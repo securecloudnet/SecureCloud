@@ -1,25 +1,25 @@
-# /etc/conf.d/northernd: config file for /etc/init.d/northernd
+# /etc/conf.d/securecloudd: config file for /etc/init.d/securecloudd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/northern/northern.conf"
+#BITCOIND_CONFIGFILE="/etc/securecloud/securecloud.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/northernd"
+#BITCOIND_PIDDIR="/var/run/securecloudd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/northernd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/securecloudd.pid"
 
-# Where to write northernd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/northernd"
+# Where to write securecloudd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/securecloudd"
 
-# User and group to own northernd process
-#BITCOIND_USER="northern"
-#BITCOIND_GROUP="northern"
+# User and group to own securecloudd process
+#BITCOIND_USER="securecloud"
+#BITCOIND_GROUP="securecloud"
 
-# Path to northernd executable
-#BITCOIND_BIN="/usr/bin/northernd"
+# Path to securecloudd executable
+#BITCOIND_BIN="/usr/bin/securecloudd"
 
-# Nice value to run northernd under
+# Nice value to run securecloudd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

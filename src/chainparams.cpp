@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Northern developers
+// Copyright (c) 2017 The SecureCloud developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -98,7 +98,7 @@ public:
         pchMessageStart[2] = 0x11;
         pchMessageStart[3] = 0xab;
         vAlertPubKey = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
-        nDefaultPort = 6942;
+        nDefaultPort = 9191;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
         nMaxReorganizationDepth = 100;
@@ -107,14 +107,14 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60; 
-        nTargetSpacing = 2 * 60;  // Northern: 2 minute blocks during POW (block 1-200)
+        nTargetSpacing = 2 * 60;  // SecureCloud: 2 minute blocks during POW (block 1-200)
         nMaturity = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 5000000 * COIN; // 5 million max supply
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
-        nModifierUpdateBlock = 1; // we use the version 2 for NORT
+        nModifierUpdateBlock = 1; // we use the version 2 for SCN
 
         /*
          * python ~/genesis.py -a quark-hash -z "Bitcoin now uses as much energy as Ireland - businessgreen 21/05/2018" -t 1526928414 -v 0 -p 04f5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
@@ -144,17 +144,17 @@ public:
         //vSeeds.push_back(CDNSSeedData("", ""));
  
 
-        // Northern addresses start with 'N'
+        // SecureCloud addresses start with 'N'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
-        // Northern script addresses start with '3'
+        // SecureCloud script addresses start with '3'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);
-        // Northern private keys start with 'K'
+        // SecureCloud private keys start with 'K'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 46);
-        // Northern BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // SecureCloud BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // Northern BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // SecureCloud BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // Northern BIP44 coin type is '222' (0x800000de)
+        // SecureCloud BIP44 coin type is '222' (0x800000de)
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >();
 
@@ -199,13 +199,13 @@ public:
         pchMessageStart[2] = 0x32;
         pchMessageStart[3] = 0xbc;
         vAlertPubKey = ParseHex("041b2b4c86273359acac3522471911ed2b303eaab65e8a1de01c06e89f2eab1e55234a4b504f3ce20c6f661f007d0ca15623b4358d9855c7c8ba793a24fa315e22");
-        nDefaultPort = 16942;
+        nDefaultPort = 19191;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Northern: 1 day
-        nTargetSpacing = 2 * 60;  // Northern: 1 minute
+        nTargetTimespan = 1 * 60; // SecureCloud: 1 day
+        nTargetSpacing = 2 * 60;  // SecureCloud: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -222,17 +222,17 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // Testnet Northern addresses start with 'g'
+        // Testnet SecureCloud addresses start with 'g'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 98);
-        // Testnet Northern script addresses start with '5' or '6'
+        // Testnet SecureCloud script addresses start with '5' or '6'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);
         // Testnet private keys start with 'k'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 108);
-        // Testnet Northern BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet SecureCloud BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Northern BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet SecureCloud BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet northern BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet securecloud BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -278,15 +278,15 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Northern: 1 day
-        nTargetSpacing = 2 * 60;        // Northern: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // SecureCloud: 1 day
+        nTargetSpacing = 2 * 60;        // SecureCloud: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1516926684;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 20542300;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 26942;
+        nDefaultPort = 29191;
        // assert(hashGenesisBlock == uint256("0x229874aa8a92df3347600978e226ba57bc994b9fa291ea50519afafca2d50ed3"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.

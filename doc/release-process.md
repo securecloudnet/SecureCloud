@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations see [translation_process.md](https://github.com/northern/northern/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations see [translation_process.md](https://github.com/securecloud/securecloud/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/northern/gitian.sigs.git
-    git clone https://github.com/northern/northern-detached-sigs.git
+    git clone https://github.com/securecloud/gitian.sigs.git
+    git clone https://github.com/securecloud/securecloud-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/northern/northern.git
+    git clone https://github.com/securecloud/securecloud.git
 
-### Northern maintainers/release engineers, suggestion for writing release notes
+### SecureCloud maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./northern
+    pushd ./securecloud
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../northern/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../securecloud/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,55 +92,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url northern=/path/to/northern,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url securecloud=/path/to/securecloud,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Northern Core for Linux, Windows, and OS X:
+### Build and sign SecureCloud Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit northern=v${VERSION} ../northern/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../northern/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/northern-*.tar.gz build/out/src/northern-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit securecloud=v${VERSION} ../securecloud/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../securecloud/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/securecloud-*.tar.gz build/out/src/securecloud-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit northern=v${VERSION} ../northern/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../northern/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/northern-*-win-unsigned.tar.gz inputs/northern-win-unsigned.tar.gz
-    mv build/out/northern-*.zip build/out/northern-*.exe ../
+    ./bin/gbuild --memory 3000 --commit securecloud=v${VERSION} ../securecloud/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../securecloud/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/securecloud-*-win-unsigned.tar.gz inputs/securecloud-win-unsigned.tar.gz
+    mv build/out/securecloud-*.zip build/out/securecloud-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit northern=v${VERSION} ../northern/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../northern/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/northern-*-osx-unsigned.tar.gz inputs/northern-osx-unsigned.tar.gz
-    mv build/out/northern-*.tar.gz build/out/northern-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit securecloud=v${VERSION} ../securecloud/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../securecloud/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/securecloud-*-osx-unsigned.tar.gz inputs/securecloud-osx-unsigned.tar.gz
+    mv build/out/securecloud-*.tar.gz build/out/securecloud-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit northern=v${VERSION} ../northern/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../northern/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/northern-*.tar.gz build/out/src/northern-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit securecloud=v${VERSION} ../securecloud/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../securecloud/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/securecloud-*.tar.gz build/out/src/securecloud-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`northern-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`northern-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`northern-${VERSION}-win[32|64]-setup-unsigned.exe`, `northern-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`northern-${VERSION}-osx-unsigned.dmg`, `northern-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`securecloud-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`securecloud-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`securecloud-${VERSION}-win[32|64]-setup-unsigned.exe`, `securecloud-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`securecloud-${VERSION}-osx-unsigned.dmg`, `securecloud-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import northern/contrib/gitian-keys/*.pgp
+    gpg --import securecloud/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../northern/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../northern/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../northern/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../northern/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../securecloud/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../securecloud/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../securecloud/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../securecloud/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -162,22 +162,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer northern-osx-unsigned.tar.gz to osx for signing
-    tar xf northern-osx-unsigned.tar.gz
+    transfer securecloud-osx-unsigned.tar.gz to osx for signing
+    tar xf securecloud-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf northern-win-unsigned.tar.gz
+    tar xf securecloud-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/northern-detached-sigs
+    cd ~/securecloud-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -190,25 +190,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [northern-detached-sigs](https://github.com/northern/northern-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [securecloud-detached-sigs](https://github.com/securecloud/securecloud-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../northern/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../northern/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../northern/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/northern-osx-signed.dmg ../northern-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../securecloud/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../securecloud/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../securecloud/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/securecloud-osx-signed.dmg ../securecloud-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../northern/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../northern/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../northern/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/northern-*win64-setup.exe ../northern-${VERSION}-win64-setup.exe
-    mv build/out/northern-*win32-setup.exe ../northern-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../securecloud/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../securecloud/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../securecloud/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/securecloud-*win64-setup.exe ../securecloud-${VERSION}-win64-setup.exe
+    mv build/out/securecloud-*win32-setup.exe ../securecloud-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -230,23 +230,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-northern-${VERSION}-aarch64-linux-gnu.tar.gz
-northern-${VERSION}-arm-linux-gnueabihf.tar.gz
-northern-${VERSION}-i686-pc-linux-gnu.tar.gz
-northern-${VERSION}-x86_64-linux-gnu.tar.gz
-northern-${VERSION}-osx64.tar.gz
-northern-${VERSION}-osx.dmg
-northern-${VERSION}.tar.gz
-northern-${VERSION}-win32-setup.exe
-northern-${VERSION}-win32.zip
-northern-${VERSION}-win64-setup.exe
-northern-${VERSION}-win64.zip
+securecloud-${VERSION}-aarch64-linux-gnu.tar.gz
+securecloud-${VERSION}-arm-linux-gnueabihf.tar.gz
+securecloud-${VERSION}-i686-pc-linux-gnu.tar.gz
+securecloud-${VERSION}-x86_64-linux-gnu.tar.gz
+securecloud-${VERSION}-osx64.tar.gz
+securecloud-${VERSION}-osx.dmg
+securecloud-${VERSION}.tar.gz
+securecloud-${VERSION}-win32-setup.exe
+securecloud-${VERSION}-win32.zip
+securecloud-${VERSION}-win64-setup.exe
+securecloud-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the https://www.nort.network/ server*.
+space *do not upload these to the https://www.scn.network/ server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -262,10 +262,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/Northern, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/SecureCloud, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/northern/northern/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/securecloud/securecloud/releases/new) with a link to the archived release notes.
 
   - Celebrate

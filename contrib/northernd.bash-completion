@@ -1,12 +1,12 @@
-# bash programmable completion for northernd(1) and northern-cli(1)
+# bash programmable completion for securecloudd(1) and securecloud-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have northernd && {
+have securecloudd && {
 
-# call $northernd for RPC
-_northern_rpc() {
+# call $securecloudd for RPC
+_securecloud_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _northern_rpc() {
                 ;;
         esac
     done
-    $northernd "${rpcargs[@]}" "$@"
+    $securecloudd "${rpcargs[@]}" "$@"
 }
 
-# Add northern accounts to COMPREPLY
-_northern_accounts() {
+# Add securecloud accounts to COMPREPLY
+_securecloud_accounts() {
     local accounts
-    accounts=$(_northern_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_securecloud_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_northernd() {
+_securecloudd() {
     local cur prev words=() cword
-    local northernd
+    local securecloudd
 
-    # save and use original argument to invoke northernd
-    # northernd might not be in $PATH
-    northernd="$1"
+    # save and use original argument to invoke securecloudd
+    # securecloudd might not be in $PATH
+    securecloudd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _northernd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _northern_accounts
+                _securecloud_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _northernd() {
                 return 0
                 ;;
             move|setaccount)
-                _northern_accounts
+                _securecloud_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _northernd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _northern_accounts
+            _securecloud_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _northernd() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($northernd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($securecloudd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_northern_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_securecloud_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _northernd() {
     esac
 }
 
-complete -F _northernd northernd northern-cli
+complete -F _securecloudd securecloudd securecloud-cli
 }
 
 # Local variables:

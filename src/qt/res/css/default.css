@@ -786,12 +786,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 	border:0;
 }
 
-/* About Northern Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Northern Contents */
+/* About SecureCloud Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About SecureCloud Contents */
 	margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Northern text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About SecureCloud text */
 	margin-right:10px;
 }
 
@@ -818,7 +818,7 @@ QLabel#labelOverviewHeaderLeft {
 
 QLabel#labelOverviewHeaderRight {
 	qproperty-alignment: 'AlignVCenter | AlignRight';
-	background-image: url(':/images/northern_logo_horizontal');
+	background-image: url(':/images/securecloud_logo_horizontal');
 	background-repeat: no-repeat;
 }
 
@@ -886,7 +886,7 @@ QWidget .QFrame#frameBalances .QLabel#labelImmatureText, /* Immature Balance Lab
 QWidget .QFrame#frameBalances .QLabel#labelTotalText, /* Total Balance Label */
 QWidget .QFrame#frameBalances .QLabel#labelPendingText, /* Pending Balance Label */
 QWidget .QFrame#frameBalances .QLabel#labelBalanceText, /* Available Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* NORT Balances Header Label */
+QWidget .QFrame#frameBalances .QLabel#labelBalances { /* SCN Balances Header Label */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	min-width: 160px;
 	color: #333333;
@@ -895,11 +895,11 @@ QWidget .QFrame#frameBalances .QLabel#labelBalances { /* NORT Balances Header La
 	font-size: 14px;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* NORT Balances Header Label */
+QWidget .QFrame#frameBalances .QLabel#labelBalances { /* SCN Balances Header Label */
 	font-weight: bold;
 }
 
-QWidget .QFrame#frameBalances #lineBalances { /* NORT Balances Line separator */
+QWidget .QFrame#frameBalances #lineBalances { /* SCN Balances Line separator */
 	background-color:#003046;
 }
 

@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Northern RPC command dispatcher.
+ * SecureCloud RPC command dispatcher.
  */
 class CRPCTable
 {

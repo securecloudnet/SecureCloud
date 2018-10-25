@@ -43,7 +43,7 @@ bool fSendFreeTransactions = false;
 bool fPayAtLeastCustomFee = true;
 
 /**
- * Fees smaller than this (in unort) are considered zero fee (for transaction creation)
+ * Fees smaller than this (in uscn) are considered zero fee (for transaction creation)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minTxFee 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  * Override with -mintxfee
@@ -1678,7 +1678,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
                     } else if (coin_type == ONLY_NOT10000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 NORT.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 SCN.");
                     }
 
                     if (useIX) {
@@ -1706,7 +1706,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-nort-address
+                    // change transaction isn't always pay-to-scn-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address

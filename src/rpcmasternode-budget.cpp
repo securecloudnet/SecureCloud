@@ -67,9 +67,9 @@ UniValue mnbudget(const UniValue& params, bool fHelp)
             "\nAvailable commands:\n"
             "  prepare            - Prepare proposal for network by signing and creating tx\n"
             "  submit             - Submit proposal for network\n"
-            "  vote-many          - Vote on a Northern initiative\n"
-            "  vote-alias         - Vote on a Northern initiative\n"
-            "  vote               - Vote on a Northern initiative/budget\n"
+            "  vote-many          - Vote on a SecureCloud initiative\n"
+            "  vote-alias         - Vote on a SecureCloud initiative\n"
+            "  vote               - Vote on a SecureCloud initiative/budget\n"
             "  getvotes           - Show current masternode budgets\n"
             "  getinfo            - Show current masternode budgets\n"
             "  show               - Show all budgets\n"
@@ -159,7 +159,7 @@ UniValue preparebudget(const UniValue& params, bool fHelp)
 
     if (fHelp || params.size() != 6)
         throw runtime_error(
-            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"nort-address\" monthly-payment\n"
+            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"scn-address\" monthly-payment\n"
             "\nPrepare proposal for network by signing and creating tx\n"
 
             "\nArguments:\n"
@@ -167,7 +167,7 @@ UniValue preparebudget(const UniValue& params, bool fHelp)
             "2. \"url\":            (string, required) URL of proposal details (64 character limit)\n"
             "3. payment-count:    (numeric, required) Total number of monthly payments\n"
             "4. block-start:      (numeric, required) Starting super block height\n"
-            "5. \"nort-address\":   (string, required) NORT address to send payments to\n"
+            "5. \"scn-address\":   (string, required) SCN address to send payments to\n"
             "6. monthly-payment:  (numeric, required) Monthly payment amount\n"
 
             "\nResult:\n"
@@ -210,9 +210,9 @@ UniValue preparebudget(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[4].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid NORT address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SCN address");
 
-    // Parse NORT address
+    // Parse SCN address
     CScript scriptPubKey = GetScriptForDestination(address.Get());
     CAmount nAmount = AmountFromValue(params[5]);
 
@@ -252,7 +252,7 @@ UniValue submitbudget(const UniValue& params, bool fHelp)
 
     if (fHelp || params.size() != 7)
         throw runtime_error(
-            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"nort-address\" monthly-payment \"fee-tx\"\n"
+            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"scn-address\" monthly-payment \"fee-tx\"\n"
             "\nSubmit proposal to the network\n"
 
             "\nArguments:\n"
@@ -260,7 +260,7 @@ UniValue submitbudget(const UniValue& params, bool fHelp)
             "2. \"url\":            (string, required) URL of proposal details (64 character limit)\n"
             "3. payment-count:    (numeric, required) Total number of monthly payments\n"
             "4. block-start:      (numeric, required) Starting super block height\n"
-            "5. \"nort-address\":   (string, required) NORT address to send payments to\n"
+            "5. \"scn-address\":   (string, required) SCN address to send payments to\n"
             "6. monthly-payment:  (numeric, required) Monthly payment amount\n"
             "7. \"fee-tx\":         (string, required) Transaction hash from preparebudget command\n"
 
@@ -304,9 +304,9 @@ UniValue submitbudget(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[4].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid NORT address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SCN address");
 
-    // Parse NORT address
+    // Parse SCN address
     CScript scriptPubKey = GetScriptForDestination(address.Get());
     CAmount nAmount = AmountFromValue(params[5]);
     uint256 hash = ParseHashV(params[6], "parameter 1");
@@ -683,7 +683,7 @@ UniValue getbudgetprojection(const UniValue& params, bool fHelp)
             "    \"BlockEnd\": n,                (numeric) Proposal ending block\n"
             "    \"TotalPaymentCount\": n,       (numeric) Number of payments\n"
             "    \"RemainingPaymentCount\": n,   (numeric) Number of remaining payments\n"
-            "    \"PaymentAddress\": \"xxxx\",     (string) NORT address of payment\n"
+            "    \"PaymentAddress\": \"xxxx\",     (string) SCN address of payment\n"
             "    \"Ratio\": x.xxx,               (numeric) Ratio of yeas vs nays\n"
             "    \"Yeas\": n,                    (numeric) Number of yea votes\n"
             "    \"Nays\": n,                    (numeric) Number of nay votes\n"
@@ -746,7 +746,7 @@ UniValue getbudgetinfo(const UniValue& params, bool fHelp)
             "    \"BlockEnd\": n,                (numeric) Proposal ending block\n"
             "    \"TotalPaymentCount\": n,       (numeric) Number of payments\n"
             "    \"RemainingPaymentCount\": n,   (numeric) Number of remaining payments\n"
-            "    \"PaymentAddress\": \"xxxx\",     (string) NORT address of payment\n"
+            "    \"PaymentAddress\": \"xxxx\",     (string) SCN address of payment\n"
             "    \"Ratio\": x.xxx,               (numeric) Ratio of yeas vs nays\n"
             "    \"Yeas\": n,                    (numeric) Number of yea votes\n"
             "    \"Nays\": n,                    (numeric) Number of nay votes\n"

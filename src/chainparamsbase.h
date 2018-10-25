@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between northern-cli and northernd)
- * of a given instance of the Northern system.
+ * CBaseChainParams defines the base parameters (shared between securecloud-cli and securecloudd)
+ * of a given instance of the SecureCloud system.
  */
 class CBaseChainParams
 {

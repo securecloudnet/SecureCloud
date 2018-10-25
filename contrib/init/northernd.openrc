@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/northern/.northern" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/northern/.northern"
+if [ -d "/var/lib/securecloud/.securecloud" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/securecloud/.securecloud"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/northernd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/securecloudd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/northern/northern.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/northernd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/northernd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/securecloud/securecloud.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/securecloudd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/securecloudd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-northern}
-BITCOIND_GROUP=${BITCOIND_GROUP:-northern}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/northernd}
+BITCOIND_USER=${BITCOIND_USER:-securecloud}
+BITCOIND_GROUP=${BITCOIND_GROUP:-securecloud}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/securecloudd}
 
-name="Northern Core Daemon"
-description="Northern crypto-currency p2p network daemon"
+name="SecureCloud Core Daemon"
+description="SecureCloud crypto-currency p2p network daemon"
 
-command="/usr/bin/northernd"
+command="/usr/bin/securecloudd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run northernd."
+		eerror "ERROR: You must set a secure rpcpassword to run securecloudd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Northern Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"SecureCloud Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

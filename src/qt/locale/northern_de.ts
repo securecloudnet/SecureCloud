@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie NORT überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie SCN überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie NORT empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie SCN empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre NORT-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie NORT überweisen.</translation>
+        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre SCN-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie SCN überweisen.</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre NORT-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre SCN-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Northern will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NORTs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer NORTs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer SCNs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NORT&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre NORTs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre SCNs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a NORT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine NORT Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine SCN Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>NORT Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>SCN Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese NORT Adresse besitzt</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese SCN Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>Die NORT Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>Die SCN Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified NORT address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen NORT-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified SCN address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen SCN-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     <message>
-        <source>Send coins to a NORT address</source>
-        <translation>An eine NORT-Adresse überweisen</translation>
+        <source>Send coins to a SCN address</source>
+        <translation>An eine SCN-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und northern: URIs)</translation>
+        <source>Request payments (generates QR codes and securecloud: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und securecloud: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -622,24 +622,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About Northern Core</source>
-        <translation>Über.Northern Core</translation>
+        <source>&amp;About SecureCloud Core</source>
+        <translation>Über.SecureCloud Core</translation>
     </message>
     <message>
-        <source>Show information about Northern Core</source>
-        <translation>Zeigt Informationen über Northern Core</translation>
+        <source>Show information about SecureCloud Core</source>
+        <translation>Zeigt Informationen über SecureCloud Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Northern</source>
-        <translation>Konfiguration von Northern verändern</translation>
+        <source>Modify configuration options for SecureCloud</source>
+        <translation>Konfiguration von SecureCloud verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your NORT addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer NORT-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your SCN addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer SCN-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified NORT addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten NORT-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified SCN addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten SCN-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Öffne eine northern: URI or Zahlungsanfrage</translation>
+        <source>Open a securecloud: URI or payment request</source>
+        <translation>Öffne eine securecloud: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,16 +678,16 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the Northern Core help message to get a list with possible Northern command-line options</source>
-        <translation>Zeige die Northern-Core Hilfe, um mögliche Northern Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the SecureCloud Core help message to get a list with possible SecureCloud command-line options</source>
+        <translation>Zeige die SecureCloud-Core Hilfe, um mögliche SecureCloud Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>Northern Core client</source>
-        <translation>Northern Core Client</translation>
+        <source>SecureCloud Core client</source>
+        <translation>SecureCloud Core Client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Northern network</source>
-        <translation><numerusform>%n aktive Verbindung zum Northern Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Northern Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to SecureCloud network</source>
+        <translation><numerusform>%n aktive Verbindung zum SecureCloud Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum SecureCloud Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -836,8 +836,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "northern.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (securecloud.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "securecloud.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1010,8 +1010,8 @@ Adresse: %4</translation>
         <translation>mittel-hoch</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 unort per input.</source>
-        <translation>Kann um +/- %1 unort pro Eingang variieren.</translation>
+        <source>Can vary +/- %1 uscn per input.</source>
+        <translation>Kann um +/- %1 uscn pro Eingang variieren.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1125,8 +1125,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid NORT address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige NORT-Adresse.</translation>
+        <source>The entered address "%1" is not a valid SCN address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige SCN-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1171,16 +1171,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Northern Core</source>
-        <translation>Über Northern Core</translation>
+        <source>About SecureCloud Core</source>
+        <translation>Über SecureCloud Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1226,16 +1226,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Northern Core.</source>
-        <translation>Willkommen zu Northern Core.</translation>
+        <source>Welcome to SecureCloud Core.</source>
+        <translation>Willkommen zu SecureCloud Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Northern Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Northern Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where SecureCloud Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie SecureCloud Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Northern Core will download and store a copy of the Northern block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Northern Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>SecureCloud Core will download and store a copy of the SecureCloud block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>SecureCloud Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1246,8 +1246,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1384,12 +1384,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other NORT addresses after it matures.
-To Add: enter percentage to give and NORT address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCN addresses after it matures.
+To Add: enter percentage to give and SCN address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen NORT-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die NORT-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen SCN-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die SCN-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1562,8 +1562,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the Northern client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des Northern-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the SecureCloud client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des SecureCloud-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1582,12 +1582,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start Northern after logging in to the system.</source>
-        <translation>Northern automatisch nach dem Login starten.</translation>
+        <source>Automatically start SecureCloud after logging in to the system.</source>
+        <translation>SecureCloud automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start Northern on system login</source>
-        <translation>Northern automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start SecureCloud on system login</source>
+        <translation>SecureCloud automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1614,7 +1614,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Northern.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting SecureCloud.</source>
         <translation>Die Sprache der Benutzeroberflächekann hier gesetzt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
@@ -1622,8 +1622,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Connect to the Northern network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem Northern Netzwerk verbinden.</translation>
+        <source>Connect to the SecureCloud network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem SecureCloud Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1749,8 +1749,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <source>NORT Balances</source>
-        <translation>NORT Bilanzen</translation>
+        <source>SCN Balances</source>
+        <translation>SCN Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1777,8 +1777,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Northern network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Northern-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SecureCloud network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem SecureCloud-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1813,8 +1813,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Verfügbar:</translation>
     </message>
     <message>
-        <source>NORT:</source>
-        <translation>NORT:</translation>
+        <source>SCN:</source>
+        <translation>SCN:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1852,12 +1852,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start northern: click-to-pay handler</source>
-        <translation>Kann northern nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start securecloud: click-to-pay handler</source>
+        <translation>Kann securecloud nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid NORT address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige NORT-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SCN address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige SCN-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1942,8 +1942,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a NORT address (e.g. %1)</source>
-        <translation>NORT-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a SCN address (e.g. %1)</source>
+        <translation>SCN-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2080,8 +2080,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Northern debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne Northern-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann für einige Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the SecureCloud debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne SecureCloud-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann für einige Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2248,8 +2248,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Northern RPC console.</source>
-        <translation>Willkommen in der Northern RPC Konsole.</translation>
+        <source>Welcome to the SecureCloud RPC console.</source>
+        <translation>Willkommen in der SecureCloud RPC Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2319,12 +2319,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Northern network.</source>
-        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das Northern-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SecureCloud network.</source>
+        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das SecureCloud-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Northern network.</source>
-        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das Northern-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SecureCloud network.</source>
+        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das SecureCloud-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2477,7 +2477,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>NORTs überweisen</translation>
+        <translation>SCNs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2548,8 +2548,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 NORT</source>
-        <translation>0 NORT</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2600,16 +2600,16 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uNORTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNORTs in fee,&lt;br /&gt;while "at least" pays 1000 uNORTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uNORTs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uNORTs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uNORTs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSCNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSCNs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uSCNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uNORTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNORTs in fee,&lt;br /&gt;while "total at least" pays 1000 uNORTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uNORTs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uNORTs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uNORTs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSCNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSCNs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uSCNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Northern transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken ist.&lt;br /&gt;Aber sein Sie sich bewusst, dass dies am Ende in einer niemals bestätigende Transaktion endet, sobald es mehr Nachfrage nach Northern-Transaktionen gibt, als das Netzwerk verarbeiten kann.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud transactions than the network can process.</source>
+        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken ist.&lt;br /&gt;Aber sein Sie sich bewusst, dass dies am Ende in einer niemals bestätigende Transaktion endet, sobald es mehr Nachfrage nach SecureCloud-Transaktionen gibt, als das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2708,8 +2708,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>benutzend</translation>
     </message>
     <message>
-        <source>Warning: Invalid NORT address</source>
-        <translation>Warnung: Ungültige NORT-Adresse</translation>
+        <source>Warning: Invalid SCN address</source>
+        <translation>Warnung: Ungültige SCN-Adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2807,8 +2807,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The NORT address to send the payment to</source>
-        <translation>NORT-Adresse, an die überwiesen werden soll</translation>
+        <source>The SCN address to send the payment to</source>
+        <translation>SCN-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2847,8 +2847,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the northern: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Northern network.</source>
-        <translation>Eine an die northern-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Northern-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the securecloud: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SecureCloud network.</source>
+        <translation>Eine an die securecloud-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das SecureCloud-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2874,8 +2874,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Northern Core is shutting down...</source>
-        <translation>Northern Core wird beendet...</translation>
+        <source>SecureCloud Core is shutting down...</source>
+        <translation>SecureCloud Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2897,8 +2897,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie sie besitzen. Sein Sie vorsichtig nichts nebulöses zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu denen zu untergeben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>NORT Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>SCN Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2929,16 +2929,16 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese NORT Adresse besitzt</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese SCN Adresse besitzt</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>Die NORT Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>Die SCN Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified NORT address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen NORT-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified SCN address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen SCN-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3024,8 +3024,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3040,8 +3040,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The Northern Core developers</source>
-        <translation>Die Northern Core Entwickler</translation>
+        <source>The SecureCloud Core developers</source>
+        <translation>Die SecureCloud Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3215,7 +3215,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte NORTs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine NORTs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte SCNs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine SCNs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3541,11 +3541,11 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>NORTs überweisen</translation>
+        <translation>SCNs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NORT.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 NORT begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 SCN begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -3588,7 +3588,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
 </context>
 <context>
-    <name>northern-core</name>
+    <name>securecloud-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -3602,8 +3602,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Fehler aufgetreten beim Einrichten der RPC-Adresse %s Port %u für horchen: %s</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Northern Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Northern Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. SecureCloud Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. SecureCloud Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3614,8 +3614,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Lösche alle Wallet-Transaktionen und stelle nur diese Teile der Blockchain wieder her durch -neuscan beim Start</translation>
     </message>
     <message>
-        <source>Disable all Northern specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktiviere alle Northern-spezifischen Funktionen (Masternodes, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
+        <source>Disable all SecureCloud specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Deaktiviere alle SecureCloud-spezifischen Funktionen (Masternodes, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3658,12 +3658,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in NORT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in NORT/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in SCN/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in NORT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in NORT/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in SCN/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3734,8 +3734,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The Northern Core Developers</source>
-        <translation>Copyright (C) 2017-%i The Northern Core Developers</translation>
+        <source>Copyright (C) 2017-%i The SecureCloud Core Developers</source>
+        <translation>Copyright (C) 2017-%i The SecureCloud Core Developers</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3770,8 +3770,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Northern Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. Northern Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. SecureCloud Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. SecureCloud Core schaltet ab.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4050,8 +4050,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Northern Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Northern Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart SecureCloud Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte SecureCloud Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

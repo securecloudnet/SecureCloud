@@ -1,4 +1,4 @@
-Building Northern
+Building SecureCloud
 
 Use the autogen script to prepare the build environment.
 
@@ -8,6 +8,6 @@ Use the autogen script to prepare the build environment.
 
 Always verify the signatures and checksums.
 
-See doc/build-*.md for instructions on building northernd,
+See doc/build-*.md for instructions on building securecloudd,
 the intended-for-services, no-graphical-interface, reference
-implementation of Northern.
+implementation of SecureCloud.

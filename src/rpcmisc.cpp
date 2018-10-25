@@ -55,7 +55,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"version\": xxxxx,           (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,   (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total northern balance of the wallet\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total securecloud balance of the wallet\n"
             "  \"blocks\": xxxxxx,           (numeric) the current number of blocks processed in the server\n"
             "  \"timeoffset\": xxxxx,        (numeric) the time offset\n"
             "  \"connections\": xxxxx,       (numeric) the number of connections\n"
@@ -66,8 +66,8 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,      (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in nort/kb\n"
-            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in nort/kb\n"
+            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in scn/kb\n"
+            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in scn/kb\n"
             "  \"staking status\": true|false,  (boolean) if the wallet is staking or not\n"
             "  \"errors\": \"...\"           (string) any error messages\n"
             "}\n"
@@ -277,14 +277,14 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress \"nortaddress\"\n"
-            "\nReturn information about the given nort address.\n"
+            "validateaddress \"scnaddress\"\n"
+            "\nReturn information about the given scn address.\n"
             "\nArguments:\n"
-            "1. \"nortaddress\"     (string, required) The nort address to validate\n"
+            "1. \"scnaddress\"     (string, required) The scn address to validate\n"
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"nortaddress\", (string) The nort address validated\n"
+            "  \"address\" : \"scnaddress\", (string) The scn address validated\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isscript\" : true|false,        (boolean) If the key is a script\n"
             "  \"pubkey\" : \"publickeyhex\",    (string) The hex value of the raw public key\n"
@@ -341,7 +341,7 @@ CScript _createmultisig_redeemScript(const UniValue& params)
     for (unsigned int i = 0; i < keys.size(); i++) {
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
-        // Case 1: NORT address and we have full public key:
+        // Case 1: SCN address and we have full public key:
         CBitcoinAddress address(ks);
         if (pwalletMain && address.IsValid()) {
             CKeyID keyID;
@@ -387,9 +387,9 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
 
                      "\nArguments:\n"
                      "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-                     "2. \"keys\"       (string, required) A json array of keys which are nort addresses or hex-encoded public keys\n"
+                     "2. \"keys\"       (string, required) A json array of keys which are scn addresses or hex-encoded public keys\n"
                      "     [\n"
-                     "       \"key\"    (string) nort address or hex-encoded public key\n"
+                     "       \"key\"    (string) scn address or hex-encoded public key\n"
                      "       ,...\n"
                      "     ]\n"
 
@@ -422,10 +422,10 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"nortaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"scnaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"nortaddress\"  (string, required) The nort address to use for the signature.\n"
+            "1. \"scnaddress\"  (string, required) The scn address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"

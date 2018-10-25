@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše NORT adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše SCN adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše NORT adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše SCN adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Northern will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NORTs from being stolen by malware infecting your computer.</source>
-        <translation>Northern sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše NORT pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše SCN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NORT&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY NORT &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY SCN &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a NORT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu NORT, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu SCN, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>Adresa NORT, ktorou chcete správu podpísať</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>Adresa SCN, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto NORT adresy</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto SCN adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>NORT adresa, ktorou bola správa podpísaná</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>SCN adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified NORT address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou NORT adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified SCN address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou SCN adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     <message>
-        <source>Send coins to a NORT address</source>
-        <translation>Odoslať mince na adresu NORT</translation>
+        <source>Send coins to a SCN address</source>
+        <translation>Odoslať mince na adresu SCN</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a northern: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and securecloud: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a securecloud: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +614,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Northern Core</source>
-        <translation>O Northern Core</translation>
+        <source>&amp;About SecureCloud Core</source>
+        <translation>O SecureCloud Core</translation>
     </message>
     <message>
-        <source>Show information about Northern Core</source>
-        <translation>Zobraziť informácie o Northern Core</translation>
+        <source>Show information about SecureCloud Core</source>
+        <translation>Zobraziť informácie o SecureCloud Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Northern</source>
-        <translation>Zmeňte možnosti konfigurácie pre Northern</translation>
+        <source>Modify configuration options for SecureCloud</source>
+        <translation>Zmeňte možnosti konfigurácie pre SecureCloud</translation>
     </message>
     <message>
-        <source>Sign messages with your NORT addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy NORT, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your SCN addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy SCN, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified NORT addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými NORT adresami</translation>
+        <source>Verify messages to ensure they were signed with specified SCN addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými SCN adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +662,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Otvorte northern: URI alebo žiadosť o platbu</translation>
+        <source>Open a securecloud: URI or payment request</source>
+        <translation>Otvorte securecloud: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,12 +674,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Northern Core help message to get a list with possible Northern command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Northern Core a získajte zoznam možností príkazového riadka Northern</translation>
+        <source>Show the SecureCloud Core help message to get a list with possible SecureCloud command-line options</source>
+        <translation>Zobraziť pomocnú správu programu SecureCloud Core a získajte zoznam možností príkazového riadka SecureCloud</translation>
     </message>
     <message>
-        <source>Northern Core client</source>
-        <translation>Northern Core klient</translation>
+        <source>SecureCloud Core client</source>
+        <translation>SecureCloud Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (northern.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (securecloud.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (securecloud.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -900,15 +900,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1082,8 +1082,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>Adresa NORT, ktorou chcete správu podpísať</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>Adresa SCN, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1106,16 +1106,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto NORT adresy</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto SCN adresy</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>NORT adresa, ktorou bola správa podpísaná</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>SCN adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified NORT address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou NORT adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified SCN address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou SCN adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1153,8 +1153,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Core</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Core</translation>
     </message>
     </context>
 <context>
@@ -1249,7 +1249,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>securecloud-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

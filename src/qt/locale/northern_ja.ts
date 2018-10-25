@@ -257,6 +257,6 @@
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>securecloud-core</name>
     </context>
 </TS>

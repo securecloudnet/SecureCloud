@@ -77,7 +77,7 @@ HEADERS += src/bignum.h \
            src/compressor.h \
            src/core_io.h \
            src/crypter.h \
-           src/northern-config.h \
+           src/securecloud-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/bignum.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/northern-config.h \
+           src/config/securecloud-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -331,7 +331,7 @@ HEADERS += src/bignum.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/northern.moc \
+           src/qt/securecloud.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -369,9 +369,9 @@ SOURCES += src/activemasternode.cpp \
            src/core_read.cpp \
            src/core_write.cpp \
            src/crypter.cpp \
-           src/northern-cli.cpp \
-           src/northern-tx.cpp \
-           src/northern.cpp \
+           src/securecloud-cli.cpp \
+           src/securecloud-tx.cpp \
+           src/securecloud.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -466,8 +466,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroldialog.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
-           src/qt/northern.cpp \
-           src/qt/northernstrings.cpp \
+           src/qt/securecloud.cpp \
+           src/qt/securecloudstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -545,7 +545,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_northern.cpp \
+           src/test/test_securecloud.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -636,21 +636,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/northern.qrc src/qt/northern_locale.qrc
+RESOURCES += src/qt/securecloud.qrc src/qt/securecloud_locale.qrc
 
-TRANSLATIONS += src/qt/locale/northern_bg.ts \
-                src/qt/locale/northern_de.ts \
-                src/qt/locale/northern_en.ts \
-                src/qt/locale/northern_es.ts \
-                src/qt/locale/northern_fi.ts \
-                src/qt/locale/northern_fr.ts \
-                src/qt/locale/northern_it.ts \
-                src/qt/locale/northern_ja.ts \
-                src/qt/locale/northern_pl.ts \
-                src/qt/locale/northern_pt.ts \
-                src/qt/locale/northern_ru.ts \
-                src/qt/locale/northern_sk.ts \
-                src/qt/locale/northern_sv.ts \
-                src/qt/locale/northern_vi.ts \
-                src/qt/locale/northern_zh_CN.ts \
-                src/qt/locale/northern_zh_TW.ts
+TRANSLATIONS += src/qt/locale/securecloud_bg.ts \
+                src/qt/locale/securecloud_de.ts \
+                src/qt/locale/securecloud_en.ts \
+                src/qt/locale/securecloud_es.ts \
+                src/qt/locale/securecloud_fi.ts \
+                src/qt/locale/securecloud_fr.ts \
+                src/qt/locale/securecloud_it.ts \
+                src/qt/locale/securecloud_ja.ts \
+                src/qt/locale/securecloud_pl.ts \
+                src/qt/locale/securecloud_pt.ts \
+                src/qt/locale/securecloud_ru.ts \
+                src/qt/locale/securecloud_sk.ts \
+                src/qt/locale/securecloud_sv.ts \
+                src/qt/locale/securecloud_vi.ts \
+                src/qt/locale/securecloud_zh_CN.ts \
+                src/qt/locale/securecloud_zh_TW.ts

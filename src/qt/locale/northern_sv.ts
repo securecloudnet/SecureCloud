@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina NORT adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina SCN adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina NORT adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina SCN adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,16 +160,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>Northern will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NORTs from being stolen by malware infecting your computer.</source>
-        <translation>Northern kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina NORTs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina SCNs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NORT&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA NORT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA SCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a NORT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en NORT adress som du vill kryptera med BIP 38.
+        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en SCN adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>NORT adressen för signera meddelandet med</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>SCN adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna NORT adress</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna SCN adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>NORT adressen meddelandet blev signerat med</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>SCN adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified NORT address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika NORT adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified SCN address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika SCN adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,16 +583,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Kärna</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a NORT address</source>
-        <translation>Skicka mynt till en NORT adress</translation>
+        <source>Send coins to a SCN address</source>
+        <translation>Skicka mynt till en SCN adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och northern: URls)</translation>
+        <source>Request payments (generates QR codes and securecloud: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och securecloud: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -603,24 +603,24 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Northern Core</source>
-        <translation>Om Northern Kärnan</translation>
+        <source>&amp;About SecureCloud Core</source>
+        <translation>Om SecureCloud Kärnan</translation>
     </message>
     <message>
-        <source>Show information about Northern Core</source>
-        <translation>Visa information om Northern Kärnan</translation>
+        <source>Show information about SecureCloud Core</source>
+        <translation>Visa information om SecureCloud Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for Northern</source>
-        <translation>Ändra konfigurationsval för Northern</translation>
+        <source>Modify configuration options for SecureCloud</source>
+        <translation>Ändra konfigurationsval för SecureCloud</translation>
     </message>
     <message>
-        <source>Sign messages with your NORT addresses to prove you own them</source>
-        <translation>Signera meddelanden med din NORT adress för att visa att du äger dem</translation>
+        <source>Sign messages with your SCN addresses to prove you own them</source>
+        <translation>Signera meddelanden med din SCN adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified NORT addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika NORT adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified SCN addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika SCN adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>Northern Core client</source>
-        <translation>Northern kärn klient</translation>
+        <source>SecureCloud Core client</source>
+        <translation>SecureCloud kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -837,15 +837,15 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Kärna</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Kärna</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1095,8 +1095,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>NORT adressen för signera meddelandet med</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>SCN adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1119,16 +1119,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna NORT adress</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna SCN adress</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>NORT adressen meddelandet blev signerat med</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>SCN adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified NORT address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika NORT adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified SCN address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika SCN adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1170,8 +1170,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Northern Core</source>
-        <translation>Northern Kärna</translation>
+        <source>SecureCloud Core</source>
+        <translation>SecureCloud Kärna</translation>
     </message>
     </context>
 <context>
@@ -1354,7 +1354,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>securecloud-core</name>
     <message>
         <source>Error</source>
         <translation>Fel</translation>

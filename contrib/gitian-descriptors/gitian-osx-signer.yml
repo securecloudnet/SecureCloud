@@ -1,5 +1,5 @@
 ---
-name: "northern-dmg-signer"
+name: "securecloud-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/northern/northern-detached-sigs.git"
+- "url": "https://github.com/securecloud/securecloud-detached-sigs.git"
   "dir": "signature"
 files:
-- "northern-osx-unsigned.tar.gz"
+- "securecloud-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,11 +27,11 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=northern-osx-unsigned.tar.gz
-  SIGNED=northern-osx-signed.dmg
+  UNSIGNED=securecloud-osx-unsigned.tar.gz
+  SIGNED=securecloud-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Northern-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
+  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "SecureCloud-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}

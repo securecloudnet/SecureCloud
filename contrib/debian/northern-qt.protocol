@@ -1,6 +1,6 @@
 [Protocol]
-exec=northern-qt '%u'
-protocol=northern
+exec=securecloud-qt '%u'
+protocol=securecloud
 input=none
 output=none
 helper=true

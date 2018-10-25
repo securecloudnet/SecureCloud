@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços NORT para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços SCN para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your NORT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços NORT para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços SCN para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Northern will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NORTs from being stolen by malware infecting your computer.</source>
-        <translation>Northern encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas NORTs contra roubo por malware infectando seu computador.</translation>
+        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas SCNs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NORT&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA NORT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA SCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>Encriptar com &amp;BIP 38</translation>
     </message>
     <message>
-        <source>Enter a NORT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Digite um endereço NORT que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
+        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Digite um endereço SCN que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>Um endereço NORT para assinar a mensagem</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>Um endereço SCN para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço NORT.</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço SCN.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -295,8 +295,8 @@
         <translation>Criptografia BIP 38</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>O endereço NORT que foi assinado com</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>O endereço SCN que foi assinado com</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -626,8 +626,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The NORT address to sign the message with</source>
-        <translation>Um endereço NORT para assinar a mensagem</translation>
+        <source>The SCN address to sign the message with</source>
+        <translation>Um endereço SCN para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -658,12 +658,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NORT address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço NORT.</translation>
+        <source>Sign the message to prove you own this SCN address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço SCN.</translation>
     </message>
     <message>
-        <source>The NORT address the message was signed with</source>
-        <translation>O endereço NORT que foi assinado com</translation>
+        <source>The SCN address the message was signed with</source>
+        <translation>O endereço SCN que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -861,14 +861,14 @@
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>securecloud-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Northern specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionacilidades específicas da Northern (Masternodes, SwiftTX, Budgeting) (0-1, default %u)</translation>
+        <source>Disable all SecureCloud specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionacilidades específicas da SecureCloud (Masternodes, SwiftTX, Budgeting) (0-1, default %u)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -1215,8 +1215,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Northern Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Northern Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart SecureCloud Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o SecureCloud Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -1,6 +1,6 @@
-usr/local/bin/northern-qt usr/bin
+usr/local/bin/securecloud-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/northern-qt.desktop usr/share/applications
-debian/northern-qt.protocol usr/share/kde4/services/
+debian/securecloud-qt.desktop usr/share/applications
+debian/securecloud-qt.protocol usr/share/kde4/services/

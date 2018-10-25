@@ -1,2 +1,2 @@
-usr/local/bin/northernd usr/bin
-usr/local/bin/northern-cli usr/bin
+usr/local/bin/securecloudd usr/bin
+usr/local/bin/securecloud-cli usr/bin

@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Northern"
-            VALUE "FileDescription",    "Northern Core (OSS GUI client for Northern)"
+            VALUE "CompanyName",        "SecureCloud"
+            VALUE "FileDescription",    "SecureCloud Core (OSS GUI client for SecureCloud)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "northern-qt"
+            VALUE "InternalName",       "securecloud-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "northern-qt.exe"
-            VALUE "ProductName",        "Northern Core"
+            VALUE "OriginalFilename",   "securecloud-qt.exe"
+            VALUE "ProductName",        "SecureCloud Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

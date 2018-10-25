@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both northernd and northern-qt, to make it harder for attackers to
+ * for both securecloudd and securecloud-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Northern Core");
+const std::string CLIENT_NAME("SecureCloud Core");
 
 /**
  * Client version number

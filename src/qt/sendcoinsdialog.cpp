@@ -59,7 +59,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent),
     connect(ui->splitBlockCheckBox, SIGNAL(stateChanged(int)), this, SLOT(splitBlockChecked(int)));
     connect(ui->splitBlockLineEdit, SIGNAL(textChanged(const QString&)), this, SLOT(splitBlockLineEditChanged(const QString&)));
 
-    // Northern specific
+    // SecureCloud specific
     QSettings settings;
     if (!settings.contains("bUseSwiftTX"))
         settings.setValue("bUseSwiftTX", false);
@@ -873,7 +873,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
             ui->labelCoinControlChangeLabel->setText("");
         } else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid NORT address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid SCN address"));
         } else // Valid address
         {
             CPubKey pubkey;

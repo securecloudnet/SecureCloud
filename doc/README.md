@@ -1,28 +1,28 @@
-Northern Core
+SecureCloud Core
 =====================
 
 Setup
 ---------------------
-[Northern Core](https://www.nort.network) is the original Northern client and it builds the backbone of the network. However, it downloads and stores the entire history of Northern transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[SecureCloud Core](https://www.scn.network) is the original SecureCloud client and it builds the backbone of the network. However, it downloads and stores the entire history of SecureCloud transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Northern on your native platform.
+The following are some helpful notes on how to run SecureCloud on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/northern-qt (GUI, 32-bit) or bin/32/northernd (headless, 32-bit)
-- bin/64/northern-qt (GUI, 64-bit) or bin/64/northernd (headless, 64-bit)
+- bin/32/securecloud-qt (GUI, 32-bit) or bin/32/securecloudd (headless, 32-bit)
+- bin/64/securecloud-qt (GUI, 64-bit) or bin/64/securecloudd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run northern-qt.exe.
+Unpack the files into a directory, and then run securecloud-qt.exe.
 
 ### OSX
 
-Drag Northern-Qt to your applications folder, and then run Northern-Qt.
+Drag SecureCloud-Qt to your applications folder, and then run SecureCloud-Qt.
 
 ### Need Help?
 
@@ -30,7 +30,7 @@ Drag Northern-Qt to your applications folder, and then run Northern-Qt.
 
 Building
 ---------------------
-The following are developer notes on how to build Northern on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build SecureCloud on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -38,7 +38,7 @@ The following are developer notes on how to build Northern on your native platfo
 
 Development
 ---------------------
-The Northern repo's [root README](https://github.com/northern/northern/blob/master/README.md) contains relevant information on the development process and automated testing.
+The SecureCloud repo's [root README](https://github.com/securecloud/securecloud/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Northern developers
+// Copyright (c) 2017-2018 The SecureCloud developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +20,7 @@ void ThreadMasternodePool()
     if (fLiteMode) return; //disable all Masternode related functionality
 
     // Make this thread recognisable
-    RenameThread("northern-mnpool");
+    RenameThread("securecloud-mnpool");
 
     unsigned int c = 0;
 

@@ -1,19 +1,19 @@
 [Unit]
-Description=Northern's distributed currency daemon
+Description=SecureCloud's distributed currency daemon
 After=network.target
 
 [Service]
-User=northern
-Group=northern
+User=securecloud
+Group=securecloud
 
 Type=forking
-PIDFile=/var/lib/northernd/northernd.pid
+PIDFile=/var/lib/securecloudd/securecloudd.pid
 
-ExecStart=/usr/bin/northernd -daemon -pid=/var/lib/northernd/northernd.pid \
-          -conf=/etc/northern/northern.conf -datadir=/var/lib/northernd
+ExecStart=/usr/bin/securecloudd -daemon -pid=/var/lib/securecloudd/securecloudd.pid \
+          -conf=/etc/securecloud/securecloud.conf -datadir=/var/lib/securecloudd
 
-ExecStop=-/usr/bin/northern-cli -conf=/etc/northern/northern.conf \
-         -datadir=/var/lib/northernd stop
+ExecStop=-/usr/bin/securecloud-cli -conf=/etc/securecloud/securecloud.conf \
+         -datadir=/var/lib/securecloudd stop
 
 Restart=always
 PrivateTmp=true

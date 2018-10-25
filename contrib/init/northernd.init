@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  northernd The Northern core server.
+#  securecloudd The SecureCloud core server.
 #
 #
 # chkconfig: 345 80 20
-# description: northernd
-# processname: northernd
+# description: securecloudd
+# processname: securecloudd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/northernd, see below
-if [ -f /etc/sysconfig/northernd ]; then
-        . /etc/sysconfig/northernd
+# you can override defaults in /etc/sysconfig/securecloudd, see below
+if [ -f /etc/sysconfig/securecloudd ]; then
+        . /etc/sysconfig/securecloudd
 fi
 
 RETVAL=0
 
-prog=northernd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/northernd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/northernd}
+prog=securecloudd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/securecloudd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/securecloudd}
 
-# northernd defaults to /usr/bin/northernd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/northernd}
+# securecloudd defaults to /usr/bin/securecloudd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/securecloudd}
 
-# northernd opts default to -disablewallet, override with BITCOIND_OPTS
+# securecloudd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {
