@@ -1624,13 +1624,13 @@ int64_t GetBlockValue(int nHeight)
     }
 
     if (nHeight < Params().LAST_POW_BLOCK())
-        nSubsidy = 12500 * COIN; // 200 blocks x 12,500 SCN = 2,500,000 SCN premine
+        nSubsidy = 13000 * COIN; // 200 blocks x 13,000 SCN = 2,600,000 SCN premine
     else if (nHeight <= 129600)
-        nSubsidy = 1.25 * COIN;
-    else if (nHeight > 129600 && nHeight <= 259200)
         nSubsidy = 2.5 * COIN;
-    else
+    else if (nHeight > 129600 && nHeight <= 259200)
         nSubsidy = 1.25 * COIN;
+    else
+        nSubsidy = 0.5 * COIN;
 
     // Check if we reached the coin max supply.
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
