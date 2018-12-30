@@ -160,14 +160,14 @@ extern CBlockIndex* pindexBestHeader;
 /** Minimum disk space required - used in CheckDiskSpace() */
 static const uint64_t nMinDiskSpace = 52428800;
 
-/** Register a wallet to receive updates from core */
-void RegisterValidationInterface(CValidationInterface* pwalletIn);
-/** Unregister a wallet from core */
-void UnregisterValidationInterface(CValidationInterface* pwalletIn);
-/** Unregister all wallets from core */
-void UnregisterAllValidationInterfaces();
-/** Push an updated transaction to all registered wallets */
-void SyncWithWallets(const CTransaction& tx, const CBlock* pblock = NULL);
+// /** Register a wallet to receive updates from core */
+// void RegisterValidationInterface(CValidationInterface* pwalletIn);
+// /** Unregister a wallet from core */
+// void UnregisterValidationInterface(CValidationInterface* pwalletIn);
+// /** Unregister all wallets from core */
+// void UnregisterAllValidationInterfaces();
+// /** Push an updated transaction to all registered wallets */
+// void SyncWithWallets(const CTransaction& tx, const CBlock* pblock = NULL);
 
 /** Register with a network node to receive its signals */
 void RegisterNodeSignals(CNodeSignals& nodeSignals);
