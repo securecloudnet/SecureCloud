@@ -97,7 +97,8 @@ public:
         pchMessageStart[1] = 0xdc;
         pchMessageStart[2] = 0x21;
         pchMessageStart[3] = 0xcb;
-        vAlertPubKey = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
+        vAlertPubKey = ParseHex("0485fbb3ab1dfe9ff723af4b68e870290a5357aec2415b220eb8e22011de442c69d3ef4456ff38500645757272812a760292d95c97ec908e20aa2bbc191f3343f5");
+        vAlertPubKeyOld = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
         nDefaultPort = 9191;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
@@ -135,7 +136,6 @@ public:
         assert(hashGenesisBlock == uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"));
         assert(genesis.hashMerkleRoot == uint256("0xb9e8be7516d514a733a481dc7db4fa04e89b59e0407e99292337cf28d40dcaae"));
  
-
         // SecureCloud addresses start with 's'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         // SecureCloud script addresses start with '3'
@@ -162,11 +162,14 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
+        strSporkKey = "04f9cb975c94dc0037ba350e19f09566239439b5c9ed1729a4dfb257e5d2b75759bb1fa2c72f4a5270c9cb9e4465c213cfeac65a2b83f2484ad297a3991cc7020a";
+        strSporkKeyOld = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
         strMasternodePoolDummyAddress = "NSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
         nStartMasternodePayments = 4070908800; 
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+		
+		nStartNewKeys = 1546214400; // New Spork/Alert Key start at 31/12/2018 @ 12:00am (UTC)
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
