@@ -341,6 +341,7 @@ void OverviewPage::SetLinks()
     ui->labelLinks4->setText("Discord:");
     ui->labelLinks5->setText("Twitter:");
     ui->labelLinks6->setText("Github:");
+    ui->labelLinks7->setText("SCN Merchants");
 
     ui->labelLinksUrl1->setText("<a href=\"https://www.securecloudnet.org/\">https://www.securecloudnet.org/</a>");
     ui->labelLinksUrl2->setText("<a href=\"https://securecloudnet.org/wp-content/uploads/2018/12/SecureCloudNet-Whitepaper-v1.0.pdf\">https://securecloudnet.org/wp-content/uploads/2018/12/SecureCloudNet-Whitepaper-v1.0.pdf</a>");
@@ -348,4 +349,5 @@ void OverviewPage::SetLinks()
     ui->labelLinksUrl4->setText("<a href=\"https://discord.gg/HQPV2qd\">https://discord.gg/HQPV2qd</a>");
     ui->labelLinksUrl5->setText("<a href=\"https://twitter.com/SecureCloudnet?lang=en\">https://twitter.com/SecureCloudnet?lang=en</a>");
     ui->labelLinksUrl6->setText("<a href=\"https://github.com/securecloudnet/SecureCloud\">https://github.com/securecloudnet/SecureCloud</a>");
+    ui->labelLinksUrl7->setText("<a href=\"https://securecloudnet.org/list-of-merchants-taking-scn/\">https://securecloudnet.org/list-of-merchants-taking-scn/</a>");
 }
