@@ -59,7 +59,7 @@ QToolBar {
 }
 
 QToolBar > QToolButton {
-  Alignment: left;
+  alignment: left;
   background-color: #003046;
   selection-background-color: transparent;
   border: 0.5px solid #333;
@@ -75,13 +75,13 @@ QToolBar > QToolButton {
   height: 70px;
 }
 QToolBar > QToolButton:checked {
-  background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffffff, stop: 0.07 #ffffff, stop: 0.0701 #003046, stop: 1 #003046);
-  color:#fff;
+  background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffff00, stop: 0.07 #ffff00, stop: 0.0701 #003046, stop: 1 #003046);
+  color:#ffff00;
 }
 
 QToolBar > QToolButton:hover {
   background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffffff, stop: 0.07 #ffffff, stop: 0.0701 #003046, stop: 1 #003046);
-  color:#333;
+  color:#ffff00;
 }
 
 QToolBar > QToolButton#ToolbarSpacer:hover:!selected {
@@ -90,7 +90,7 @@ QToolBar > QToolButton#ToolbarSpacer:hover:!selected {
 
 QToolBar > QToolButton:pressed {
   background-color: qlineargradient(x1:0, x2: 1, stop: 0 #00a300, stop: 0.07 #00a300, stop: 0.0701 #003046, stop: 1 #003046);
-  color:#fff;
+  color:#ffffff;
 }
 
 QMessageBox {
