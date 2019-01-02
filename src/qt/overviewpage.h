@@ -58,6 +58,8 @@ private:
     TxViewDelegate* txdelegate;
     TransactionFilterProxy* filter;
 
+    void SetLinks();
+
 private slots:
     void updateDisplayUnit();
     void handleTransactionClicked(const QModelIndex& index);

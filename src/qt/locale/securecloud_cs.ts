@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopírovat vybranou adresu do mezipaměti</translation>
+        <translation>Kopírovat vybranou adresu do schránky</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše SCN adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše KYD adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše SCN adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše KYD adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše SCNy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
+        <translation>KYD se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše KYDy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE SCNy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE KYDy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -225,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -235,16 +238,8 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte SCN adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>The SCN address to sign the message with</source>
-        <translation>SCN adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,16 +270,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SCN address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto SCN adresu</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Šifrovat &amp;Klíč</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Resetovat všechny položky podepsání zprávy</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -299,20 +286,8 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The SCN address the message was signed with</source>
-        <translation>SCN adresa zprávy byla podpsána</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified SCN address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou SCN adresou</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>Dešifrovat &amp;Klíč</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Resetovat všechny položky pro ověření zprávy</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -420,6 +395,10 @@
     <message>
         <source>Browse transaction history</source>
         <translation>Procházet historii transakcí</translation>
+    </message>
+    <message>
+        <source>Privacy Actions for zKYD</source>
+        <translation>Řešení soukromí pro zKYD</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -562,6 +541,30 @@
         <translation>Zobrazit seznam použitých adres  a popisků pro přijetí plateb</translation>
     </message>
     <message>
+        <source>&amp;Multisignature creation...</source>
+        <translation>&amp;Vytvoření multisignatury</translation>
+    </message>
+    <message>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation>Vytvořit novou multisignaturní adresu a přidat ji do této peněženky</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature spending...</source>
+        <translation>&amp;Multisignaturní výdaje...</translation>
+    </message>
+    <message>
+        <source>Spend from a multisignature address</source>
+        <translation>Uhradit z multisignaturní adresy</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature signing...</source>
+        <translation>&amp;Multisignaturní podepisování...</translation>
+    </message>
+    <message>
+        <source>Sign with a multisignature address</source>
+        <translation>Podepsat multisignaturní adresou</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Otevřít &amp;URI...</translation>
     </message>
@@ -572,6 +575,10 @@
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Synchronizuji přídavná data: %p%</translation>
+    </message>
+    <message>
+        <source>%1 behind. Scanning block %2</source>
+        <translation>Zbývá %1 bloků. Skenuji blok %2</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -594,16 +601,20 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
-        <source>Send coins to a SCN address</source>
-        <translation>Odeslat platbuna SCN adresu</translation>
+        <source>Send coins to a KYD address</source>
+        <translation>Odeslat platbuna KYD adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and securecloud: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a securecloud: URIs)</translation>
+        <source>Request payments (generates QR codes and kyd: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a kyd: URIs)</translation>
+    </message>
+    <message>
+        <source>&amp;Privacy</source>
+        <translation>&amp;Soukromí</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +625,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About SecureCloud Core</source>
-        <translation>&amp;O SecureCloud Core</translation>
+        <source>&amp;About KYD Core</source>
+        <translation>&amp;O KYD Core</translation>
     </message>
     <message>
-        <source>Show information about SecureCloud Core</source>
-        <translation>Zobraz informace o SecureCloud Core</translation>
+        <source>Show information about KYD Core</source>
+        <translation>Zobraz informace o KYD Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for SCN</source>
-        <translation>Upravit možnosti konfigurace pro SCN</translation>
+        <source>Modify configuration options for KYD</source>
+        <translation>Upravit možnosti konfigurace pro KYD</translation>
     </message>
     <message>
-        <source>Sign messages with your SCN addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší SCN adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your KYD addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší KYD adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified SCN addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými SCN adresami</translation>
+        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými KYD adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a securecloud: URI or payment request</source>
-        <translation>Otevřít securecloud: URI nebo platební žádost</translation>
+        <source>Open a KYD: URI or payment request</source>
+        <translation>Otevřít KYD: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,12 +685,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the SecureCloud Core help message to get a list with possible SecureCloud command-line options</source>
-        <translation>Zobrazit SecureCloud Core pomocnou zpráv pro získání seznamu možných parametrů SecureCloud pro příkazy do příkazové řádky</translation>
+        <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
+        <translation>Zobrazit KYD Core pomocnou zpráv pro získání seznamu možných parametrů KYD pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>SecureCloud Core client</source>
-        <translation>SecureCloud Core klient</translation>
+        <source>KYD Core client</source>
+        <translation>KYD Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -706,8 +717,8 @@
         <translation>%1 a %2</translation>
     </message>
     <message>
-        <source>%1 behind</source>
-        <translation>%1 za</translation>
+        <source>Catching up...</source>
+        <translation>Doháníme co se dá...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -789,6 +800,14 @@ MultiSend: %1</translation>
         <translation>Blockchainový průzkumník</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Zpět</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Dále</translation>
+    </message>
+    <message>
         <source>Address / Block / Transaction</source>
         <translation>Adresa / Blok / Transakce</translation>
     </message>
@@ -801,12 +820,16 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (securecloud.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (securecloud.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (kyd.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
+        <translation>Celkem: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / neznámé: %5)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>Upozornění sítě</translation>
@@ -1058,8 +1081,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid SCN address.</source>
-        <translation>Zadaná adresa "%1" není validní SCN adresa.</translation>
+        <source>The entered address "%1" is not a valid KYD address.</source>
+        <translation>Zadaná adresa "%1" není validní KYD adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1104,12 +1127,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
-        <source>About SecureCloud Core</source>
-        <translation>O SecureCloud Core</translation>
+        <source>About KYD Core</source>
+        <translation>O KYD Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1143,16 +1166,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to SecureCloud Core.</source>
-        <translation>Vítejte v SecureCloud Core.</translation>
+        <source>Welcome to KYD Core.</source>
+        <translation>Vítejte v KYD Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where SecureCloud Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude SecureCloud Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where KYD Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude KYD Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>SecureCloud Core will download and store a copy of the SecureCloud block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>SecureCloud Core stáhne a uloží kopii SecureCloud blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>KYD Core will download and store a copy of the KYD block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>KYD Core stáhne a uloží kopii KYD blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1163,8 +1186,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1188,10 +1211,6 @@ MultiSend: %1</translation>
     <message>
         <source>Form</source>
         <translation>Od</translation>
-    </message>
-    <message>
-        <source>My Masternodes</source>
-        <translation>Moje Masternody</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1369,6 +1388,10 @@ MultiSend: %1</translation>
         <translation>Poslat pro odměny masternodů</translation>
     </message>
     <message>
+        <source>(no label)</source>
+        <translation>(bez popisku)</translation>
+    </message>
+    <message>
         <source>The entered address:
 </source>
         <translation>Zadaná adresa:
@@ -1407,6 +1430,68 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 </translation>
     </message>
 </context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Status:</source>
+        <translation>Stav:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hodnota:</translation>
+    </message>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>Konfigurace obfuskace</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Základní ochrana soukromí</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Vysoká ochrana soukromí</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Maximální ochrana soukromí</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Vyberte úrpvěň ochrany soukromí</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 KYD</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 KYD</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Použít 16 oddělených masternodů</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 KYD to anonymize 10000 KYD</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 KYD pro anonymizaci 10000 KYD</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
+    </message>
+    <message>
+        <source>0.1 KYD per 10000 KYD you anonymize.</source>
+        <translation>0.1 KYD za 10000 KYD anonymizujete.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Konfigurace obufuskace</translation>
+    </message>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1465,12 +1550,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start SecureCloud after logging in to the system.</source>
-        <translation>Automaticky spustit SecureCloud po přihlášení do systému</translation>
+        <source>Automatically start KYD after logging in to the system.</source>
+        <translation>Automaticky spustit KYD po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start SecureCloud on system login</source>
-        <translation>&amp;Spusti SecureCloud při přihlášení do systému</translation>
+        <source>&amp;Start KYD on system login</source>
+        <translation>&amp;Spusti KYD při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1552,22 +1637,14 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Zpracovávané:</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Balance</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Celkem:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>Vaše aktuální celková balance</translation>
     </message>
     <message>
         <source>Spendable:</source>
         <translation>Disponibilní:</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1586,6 +1663,89 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Čas pingnutí</translation>
     </message>
 </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Reset</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Množství:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hodnota:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Vyberte již dříve použitou adresu</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Vložit adresu z mezipamětí</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Popis</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>H&amp;odnota:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorita:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextPopisku</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Poplatek:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>ne</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Byty:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Nedostatek prostředků!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>střední</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Změna:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopíroat množstí</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopírovat hodnotu</translation>
+    </message>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -1927,8 +2087,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 SCN</source>
-        <translation>0 SCN</translation>
+        <source>0 KYD</source>
+        <translation>0 KYD</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1969,10 +2129,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Add &amp;Recipient</source>
         <translation>Přidat &amp;Příjemce</translation>
-    </message>
-    <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2056,8 +2212,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The SCN address to sign the message with</source>
-        <translation>SCN adresa pro podepsání zprávy</translation>
+        <source>The KYD address to sign the message with</source>
+        <translation>KYD adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2084,16 +2240,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SCN address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto SCN adresu</translation>
+        <source>Sign the message to prove you own this KYD address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto KYD adresu</translation>
     </message>
     <message>
-        <source>The SCN address the message was signed with</source>
-        <translation>SCN adresa zprávy byla podpsána</translation>
+        <source>The KYD address the message was signed with</source>
+        <translation>KYD adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SCN address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou SCN adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified KYD address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou KYD adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2135,8 +2291,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     </context>
 <context>
@@ -2239,7 +2395,14 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>securecloud-core</name>
+    <name>ZKydControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
+    <name>kyd-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>
@@ -2247,10 +2410,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Information</source>
         <translation>Informace</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTx možnosti:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>

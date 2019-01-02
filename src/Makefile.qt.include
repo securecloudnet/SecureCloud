@@ -10,12 +10,18 @@ QT_TS = \
   qt/locale/securecloud_de.ts \
   qt/locale/securecloud_en.ts \
   qt/locale/securecloud_en_US.ts \
+  qt/locale/securecloud_eo.ts \
   qt/locale/securecloud_es.ts \
+  qt/locale/securecloud_es_ES.ts \
   qt/locale/securecloud_fi.ts \
   qt/locale/securecloud_fr_FR.ts \
+  qt/locale/securecloud_hi_IN.ts \
+  qt/locale/securecloud_hr.ts \
+  qt/locale/securecloud_hr_HR.ts \
   qt/locale/securecloud_it.ts \
   qt/locale/securecloud_ja.ts \
   qt/locale/securecloud_ko_KR.ts \
+  qt/locale/securecloud_lt_LT.ts \
   qt/locale/securecloud_nl.ts \
   qt/locale/securecloud_pl.ts \
   qt/locale/securecloud_pt.ts \
@@ -26,6 +32,7 @@ QT_TS = \
   qt/locale/securecloud_sv.ts \
   qt/locale/securecloud_tr.ts \
   qt/locale/securecloud_uk.ts \
+  qt/locale/securecloud_vi.ts \
   qt/locale/securecloud_zh_CN.ts \
   qt/locale/securecloud_zh_TW.ts
 
@@ -56,6 +63,7 @@ QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
+  qt/moc_bantablemodel.cpp \
   qt/moc_bip38tooldialog.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
@@ -126,6 +134,7 @@ BITCOIN_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
+  qt/bantablemodel.h \
   qt/bip38tooldialog.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
@@ -242,6 +251,7 @@ RES_ICONS = \
   qt/res/icons/unit_tuscn.png
 
 BITCOIN_QT_CPP = \
+  qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
   qt/bitcoingui.cpp \
@@ -263,8 +273,11 @@ BITCOIN_QT_CPP = \
   qt/rpcconsole.cpp \
   qt/splashscreen.cpp \
   qt/trafficgraphwidget.cpp \
-  qt/utilitydialog.cpp \
-  qt/winshutdownmonitor.cpp
+  qt/utilitydialog.cpp
+
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += qt/winshutdownmonitor.cpp
+endif
 
 if ENABLE_WALLET
 BITCOIN_QT_CPP += \

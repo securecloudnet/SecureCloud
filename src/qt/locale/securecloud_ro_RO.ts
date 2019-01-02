@@ -61,6 +61,9 @@
     <name>AskPassphraseDialog</name>
     </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     </context>
 <context>
@@ -94,6 +97,12 @@
     <name>MultiSendDialog</name>
     </context>
 <context>
+    <name>MultisigDialog</name>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -107,6 +116,9 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
     </context>
 <context>
     <name>QObject</name>
@@ -177,6 +189,9 @@
     </message>
     </context>
 <context>
-    <name>securecloud-core</name>
+    <name>ZKydControlDialog</name>
+    </context>
+<context>
+    <name>kyd-core</name>
     </context>
 </TS>

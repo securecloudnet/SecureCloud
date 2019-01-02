@@ -30,9 +30,6 @@
      <property name="pixmap">
       <pixmap resource="../securecloud.qrc">:/images/about</pixmap>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-     </property>
     </widget>
    </item>
    <item>
@@ -57,8 +54,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>480</width>
-          <height>212</height>
+          <width>479</width>
+          <height>213</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">

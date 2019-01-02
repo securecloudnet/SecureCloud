@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Clique com o botão direito do mouse para editar o endereço ou a descrição</translation>
+        <translation>Clique com o botão direito do rato para editar o endereço ou a descrição</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -11,7 +11,7 @@
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>Novo</translation>
+        <translation>&amp;Novo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -23,11 +23,11 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Deletar da lista o endereço selecionado</translation>
+        <translation>Apagar o endereço selecionado da lista</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Excluir</translation>
+        <translation>&amp;Apagar</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -39,19 +39,19 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Fechar</translation>
+        <translation>F&amp;echar</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Escolha o endereço para enviar moedas</translation>
+        <translation>Escolha o endereço para onde enviar moedas</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Escolha o endereço para receber moedas</translation>
+        <translation>Escolha o endereço onde receber moedas</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>Escol&amp;her</translation>
+        <translation>E&amp;scolher</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -62,20 +62,20 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços SCN para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços KYD para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços SCN para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços KYD onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>C&amp;opiar endereço</translation>
+        <translation>&amp;Copiar Endereço</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Cop&amp;iar Descrição</translation>
+        <translation>Copiar &amp;Descrição</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -117,11 +117,11 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Caixa de diálogo de Senha</translation>
+        <translation>Caixa de diálogo de senha</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Digite sua senha</translation>
+        <translation>Digite a sua senha</translation>
     </message>
     <message>
         <source>New passphrase</source>
@@ -129,7 +129,7 @@
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Repetir senha</translation>
+        <translation>Repetir nova senha</translation>
     </message>
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas SCNs contra roubo por malware infectando seu computador.</translation>
+        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
+        <translation>KYD encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas KYDs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA SCN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA KYD&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -225,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -235,16 +238,8 @@
         <translation>Encriptar com &amp;BIP 38</translation>
     </message>
     <message>
-        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Digite um endereço SCN que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Endereço:</translation>
-    </message>
-    <message>
-        <source>The SCN address to sign the message with</source>
-        <translation>Um endereço SCN para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,16 +270,8 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SCN address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço SCN.</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Criptografar Chave</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Reiniciar todas os campos das mensagens assinadas</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -293,10 +280,6 @@
     <message>
         <source>&amp;BIP 38 Decrypt</source>
         <translation>Criptografia BIP 38</translation>
-    </message>
-    <message>
-        <source>The SCN address the message was signed with</source>
-        <translation>O endereço SCN que foi assinado com</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -401,6 +384,14 @@
         <source>Edit Address</source>
         <translation>Alterar endereço</translation>
     </message>
+    <message>
+        <source>&amp;Label</source>
+        <translation>&amp;Descrição</translation>
+    </message>
+    <message>
+        <source>&amp;Address</source>
+        <translation>&amp;Endereço</translation>
+    </message>
     </context>
 <context>
     <name>FreespaceChecker</name>
@@ -428,6 +419,20 @@
         <source>Address:</source>
         <translation>Endereço:</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(Sem descrição)</translation>
+    </message>
+    </context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantidade:</translation>
+    </message>
+    </context>
+<context>
+    <name>ObfuscationConfig</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -443,6 +448,41 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantidade:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço usado anteriormente.</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da areá de trabalho. </translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Taxa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>não</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -626,8 +666,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The SCN address to sign the message with</source>
-        <translation>Um endereço SCN para assinar a mensagem</translation>
+        <source>The KYD address to sign the message with</source>
+        <translation>Um endereço KYD para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -658,12 +698,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SCN address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço SCN.</translation>
+        <source>Sign the message to prove you own this KYD address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço KYD.</translation>
     </message>
     <message>
-        <source>The SCN address the message was signed with</source>
-        <translation>O endereço SCN que foi assinado com</translation>
+        <source>The KYD address the message was signed with</source>
+        <translation>O endereço KYD que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -861,14 +901,13 @@
     </message>
     </context>
 <context>
-    <name>securecloud-core</name>
+    <name>ZKydControlDialog</name>
+    </context>
+<context>
+    <name>kyd-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
-    </message>
-    <message>
-        <source>Disable all SecureCloud specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionacilidades específicas da SecureCloud (Masternodes, SwiftTX, Budgeting) (0-1, default %u)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -923,6 +962,14 @@
         <translation>Nenhum Masternode compatível encontrado.</translation>
     </message>
     <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Requisição de ofuscação completa:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Requisição de ofuscação incompleta:</translation>
+    </message>
+    <message>
         <source>Options:</source>
         <translation>Opções:</translation>
     </message>
@@ -957,14 +1004,6 @@
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Enviar transações como transações de taxa zero, se possível (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Arquivo de certificado do servidor (padrão:%s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Chave privada do servidor (padrão:%s)</translation>
     </message>
     <message>
         <source>Session not complete!</source>
@@ -1075,10 +1114,6 @@
         <translation>Enviado para masternode, esperando na fila %s</translation>
     </message>
     <message>
-        <source>SwiftTX options:</source>
-        <translation>Opções SwiftTX:</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>Sincronização falhou</translation>
     </message>
@@ -1179,10 +1214,6 @@
         <translation>Atualizar a carteira para a ultimo formato</translation>
     </message>
     <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Use o OpenSSL(https) para conexões JSON-RPC</translation>
-    </message>
-    <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>Use UPnP para mapear as portas de escuta(padrão: %u)</translation>
     </message>
@@ -1197,6 +1228,10 @@
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nome de usuário para conexões JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Valor maior do que o máximo permitido pela pool.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -1215,8 +1250,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart SecureCloud Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o SecureCloud Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart KYD Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o KYD Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

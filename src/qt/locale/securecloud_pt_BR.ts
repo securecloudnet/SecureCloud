@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your SCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços SCN para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços KYD para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your SCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços SCN para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços KYD para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -132,6 +132,14 @@
         <translation>Repita a nova palavra-chave</translation>
     </message>
     <message>
+        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
+        <translation>Server irá desabilitar o sendmoney trivial quando a conta do sistema operacional for comprometido. Não oferece segurança real.</translation>
+    </message>
+    <message>
+        <source>For anonymization, automint, and staking only</source>
+        <translation>Somente para anonimização, automint e staking</translation>
+    </message>
+    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Digite uma nova senha para esta carteira.&lt;br/&gt;Use uma senha com &lt;b&gt;dez ou mais caracteres aleatórios&lt;/b&gt; ou &lt;b&gt;mais de oito palavras.&lt;/b&gt;</translation>
     </message>
@@ -168,16 +176,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>SecureCloud will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas SCNs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
+        <translation>KYD vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas KYDs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS SCN&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS KYD&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -221,6 +229,17 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    <message>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
+    </message>
+    <message>
+        <source>Banned Until</source>
+        <translation>Proibido até</translation>
+    </message>
+</context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -231,16 +250,12 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a SCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The SCN address to sign the message with</source>
-        <translation>O endereço SCN para assinar a mensagem</translation>
+        <source>Enter a KYD Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,36 +286,20 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SCN address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço SCN</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Chave encriptada:</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Reiniciar todos os campos de mensagem</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The SCN address the message was signed with</source>
-        <translation>O endereço SCN que assinou a mensagem</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified SCN address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço SCN especificado.</translation>
+        <source>&amp;BIP 38 Decrypt</source>
+        <translation>&amp;Descriptografar BIP 38</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
         <translation>Descriptografar &amp;Chave</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Reiniciar todos os campos de mensagem</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -408,6 +407,10 @@
     <message>
         <source>Browse transaction history</source>
         <translation>Olhar histórico de transação</translation>
+    </message>
+    <message>
+        <source>Privacy Actions for zKYD</source>
+        <translation>Ações privadas para zKYD</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -550,6 +553,30 @@
         <translation>Mostrar a lista de endereços de recebimento e rótulos utilizados</translation>
     </message>
     <message>
+        <source>&amp;Multisignature creation...</source>
+        <translation>&amp;Criação de multiassinaturas</translation>
+    </message>
+    <message>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation>Crie um novo endereço multiassinatura e adicione à esta carteira</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature spending...</source>
+        <translation>&amp;Gasto multiassinatura...</translation>
+    </message>
+    <message>
+        <source>Spend from a multisignature address</source>
+        <translation>Gastar de um endereço multiassinatura</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature signing...</source>
+        <translation>&amp;Assinando multiassinatura...</translation>
+    </message>
+    <message>
+        <source>Sign with a multisignature address</source>
+        <translation>Assinar com um endereço multiassinatura</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Abrir &amp;URI...</translation>
     </message>
@@ -560,6 +587,10 @@
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Sincronizando informação adicional: %p%</translation>
+    </message>
+    <message>
+        <source>%1 behind. Scanning block %2</source>
+        <translation>%1 atrás. Escaneado bloco %2</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -582,16 +613,20 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
-        <source>Send coins to a SCN address</source>
-        <translation>Enviar moedas para um endereço SCN</translation>
+        <source>Send coins to a KYD address</source>
+        <translation>Enviar moedas para um endereço KYD</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and securecloud: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e securecloud: URIs)</translation>
+        <source>Request payments (generates QR codes and kyd: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e kyd: URIs)</translation>
+    </message>
+    <message>
+        <source>&amp;Privacy</source>
+        <translation>&amp;Privacidade</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -602,24 +637,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About SecureCloud Core</source>
-        <translation>&amp;Sobre o SecureCloud Core</translation>
+        <source>&amp;About KYD Core</source>
+        <translation>&amp;Sobre o KYD Core</translation>
     </message>
     <message>
-        <source>Show information about SecureCloud Core</source>
-        <translation>Mostra informação sobre o SecureCloud Core</translation>
+        <source>Show information about KYD Core</source>
+        <translation>Mostra informação sobre o KYD Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for SecureCloud</source>
-        <translation>Modificar opções de configuração para SecureCloud</translation>
+        <source>Modify configuration options for KYD</source>
+        <translation>Modificar opções de configuração para KYD</translation>
     </message>
     <message>
-        <source>Sign messages with your SCN addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços SCN para provar que você os detém</translation>
+        <source>Sign messages with your KYD addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços KYD para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified SCN addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços SCN especificados</translation>
+        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços KYD especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -650,8 +685,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a securecloud: URI or payment request</source>
-        <translation>Abrir um securecloud: URI ou requisição de pagamento</translation>
+        <source>Open a KYD: URI or payment request</source>
+        <translation>Abrir um KYD: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -662,12 +697,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the SecureCloud Core help message to get a list with possible SecureCloud command-line options</source>
-        <translation>Mostra a ajuda da SecureCloud Core para receber uma lista com possíveis opções de linha de comando SecureCloud</translation>
+        <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
+        <translation>Mostra a ajuda da KYD Core para receber uma lista com possíveis opções de linha de comando KYD</translation>
     </message>
     <message>
-        <source>SecureCloud Core client</source>
-        <translation>Cliente Core SecureCloud</translation>
+        <source>KYD Core client</source>
+        <translation>Cliente Core KYD</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -692,10 +727,6 @@
     <message>
         <source>%1 and %2</source>
         <translation>%1 e %2</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 atrás</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -786,6 +817,14 @@ MultiSend: %1</translation>
         <translation>Explorador Blockchain</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Voltar</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Avançar</translation>
+    </message>
+    <message>
         <source>Address / Block / Transaction</source>
         <translation>Endereço / Bloco / Transação</translation>
     </message>
@@ -798,15 +837,15 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (securecloud.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (securecloud.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (kyd.conf). </translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
-        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>Total: %1 (OBF compatível: %2 / Ativado: %3)</translation>
+        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
+        <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Desconhecido: %5)</translation>
     </message>
     <message>
         <source>Network Alert</source>
@@ -878,6 +917,10 @@ MultiSend: %1</translation>
     <message>
         <source>Received with address</source>
         <translation>Recebido no endereço</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Date</source>
@@ -962,10 +1005,6 @@ MultiSend: %1</translation>
     <message>
         <source>medium-high</source>
         <translation>médio-alto</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 uscn per input.</source>
-        <translation>pode variar entre +/-%1 uscn por input</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1079,8 +1118,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid SCN address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de SCN</translation>
+        <source>The entered address "%1" is not a valid KYD address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de KYD</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1125,16 +1164,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About SecureCloud Core</source>
-        <translation>Sobre o SecureCloud Core</translation>
+        <source>About KYD Core</source>
+        <translation>Sobre o KYD Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1147,6 +1186,14 @@ MultiSend: %1</translation>
     <message>
         <source>command-line options</source>
         <translation>opções de linha de comando</translation>
+    </message>
+    <message>
+        <source>UI Options:</source>
+        <translation>Opções de UI:</translation>
+    </message>
+    <message>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Escolher diretório de informações ao inicializar (padrão: %u)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
@@ -1168,16 +1215,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to SecureCloud Core.</source>
-        <translation>Bem-vindo ao SecureCloud Core.</translation>
+        <source>Welcome to KYD Core.</source>
+        <translation>Bem-vindo ao KYD Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where SecureCloud Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde SecureCloud Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where KYD Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde KYD Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>SecureCloud Core will download and store a copy of the SecureCloud block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>SecureCloud Core vai baixar e armazenar uma cópia da blockchain SecureCloud. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>KYD Core will download and store a copy of the KYD block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>KYD Core vai baixar e armazenar uma cópia da blockchain KYD. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1188,8 +1235,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1213,10 +1260,6 @@ MultiSend: %1</translation>
     <message>
         <source>Form</source>
         <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>My Masternodes</source>
-        <translation>Meus Masternodes</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1249,6 +1292,10 @@ MultiSend: %1</translation>
     <message>
         <source>S&amp;tart alias</source>
         <translation>iniciar apelido</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>Iniciar &amp;todos</translation>
     </message>
     <message>
         <source>&amp;Update status</source>
@@ -1350,6 +1397,10 @@ MultiSend: %1</translation>
         <translation>Endereço:</translation>
     </message>
     <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Coloque uma etiqueta neste endereço para adicioná-lo à lista de contatos</translation>
+    </message>
+    <message>
         <source>Delete Address From MultiSend Vector</source>
         <translation>Deleta endereço do vetor MultiSend</translation>
     </message>
@@ -1380,6 +1431,10 @@ MultiSend: %1</translation>
     <message>
         <source>Send For Masternode Rewards</source>
         <translation>Enviar para recompensas de Masternode</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sem rótulo)</translation>
     </message>
     <message>
         <source>The entered address:
@@ -1419,6 +1474,148 @@ Favor verificar o endereço e tente novamente.</translation>
 </source>
         <translation>Não foi possível localizar o endereço
 </translation>
+    </message>
+</context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Create MultiSignature &amp;Address</source>
+        <translation>Criar &amp;Endereço multiassinatura</translation>
+    </message>
+    <message>
+        <source>How many people must sign to verify a transaction</source>
+        <translation>Quantas pessoas devem assinar para verificar uma transação</translation>
+    </message>
+    <message>
+        <source>Address Label:</source>
+        <translation>Rótulo do endereço:</translation>
+    </message>
+    <message>
+        <source>Create a new multisig address</source>
+        <translation>Criar um novo endereço multisig</translation>
+    </message>
+    <message>
+        <source>C&amp;reate</source>
+        <translation>C&amp;riar</translation>
+    </message>
+    <message>
+        <source>Status:</source>
+        <translation>Situação:</translation>
+    </message>
+    <message>
+        <source>Inputs:</source>
+        <translation>Inputs:</translation>
+    </message>
+    <message>
+        <source>Quantity Selected:</source>
+        <translation>Quantia selecionada:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantia:</translation>
+    </message>
+    <message>
+        <source>Address / Amount:</source>
+        <translation>Endereço / Quantia:</translation>
+    </message>
+    <message>
+        <source>Cr&amp;eate</source>
+        <translation>Cr&amp;iar</translation>
+    </message>
+    <message>
+        <source>S&amp;ign</source>
+        <translation>A&amp;ssinar</translation>
+    </message>
+    <message>
+        <source>Add Private &amp;Key</source>
+        <translation>Adicionar &amp;Chave Privada</translation>
+    </message>
+    <message>
+        <source>Sign with only private keys (Not Recommened)</source>
+        <translation>Assinar somente com chaves privadas (Não Recomendado)</translation>
+    </message>
+    <message>
+        <source>Invalid Tx Hash.</source>
+        <translation>Tx Hash inválido.</translation>
+    </message>
+    <message>
+        <source>Amount: </source>
+        <translation>Quantidade:</translation>
+    </message>
+    <message>
+        <source>Maximum (15)</source>
+        <translation>Máximo (15)</translation>
+    </message>
+</context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>Configurar Ofuscação</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Privacidade Básica</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Alta Privacidade</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Privacidade Máxima</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Favor selecionar o nível de privacidade.</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 KYD</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 KYD</translation>
+    </message>
+    <message>
+        <source>Use 8 separate masternodes to mix funds up to 10000 KYD</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 KYD</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Use 16 masternodes separados</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 KYD to anonymize 10000 KYD</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 KYD para anonimizar 10000 KYD</translation>
+    </message>
+    <message>
+        <source>This option is moderately fast and will cost about 0.05 KYD to anonymize 10000 KYD</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 KYD para anonimizar 10000 KYD</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
+    </message>
+    <message>
+        <source>0.1 KYD per 10000 KYD you anonymize.</source>
+        <translation>0.1 KYD por 10000 KYD que deixar anônima.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Configuração de ofuscação</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening KYD's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela KYD's.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening KYD's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela KYD's.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening KYD's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela KYD's.</translation>
     </message>
 </context>
 <context>
@@ -1471,8 +1668,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the SecureCloud client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente SecureCloud no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the KYD client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente KYD no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1491,12 +1688,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start SecureCloud after logging in to the system.</source>
-        <translation>Iniciar automaticamente SecureCloud depois de logar no sistema.</translation>
+        <source>Automatically start KYD after logging in to the system.</source>
+        <translation>Iniciar automaticamente KYD depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start SecureCloud on system login</source>
-        <translation>&amp;Iniciar SecureCloud ao logar no sistema</translation>
+        <source>&amp;Start KYD on system login</source>
+        <translation>&amp;Iniciar KYD ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1511,12 +1708,18 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting SecureCloud.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do SecureCloud.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting KYD.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do KYD.</translation>
     </message>
     <message>
-        <source>Connect to the SecureCloud network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede SecureCloud através de um proxy SOCKS5</translation>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/kyd-project/kyd-project-translations</source>
+        <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
+https://www.transifex.com/kyd-project/kyd-project-translations</translation>
+    </message>
+    <message>
+        <source>Connect to the KYD network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede KYD através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1557,6 +1760,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Interface do usuário &amp;Linguagem:</translation>
+    </message>
+    <message>
+        <source>User Interface Theme:</source>
+        <translation>Usar tema de inferface:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1618,7 +1825,7 @@ Favor verificar o endereço e tente novamente.</translation>
         <source>The supplied proxy address is invalid.</source>
         <translation>O endereço proxy fornecido é inválido.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -1646,8 +1853,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SecureCloud network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede SecureCloud após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede KYD após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1656,10 +1863,6 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Total:</source>
         <translation>Total:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>Seu saldo total atual</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
@@ -1674,6 +1877,14 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Disponível:</translation>
     </message>
     <message>
+        <source>Locked:</source>
+        <translation>Travado:</translation>
+    </message>
+    <message>
+        <source>Unconfirmed:</source>
+        <translation>Não confirmado:</translation>
+    </message>
+    <message>
         <source>Recent transactions</source>
         <translation>Transações recentes</translation>
     </message>
@@ -1681,7 +1892,7 @@ Favor verificar o endereço e tente novamente.</translation>
         <source>out of sync</source>
         <translation>fora de sincronia</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1733,14 +1944,237 @@ Favor verificar o endereço e tente novamente.</translation>
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Zerocoin Actions:</source>
+        <translation>Ações Zerocoin:</translation>
+    </message>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede KYD após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zKYD</source>
+        <translation>zKYD</translation>
+    </message>
+    <message>
+        <source>0.000 000 00 KYD</source>
+        <translation>0.000 000 00 KYD</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Reinicia</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantidade:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantia:</translation>
+    </message>
+    <message>
+        <source>Quantity Selected:</source>
+        <translation>Quantia selecionada:</translation>
+    </message>
+    <message>
+        <source>Available Balance:</source>
+        <translation>Saldo disponível:</translation>
+    </message>
+    <message>
+        <source>Security Level:</source>
+        <translation>Nível de Segurança:</translation>
+    </message>
+    <message>
+        <source>Security Level 1 - 100 (default: 42)</source>
+        <translation>Nível de segurança 1 - 100 (padrão: 42)</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Pagar &amp;Para:</translation>
+    </message>
+    <message>
+        <source>The KYD address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>O endereço KYD para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço previamente utilizado</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da área de transferência</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Rótulo:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Coloque uma etiqueta neste endereço para adicioná-lo à lista de endereços utilizados</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>Quantia:</translation>
+    </message>
+    <message>
+        <source>Information about the available Zerocoin funds.</source>
+        <translation>Informação sobre os fundos disponíveis em Zerocoin.</translation>
+    </message>
+    <message>
+        <source>Zerocoin Stats:</source>
+        <translation>Estatísticas zerocoin:</translation>
+    </message>
+    <message>
+        <source>Total Balance including unconfirmed and immature zKYD</source>
+        <translation>Balanço Total incluindo não confirmadas e imaturas zKYD</translation>
+    </message>
+    <message>
+        <source>Total Zerocoin  Balance:</source>
+        <translation>Balanço Total Zerocoin:</translation>
+    </message>
+    <message>
+        <source>0 x</source>
+        <translation>0 x</translation>
+    </message>
+    <message>
+        <source>Denominations with value 10:</source>
+        <translation>Denominações com valor 10:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 50:</source>
+        <translation>Denominações com valor 50:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 100:</source>
+        <translation>Denominações com valor 100:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 500:</source>
+        <translation>Denominações com valor 500:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 1000:</source>
+        <translation>Denominações com valor 1000:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 5000:</source>
+        <translation>Denominações com valor 5000:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Rótulo</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Taxa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>não</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Fundos insuficientes!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>médio</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Funções do Controle de Moedas</translation>
+    </message>
+    <message>
+        <source>Amount After Fee:</source>
+        <translation>Quantia depois da taxa:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Troco:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>fora de sincronia</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copiar quantidade</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copiar quantia</translation>
+    </message>
+    <message>
+        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
+        <translation>Erro: Sua carteira está travada. Favor inserir a palavra-chave da carteira primeiro.</translation>
+    </message>
+    <message>
+        <source>Message: Enter an amount &gt; 0.</source>
+        <translation>Mensagem: Insira uma quantia &gt; 0.</translation>
+    </message>
+    <message>
+        <source>Confirm additional Fees</source>
+        <translation>Confirmar Taxas adicionais</translation>
+    </message>
+    <message>
+        <source> to address </source>
+        <translation>para o endereço</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Confirmar envio de moedas</translation>
+    </message>
+    <message>
+        <source>denomination: </source>
+        <translation>denominação:</translation>
+    </message>
+    <message>
+        <source>address: </source>
+        <translation>endereço:</translation>
+    </message>
+    <message>
+        <source>Sending successful, return code: </source>
+        <translation>Enviado com sucesso, código de retorno:</translation>
+    </message>
+    <message>
+        <source>txid: </source>
+        <translation>txid:</translation>
+    </message>
+    <message>
+        <source>fee: </source>
+        <translation>taxa:</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a SCN address (e.g. %1)</source>
-        <translation>Insira um endereço SCN (e.g. %1)</translation>
+        <source>Enter a KYD address (e.g. %1)</source>
+        <translation>Insira um endereço KYD (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1917,14 +2351,6 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Serviços</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>Altura de início</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Altura da sincronização</translation>
-    </message>
-    <message>
         <source>Connection Time</source>
         <translation>Tempo de conexão</translation>
     </message>
@@ -1953,6 +2379,18 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Reparo da Carteira</translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>Excluir pastas locais Blockchain</translation>
+    </message>
+    <message>
+        <source>Wallet In Use:</source>
+        <translation>Carteiro em uso:</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Tentar recuperar chaves privadas de um wallet.dat corrompido.</translation>
+    </message>
+    <message>
         <source>Rescan blockchain files</source>
         <translation>Reescanear os arquivos da blockchain</translation>
     </message>
@@ -1967,6 +2405,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Upgrade wallet format</source>
         <translation>Atualizar formato da carteira</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Deleta todos os arquivos locais da blockchain para que a carteira sincronize do zero.</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
@@ -1989,8 +2431,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the SecureCloud RPC console.</source>
-        <translation>Bem-vindo ao console da SecureCloud RPC</translation>
+        <source>Welcome to the KYD RPC console.</source>
+        <translation>Bem-vindo ao console da KYD RPC</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Você deseja continuar?.&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2027,10 +2473,6 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Unknown</source>
         <translation>Desconhecido</translation>
-    </message>
-    <message>
-        <source>Fetching...</source>
-        <translation>buscando...</translation>
     </message>
 </context>
 <context>
@@ -2105,6 +2547,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Copy &amp;URI</source>
         <translation>Copiar &amp;URI</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>Copiar &amp;Endereço</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
@@ -2241,8 +2687,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 SCN</source>
-        <translation>0 SCN</translation>
+        <source>0 KYD</source>
+        <translation>0 KYD</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2277,16 +2723,20 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>(Smart fee não inicializada ainda. Isso geralmente leva alguns blocos...)</translation>
     </message>
     <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
+    </message>
+    <message>
         <source>Confirmation time:</source>
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uSCNs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uSCNs em taxa,&lt;br /&gt; pagará pelo menos 1000 uSCNs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uKYDs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uKYDs in fee,&lt;br /&gt;while "at least" pays 1000 uKYDs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uKYDs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uKYDs em taxa,&lt;br /&gt; pagará pelo menos 1000 uKYDs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de SecureCloud do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for KYD transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de KYD do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2313,6 +2763,10 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Confirma a ação de envio</translation>
     </message>
     <message>
+        <source>S&amp;end</source>
+        <translation>E&amp;nviar</translation>
+    </message>
+    <message>
         <source>Clear all fields of the form.</source>
         <translation>Limpa todos os campos do formulário.</translation>
     </message>
@@ -2329,8 +2783,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>Anonymized KYD</source>
+        <translation>KYD anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2365,20 +2819,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Copiar troco</translation>
     </message>
     <message>
-        <source>using</source>
-        <translation>usando</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid SCN address</source>
-        <translation>Aviso: endereço SCN inválido</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>quaisquer fundos disponíveis (não recomendado)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>e SwiftTX</translation>
+        <source>Warning: Invalid KYD address</source>
+        <translation>Aviso: endereço KYD inválido</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2437,6 +2879,10 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Criação da transação falhou!</translation>
     </message>
     <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Erro: A carteira foi destravada apenas para anonimizar moedas.</translation>
+    </message>
+    <message>
         <source>Pay only the minimum fee of %1</source>
         <translation>Pague somente a taxa mínima de %1</translation>
     </message>
@@ -2460,8 +2906,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The SCN address to send the payment to</source>
-        <translation>O endereço SCN para enviar o pagamento</translation>
+        <source>The KYD address to send the payment to</source>
+        <translation>O endereço KYD para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2523,8 +2969,8 @@ Favor verificar o endereço e tente novamente.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>SecureCloud Core is shutting down...</source>
-        <translation>SecureCloud Core está desligando...</translation>
+        <source>KYD Core is shutting down...</source>
+        <translation>KYD Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2542,8 +2988,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The SCN address to sign the message with</source>
-        <translation>O endereço SCN para assinar a mensagem</translation>
+        <source>The KYD address to sign the message with</source>
+        <translation>O endereço KYD para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2574,16 +3020,16 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SCN address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço SCN</translation>
+        <source>Sign the message to prove you own this KYD address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço KYD</translation>
     </message>
     <message>
-        <source>The SCN address the message was signed with</source>
-        <translation>O endereço SCN que assinou a mensagem</translation>
+        <source>The KYD address the message was signed with</source>
+        <translation>O endereço KYD que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SCN address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço SCN especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified KYD address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço KYD especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2665,8 +3111,8 @@ Favor verificar o endereço e tente novamente.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SecureCloud Core</source>
-        <translation>SecureCloud Core</translation>
+        <source>KYD Core</source>
+        <translation>KYD Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2681,12 +3127,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>Os desenvolvedores do PIVX Core</translation>
-    </message>
-    <message>
-        <source>The SecureCloud Core developers</source>
-        <translation>Os desenvolvedores do SecureCloud Core</translation>
+        <source>The KYD Core developers</source>
+        <translation>Os desenvolvedores do KYD Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2711,18 +3153,6 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>conflitou</translation>
     </message>
     <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (verificado via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/confirmado (verificado via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmações (verificado via swifttx)</translation>
-    </message>
-    <message>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -2735,24 +3165,36 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>%1 confirmações</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (verificação SwiftTX em progresso - %2 de %3 assinaturas)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (verificado via SwiftX)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmado (verificação SwiftTX em progresso - %2 de %3 assinaturas)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/confirmado (verificado via SwiftX)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmações (verificação SwiftTX em progresso - %2 de %3 assinaturas)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 confirmações (verificado via SwiftX)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (verificação SwiftTX falhou)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (verificação SwiftX  em progresso - %2 de %3 assinaturas)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/confirmado (verificação SwiftTX falhou)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confirmado (verificação SwiftX  em progresso - %2 de %3 assinaturas )</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 confirmações ( verificação SwiftX  em progresso - %2 de %3 assinaturas)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline ( verificação SwiftX falhou)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/confirmado (verificação SwiftX falhou)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -2847,6 +3289,10 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Vendedor</translation>
     </message>
     <message>
+        <source>Debug information</source>
+        <translation>Informação de depuração</translation>
+    </message>
+    <message>
         <source>Transaction</source>
         <translation>Transação</translation>
     </message>
@@ -2933,20 +3379,28 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Recebido de</translation>
     </message>
     <message>
+        <source>Received via Obfuscation</source>
+        <translation>Recebido com Ofuscação</translation>
+    </message>
+    <message>
         <source>Sent to</source>
         <translation>Enviado para</translation>
+    </message>
+    <message>
+        <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
+        <translation>Bloco órfão - Gerado, porém não aceito. Isto não impacta seus fundos.</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
         <translation>Pagamento para si mesmo</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Cunhado</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Minerado</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Ofuscado</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3156,11 +3610,7 @@ Favor verificar o endereço e tente novamente.</translation>
         <source>Send Coins</source>
         <translation>Enviar Moedas</translation>
     </message>
-    <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
-        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 SCN.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
     <message>
@@ -3183,32 +3633,31 @@ Favor verificar o endereço e tente novamente.</translation>
         <source>Wallet Data (*.dat)</source>
         <translation>Wallet Data (.dat)</translation>
     </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>Backup falhou</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Aconteceu um erro na tentativa de salvar os dados da carteira em %1.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Backup com sucesso</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>Os dados da carteira foram salvos em %1 com sucesso.</translation>
-    </message>
 </context>
 <context>
-    <name>securecloud-core</name>
+    <name>ZKydControlDialog</name>
+    <message>
+        <source>Quantity</source>
+        <translation>Quantia</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zKYD</source>
+        <translation>zKYD</translation>
+    </message>
+    <message>
+        <source>Select/Deselect All</source>
+        <translation>Selecionar/Deselecionar todos</translation>
+    </message>
+    </context>
+<context>
+    <name>kyd-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
-    </message>
-    <message>
-        <source>Disable all SecureCloud specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas SecureCloud (Masternodes, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3223,12 +3672,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em SCN/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in KYD/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em KYD/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em SCN/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in KYD/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em KYD/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3247,12 +3696,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCN.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 SCN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 KYD.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 KYD.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3267,8 +3712,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong SecureCloud Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core SecureCloud não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong KYD Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core KYD não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3283,8 +3728,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(9191 could be used only on mainnet)</source>
-        <translation>(9191 could be used only on mainnet)</translation>
+        <source>(9229 could be used only on mainnet)</source>
+        <translation>(9229 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3295,8 +3740,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 9191 for mainnet)</source>
-        <translation>(deve ser 9191 para mainnet)</translation>
+        <source>(must be 9229 for mainnet)</source>
+        <translation>(deve ser 9229 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -3317,6 +3762,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Can't find random Masternode.</source>
         <translation>Não conseguiu encontrar um Masternode aleatório.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Não é possível embaralhar enquanto a sincronia estiver em progresso.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -3343,16 +3792,20 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do PIVX Core</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2017-%i The SecureCloud Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2017-%i aos Desenvolvedores do SecureCloud Core</translation>
+        <source>Copyright (C) 2015-%i The KYD Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do KYD Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>database de blocos corrompida</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>Opções de depuração/teste:</translation>
+    </message>
+    <message>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation>Desabilitar notificações OS para transações chegando (padrão: %u)</translation>
     </message>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
@@ -3399,8 +3852,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of SecureCloud Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da SecureCloud Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of KYD Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da KYD Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3431,12 +3884,20 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>erro: Carteira travada, não foi possível criar a transação!</translation>
     </message>
     <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>Erro: Você já possui entradas pendentes na pool de Ofuscação</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Falhou em escutar qualquer porta. Use -listen=0 se você quiser isso.</translation>
+    </message>
+    <message>
         <source>Failed to read block</source>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in SCN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em SCN/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in KYD/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em KYD/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -3487,16 +3948,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>O input não é válido.</translation>
     </message>
     <message>
+        <source>Insufficient funds</source>
+        <translation>Fundos insuficientes</translation>
+    </message>
+    <message>
         <source>Insufficient funds.</source>
         <translation>Fundos insuficientes.</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Inválido -onion endereço: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Inválido -proxy endereço: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3523,6 +3980,10 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Quantia inválida para -reservebalance=&lt;quantidade&gt;</translation>
     </message>
     <message>
+        <source>Invalid amount</source>
+        <translation>quantia inválida</translation>
+    </message>
+    <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
         <translation>masternodeprivkey inválido. Favor conferir o manual.</translation>
     </message>
@@ -3541,6 +4002,28 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Script inválido detectado.</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>opções SwiftX:</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>transações não confirmadas removidas
+</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; pode ser:</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>Última ofuscação foi muito recente.</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>Última ação de ofuscação com sucesso foi muito recente.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -3595,6 +4078,10 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Masternode:</translation>
     </message>
     <message>
+        <source>Mixing in progress...</source>
+        <translation>Embaralhamento em progresso.</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Necessário especificar uma porta com -whitebind: '%s'</translation>
     </message>
@@ -3627,6 +4114,18 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Número de backups automáticos da carteira (padrão: 10)</translation>
     </message>
     <message>
+        <source>Obfuscation is idle.</source>
+        <translation>Ofuscação está ociosa.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Requisição de ofuscação completa:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Requisição de ofuscação incompleta:</translation>
+    </message>
+    <message>
         <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
         <translation>Somente conecte a nós da rede &lt;net&gt; (Ipv4, ipv6 ou onion)</translation>
     </message>
@@ -3639,8 +4138,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Senha para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opções de SSL RPC (veja a Bitcoin Wiki para instruções na configuração do SSL)</translation>
+        <source>Preparing for resync...</source>
+        <translation>Preparando para ressincronizar... </translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3657,10 +4156,6 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Enviar transações com taxa zero se possível (padrão: %u)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Chave privada do servidor (padrão: %s)</translation>
     </message>
     <message>
         <source>Session not complete!</source>
@@ -3731,6 +4226,10 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Especifique seu próprio endereço público</translation>
     </message>
     <message>
+        <source>Staking options:</source>
+        <translation>Opções de staking:</translation>
+    </message>
+    <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
         <translation>Parar de rodar depois de importar blocos do disco (padrão: %u)</translation>
     </message>
@@ -3745,10 +4244,6 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Enviado ao masternode, aguardando na fila %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>opções SwiftTX:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -3823,16 +4318,16 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Atualize a carteira para o último formato</translation>
     </message>
     <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Usar OpenSSL (https) para conexões JSON-RPC</translation>
-    </message>
-    <message>
         <source>Use the test network</source>
         <translation>Use a rede de testes</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nome de usuário para conexões JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Valor maior que o máximo permitido pela pool de Ofuscação </translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3847,8 +4342,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart SecureCloud Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o SecureCloud Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart KYD Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o KYD Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -3893,6 +4388,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Eliminando todas as transações da carteira...</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>opções Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>

@@ -95,7 +95,7 @@ public:
             foreground = COLOR_BLACK;
         }
         painter->setPen(foreground);
-        QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true, BitcoinUnits::separatorNever);
+        QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true, BitcoinUnits::separatorAlways);
         if (!confirmed) {
             amountText = QString("[") + amountText + QString("]");
         }
@@ -169,27 +169,68 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
 
+    CAmount nLockedBalance = 0;
+    CAmount nWatchOnlyLockedBalance = 0;
+    if (pwalletMain) {
+        nLockedBalance = pwalletMain->GetLockedCoins();
+        nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
+    }
+
+    // SCN Balance
+    CAmount nTotalBalance = balance + unconfirmedBalance;
+    CAmount scnAvailableBalance = balance - immatureBalance - nLockedBalance;
+
+    // SCN Watch-Only Balance
+    CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
+    CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
+
     // SCN labels
-    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance, false, BitcoinUnits::separatorNever));
-    ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorNever));
-    ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorNever));
-    ui->labelTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance + unconfirmedBalance, false, BitcoinUnits::separatorNever));
+    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, scnAvailableBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelLockedBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Watchonly labels
-    ui->labelWatchAvailable->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchOnlyBalance, false, BitcoinUnits::separatorNever));
-    ui->labelWatchPending->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchUnconfBalance, false, BitcoinUnits::separatorNever));
-    ui->labelWatchImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchImmatureBalance, false, BitcoinUnits::separatorNever));
-    ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchOnlyBalance + watchUnconfBalance + watchImmatureBalance, false, BitcoinUnits::separatorNever));
+    ui->labelWatchAvailable->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nAvailableWatchBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelWatchPending->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchUnconfBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelWatchImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchImmatureBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
-    // for the non-mining users
-    bool showImmature = immatureBalance != 0;
-    bool showWatchOnlyImmature = watchImmatureBalance != 0;
+    // Only show most balances if they are non-zero for the sake of simplicity
+    QSettings settings;
+    bool settingShowAllBalances = !settings.value("fHideZeroBalances").toBool();
 
-    // for symmetry reasons also show immature label when the watch-only one is shown
-    ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature);
+    bool showWatchOnly = nTotalWatchBalance != 0;
+
+    // SCN Available
+    bool showSCNAvailable = settingShowAllBalances || scnAvailableBalance != nTotalBalance;
+    bool showWatchOnlySCNAvailable = showSCNAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
+    ui->labelBalance->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
+    ui->labelWatchAvailable->setVisible(showSCNAvailable && showWatchOnly);
+
+    // SCN Pending
+    bool showSCNPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlySCNPending = showSCNPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showSCNPending || showWatchOnlySCNPending);
+    ui->labelUnconfirmed->setVisible(showSCNPending || showWatchOnlySCNPending);
+    ui->labelWatchPending->setVisible(showSCNPending && showWatchOnly);
+
+    // SCN Immature
+    bool showImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showImmature || watchImmatureBalance != 0;
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
-    ui->labelWatchImmature->setVisible(showWatchOnlyImmature); // show watch-only immature balance
+    ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
+
+    // SCN Locked
+    bool showSCNLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlySCNLocked = showSCNLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showSCNLocked || showWatchOnlySCNLocked);
+    ui->labelLockedBalance->setVisible(showSCNLocked || showWatchOnlySCNLocked);
+    ui->labelWatchLocked->setVisible(showSCNLocked && showWatchOnly);
 
     static int cachedTxLocks = 0;
 
@@ -206,6 +247,7 @@ void OverviewPage::updateWatchOnlyLabels(bool showWatchOnly)
     ui->labelWatchonly->setVisible(showWatchOnly);      // show watch-only label
     ui->labelWatchAvailable->setVisible(showWatchOnly); // show watch-only available balance
     ui->labelWatchPending->setVisible(showWatchOnly);   // show watch-only pending balance
+    ui->labelWatchLocked->setVisible(showWatchOnly);     // show watch-only total balance
     ui->labelWatchTotal->setVisible(showWatchOnly);     // show watch-only total balance
 
     if (!showWatchOnly) {
@@ -213,6 +255,7 @@ void OverviewPage::updateWatchOnlyLabels(bool showWatchOnly)
     } else {
         ui->labelBalance->setIndent(20);
         ui->labelUnconfirmed->setIndent(20);
+        ui->labelLockedBalance->setIndent(20);
         ui->labelImmature->setIndent(20);
         ui->labelTotal->setIndent(20);
     }
@@ -285,4 +328,21 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::SetLinks()
+{
+    ui->labelLinks1->setText("Website:");
+    ui->labelLinks2->setText("Whitepaper:");
+    ui->labelLinks3->setText("Block Explorer:");
+    ui->labelLinks4->setText("Discord:");
+    ui->labelLinks5->setText("Twitter:");
+    ui->labelLinks6->setText("Github:");
+
+    ui->labelLinksUrl1->setText("<a href=\"https://www.securecloudnet.org/\">https://www.securecloudnet.org/</a>");
+    ui->labelLinksUrl2->setText("<a href=\"https://securecloudnet.org/wp-content/uploads/2018/12/SecureCloudNet-Whitepaper-v1.0.pdf\">https://securecloudnet.org/wp-content/uploads/2018/12/SecureCloudNet-Whitepaper-v1.0.pdf</a>");
+    ui->labelLinksUrl3->setText("<a href=\"http://explorer.securecloudnet.org:3001/\">http://explorer.securecloudnet.org:3001/</a>");
+    ui->labelLinksUrl4->setText("<a href=\"https://discord.gg/HQPV2qd\">https://discord.gg/HQPV2qd</a>");
+    ui->labelLinksUrl5->setText("<a href=\"https://twitter.com/SecureCloudnet?lang=en\">https://twitter.com/SecureCloudnet?lang=en</a>");
+    ui->labelLinksUrl6->setText("<a href=\"https://github.com/securecloudnet/SecureCloud\">https://github.com/securecloudnet/SecureCloud</a>");
 }

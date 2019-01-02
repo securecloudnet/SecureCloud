@@ -709,13 +709,13 @@ void CMasternodeMan::ProcessMasternodeConnections()
     if (Params().NetworkID() == CBaseChainParams::REGTEST) return;
 
     LOCK(cs_vNodes);
-    BOOST_FOREACH (CNode* pnode, vNodes) {
+    //BOOST_FOREACH (CNode* pnode, vNodes) {
         // if (pnode->fObfuScationMaster) {
         //     LogPrint("masternode","Closing Masternode connection peer=%i \n", pnode->GetId());
         //     pnode->fObfuScationMaster = false;
         //     pnode->Release();
         // }
-    }
+    //}
 }
 
 void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)

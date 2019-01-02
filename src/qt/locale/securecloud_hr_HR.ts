@@ -1,231 +1,231 @@
-<TS language="nl" version="2.1">
+<TS language="hr_HR" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Klik met de rechtermuisknop om het adres of label te wijzigen</translation>
+        <translation>Desnom tipkom miša kliknite za uređivanje adrese ili oznake</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Maak een nieuw adres aan</translation>
+        <translation>Stvori novu adresu</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Nieuw</translation>
+        <translation>Novo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopieer het geselecteerde adres naar het klembord</translation>
+        <translation>Kopirajte trenutno odabranu adresu u međuspremnik sustava</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopiëren</translation>
+        <translation>Kopiraj</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Verwijder het geselecteerde adres uit de lijst</translation>
+        <translation>Izbrisati trenutno odabranu adresu s popisa</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Verwijderen</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Exporteer de data in de huidige tab naar een bestand</translation>
+        <translation>Izvoz podataka iz trenutne kartice u datoteku</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exporteren</translation>
+        <translation>Izvoz</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Sluiten</translation>
+        <translation>Zatvori</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Kies het adres om munten naar toe te sturen</translation>
+        <translation>Odaberite adresu za slanje novčića</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Kies het adres om munten op te ontvangen</translation>
+        <translation>Odaberite adresu za primanje novčića</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>K&amp;iezen</translation>
+        <translation>Odaberi</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Verzendadressen</translation>
+        <translation>Adresa primatelja</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>Ontvangstadressen</translation>
+        <translation>Adresa primatelja</translation>
     </message>
     <message>
         <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw KYD adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <translation>To su vaše KYD adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
         <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw KYD adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <translation>To su vaše KYD adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Kopiëer Adres</translation>
+        <translation>Kopiraj adresu</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Kopiëer &amp;Label</translation>
+        <translation>Kopiraj oznaku</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Bewerken</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>Exporteer Adreslijst</translation>
+        <translation>Izvezi popis adresa</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Kommagescheiden bestand (*.csv)</translation>
+        <translation>Datoteka odvojena zarezom (* .csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Export Mislukt</translation>
+        <translation>Izvoz nije uspio</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
+        <translation>Došlo je do pogreške prilikom spremanja popisa adresa na %1. Molim te pokušaj ponovno</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Oznaka</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(geen label)</translation>
+        <translation>(bez oznake)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Wachtwoordzin dialoog</translation>
+        <translation>Passphrase Dialog (tajni dijalog)</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Voer wachtwoordzin in</translation>
+        <translation>Unesite zaporku</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Nieuwe wachtwoordzin</translation>
+        <translation>Nova zaporka</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Herhaal nieuwe wachtwoordzin</translation>
+        <translation>Ponovi novu zaporku</translation>
     </message>
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Dient om de triviale sendmoney uit te schakelen wanneer het OS account in gevaar is gebracht. Geeft geen echte veiligheid.</translation>
+        <translation>Služi za onemogućavanje spornog slanja novca kada je OS račun ugrožen. Ne pruža nikakvu stvarnu sigurnost.</translation>
     </message>
     <message>
         <source>For anonymization, automint, and staking only</source>
-        <translation>Alleen voor anonimisering, automint en staking</translation>
+        <translation>Samo za anonimizaciju, automint i staking</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Voer een nieuw wachtwoord in voor uw portemonnee.&lt;br/&gt;Gebruik een wachtwoord van &lt;b&gt;tien of meer willekeurige karakters&lt;/b&gt;, of &lt;b&gt;acht of meer woorden&lt;/b&gt;.</translation>
+        <translation>Unesi novu zaporku za novčanik. 1. Molimo koristite zaporku od 2. 10 ili više nasumičnih simbola, ili 3. osam i više riječi 3. </translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Versleutel portemonnee</translation>
+        <translation>Šifriranje novčanika</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te openen.</translation>
+        <translation>Ova operacija zahtijeva zaporku za otključavanje novčanika.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>Open portemonnee</translation>
+        <translation>Otključaj novčanik</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te ontsleutelen</translation>
+        <translation>Ova operacija zahtjeva zaporku novčanika za dešifriranje novčanika</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Ontsleutel portemonnee</translation>
+        <translation>Dešifriraj novčanik</translation>
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Wijzig wachtwoord</translation>
+        <translation>Promijeni zaporku</translation>
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Voer de oude en nieuwe wachtwoordzin in voor uw portemonnee.</translation>
+        <translation>Unesi staru i novu zaporku novčanika.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Bevestig versleuteling van de portemonnee</translation>
+        <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
         <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
-        <translation>KYD zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw KYD's kunnen stelen.</translation>
+        <translation>KYD se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše KYD od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
+        <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW KYD VERLIEZEN&lt;/b&gt;!</translation>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše KYDove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation>Portemonnee versleuteld</translation>
+        <translation>Novčanik šifriran</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>BELANGRIJK: Elke eerder gemaakte backup van uw portemonneebestand dient te worden vervangen door het nieuwe gegenereerde, versleutelde portemonneebestand. Om veiligheidsredenen zullen eerdere backups van het niet-versleutelde portemonneebestand onbruikbaar worden zodra u uw nieuwe, versleutelde, portemonnee begint te gebruiken.</translation>
+        <translation>VAŽNO: Bilo kakve prethodne sigurnosne kopije koje ste napravili iz svoje datoteke lisnice trebale bi se zamijeniti novom generičkom, šifriranom datotekom lisnice. Iz sigurnosnih razloga, prethodne sigurnosne kopije nekodirane datoteke novčanika postat će beskorisne čim počnete koristiti novi, šifrirani novčanik.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Portemonneeversleuteling mislukt</translation>
+        <translation>Šifriranje novčanika neuspijelo</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Portemonneeversleuteling mislukt door een interne fout. Uw portemonnee is niet versleuteld.</translation>
+        <translation>Šifriranje novčanika neuspijelo zbog unutarnje greške. Vaš novčanik nije šifriran.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>De opgegeven wachtwoordzinnen komen niet overeen.</translation>
+        <translation>Unesene lozinke se ne podudaraju.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Portemonnee openen mislukt</translation>
+        <translation>Otključavanje novčanika neuspijelo</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>De opgegeven wachtwoordzin voor de portemonnee ontsleuteling is niet correct.</translation>
+        <translation>Zaporka za šifriranje novčanika bila je netočna.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Portemonnee ontsleuteling mislukt</translation>
+        <translation>Neuspjelo šifriranje novčanika</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Portemonnee wachtwoordzin is met succes gewijzigd.</translation>
+        <translation>Zaporka novčanika uspješno promijenjena.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Waarschuwing: De Caps-Lock-toets staat aan!</translation>
+        <translation>Upozorenje: Caps Lock uključen!</translation>
     </message>
 </context>
 <context>
@@ -236,34 +236,34 @@
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>Verboden tot</translation>
+        <translation>Blokiran do</translation>
     </message>
 </context>
 <context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
-        <translation>BIP 38 Tool</translation>
+        <translation>BIP 38 Alat</translation>
     </message>
     <message>
         <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 Versleuteling</translation>
+        <translation>BIP 38 Šifra</translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>Adres:</translation>
+        <translation>Adresa:</translation>
     </message>
     <message>
         <source>Enter a KYD Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een KYD adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
+        <translation>Unesite KYD adresu koju želite šifrirati pomoću BIP 38. Unesite zaporku u srednjem okviru. Pritisnite šifriranje za izračunavanje šifriranog privatnog ključa.</translation>
     </message>
     <message>
         <source>The KYD address to encrypt</source>
-        <translation>Het KYD adres om te versleutelen</translation>
+        <translation>KYD adresa za šifriranje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <translation>Odaberite prethodno upotrijebljenu adresu</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -271,7 +271,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <translation>Zalijepite adresu iz međuspremnika</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -279,370 +279,370 @@
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>Wachtwoord:</translation>
+        <translation>Zaporka:</translation>
     </message>
     <message>
         <source>Encrypted Key:</source>
-        <translation>Versleutelde sleutel:</translation>
+        <translation>Šifrirani ključ:</translation>
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
+        <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
         <source>Encrypt the private key for this KYD address</source>
-        <translation>Versleutel de privé sleutel voor dit KYD adres</translation>
+        <translation>Šifriranje privatnog ključa za ovu KYD adresu</translation>
     </message>
     <message>
         <source>Reset all fields</source>
-        <translation>Reset alle velden</translation>
+        <translation>Ponovno postavite sva polja</translation>
     </message>
     <message>
         <source>The encrypted private key</source>
-        <translation>De versleutelde privé sleutel</translation>
+        <translation>Šifrirani privatni ključ</translation>
     </message>
     <message>
         <source>Decrypt the entered key using the passphrase</source>
-        <translation>Decodeer de ingevoerde sleutel met behulp van de wachtwoordzin</translation>
+        <translation>Dešifriranje unesenog ključa pomoću zaporke</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
-        <translation>Versleutel &amp;Sleutel</translation>
+        <translation>Šifriraj ključ</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <translation>Poništi sve</translation>
     </message>
     <message>
         <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 ontsleuteling</translation>
+        <translation>BIP 38 Dešifriranje</translation>
     </message>
     <message>
         <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer de wachtwoordzin in, in het middelste veld. Druk op Ontsleutel Sleutel om de privé sleutel te berekenen.  Nadat de privé sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de privé sleutel toevoegen aan de portemonnee.</translation>
+        <translation>Unesite BIP 38 šifrirani privatni ključ. Unesite zaporku u srednji okvir. Pritisnite gumb za dešifriranje da biste izračunali privatni ključ. Nakon dešifriranja ključa, klikom na "Import Address" dodati će taj privatni ključ u novčanik.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
-        <translation>Ontsleutelen &amp;Sleutel</translation>
+        <translation>Dešifriraj ključ</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
-        <translation>Ontsleutelde sleutel:</translation>
+        <translation>Dešifrirani ključ</translation>
     </message>
     <message>
         <source>Import Address</source>
-        <translation>Adres Importeren</translation>
+        <translation>Uvoz adrese</translation>
     </message>
     <message>
         <source>Click "Decrypt Key" to compute key</source>
-        <translation>Klik "Ontsleutelen Sleutel" om de sleutel te berekenen</translation>
+        <translation>Pritisnite "Dešifriraj ključ" za izračunavanje ključa</translation>
     </message>
     <message>
         <source>The entered passphrase is invalid. </source>
-        <translation>De ingevoerde wachtwoordzin is ongeldig.</translation>
+        <translation>Unesena zaporka je nevažeća.</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Toegestaan: 0-9,a-z,A-Z</translation>
+        <translation>Dozvoljeno: 0-9, a-z, A-Z.</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>Het ingevoerde adres is ongeldig.</translation>
+        <translation>Unesena adresa je nevažeća.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Controleer het adres en probeer het opnieuw.</translation>
+        <translation>Provjerite adresu i pokušajte ponovno.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>Het opgegeven adres verwijst niet naar een sleutel.</translation>
+        <translation>Unesena adresa ne odnosi se na ključ.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee ontsleuteling is geannuleerd.</translation>
+        <translation>Otključavanje novčanika je otkazano.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Privé sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+        <translation>Privatni ključ za unesenu adresu nije dostupan.</translation>
     </message>
     <message>
         <source>Failed to decrypt.</source>
-        <translation>Ontsleutelen mislukt.</translation>
+        <translation>Dešifriranje neuspijelo</translation>
     </message>
     <message>
         <source>Please check the key and passphrase and try again.</source>
-        <translation>Controleer de sleutel en de wachtwoordzin en probeer het opnieuw.</translation>
+        <translation>Provjerite ključ i lozinku te pokušajte ponovo.</translation>
     </message>
     <message>
         <source>Data Not Valid.</source>
-        <translation>Gegevens ongeldig.</translation>
+        <translation>Podaci nisu valjani.</translation>
     </message>
     <message>
         <source>Please try again.</source>
-        <translation>Probeer het opnieuw.</translation>
+        <translation>Pokušajte ponovno.</translation>
     </message>
     <message>
         <source>Please wait while key is imported</source>
-        <translation>Wacht tot de sleutel is geïmporteerd</translation>
+        <translation>Molimo pričekajte dok se ključ uvozi</translation>
     </message>
     <message>
         <source>Key Already Held By Wallet</source>
-        <translation>Sleutel al aanwezig in portemonnee</translation>
+        <translation>Novčanik već sadrži ključ</translation>
     </message>
     <message>
         <source>Error Adding Key To Wallet</source>
-        <translation>Fout bij het toevoegen van de sleutel</translation>
+        <translation>Greška prilikom dodavanja ključa u novčanik</translation>
     </message>
     <message>
         <source>Successfully Added Private Key To Wallet</source>
-        <translation>De privé sleutel is met succes toegevoegd aan de portemonnee</translation>
+        <translation>Privatni ključ uspješno dodan u novčanik</translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
         <source>Wallet</source>
-        <translation>Portemonnee</translation>
+        <translation>Novčanik</translation>
     </message>
     <message>
         <source>Node</source>
-        <translation>Node</translation>
+        <translation>Node ( čvor )</translation>
     </message>
     <message>
         <source>&amp;Overview</source>
-        <translation>&amp;Overzicht</translation>
+        <translation>Pregled</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Toon algemeen overzicht van de portemonnee</translation>
+        <translation>Prikaži opći pregled novčanika</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;Verzenden</translation>
+        <translation>Šalji</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;Ontvangen</translation>
+        <translation>Primi</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;Transacties</translation>
+        <translation>Transakcije</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Blader door transactiegescheidenis</translation>
+        <translation>Pregled povijesti transakcija</translation>
     </message>
     <message>
         <source>Privacy Actions for zKYD</source>
-        <translation>Privacy Acties voor zKYD</translation>
+        <translation>Postavke privatnosti za zKYD</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>S&amp;luiten</translation>
+        <translation>Izlaz</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Programma afsluiten</translation>
+        <translation>Napusti aplikaciju</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>Over &amp;Qt</translation>
+        <translation>O Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Toon informatie over Qt</translation>
+        <translation>Prikažiinformacije o Qt</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
-        <translation>&amp;Opties...</translation>
+        <translation>Mogućnosti</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Tonen / Verbergen</translation>
+        <translation>Prikaži / Sakrij</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Toon of verberg het hoofdvenster</translation>
+        <translation>Prikaži ili sakrij glavni prozor</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>$Versleutel portemonnee...</translation>
+        <translation>Šifriraj novčanik</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Versleutel de privé sleutels die bij uw portemonnee horen</translation>
+        <translation>Šifriranje privatnih ključeva koji pripadaju vašem novčaniku</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup Portemonnee...</translation>
+        <translation>Sigurnosna kopija novčanika ...</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>Backup portemonnee naar een andere locatie</translation>
+        <translation>Sigurnosna kopija novčanika na drugo mjesto</translation>
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Wijzig Wachtwoordzin...</translation>
+        <translation>Promijeni zaporku</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Wijzig de wachtwoordzin die gebruikt wordt voor uw portemonnee versleuteling</translation>
+        <translation>Promjena zaporke koja se koristi za šifriranje lisnice</translation>
     </message>
     <message>
         <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Open portemonnee...</translation>
+        <translation>Otključaj novčanik ...</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>Open portemonnee</translation>
+        <translation>Otključaj novčanik</translation>
     </message>
     <message>
         <source>&amp;Lock Wallet</source>
-        <translation>&amp;Sluit portemonnee</translation>
+        <translation>Zaključaj novčanik</translation>
     </message>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>Bericht &amp;Ondertekenen...</translation>
+        <translation>Potpišite poruku ...</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>Bericht &amp;Verifiëren... </translation>
+        <translation>Potvrdite poruku ...</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Informatie</translation>
+        <translation>Informacije</translation>
     </message>
     <message>
         <source>Show diagnostic information</source>
-        <translation>Toon diagnostische informatie</translation>
+        <translation>Prikaz dijagnostičkih podataka</translation>
     </message>
     <message>
         <source>&amp;Debug console</source>
-        <translation>&amp;Debug console</translation>
+        <translation>Konzola za uklanjanje pogrešaka</translation>
     </message>
     <message>
         <source>Open debugging console</source>
-        <translation>Open debugging console</translation>
+        <translation>Otvorite konzolu za uklanjanje pogrešaka</translation>
     </message>
     <message>
         <source>&amp;Network Monitor</source>
-        <translation>&amp;Netwerk Monitor</translation>
+        <translation>Monitor mreže</translation>
     </message>
     <message>
         <source>Show network monitor</source>
-        <translation>Toon netwerk monitor</translation>
+        <translation>Prikaži mrežni monitor</translation>
     </message>
     <message>
         <source>&amp;Peers list</source>
-        <translation>&amp;Peers lijst</translation>
+        <translation>Popis suradnika</translation>
     </message>
     <message>
         <source>Show peers info</source>
-        <translation>Toon informatie van peers</translation>
+        <translation>Prikaži podatke o vršnjacima</translation>
     </message>
     <message>
         <source>Wallet &amp;Repair</source>
-        <translation>Portemonnee &amp;Repareren </translation>
+        <translation>Popravak novčanika</translation>
     </message>
     <message>
         <source>Show wallet repair options</source>
-        <translation>Toon portemonnee reparatie opties</translation>
+        <translation>Prikaz opcija popravka novčanika</translation>
     </message>
     <message>
         <source>Open configuration file</source>
-        <translation>Open configuratie bestand</translation>
+        <translation>Otvorite konfiguracijsku datoteku</translation>
     </message>
     <message>
         <source>Show Automatic &amp;Backups</source>
-        <translation>Toon Automatische &amp;Backups</translation>
+        <translation>Prikaži automatsko sigurnosno kopiranje</translation>
     </message>
     <message>
         <source>Show automatically created wallet backups</source>
-        <translation>Toon automatisch aangemaakte portemonnee backups</translation>
+        <translation>Pokaži automatski stvorene sigurnosne kopije novčanika</translation>
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>&amp;Verzendadressen...</translation>
+        <translation>Adrese slanja ...</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Toon de lijst van gebruikte verzendadressen en labels</translation>
+        <translation>Prikaz popisa upotrijebljenih adresa slanja i oznaka</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Ontvangstadressen...</translation>
+        <translation>Adresa primatelja...</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Toon de lijst van gebruikte ontvangstadressen en labels</translation>
+        <translation>Prikaz popisa korištenih adresa primatelja i oznaka</translation>
     </message>
     <message>
         <source>&amp;Multisignature creation...</source>
-        <translation>&amp;Multisignature aanmaak...</translation>
+        <translation>Stvaranje višestruke oznake ...</translation>
     </message>
     <message>
         <source>Create a new multisignature address and add it to this wallet</source>
-        <translation>Creëer een nieuw multisignature adres en voeg het toe aan deze portemonnee</translation>
+        <translation>Izradite novu višestruk adresu i dodaj je u novčanik</translation>
     </message>
     <message>
         <source>&amp;Multisignature spending...</source>
-        <translation>&amp;Multisignature spenderen...</translation>
+        <translation>Višepotpisno trošenje...</translation>
     </message>
     <message>
         <source>Spend from a multisignature address</source>
-        <translation>Besteden vanuit een multisignature adres</translation>
+        <translation>Provedite s višestruke adrese </translation>
     </message>
     <message>
         <source>&amp;Multisignature signing...</source>
-        <translation>Ondertekenen van &amp;Multisignature...</translation>
+        <translation>Višestruki potpis</translation>
     </message>
     <message>
         <source>Sign with a multisignature address</source>
-        <translation>Onderteken met een multisignature adres</translation>
+        <translation>Prijavite se s višestrukom adresom</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
-        <translation>Open &amp;URI...</translation>
+        <translation>Otvori URI</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
-        <translation>&amp;Opdrachtregelopties</translation>
+        <translation>Opcije naredbene linije</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n blokken aan transactiegeschiedenis verwerkt.</numerusform><numerusform>%n blokken aan transactiegeschiedenis verwerkt.</numerusform></translation>
+        <translation><numerusform>Obrađeno %n blokova povijesti transakcija.</numerusform><numerusform>Obrađeno %n blokova povijesti transakcija.</numerusform><numerusform>Obrađeno %n blokova povijesti transakcija.</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
-        <translation>Synchroniseren aanvullende gegevens: %p%</translation>
+        <translation>Usklađivanje dodatnih podataka: %p%</translation>
     </message>
     <message>
         <source>%1 behind. Scanning block %2</source>
-        <translation>%1 achter. Scannen van block %2</translation>
+        <translation>%1 iza. Skeniranje bloka %2</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
-        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;enkel voor anonimisering en staking</translation>
+        <translation>Novčanik je šifriran i trenutačno je otključan samo radi anonimizacije i stakinga</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>&amp;Bestand</translation>
+        <translation>Datoteka</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>&amp;Instellingen</translation>
+        <translation>Postavke</translation>
     </message>
     <message>
         <source>&amp;Tools</source>
-        <translation>&amp;Gereedschap</translation>
+        <translation>Alati</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <translation>Pomoć</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>Tabblad werkbalk</translation>
+        <translation>Alatna traka kartica</translation>
     </message>
     <message>
         <source>KYD Core</source>
@@ -650,171 +650,171 @@
     </message>
     <message>
         <source>Send coins to a KYD address</source>
-        <translation>Verstuur munten naar een KYD adres</translation>
+        <translation>Pošaljite kovanice na KYD adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and kyd: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en KYD: URI's)</translation>
+        <translation>Zahtjev za plaćanje (generira QR kodove i kyd: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
-        <translation>&amp;Privacy</translation>
+        <translation>Privatnost</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
-        <translation>&amp;Masternodes</translation>
+        <translation>Masternodes</translation>
     </message>
     <message>
         <source>Browse masternodes</source>
-        <translation>Bekijk masternodes</translation>
+        <translation>Pretraži masternodes</translation>
     </message>
     <message>
         <source>&amp;About KYD Core</source>
-        <translation>&amp;Over KYD Core</translation>
+        <translation>O KYD Core</translation>
     </message>
     <message>
         <source>Show information about KYD Core</source>
-        <translation>Toon informatie over KYD Kern</translation>
+        <translation>Prikaz informacija o KYD Core-u</translation>
     </message>
     <message>
         <source>Modify configuration options for KYD</source>
-        <translation>Wijzig KYD configuratie opties</translation>
+        <translation>Izmijenite konfiguracijske opcije za KYD</translation>
     </message>
     <message>
         <source>Sign messages with your KYD addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw KYD adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
+        <translation>Potpišite poruke s vašim KYD adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified KYD addresses</source>
-        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde KYD adressen</translation>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim KYD adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 tool</translation>
+        <translation>BIP38 Alat</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>Versleutelen en ontsleutel privé sleutels door middel van een wachtwoordzin</translation>
+        <translation>Šifriranje i dešifriranje privatnih ključeva pomoću zaporke</translation>
     </message>
     <message>
         <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
+        <translation>Višestruko slanje</translation>
     </message>
     <message>
         <source>MultiSend Settings</source>
-        <translation>MultiSend instellingen</translation>
+        <translation>Postavke Višestrukog slanja</translation>
     </message>
     <message>
         <source>Open Wallet &amp;Configuration File</source>
-        <translation>Open Portemonnee &amp;Configuratiebestand</translation>
+        <translation>Otvorite konfiguracijsku datoteku novčanika</translation>
     </message>
     <message>
         <source>Open &amp;Masternode Configuration File</source>
-        <translation>Open &amp;Masternode Configuratiebestand</translation>
+        <translation>Otvori Masternode konfiguracijsku datoteku</translation>
     </message>
     <message>
         <source>Open Masternode configuration file</source>
-        <translation>Open Masternode configuratiebestand</translation>
+        <translation>Otvori Masternode konfiguracijsku datoteku</translation>
     </message>
     <message>
         <source>Open a KYD: URI or payment request</source>
-        <translation>Open een KYD: URI of betaalverzoek</translation>
+        <translation>Otvori KYD: URI zahtjev za plačanje</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Blockchain verkenner</translation>
+        <translation>Blockchain istraživač</translation>
     </message>
     <message>
         <source>Block explorer window</source>
-        <translation>Block verkenner venster</translation>
+        <translation>Prozor Block preglednika</translation>
     </message>
     <message>
         <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
-        <translation>Toon het KYD Core help bericht om een ​​lijst te krijgen met mogelijke KYD command line opties</translation>
+        <translation>Pokažite poruku KYD Core pomoći da biste dobili popis s mogućim KYD opcijama naredbenog retka</translation>
     </message>
     <message>
         <source>KYD Core client</source>
-        <translation>KYD Core client</translation>
+        <translation>KYDIX Core Klijent</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to KYD network</source>
-        <translation><numerusform>%n actieve verbindingen met het KYD netwerk</numerusform><numerusform>%n actieve connectie(s) naar KYD netwerk</numerusform></translation>
+        <translation><numerusform>%n aktivne veze na KYD mrežu</numerusform><numerusform>%n aktivne veze na KYD mrežu</numerusform><numerusform>%n aktivne veze na KYD mrežu</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>Synchroniseren met het netwerk...</translation>
+        <translation>Sinkronizacija s mrežom...</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
-        <translation>Blocks aan het importeren vanaf schijf...</translation>
+        <translation>Uvoz blokova s diska...</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
-        <translation>Blocks opnieuw aan het indexeren op de schijf...</translation>
+        <translation>Ponovno indeksiranje blokova na disku ...</translation>
     </message>
     <message>
         <source>No block source available...</source>
-        <translation>Geen block bron beschikbaar</translation>
+        <translation>Block izvor nije dostupan...</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>Bijgewerkt</translation>
+        <translation>Ažurirano</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n uren</numerusform><numerusform>%n uren</numerusform></translation>
+        <translation><numerusform>%n sati</numerusform><numerusform>%n sati</numerusform><numerusform>%n sati</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform>%n day</numerusform><numerusform>%n dagen</numerusform></translation>
+        <translation><numerusform>%n dana</numerusform><numerusform>%n dana</numerusform><numerusform>%n dana</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n weken</numerusform><numerusform>%n weken</numerusform></translation>
+        <translation><numerusform>%n tjedni</numerusform><numerusform>%n tjedni</numerusform><numerusform>%n tjedni</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
-        <translation>%1 en %2</translation>
+        <translation>%1 i %2</translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n year</numerusform><numerusform>%n jaren</numerusform></translation>
+        <translation><numerusform>%n godine</numerusform><numerusform>%n godine</numerusform><numerusform>%n godine</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
-        <translation>Aan het bijwerken...</translation>
+        <translation>Nadoknađivanje</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Laatst ontvangen block was %1 geleden gegenereerd.</translation>
+        <translation>Posljednji primljeni blok generiran je prije %1.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transacties hierna zullen nog niet zichtbaar zijn.</translation>
+        <translation>Transakcije nakon toga još neće biti vidljive.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Greška</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Waarschuwing</translation>
+        <translation>Upozorenje</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informatie</translation>
+        <translation>Informacije</translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Verzend transactie</translation>
+        <translation>Poslane transakcije</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Inkomende transactie</translation>
+        <translation>Dolazne transakcije</translation>
     </message>
     <message>
         <source>Sent MultiSend transaction</source>
-        <translation>Verzonden MultiSend transactie</translation>
+        <translation>Pošalji Višestruku transakciju</translation>
     </message>
     <message>
         <source>Date: %1
@@ -823,69 +823,69 @@ Type: %3
 Address: %4
 </source>
         <translation>Datum: %1
-Hoeveelheid: %2
-Type: %3
-Adres: %4
+Iznos: %2
+Tip: %3
+Adresa: %4
 </translation>
     </message>
     <message>
         <source>Staking is active
  MultiSend: %1</source>
-        <translation>Staking is actief
-Multisend: %1</translation>
+        <translation>Aktivan Staking
+Višestruko slanje: %1</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Actief</translation>
+        <translation>Aktivno</translation>
     </message>
     <message>
         <source>Not Active</source>
-        <translation>Niet actief</translation>
+        <translation>Neaktivno</translation>
     </message>
     <message>
         <source>Staking is not active
  MultiSend: %1</source>
-        <translation>Staking is niet actief
-MultiSend: %1</translation>
+        <translation>Staking nije aktivan
+Višestruko slanje: %1</translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
+        <translation>AutoMint je trenutno omogućen i podešen na</translation>
     </message>
     <message>
         <source>AutoMint is disabled</source>
-        <translation>AutoMint is uitgeschakeld</translation>
+        <translation>AutoMint je onemogućen</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;</translation>
+        <translation>Novčanik je &lt;b&gt;šifriran&lt;/b&gt; i trenutno &lt;b&gt;otključan&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Portemonnee is versleuteld &lt;/b&gt;en momenteel &lt;b&gt; vergrendeld&lt;/b&gt;</translation>
+        <translation>Novčanik je 1. šifriran 1. i trenutno 2. zaključan 2.</translation>
     </message>
 </context>
 <context>
     <name>BlockExplorer</name>
     <message>
         <source>Blockchain Explorer</source>
-        <translation>Blockchain Verkenner</translation>
+        <translation>Blockchain preglednik</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Terug</translation>
+        <translation>Natrag</translation>
     </message>
     <message>
         <source>Forward</source>
-        <translation>Volgende</translation>
+        <translation>Naprijed</translation>
     </message>
     <message>
         <source>Address / Block / Transaction</source>
-        <translation>Adres / Block / Transactie</translation>
+        <translation>Adresa / Block / Transakcija</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Pretraga</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -893,45 +893,45 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
-        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (kyd.conf).</translation>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (kyd.conf).</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
-        <translation>Totaal: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Onbekend: %5)</translation>
+        <translation>Ukupno: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Nepoznato: %5)</translation>
     </message>
     <message>
         <source>Network Alert</source>
-        <translation>Netwerk waarschuwing</translation>
+        <translation>Upozorenje o mreži</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
         <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
+        <translation>Količina:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>Bytovi:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Bedrag:</translation>
+        <translation>Iznos:</translation>
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioriteit:</translation>
+        <translation>Prioritet:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Fee:</translation>
+        <translation>Naknada:</translation>
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Munt Selectie</translation>
+        <translation>Odabir novčića</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -939,47 +939,47 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Na de fee:</translation>
+        <translation>Naknadne naknade:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wisselgeld:</translation>
+        <translation>Razlika:</translation>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>(de)selecteer alles</translation>
+        <translation>(ne)odaberi sve</translation>
     </message>
     <message>
         <source>toggle lock state</source>
-        <translation>Schakel lock status</translation>
+        <translation>prebaciti stanje zaključavanja</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation>Tree modus</translation>
+        <translation>Granati prikaz</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>Lijst modus</translation>
+        <translation>Popis</translation>
     </message>
     <message>
         <source>(1 locked)</source>
-        <translation>(1 locked)</translation>
+        <translation>(1 zaključan)</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Bedrag</translation>
+        <translation>Iznos</translation>
     </message>
     <message>
         <source>Received with label</source>
-        <translation>Ontvangen met label</translation>
+        <translation>Primljeno s oznakom</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>Ontvangen met adres</translation>
+        <translation>Primljeno s adresom</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tip</translation>
     </message>
     <message>
         <source>Date</source>
@@ -987,248 +987,248 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Bevestigingen</translation>
+        <translation>Potvrde</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Bevestigd</translation>
+        <translation>Potvrđeno</translation>
     </message>
     <message>
         <source>Priority</source>
-        <translation>Prioriteit</translation>
+        <translation>Prioritet</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Kopieer adres</translation>
+        <translation>Kopiraj adresu</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Kopiëer label</translation>
+        <translation>Kopiraj oznaku</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer bedrag</translation>
+        <translation>Kopiraj iznos</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Kopieer transactie ID</translation>
+        <translation>Kopiraj ID transakcije</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Lock niet besteed</translation>
+        <translation>Zaključaj neiskorišteno</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Unlock niet besteed</translation>
+        <translation>Otključaj neiskorišteno</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwantiteit</translation>
+        <translation>Kopirajte količinu</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Kopieer fee</translation>
+        <translation>Kopiraj naknadu</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Kopieer na fee</translation>
+        <translation>Kopiraj naknadnu naknadu</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Kopieer bytes</translation>
+        <translation>Kopiraj bitove</translation>
     </message>
     <message>
         <source>Copy priority</source>
-        <translation>Kopieer prioriteit</translation>
+        <translation>Kopiraj prioritet</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Kopieer dust</translation>
+        <translation>Kopiraj dust</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Kopieer wisselgeld</translation>
+        <translation>Kopiraj razliku</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
-        <translation>Schakel alsjeblieft over naar "Lijst modus" om deze functie te gebruiken.</translation>
+        <translation>Prebacite se na "popis" kako biste koristili ovu funkciju.</translation>
     </message>
     <message>
         <source>highest</source>
-        <translation>hoogste</translation>
+        <translation>najviši</translation>
     </message>
     <message>
         <source>higher</source>
-        <translation>hoger</translation>
+        <translation>viši</translation>
     </message>
     <message>
         <source>high</source>
-        <translation>hoog</translation>
+        <translation>visok</translation>
     </message>
     <message>
         <source>medium-high</source>
-        <translation>medium-hoog</translation>
+        <translation>srednje visok</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>medium</translation>
+        <translation>srednje</translation>
     </message>
     <message>
         <source>low-medium</source>
-        <translation>laag-medium</translation>
+        <translation>srednje niži</translation>
     </message>
     <message>
         <source>low</source>
-        <translation>laag</translation>
+        <translation>nizak</translation>
     </message>
     <message>
         <source>lower</source>
-        <translation>lager</translation>
+        <translation>niži</translation>
     </message>
     <message>
         <source>lowest</source>
-        <translation>laagst</translation>
+        <translation>najniži</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation>(%1 vergrendeld)</translation>
+        <translation>(%1 zaključano)</translation>
     </message>
     <message>
         <source>none</source>
-        <translation>geen</translation>
+        <translation>bez</translation>
     </message>
     <message>
         <source>yes</source>
-        <translation>ja</translation>
+        <translation>da</translation>
     </message>
     <message>
         <source>no</source>
-        <translation>nee</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Dit label wordt rood, als de transactiegrootte groter is dan 1000 bytes.</translation>
+        <translation>Ova oznaka postaje crvena, ako je veličina transakcije veća od 1000 bajta.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>Dit betekent dat een fee van minstens %1 per kB vereist is.</translation>
+        <translation>To znači da je potrebna naknada od najmanje %1 po kB.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Kan variëren van +/- 1 byte per invoer.</translation>
+        <translation>Varira +/- 1 byte po unosu.</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transacties met hogere prioriteit zullen waarschijnlijk eerder in een blok opgenomen worden.</translation>
+        <translation>Vjerojatnije je da će transakcije s većim prioritetom biti uključene u blok.</translation>
     </message>
     <message>
         <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>Dit label wordt rood, als de prioriteit lager is dan "medium".</translation>
+        <translation>Ova oznaka postaje crvena, ako je prioritet manji od "srednji".</translation>
     </message>
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
+        <translation>Ova oznaka postaje crvena ako neki primatelj prima iznos manji od %1.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 ukyd per input.</source>
-        <translation>Kan +/-%1 ukyd per invoer variëren.</translation>
+        <translation>Može varirati +/- %1 ukyd po unosu.</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(geen label)</translation>
+        <translation>(bez oznake)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
-        <translation>wijzig van %1 (%2)</translation>
+        <translation>promijeni s %1 (%2)</translation>
     </message>
     <message>
         <source>(change)</source>
-        <translation>(wijzig)</translation>
+        <translation>(promjena)</translation>
     </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>Wijzig Adres</translation>
+        <translation>Uredi Adresu</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>&amp;Label</translation>
+        <translation>Oznaka</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Het label dat geassocieerd is met deze adreslijst invoer</translation>
+        <translation>Oznaka povezana s ovim unosom popisa adresa</translation>
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation>&amp;Adres</translation>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Het adres geassocieerd met deze adreslijst invoer. Dit kan alleen worden gewijzigd voor verzend adressen.</translation>
+        <translation>Adresa povezana s ovim unosom popisa adresa. To se može promijeniti samo za slanje adresa.</translation>
     </message>
     <message>
         <source>New receiving address</source>
-        <translation>Nieuw ontvangst adres</translation>
+        <translation>Nova adresa za primanje</translation>
     </message>
     <message>
         <source>New sending address</source>
-        <translation>Nieuw verzend adres</translation>
+        <translation>Nova adresa za slanje</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Wijzig ontvangst adres</translation>
+        <translation>Uređivanje adrese primatelja</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Wijzig verzend adres</translation>
+        <translation>Uređivanje adrese slanja</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid KYD address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig KYD adres.</translation>
+        <translation>Unesena adresa "%1" nije važeća KYD adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
-        <translation>Het ingevoerde adres: "%1" staat al in uw adresboek.</translation>
+        <translation>Unesena adresa "%1" već je u adresaru.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>Kan portemonnee niet ontgrendelen.</translation>
+        <translation>Nije moguće otključati novčanik.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>Aanmaken nieuwe key mislukt.</translation>
+        <translation>Novo generiranje ključa nije uspjelo.</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Een nieuwe data directory zal worden aangemaakt.</translation>
+        <translation>Kreirat će se novi direktorij podataka.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>naam</translation>
+        <translation>naziv</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Map bestaat reeds. Voeg %1 toe als je van plan bent om hier een nieuwe map te creëren.</translation>
+        <translation>Direktorij već postoji. Dodajte %1 ako namjeravate izraditi novi direktorij ovdje.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Pad bestaat al en is geen directory.</translation>
+        <translation>Put već postoji i nije direktorij.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>Kan de data directory hier niet aanmaken.</translation>
+        <translation>Ovdje nije moguće stvoriti direktorij za podatke.</translation>
     </message>
 </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
-        <translation>versie</translation>
+        <translation>verzija</translation>
     </message>
     <message>
         <source>KYD Core</source>
@@ -1240,70 +1240,70 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>About KYD Core</source>
-        <translation>Over KYD Core</translation>
+        <translation>O KYD Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
-        <translation>Command-line opties</translation>
+        <translation>Opcije naredbene linije</translation>
     </message>
     <message>
         <source>Usage:</source>
-        <translation>Gebruik:</translation>
+        <translation>Upotreba:</translation>
     </message>
     <message>
         <source>command-line options</source>
-        <translation>command-line opties</translation>
+        <translation>opcije naredbenog retka</translation>
     </message>
     <message>
         <source>UI Options:</source>
-        <translation>UI Opties:</translation>
+        <translation>UI mogućnosti:</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
-        <translation>Kies data directory bij opstarten (standaard: %u)</translation>
+        <translation>Odaberite direktorij za podatke pri pokretanju (zadano: %u)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: %u)</source>
-        <translation>Toon splash scherm bij opstarten (standaard: %u)</translation>
+        <translation>Prikažite zaslon prilikom pokretanja (zadano: %u)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Stel taal in, bijvoorbeeld "de_DE" (standaard: systeem locale)</translation>
+        <translation>Postavite jezik, na primjer "de_DE" (zadano: regionalni sustav)</translation>
     </message>
     <message>
         <source>Start minimized</source>
-        <translation>Geminimaliseerd starten</translation>
+        <translation>Početak minimiziran</translation>
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Stel SSL root certificaten in voor betalingsverzoek (standaard: -systeem-)</translation>
+        <translation>Postavite SSL potvrde korijena za zahtjev za plaćanje (zadano: -system-)</translation>
     </message>
 </context>
 <context>
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-        <translation>Welkom</translation>
+        <translation>Dobrodošli</translation>
     </message>
     <message>
         <source>Welcome to KYD Core.</source>
-        <translation>Welkom bij KYD Core.</translation>
+        <translation>Dobrodošli u KYD Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where KYD Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar KYD Core zijn data opslaat.</translation>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će KYD Core pohraniti svoje podatke.</translation>
     </message>
     <message>
         <source>KYD Core will download and store a copy of the KYD block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>KYD Core zal een kopie van de KYD blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <translation>KYD Core preuzima i pohranjuje kopiju KYD blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>Gebruik de standaard datafolder </translation>
+        <translation>Upotrijebite zadani direktorij podataka</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>Gebruik een aangepaste data directory:</translation>
+        <translation>Koristite prilagođeni direktorij podataka:</translation>
     </message>
     <message>
         <source>KYD Core</source>
@@ -1311,26 +1311,26 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Fout: opgegeven data directory "%1" kan niet worden gemaakt.</translation>
+        <translation>Greška: ne može se izraditi direktorij podataka "%1".</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Greška</translation>
     </message>
     <message>
         <source>%1 GB of free space available</source>
-        <translation>%1 GB beschikbare schijfruimte</translation>
+        <translation>%1 GB slobodnog prostora na raspolaganju</translation>
     </message>
     <message>
         <source>(of %1 GB needed)</source>
-        <translation>(van de %1 GB benodigd)</translation>
+        <translation>(%1 GB potrebno)</translation>
     </message>
 </context>
 <context>
     <name>MasternodeList</name>
     <message>
         <source>Form</source>
-        <translation>Formulier</translation>
+        <translation>Obrazac</translation>
     </message>
     <message>
         <source>MASTERNODES</source>
@@ -1338,19 +1338,19 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Opmerking: De status van uw masternodes in de lokale portemonnee kan mogelijk iets afwijken. &lt;br /&gt;Wacht altijd op de portemonnee om additionele data te synchroniseren en verifieer dit vanuit een andere node &lt;br /&gt;mocht de node nu aan het draaien zijn maar je ziet nog steeds 'MISSING' in het 'Status' veld.</translation>
+        <translation>Napomena: Status vaših masternoda u lokalnom novčaniku može potencijalno biti malo netočan. 1. Uvijek pričekajte da novčanik sinkronizira dodatne podatke, a potom dvaput provjerite od drugog čvora 2. čiji čvor bi trebao biti pokrenut, ali u polju "Status" još uvijek vidite "MISSING".</translation>
     </message>
     <message>
         <source>Alias</source>
-        <translation>Alias</translation>
+        <translation>pseudonim</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Protocol</source>
-        <translation>Protocol</translation>
+        <translation>Protokol</translation>
     </message>
     <message>
         <source>Status</source>
@@ -1358,11 +1358,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Actief</translation>
+        <translation>Aktivno </translation>
     </message>
     <message>
         <source>Last Seen (UTC)</source>
-        <translation>Laatst gezien (UTC)</translation>
+        <translation>Zadnji put viđen (UTC)</translation>
     </message>
     <message>
         <source>Pubkey</source>
@@ -1370,23 +1370,23 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>S&amp;tart alias</source>
-        <translation>S&amp;tart alias</translation>
+        <translation>Započni pseudonim</translation>
     </message>
     <message>
         <source>Start &amp;all</source>
-        <translation>&amp;all starten</translation>
+        <translation>Započni sve</translation>
     </message>
     <message>
         <source>Start &amp;MISSING</source>
-        <translation>Start &amp;MISSING</translation>
+        <translation> Započni NEDOSTAJE</translation>
     </message>
     <message>
         <source>&amp;Update status</source>
-        <translation>&amp;Status bijwerken</translation>
+        <translation>Ažuriraj status</translation>
     </message>
     <message>
         <source>Status will be updated automatically in (sec):</source>
-        <translation>Status wordt automatisch bijgewerkt in (sec):</translation>
+        <translation>Status će se automatski ažurirati u (s):</translation>
     </message>
     <message>
         <source>0</source>
@@ -1394,39 +1394,39 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Start alias</source>
-        <translation>Start alias</translation>
+        <translation>Pokreni alias</translation>
     </message>
     <message>
         <source>Confirm masternode start</source>
-        <translation>Bevestig start masternode</translation>
+        <translation>Potvrdite početak masternode</translation>
     </message>
     <message>
         <source>Are you sure you want to start masternode %1?</source>
-        <translation>Weet je zeker dat je masternode %1 wilt starten?</translation>
+        <translation>Jeste li sigurni da želite pokrenuti masternode%1?</translation>
     </message>
     <message>
         <source>Confirm all masternodes start</source>
-        <translation>Bevestig start alle masternodes</translation>
+        <translation>Potvrdite da svi masternodi počinju</translation>
     </message>
     <message>
         <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>Weet je zeker dat je ALLE masternodes wilt starten?</translation>
+        <translation>Jeste li sigurni da želite pokrenuti SVE masternode?</translation>
     </message>
     <message>
         <source>Command is not available right now</source>
-        <translation>Commando is nu niet beschikbaar</translation>
+        <translation>Naredba trenutačno nije dostupna</translation>
     </message>
     <message>
         <source>You can't use this command until masternode list is synced</source>
-        <translation>Je kunt dit commando niet gebruiken tot de masternode lijst is gesynchroniseerd</translation>
+        <translation>Ne možete upotrijebiti ovu naredbu sve dok se masternod ne sinkronizira</translation>
     </message>
     <message>
         <source>Confirm missing masternodes start</source>
-        <translation>Bevestig start ontbrekende masternodes</translation>
+        <translation>Potvrdite da nedostaje početak masternoda</translation>
     </message>
     <message>
         <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>Weet je zeker dat je alle ONTBREKENDE masternodes wilt starten?</translation>
+        <translation>Jeste li sigurni da želite započeti MISSING masternodes?</translation>
     </message>
 </context>
 <context>
@@ -1437,45 +1437,45 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Enter whole numbers 1 - 100</source>
-        <translation>Geef volledige cijfers in 1 - 100</translation>
+        <translation>Unesi cijele brojeve 1 - 100</translation>
     </message>
     <message>
         <source>Enter % to Give (1-100)</source>
-        <translation>Voer % in om te geven (1-100)</translation>
+        <translation>Unesi % za Give (1-100)</translation>
     </message>
     <message>
         <source>Enter Address to Send to</source>
-        <translation>Vul het adres in om naar te verzenden</translation>
+        <translation>Unesite adresu za slanje</translation>
     </message>
     <message>
         <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other KYD addresses after it matures.
 To Add: enter percentage to give and KYD address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere KYD adressen nadat het volwassen is. 
-Toevoegen: voer het te geven percentage in en KYD adres om toe te voegen aan de MultiSend vector.
-Verwijderen: Voer adres in om te verwijderen en druk op delete.
-MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</translation>
+        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svoje nagrade za ulog ili masternode  nagrade na popis drugih KYD adresa nakon što sazrijete.
+Za Dodaj: unesite postotak za davanje i KYD adresu za dodavanje MultiSend vektoru.
+Za brisanje: Unesite adresu za brisanje i pritisnite Delete.
+MultiSend neće biti aktiviran dok ne kliknete Aktiviraj</translation>
     </message>
     <message>
         <source>Add to MultiSend Vector</source>
-        <translation>Aan MultiSend Vector toevoegen</translation>
+        <translation>Dodaj u MultiSend Vektor</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Toevoegen</translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
         <source>Deactivate MultiSend</source>
-        <translation>Deactiveer MultiSend</translation>
+        <translation>Deaktiviraj MultiSend</translation>
     </message>
     <message>
         <source>Deactivate</source>
-        <translation>Deactiveren</translation>
+        <translation>Deaktiviraj</translation>
     </message>
     <message>
         <source>Choose an address from the address book</source>
-        <translation>Kies een adres uit het adresboek</translation>
+        <translation>Odaberite adresu iz adresara</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1483,150 +1483,147 @@ MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</transl
     </message>
     <message>
         <source>Percentage of stake to send</source>
-        <translation>Staking percentage om te verzenden</translation>
+        <translation>Postotak udjela za slanje</translation>
     </message>
     <message>
         <source>Percentage:</source>
-        <translation>Percentage:</translation>
+        <translation>Udio:</translation>
     </message>
     <message>
         <source>Address to send portion of stake to</source>
-        <translation>Adres om een ​​deel van de stake te verzenden naar</translation>
+        <translation>Adresa za slanje dijela udjela</translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>Adres:</translation>
+        <translation>Adresa: </translation>
     </message>
     <message>
         <source>Label:</source>
-        <translation>Label:</translation>
+        <translation>Oznaka:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
+        <translation>Unesite oznaku za ovu adresu da biste je dodali u adresar</translation>
     </message>
     <message>
         <source>Delete Address From MultiSend Vector</source>
-        <translation>Verwijder adres van MultiSend Vector</translation>
+        <translation>Izbriši adresu iz MultiSend vektora</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Wissen</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Activate MultiSend</source>
-        <translation>Activeer MultiSend</translation>
+        <translation>Aktiviraj MultiSend</translation>
     </message>
     <message>
         <source>Activate</source>
-        <translation>Activeren</translation>
+        <translation>Aktiviraj</translation>
     </message>
     <message>
         <source>View MultiSend Vector</source>
-        <translation>Bekijk MultiSend Vector</translation>
+        <translation>Pogledajte MultiSend Vector</translation>
     </message>
     <message>
         <source>View MultiSend</source>
-        <translation>Bekijk MultiSend</translation>
+        <translation>Pogledaj MultiSend</translation>
     </message>
     <message>
         <source>Send For Stakes</source>
-        <translation>Verstuur voor stakes</translation>
+        <translation>Pošalji za uloge tj Stakes</translation>
     </message>
     <message>
         <source>Send For Masternode Rewards</source>
-        <translation>Verstuur voor Masternode beloningen</translation>
+        <translation>Pošalji za Masternode nagrade</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(geen label)</translation>
+        <translation>(bez oznake)</translation>
     </message>
     <message>
         <source>The entered address:
 </source>
-        <translation>Het ingevoerde adres:
-</translation>
+        <translation>Unesena adresa:</translation>
     </message>
     <message>
         <source> is invalid.
 Please check the address and try again.</source>
-        <translation>is ongeldig.
-Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
+        <translation>je netočna.
+Provjerite adresu i pokušajte ponovo.</translation>
     </message>
     <message>
         <source>The total amount of your MultiSend vector is over 100% of your stake reward
 </source>
-        <translation>De totale hoeveelheid van je MultiSend vector is meer dan 100% van je stake beloning
+        <translation>Ukupna količina vašeg MultiSend vektora iznosi preko 100% vaše nagrade uloga
 </translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Vul alsjeblieft 1 - 100 voor procent in.</translation>
+        <translation>Unesite 1 - 100 za postotak.</translation>
     </message>
     <message>
         <source>Saved the MultiSend to memory, but failed saving properties to the database.
 </source>
-        <translation>De MultiSend in het geheugen opgeslagen, maar mislukt om de eigenschappen op te slaan in de database.
-</translation>
+        <translation>Spremio je MultiSend u memoriju, ali nije spasio svojstva u bazi podataka.</translation>
     </message>
     <message>
         <source>MultiSend Vector
 </source>
-        <translation>MultiSend Vector
+        <translation>MultiSend Vektor
 </translation>
     </message>
     <message>
         <source>Removed </source>
-        <translation>Verwijderd</translation>
+        <translation>Uklonjeno</translation>
     </message>
     <message>
         <source>Could not locate address
 </source>
-        <translation>Kan het adres niet lokaliseren
-</translation>
+        <translation>Nije moguće pronaći adresu</translation>
     </message>
 </context>
 <context>
     <name>MultisigDialog</name>
     <message>
         <source>Multisignature Address Interactions</source>
-        <translation>Multisignature Adres Interacties</translation>
+        <translation>Multisignature interakcije adresa</translation>
     </message>
     <message>
         <source>Create MultiSignature &amp;Address</source>
-        <translation>Creëer MultiSignature &amp;Adres</translation>
+        <translation>Kreiraj MultiSignature Adresu</translation>
     </message>
     <message>
         <source>How many people must sign to verify a transaction</source>
-        <translation>Hoeveel mensen moeten ondertekenen om een transactie te verifiëren</translation>
+        <translation>Koliko se ljudi mora potpisati za potvrdu transakcije</translation>
     </message>
     <message>
         <source>Enter the minimum number of signatures required to sign transactions</source>
-        <translation>Voer het minimale aantal vereiste ondertekeningen in om de transacties te ondertekenen</translation>
+        <translation>Unesite minimalni broj potpisa potrebnih za potpisivanje transakcija</translation>
     </message>
     <message>
         <source>Address Label:</source>
-        <translation>Adreslabel:</translation>
+        <translation>Oznaka adrese:</translation>
     </message>
     <message>
         <source>Add another address that could sign to verify a transaction from the multisig address.</source>
-        <translation>Voeg een ander adres toe die kan ondertekenen om een transactie vanuit het multisig adres te verifiëren.</translation>
+        <translation>Dodajte drugu adresu koja bi se mogla potpisati da biste potvrdili transakciju s multisig adrese.</translation>
     </message>
     <message>
         <source>&amp;Add Address / Key</source>
-        <translation>&amp;Voeg Adres / Sleutel toe</translation>
+        <translation>Dodaj adresu/ključ</translation>
     </message>
     <message>
         <source>Local addresses or public keys that can sign:</source>
-        <translation>Lokale adressen of publieke sleutels die kunnen ondertekenen:</translation>
+        <translation>Lokalne adrese ili javni ključevi koji se mogu prijaviti:</translation>
     </message>
     <message>
         <source>Create a new multisig address</source>
-        <translation>Creëer een nieuw multisig adres</translation>
+        <translation>Stvori novu multisig adresu</translation>
     </message>
     <message>
         <source>C&amp;reate</source>
-        <translation>C&amp;reëer</translation>
+        <translation>Stvori</translation>
     </message>
     <message>
         <source>Status:</source>
@@ -1636,29 +1633,29 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <source>Use below to quickly import an address by its redeem. Don't forget to add a label before clicking import!
 Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
 Please be patient after clicking import.</source>
-        <translation>Gebruik onderstaande om snel een adres te importeren door in te wisselen. Vergeet niet om een label toe te voegen voordat u op importeren klikt!
-Houd er rekening mee dat de portemonnee de blockchain opnieuw doorzoekt om transacties te vinden die het nieuwe adres bevatten.
-Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
+        <translation>Upotrijebite dolje niže kako biste brzo uvezite adresu njezinim otkupom. Ne zaboravite dodati oznaku prije nego što kliknete uvoz!
+Imajte na umu da će novčanik ponovno skenirati blok-mrežu kako bi pronašao transakcije koje sadrže novu adresu.
+Budite strpljivi nakon što kliknete uvoz.</translation>
     </message>
     <message>
         <source>&amp;Import Redeem</source>
-        <translation>&amp;Importeer Inlossen</translation>
+        <translation>Uvoz Redeem</translation>
     </message>
     <message>
         <source>&amp;Create MultiSignature Tx</source>
-        <translation>&amp;Creëer MultiSignature Tx</translation>
+        <translation>Kreiraj MultiSignature Tx</translation>
     </message>
     <message>
         <source>Inputs:</source>
-        <translation>Inputs</translation>
+        <translation>Unosi:</translation>
     </message>
     <message>
         <source>Coin Control</source>
-        <translation>Munt Controle</translation>
+        <translation>Upravljanje novčićem</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
-        <translation>Hoeveelheid geselecteerd:</translation>
+        <translation>Odabrano:</translation>
     </message>
     <message>
         <source>0</source>
@@ -1666,173 +1663,175 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Bedrag:</translation>
+        <translation>Iznos:</translation>
     </message>
     <message>
         <source>Add an input to fund the outputs</source>
-        <translation>Voeg een invoer toe om de uitvoer te financieren</translation>
+        <translation>Dodajte unos za financiranje izlaza
+</translation>
     </message>
     <message>
         <source>Add a Raw Input</source>
-        <translation>Voer een Raw invoer in</translation>
+        <translation>Dodajte neobrađeni unos</translation>
     </message>
     <message>
         <source>Address / Amount:</source>
-        <translation>Adres / Bedrag:</translation>
+        <translation>Adresa / iznos:</translation>
     </message>
     <message>
         <source>Add destinations to send KYD to</source>
-        <translation>Voeg bestemmingen toe om KYD naar te verzenden</translation>
+        <translation>Dodajte odredišta za slanje KYD
+</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
-        <translation>Voeg &amp;Bestemming toe</translation>
+        <translation>Dodaj odredište</translation>
     </message>
     <message>
         <source>Create a transaction object using the given inputs to the given outputs</source>
-        <translation>Maak een transactie object aan met behulp van de gegeven invoer voor de gegeven uitvoer</translation>
+        <translation>Stvaranje transakcijskog objekta pomoću zadanih ulaza na navedene izlaze</translation>
     </message>
     <message>
         <source>Cr&amp;eate</source>
-        <translation>Cr&amp;eëer</translation>
+        <translation>Kreiraj</translation>
     </message>
     <message>
         <source>&amp;Sign MultiSignature Tx</source>
-        <translation>&amp;Onderteken MultiSignature Tx</translation>
+        <translation>Potpiši MultiSignature Tx</translation>
     </message>
     <message>
         <source>Transaction Hex:</source>
-        <translation>Transactie Hex:</translation>
+        <translation>Transaction Hex:</translation>
     </message>
     <message>
         <source>Sign the transaction from this wallet or from provided private keys</source>
-        <translation>Onderteken de transactie vanuit deze portemonnee of vanuit aangeboden privésleutels</translation>
+        <translation>Potpišite transakciju iz novčanika ili privatnih ključeva</translation>
     </message>
     <message>
         <source>S&amp;ign</source>
-        <translation>O&amp;nderteken</translation>
+        <translation>potpiši</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;UITGESCHAKELD totdat de transactie voldoende is ondertekend.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED dok transakcija nije potpisana dovoljno puta.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Co&amp;mmit</source>
-        <translation>&amp;Engageer</translation>
+        <translation>Izvršiti</translation>
     </message>
     <message>
         <source>Add private keys to sign the transaction with</source>
-        <translation>Voeg privésleutels toe om de transactie met te ondertekenen</translation>
+        <translation>Dodajte privatne ključeve da biste potpisali transakciju</translation>
     </message>
     <message>
         <source>Add Private &amp;Key</source>
-        <translation>Voeg &amp;Privésleutel toe</translation>
+        <translation>Dodaj privatni ključ</translation>
     </message>
     <message>
         <source>Sign with only private keys (Not Recommened)</source>
-        <translation>Onderteken met enkel privésleutels (Niet Aanbevolen)</translation>
+        <translation>Prijavite se samo s privatnim ključevima (nije preporučeno)</translation>
     </message>
     <message>
         <source>Invalid Tx Hash.</source>
-        <translation>Ongeldige Tx Hash.</translation>
+        <translation>Nevažeći Tx Hash.</translation>
     </message>
     <message>
         <source>Vout position must be positive.</source>
-        <translation>Je positie moet positief zijn. </translation>
+        <translation>Vout položaj mora biti pozitivan.</translation>
     </message>
     <message>
         <source>Maximum possible addresses reached. (15)</source>
-        <translation>Maximale mogelijke adressen bereikt. (15)</translation>
+        <translation>Dostignute maksimalne moguće adrese. (15)</translation>
     </message>
     <message>
         <source>Vout Position: </source>
-        <translation>Jouw Positie:</translation>
+        <translation>Vout Pozicija: </translation>
     </message>
     <message>
         <source>Amount: </source>
-        <translation>Hoeveelheid:</translation>
+        <translation>Iznos:</translation>
     </message>
     <message>
         <source>Maximum (15)</source>
-        <translation>Maximum (15)</translation>
+        <translation>Maksimum (15)</translation>
     </message>
 </context>
 <context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
-        <translation>Configureer verduistering</translation>
+        <translation>Konfiguriraj Obfuscation</translation>
     </message>
     <message>
         <source>Basic Privacy</source>
-        <translation>Basis Privacy</translation>
+        <translation>Osnovna privatnost</translation>
     </message>
     <message>
         <source>High Privacy</source>
-        <translation>Hoge Privacy</translation>
+        <translation>Visoka privatnost</translation>
     </message>
     <message>
         <source>Maximum Privacy</source>
-        <translation>Maximum Privacy</translation>
+        <translation>Maksimalna privatnost</translation>
     </message>
     <message>
         <source>Please select a privacy level.</source>
-        <translation>Selecteer de privacy level.</translation>
+        <translation>Odaberi razinu privatnosti.</translation>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 KYD</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 KYD</translation>
+        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 10000 KYD</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 10000 KYD</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 KYD</translation>
+        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 10000 KYD</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
-        <translation>Gebruik 16 aparte masternodes</translation>
+        <translation>Koristite 16 zasebnih masternodova</translation>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 KYD to anonymize 10000 KYD</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 KYD om 10000 KYD te anonimiseren</translation>
+        <translation>Ova je opcija najbrža i košta oko 0,025 KYD da anonimizira 10000 KYD</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 KYD to anonymize 10000 KYD</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 KYD om 10000 KYD te anonimiseren</translation>
+        <translation>Ova je opcija umjereno brza i košta oko 0,05 KYD da anonimizira 10000 KYD</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
+        <translation>Ovo je najsporiji i najsigurniji izbor. Korištenje maksimalne anonimnosti košta</translation>
     </message>
     <message>
         <source>0.1 KYD per 10000 KYD you anonymize.</source>
-        <translation>je anonimiseert 0,1 KYD per 10000 KYD.</translation>
+        <translation>0,1 KYD po 10000 KYD za anonimizaciju.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
-        <translation>Verduistering configuratie</translation>
+        <translation>Obfuscation Konfiguracija</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening KYD's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van KYD te openen.</translation>
+        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju KYD-a.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening KYD's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van KYD te openen.</translation>
+        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju KYD-a</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening KYD's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van KYD te openen.</translation>
+        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju KYD-a.</translation>
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
-        <translation>URI openen</translation>
+        <translation>Otvori URI</translation>
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Open betalingsverzoek van URL of bestand</translation>
+        <translation>Otvorite zahtjev za plaćanje iz URI ili datoteke</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1840,26 +1839,26 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation>Selecteer betalingsverzoek bestand</translation>
+        <translation>Odaberite datoteku zahtjeva za plaćanje</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation>Selecteer betalingsverzoek bestand dat geopend moet worden</translation>
+        <translation>Odaberite datoteku zahtjeva za plaćanje za otvaranje</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Opties</translation>
+        <translation>Mogućnosti</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation>&amp;Algemeen</translation>
+        <translation>Glavno</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation>Grootte van cache &amp;gegevens</translation>
+        <translation>Veličina database cachea</translation>
     </message>
     <message>
         <source>MB</source>
@@ -1867,519 +1866,520 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Aantal script en verificatie threads</translation>
+        <translation>Broj skripti i foruma za potvrdu</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt;0 = laat dat aantal cores vrij)</translation>
+        <translation>(0 = auto, &lt;0 = ostavi toliko jezgri)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation>P&amp;ortemonnee</translation>
+        <translation>Novčanik</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
+        <translation>Ako onemogućite potrošnju nepotvrđenih promjena, promjena s transakcijskog kanala bit će upotrijebljena sve dok ta transakcija nema barem jednu potvrdu. To također utječe na izračun salda.</translation>
     </message>
     <message>
         <source>Automatically open the KYD client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de KYD client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <translation>Automatski otvorite KYD klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
-        <translation>Accepteer externe connecties</translation>
+        <translation>Prihvatite veze izvana</translation>
     </message>
     <message>
         <source>Allow incoming connections</source>
-        <translation>Sta inkomende connecties toe</translation>
+        <translation>Dopusti dolazne veze</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp; Verbind via SOCKS5 proxy (standaard proxy):</translation>
+        <translation>Povežite se putem SOCKS5 proxyja (zadani proxy):</translation>
     </message>
     <message>
         <source>Expert</source>
-        <translation>Expert</translation>
+        <translation>Stručnjak</translation>
     </message>
     <message>
         <source>Automatically start KYD after logging in to the system.</source>
-        <translation>KYD automatisch opstarten na inloggen op het systeem.</translation>
+        <translation>Automatski pokrenite KYD nakon prijave u sustav.</translation>
     </message>
     <message>
         <source>&amp;Start KYD on system login</source>
-        <translation>&amp;KYD starten bij systeemlogin</translation>
+        <translation>Pokrenite KYD na prijavi u sustav</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Of je de muntcontrolefuncties wilt tonen of niet.</translation>
+        <translation>Bilo da pokazuju značajke kontrole novčića ili ne.</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Munt- en controlefuncties inschakelen</translation>
+        <translation>Omogućite značajke kontrole novčića</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
-        <translation>Toon extra tabblad waarin al je masternodes worden vermeld in het eerste sub-tabblad&lt;br/&gt;en alle masternodes op het netwerk in het tweede sub-tabblad.</translation>
+        <translation>Prikaži dodatnu karticu s popisom svih svojih masternoda u prvom pod-tabu i sve masternode na mreži u drugoj podkartici.</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
-        <translation>Toon Masternodes Tab</translation>
+        <translation>Prikaži Masternodes Tab</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp; Besteed onbevestigd wisselgeld</translation>
+        <translation>Provedite nepotvrđene promjene</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation>&amp;Netwerk</translation>
+        <translation>Mreža</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting KYD.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van KYD.</translation>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja KYD-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
 https://www.transifex.com/kyd-project/kyd-project-translations</source>
-        <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
+        <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
 https://www.transifex.com/kyd-project/kyd-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Map poort gebruikt &amp;UPnP</translation>
+        <translation>Karte porta pomoću UPnP
+</translation>
     </message>
     <message>
         <source>Enable automatic minting of KYD units to zKYD</source>
-        <translation>Schakel automatisch slaan van KYD-eenheden in op zKYD</translation>
+        <translation>Omogućite automint KYD jedinica na zKYD</translation>
     </message>
     <message>
         <source>Enable zKYD Automint</source>
-        <translation>Schakel zKYD Automint in</translation>
+        <translation>Omogući zKYD Automint</translation>
     </message>
     <message>
         <source>Percentage of incoming KYD which get automatically converted to zKYD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende KYD die automatisch wordt omgezet naar zKYD via Zerocoin Protocol (min: 10%)</translation>
+        <translation>Postotak dolaznih KYD koji se automatski pretvara u zKYD putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zKYD</source>
-        <translation>Percentage autominted zKYD</translation>
+        <translation>Postotak automatiziranog zKYD</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough KYD for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg KYD voor deze denominatie beschikbaar is</translation>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno KYD za apoen</translation>
     </message>
     <message>
         <source>Preferred Automint zKYD Denomination</source>
-        <translation>Gewenste Automint zKYD denominatie</translation>
+        <translation>Preferirana Automint zKYD denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
-        <translation>Inzet splitdrempel:</translation>
+        <translation>Prag razdvajanja Stake-a:</translation>
     </message>
     <message>
         <source>Connect to the KYD network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het KYD netwerk via een SOCKS5 proxy.</translation>
+        <translation>Povežite se s KYD mrežom putem SOCKS5 proxy poslužitelja.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP:</translation>
+        <translation>Proxy IP:</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP adres van de proxy (bijvoorbeeld IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>IP adresa proxya (npr. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation>&amp;Poort:</translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Proxy-poort (v.b. 9050)</translation>
+        <translation>Port proxya (npr. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;Venster</translation>
+        <translation>Prozor</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Toon alleen een tray icoon na minimalisering van het venster.</translation>
+        <translation>Prikaži samo ikonu trake nakon minimaliziranja prozora.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp; Minimaliseer naar de tray in plaats van de taakbalk</translation>
+        <translation>Minimaliziraj na traku umjesto Taskbar</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimaliseer in plaats van de applicatie te verlaten wanneer het venster wordt gesloten. Wanneer deze optie is ingeschakeld, wordt de applicatie alleen gesloten nadat in het menu Quit wordt gekozen.</translation>
+        <translation>Minimiziraj umjesto izlaska iz aplikacije kada je prozor zatvoren. Kada je ova opcija omogućena, program će biti zatvoren samo nakon odabira opcije Quit u izborniku.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation>Minimaliseer bij sluiten</translation>
+        <translation>Minimiziraj pri zatvaranju</translation>
     </message>
     <message>
         <source>&amp;Display</source>
-        <translation>&amp;Weergave</translation>
+        <translation>Prikaz</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Gebruiksinterface &amp;language:</translation>
+        <translation>Jezik sučelja korisnika:</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
-        <translation>Gebruiksinterface thema:</translation>
+        <translation>Tema sučelja korisnika:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Toon &amp;Unit in volgende hoeveelheden:</translation>
+        <translation>Jedinica za prikaz količine:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Kies de standaard onderverdelingseenheid die in de interface wordt weergegeven en bij het verzenden van munten.</translation>
+        <translation>Odaberite zadanu jedinicu podjele za prikazivanje u sučelju i za slanje novca.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
-        <translation>Decimale cijfers</translation>
+        <translation>Decimalnih znamenki</translation>
     </message>
     <message>
         <source>Hide empty balances</source>
-        <translation>Verberg lege saldi</translation>
+        <translation>Sakri praznu bilancu</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL's van derden (bijvoorbeeld een blok verkenner) die in het tabblad transacties verschijnen als contextmenu items. %s in de URL wordt vervangen door transactie hash. Meerdere URL's worden gescheiden door verticale balk |.</translation>
+        <translation>URL-ovi treće strane (npr. Blok-istraživač) koji se pojavljuju na kartici transakcija kao stavke kontekstualnog izbornika. %s u URL-u zamjenjuje se transakcijom. Višestruki URL-ovi razdvojeni su okomitim trakom |.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
-        <translation>Transactie URL's van derden</translation>
+        <translation>URL transakcije treće stranke</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation>Actieve command line opties die bovenstaande opties overschrijven:</translation>
+        <translation>Aktivne opcije naredbenog retka koje nadjačavaju gore navedene opcije:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Reset alle client instellingen naar standaardinstellingen.</translation>
+        <translation>Ponovno postavite sve opcije klijenta na zadano.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Herstellings Opties</translation>
+        <translation>Mogućnosti ponovnog postavljanja</translation>
     </message>
     <message>
         <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <translation>U redu</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>&amp;Annuleren</translation>
+        <translation>Poništi</translation>
     </message>
     <message>
         <source>Any</source>
-        <translation>een</translation>
+        <translation>bilo koji</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>standaard</translation>
+        <translation>Zadani</translation>
     </message>
     <message>
         <source>none</source>
-        <translation>geen</translation>
+        <translation>bez</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Bevestig reset instellingen</translation>
+        <translation>Potvrdi ponovno postavljanje mogućnosti</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Client herstart vereist om wijzigingen te activeren.</translation>
+        <translation>Ponovno pokretanje klijenta potrebno je za aktiviranje promjena.</translation>
     </message>
     <message>
         <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Client wordt uitgeschakeld, wil je doorgaan?</translation>
+        <translation>Klijent će biti isključen, želite li nastaviti?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>Deze wijziging vereist een herstart van de client.</translation>
+        <translation>Ova će promjena zahtijevati ponovno pokretanje klijenta.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Het opgegeven proxyadres is ongeldig.</translation>
+        <translation>Isporučena proxy adresa nije važeća.</translation>
     </message>
     <message>
         <source>The supplied proxy port is invalid.</source>
-        <translation>De meegeleverde proxy-poort is ongeldig.</translation>
+        <translation>Isporučeni proxy priključak nije valjan.</translation>
     </message>
     <message>
         <source>The supplied proxy settings are invalid.</source>
-        <translation>De geleverde proxy-instellingen zijn ongeldig.</translation>
+        <translation>Isporučene proxy postavke nisu važeće.</translation>
     </message>
 </context>
 <context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
-        <translation>Formulier</translation>
+        <translation>Obrazac</translation>
     </message>
     <message>
         <source>Available:</source>
-        <translation>Beschikbaar:</translation>
+        <translation>Dostupno:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
-        <translation>Uw huidige bestedingsruimte</translation>
+        <translation>Vaš trenutni potrošni saldo</translation>
     </message>
     <message>
         <source>Total Balance, including all unavailable coins.</source>
-        <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
+        <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
         <source>KYD Balance</source>
-        <translation>KYD Saldi</translation>
+        <translation>KYD Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>In afwachting:</translation>
+        <translation>Na čekanju:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Totaal aantal transacties die nog niet zijn bevestigd en nog niet meetellen in het uitgeefbare saldo</translation>
+        <translation>Ukupni broj transakcija koje još nisu potvrđene i ne računaju se na potrošnju</translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation>Immatuur:</translation>
+        <translation>Nezrelo:</translation>
     </message>
     <message>
         <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Staked of masternode beloningen die nog niet volwassen zijn</translation>
+        <translation>Nagradne ili nagomilane nagrade koje još nisu sazrele</translation>
     </message>
     <message>
         <source>Current locked balance in watch-only addresses</source>
-        <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
+        <translation>Trenutačno zaključana ravnoteža u adresama samo za gledanje</translation>
     </message>
     <message>
         <source>Your current KYD balance, unconfirmed and immature transactions included</source>
-        <translation>Uw huidige KYD-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
+        <translation>Uključena je vaša trenutna bilanca KYD, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
         <source>zKYD Balance</source>
-        <translation>zKYD-saldo</translation>
+        <translation>zKYD Bilanca</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
 These zKYD are spendable.</source>
-        <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
-Deze zPIB zijn besteedbaar.</translation>
+        <translation>Mature: više od 20 potvrda i više od 1 mint od iste denominacije nakon što je mintan.
+Ti zKYDs se mogu potrošiti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Onbevestigd: minder dan 20 bevestigingen
-Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
+        <translation>Nepotvrđeno: manje od 20 potvrda
+Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het KYD netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s KYD mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
-        <translation>OVERZICHT</translation>
+        <translation>PREGLED</translation>
     </message>
     <message>
         <source>Combined Balance (including unconfirmed and immature coins)</source>
-        <translation>Gecombineerde Saldi (inclusief onbevestigde en onvolwassen munten)</translation>
+        <translation>Kombinirana bilanca (uključujući nepotvrđene i nezrele novčiće)</translation>
     </message>
     <message>
         <source>Combined Balance</source>
-        <translation>Gecombineerde balans</translation>
+        <translation>Kombinirani saldo</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Onbevestigde transacties naar watch-only adressen</translation>
+        <translation>Nepotvrđene transakcije za adrese samo za praćenje</translation>
     </message>
     <message>
         <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Staked of masternode beloningen in watch-only adressen die nog niet volwassen zijn</translation>
+        <translation>Staked ili masternode nagrade u adresama koje samo za gledanje još nisu sazrele</translation>
     </message>
     <message>
         <source>Total:</source>
-        <translation>Totaal:</translation>
+        <translation>Ukupno:</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
-        <translation>Huidig ​​totaal saldo in watch-only adressen</translation>
+        <translation>Trenutačna ukupna bilanca u adresama samo za praćenje</translation>
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Watch-only:</translation>
+        <translation>Samo za gledati:</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
-        <translation>Je huidige saldo in watch-only adressen</translation>
+        <translation>Vaš trenutni saldo u adresama samo za gledanje</translation>
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>Uitgeefbaar:</translation>
+        <translation>Po potrošiti:</translation>
     </message>
     <message>
         <source>Locked KYD or Masternode collaterals. These are excluded from zKYD minting.</source>
-        <translation>Vergrendelde KYD of Masternode onderpanden. Deze zijn uitgesloten van de zKYD muntage.</translation>
+        <translation>Zaključani KYD ili Masternode kolateral. Oni su isključeni iz zKYD kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
-        <translation>Vergrendeld:</translation>
+        <translation>Zaključano:</translation>
     </message>
     <message>
         <source>Unconfirmed:</source>
-        <translation>Onbevestigd:</translation>
+        <translation>Nepotvrđeno:</translation>
     </message>
     <message>
         <source>Your current zKYD balance, unconfirmed and immature zKYD included.</source>
-        <translation>Uw huidige zKYD-saldo, onbevestigde en onvolgroeide zKYD inbegrepen.</translation>
+        <translation>Vaša trenutačna zKYD bilanca, nepotvrđena i nezrela zKYD.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
-        <translation>Recente transacties</translation>
+        <translation>Nedavne transakcije</translation>
     </message>
     <message>
         <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
+        <translation>nije sinkronizirano</translation>
     </message>
     <message>
         <source>Current percentage of zKYD.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Huidige percentage van zKYD
-Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
+        <translation>Trenutni postotak zKYD.
+Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konfiguriranog postotka automatskog navođenja (zadano = 10%).
 </translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
+        <translation>AutoMint je trenutno omogućen i podešen na</translation>
     </message>
     <message>
         <source>To disable AutoMint add 'enablezeromint=0' in kyd.conf.</source>
-        <translation>Om AutoMint uit te schakelen, voeg je 'enablezeromint=0' toe aan kyd.conf.</translation>
+        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u kyd.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
 To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in kyd.conf</source>
-        <translation>AutoMint is momenteel uitgeschakeld.
-Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint=1' in kyd.conf</translation>
+        <translation>AutoMint je trenutno onemogućen.
+Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u kyd.conf</translation>
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
-        <translation>Fout bij betalingsverzoek</translation>
+        <translation>Greška zahtjeva za plaćanje</translation>
     </message>
     <message>
         <source>URI handling</source>
-        <translation>URL behandeling</translation>
+        <translation>rukovanje s URI</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Betalingsverzoek ophalen URL is ongeldig: %1</translation>
+        <translation>URL za dohvaćanje zahtjeva za plaćanje nije valjan: %1</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
-        <translation>Betalingsaanvraag bestandsverwerking</translation>
+        <translation>Upravljanje datotekama zahtjeva za plaćanjem</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
-        <translation>Ongeldig betalingsadres %1</translation>
+        <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
         <source>Cannot start kyd: click-to-pay handler</source>
-        <translation>Kan kyd niet starten: click-to-pay handler</translation>
+        <translation>Ne može se pokrenuti kyd: clik-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid KYD address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig KYD adres of misvormde URL parameters.</translation>
+        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom KYD adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Uw betalingsverzoek kan niet worden gelezen! Dit kan worden veroorzaakt door een ongeldig betalingsverzoek bestand.</translation>
+        <translation>Datoteku zahtjeva za plaćanje ne može se pročitati! To može biti uzrokovana nevažećom datotekom zahtjeva za plaćanjem.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
-        <translation>Betalingsverzoek afgewezen</translation>
+        <translation>Zahtjev za plaćanje odbijen</translation>
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
-        <translation>Het betalingsverzoek netwerk komt niet overeen met het client netwerk.</translation>
+        <translation>Mreža zahtjeva za plaćanje ne odgovara mreži klijenta.</translation>
     </message>
     <message>
         <source>Payment request has expired.</source>
-        <translation>Betalingsverzoek is verlopen.</translation>
+        <translation>Zahtjev za plaćanje je istekao.</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
-        <translation>Betalingsverzoek is niet geïnitialiseerd. </translation>
+        <translation>Zahtjev za plaćanje nije pokrenut.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Niet geverifieerde betalingsverzoeken naar aangepaste betaal scripts worden niet ondersteund.</translation>
+        <translation>Nepodržane su nepotvrđeni zahtjevi za plaćanje prilagođenim skriptama za plaćanje.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Gevraagd betalingsbedrag van %1 is te klein (beschouwd als dust).</translation>
+        <translation>Zatražena uplata od %1 je premala (smatra se prašinom).</translation>
     </message>
     <message>
         <source>Refund from %1</source>
-        <translation>Terugbetaling van %1</translation>
+        <translation>Povrat od %1</translation>
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Betalingsverzoek %1 is te groot (%2 bytes, toegestaan %3 bytes).</translation>
+        <translation>Zahtjev za isplatu %1 prevelik je (%2 bajta, dopušteno je %3bajta).</translation>
     </message>
     <message>
         <source>Payment request DoS protection</source>
-        <translation>Betalingsverzoek DoS bescherming</translation>
+        <translation>Zahtjev za plaćanje DoS zaštitu</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
-        <translation>Fout communiceren met %1: %2</translation>
+        <translation>Pogreška pri komunikaciji s %1: %2</translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
-        <translation>Betalingsaanvraag kan niet worden geanalyseerd!</translation>
+        <translation>Zahtjev za plaćanje ne može se rastaviti!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation>Bad response van server %1</translation>
+        <translation>Loš odgovor od poslužitelja %1</translation>
     </message>
     <message>
         <source>Network request error</source>
-        <translation>Netwerkverzoek fout</translation>
+        <translation>Greška odgovora mreže</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
-        <translation>Betaling erkend</translation>
+        <translation>Plaćanje je priznato</translation>
     </message>
 </context>
 <context>
     <name>PeerTableModel</name>
     <message>
         <source>Address/Hostname</source>
-        <translation>Adres/Hostnaam</translation>
+        <translation>Adresa / Naziv poslužitelja</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versie</translation>
+        <translation>Verzija</translation>
     </message>
     <message>
         <source>Ping Time</source>
-        <translation>Pingtijd</translation>
+        <translation>Ping Time</translation>
     </message>
 </context>
 <context>
     <name>PrivacyDialog</name>
     <message>
         <source>Zerocoin Actions:</source>
-        <translation>Zerocoin Acties:</translation>
+        <translation>Zerocoin radnje:</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het KYD netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s KYD mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2395,11 +2395,11 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Beschikbaar voor muntage zijn munten die bevestigd en niet vergrendeld of Masternode onderpanden zijn.</translation>
+        <translation>Dostupne za mintanje su kovanice koje su potvrđene i nisu zaključane ili Masternode kolateralne.</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
-        <translation>Beschikbaar voor minting:</translation>
+        <translation>Dostupno za Minting:</translation>
     </message>
     <message>
         <source>0.000 000 00 KYD</source>
@@ -2407,79 +2407,79 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Zerocoin Wallet DB opnieuw instellen. Verwijdert transacties die het niet in de blockchain hebben gered.</translation>
+        <translation>Ponovno postavite Zerocoin Wallet DB. Briše transakcije koje nisu dospjele u blockchain.</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation>Resetten</translation>
+        <translation>Reset</translation>
     </message>
     <message>
         <source>Coin Control...</source>
-        <translation>Munt controle...</translation>
+        <translation>Upravljanje novčićem...</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
+        <translation>Količina:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <translation>Iznos:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Rescan de complete blockchain voor Zerocoin mints en hun meta-data.</translation>
+        <translation>Ponovo skenirajte kompletnog blockchaina za Zerocoin mints i njihove meta-podataka.</translation>
     </message>
     <message>
         <source>ReScan</source>
-        <translation>ReScan</translation>
+        <translation>Ponovno pretraži</translation>
     </message>
     <message>
         <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Status en/of Berichten van de laatste mint actie.</translation>
+        <translation>Status i/ili poruke od zadnje Mint akcije</translation>
     </message>
     <message>
         <source>PRIVACY</source>
-        <translation>PRIVACY</translation>
+        <translation>PRIVATNOST</translation>
     </message>
     <message>
         <source>Enter an amount of Kyd to convert to zKYD</source>
-        <translation>Vul het aantal KYD in om te converteren naar zKYD</translation>
+        <translation>Unesite iznos Kyd za pretvorbu u zKYD</translation>
     </message>
     <message>
         <source>zKYD Control</source>
-        <translation>zKYD Control</translation>
+        <translation>Upravljanje zKYD</translation>
     </message>
     <message>
         <source>zKYD Selected:</source>
-        <translation>zKYD geselecteerd:</translation>
+        <translation>zKYD Odabrani:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
-        <translation>Hoeveelheid geselecteerd:</translation>
+        <translation>Odabrano:</translation>
     </message>
     <message>
         <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Zerocoin besteden. Zonder 'Betaal aan:' adres ontstaan betalingen aan jezelf.</translation>
+        <translation>Potroši Zerocoin. Bez adrese "Pay To:" stvara plaćanja za sebe.</translation>
     </message>
     <message>
         <source>Spend Zerocoin</source>
-        <translation>Besteed Zerocoin</translation>
+        <translation>Potroši Zerocoin</translation>
     </message>
     <message>
         <source>Available (mature and spendable) zKYD for spending</source>
-        <translation>Beschikbare (volwassen en uitgeefbaar) zKYD voor besteding</translation>
+        <translation>Dostupni (zreli) zKYD za potrošnju</translation>
     </message>
     <message>
         <source>Available Balance:</source>
-        <translation>Beschikbaar saldo:</translation>
+        <translation>Dostupna Bilanca:</translation>
     </message>
     <message>
         <source>Available (mature and spendable) zKYD for spending
 
 zKYD are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Beschikbare (volwwassen en uitgeefbaar) zKYD voor besteding
+        <translation>Dostupni (zreli) zKYD za potrošnju
 
-zKyd zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
+zKYD su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
     </message>
     <message>
         <source>0 zKYD</source>
@@ -2487,27 +2487,27 @@ zKyd zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Beveiligingsniveau voor Zerocoin transacties. Meer is beter, maar heeft meer tijd en middelen nodig.</translation>
+        <translation>Razina sigurnosti za Zerocoin transakcije. Više je bolje, ali treba više vremena i resursa.</translation>
     </message>
     <message>
         <source>Security Level:</source>
-        <translation>Beveiligings niveau:</translation>
+        <translation>Razina sigurnosti:</translation>
     </message>
     <message>
         <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Beveiligingsniveau 1 - 100 (standaard: 42)</translation>
+        <translation>Razina sigurnosti 1 - 100 (zadano: 42)</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
+        <translation>Platiti:</translation>
     </message>
     <message>
         <source>The KYD address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het KYD adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+        <translation>KYD adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <translation>Odaberite prethodno upotrijebljenu adresu</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2515,7 +2515,7 @@ zKyd zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <translation>Zalijepite adresu iz međuspremnika</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2523,57 +2523,57 @@ zKyd zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <translation>Oznaka:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
+        <translation>Unesite oznaku za ovu adresu da biste ga dodali na popis upotrijebljenih adresa</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
+        <translation>Količina:</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Zet wisselgeld om naar Zerocoin (mogelijk extra kosten)</translation>
+        <translation>Pretvori razliku u Zerocoin (može proizvesti dodatne troškove)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Indien aangevinkt, probeert de portemonnee het terugkerende wisselgeld te minimaliseren in plaats van het aantal uitgegeven denominaties te minimaliseren.</translation>
+        <translation>Ako je označeno, novčanik pokušava smanjiti povratnu razliku umjesto da minimizira broj utrošenih apoena.</translation>
     </message>
     <message>
         <source>Minimize Change</source>
-        <translation>Minimaliseer wisselgeld</translation>
+        <translation>Minimiziraj razliku</translation>
     </message>
     <message>
         <source>Information about the available Zerocoin funds.</source>
-        <translation>Informatie over de beschikbare Zerocoin fondsen.</translation>
+        <translation>Informacije o dostupnim Zerocoin fondovima.</translation>
     </message>
     <message>
         <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Statistieken:</translation>
+        <translation>Statistike Zerocoina:</translation>
     </message>
     <message>
         <source>Total Balance including unconfirmed and immature zKYD</source>
-        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zKYD</translation>
+        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zKYD</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
-        <translation>Totale Zerocoin Saldi:</translation>
+        <translation>Ukupno Zerocoin Stanje:</translation>
     </message>
     <message>
         <source>Denominations with value 1:</source>
-        <translation>Denominaties met waarde 1:</translation>
+        <translation>Denominacije s vrijednošću 1:</translation>
     </message>
     <message>
         <source>Denom. with value 1:</source>
-        <translation>Denom. met waarde 1:</translation>
+        <translation>Denom. s vrijednošću 1:</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Onbevestigd: minder dan 20 bevestigingen
-Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
+        <translation>Nepotvrđeno: manje od 20 potvrda
+Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
         <source>Show the current status of automatic zKYD minting.
@@ -2586,23 +2586,22 @@ To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zKYD
 
 </source>
-        <translation>Toon de huidige status van automatische zKYD-markering.
+        <translation>Pokažite trenutačni status automatskog zKYD mintanja.
 
-Om de status te wijzigen (opnieuw opstarten vereist): 
-- enable: voeg 'enablezeromint = 1' toe aan kyd.conf
-- uitschakelen: voeg 'enablezeromint = 0' toe aan kyd.conf
+Da biste promijenili status (potrebno je ponovno pokretanje):
+- omogući: dodajte 'enablezeromint = 1' u kyd.conf
+- onemogućiti: dodajte 'enablezeromint = 0' na kyd.conf
 
-Om het percentage te wijzigen (geen herstart vereist): 
-- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zKYD
-</translation>
+Promjena postotka (nije potrebno ponovno pokretanje):
+- izbornik Postavke-&gt; Opcije-&gt; Postotak zKYD</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
-        <translation>AutoMint-status</translation>
+        <translation>AutoMint Status</translation>
     </message>
     <message>
         <source>Global Supply:</source>
-        <translation>Wereldwijde levering:</translation>
+        <translation>Globalna ponuda:</translation>
     </message>
     <message>
         <source>Denom. 1:</source>
@@ -2638,67 +2637,67 @@ Om het percentage te wijzigen (geen herstart vereist):
     </message>
     <message>
         <source>0 x</source>
-        <translation> 0 x</translation>
+        <translation>0 x</translation>
     </message>
     <message>
         <source>Denominations with value 5:</source>
-        <translation>Denominaties met waarde 5:</translation>
+        <translation>Denominacije s vrijednošću 5:</translation>
     </message>
     <message>
         <source>Denom. with value 5:</source>
-        <translation>Denom. met waarde 5:</translation>
+        <translation>Denom. s vrijednošću 5: </translation>
     </message>
     <message>
         <source>Denominations with value 10:</source>
-        <translation>Denominaties met waarde 10:</translation>
+        <translation>Denominacije s vrijednošću 10:</translation>
     </message>
     <message>
         <source>Denom. with value 10:</source>
-        <translation>Denom. met waarde 10:</translation>
+        <translation>Denom. s vrijednošću 10:</translation>
     </message>
     <message>
         <source>Denominations with value 50:</source>
-        <translation>Denominaties met waarde 50:</translation>
+        <translation>Denominacije s vrijednošću 50:</translation>
     </message>
     <message>
         <source>Denom. with value 50:</source>
-        <translation>Denom. met waarde 50:</translation>
+        <translation>Denom. s vrijednošću 50:</translation>
     </message>
     <message>
         <source>Denominations with value 100:</source>
-        <translation>Denominaties met waarde 100:</translation>
+        <translation>Denominacije s vrijednošću 100:</translation>
     </message>
     <message>
         <source>Denom. with value 100:</source>
-        <translation>Denom. met waarde 100:</translation>
+        <translation>Denom. s vrijednošću 100:</translation>
     </message>
     <message>
         <source>Denominations with value 500:</source>
-        <translation>Denominaties met waarde 500:</translation>
+        <translation>Denominacije s vrijednošću 500:</translation>
     </message>
     <message>
         <source>Denom. with value 500:</source>
-        <translation>Denom. met waarde 500:</translation>
+        <translation>Denom. s vrijednošću 500:</translation>
     </message>
     <message>
         <source>Denominations with value 1000:</source>
-        <translation>Denominaties met waarde 1000:</translation>
+        <translation>Denominacije s vrijednošću 1000:</translation>
     </message>
     <message>
         <source>Denom. with value 1000:</source>
-        <translation>Denom. met waarde 1000:</translation>
+        <translation>Denom. s vrijednošću 1000:</translation>
     </message>
     <message>
         <source>Denominations with value 5000:</source>
-        <translation>Denominaties met waarde 5000:</translation>
+        <translation>Denominacije s vrijednošću 5000:</translation>
     </message>
     <message>
         <source>Denom. with value 5000:</source>
-        <translation>Denom. met waarde 5000:</translation>
+        <translation>Denom. s vrijednošću 5000:</translation>
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioriteit:</translation>
+        <translation>Prioritet:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2706,151 +2705,150 @@ Om het percentage te wijzigen (geen herstart vereist):
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Kost:</translation>
+        <translation>Naknada:</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Stof:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>no</source>
-        <translation>nee</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>Bytovi:</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Onvoldoende saldo!</translation>
+        <translation>Nedovoljna sredstva!</translation>
     </message>
     <message>
         <source>Coins automatically selected</source>
-        <translation>Munten automatisch geselecteerd</translation>
+        <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>medium</translation>
+        <translation>srednje</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
+        <translation>Značajke upravljanja novcem</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
+        <translation>Ako je to aktivirano, ali adresa za izmjenu je prazna ili nije valjana, promjena će biti poslana na novo generiranu adresu.</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
+        <translation>Prilagođene izmjene adrese</translation>
     </message>
     <message>
         <source>Amount After Fee:</source>
-        <translation>Bedrag na kosten:</translation>
+        <translation>Iznos nakon naknade:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wijzig:</translation>
+        <translation>Razlika:</translation>
     </message>
     <message>
         <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
+        <translation>nije sinkronizirano</translation>
     </message>
     <message>
         <source>Mint Status: Okay</source>
-        <translation>Mint status: Oké</translation>
+        <translation>Mint Status: U redu</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
+        <translation>Kopirajte količinu</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopiraj iznos</translation>
     </message>
     <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
-        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
-Wees alsjeblieft geduldig...</translation>
+        <translation>Pokretanje ResetMintZerocoin: ponovno skeniranje potpunog blockchain, to će trajati i do 30 minuta, ovisno o vašem hardveru.</translation>
     </message>
     <message>
         <source>Spending Zerocoin.
 Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
 Please be patient...</source>
-        <translation>Zerocoin besteden.
-Computationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je hardware.
-Wees alsjeblieft geduldig...</translation>
+        <translation>Potrošnja Zerocoina.
+Zahtjevan izračun, možda će trebati nekoliko minuta ovisno o odabranoj razini sigurnosti i vašem hardveru.
+Budite strpljivi ...</translation>
     </message>
     <message>
         <source>) needed.
 Maximum allowed: </source>
-        <translation>) vereist.
-Maximaal toegestaan:</translation>
+        <translation>) potrebno.
+Maksimalno dopušteno:</translation>
     </message>
     <message>
         <source>zKYD Spend #: </source>
-        <translation>zKYD besteed #:</translation>
+        <translation>zKYD utrošeno #: </translation>
     </message>
     <message>
         <source>zKYD Mint</source>
-        <translation>zKYD mint</translation>
+        <translation>zKYD Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;ingeschakeld&lt;/b&gt;.</translation>
+        <translation> &lt;b&gt;omogući&lt;/b&gt;.</translation>
     </message>
     <message>
         <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;invalide&lt;/b&gt;.</translation>
+        <translation> &lt;b&gt;onemogući&lt;/b&gt;.</translation>
     </message>
     <message>
         <source> Configured target percentage: &lt;b&gt;</source>
-        <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
+        <translation> Konfigirani ciljani postotak: &lt;b&gt;</translation>
     </message>
     <message>
         <source>zKYD is currently disabled due to maintenance.</source>
-        <translation>zKYD is momenteel uitgeschakeld vanwege onderhoud.</translation>
+        <translation>Zbog održavanja zKYD je trenutačno onemogućen.</translation>
     </message>
     <message>
         <source>zKYD is currently undergoing maintenance.</source>
-        <translation>zKYD wordt momenteel onderhouden.</translation>
+        <translation>Radovi u tijeku na zKYD.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt; 1&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;1&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;5&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;5&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;10&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću&lt;b&gt;10&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;50&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;50&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt; 100&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;100&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt; 500&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;500&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;1000&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;1000&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;5000&lt;/b&gt;:</translation>
+        <translation>Denom. s vrijednošću &lt;b&gt;5000&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
-        <translation>AutoMint-status</translation>
+        <translation>AutoMint Status:</translation>
     </message>
     <message>
         <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2886,11 +2884,11 @@ Maximaal toegestaan:</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Fout: Je portemonnee is vergrendeld. Voer alsjeblieft de wachtwoord zin voor de portemonnee in.</translation>
+        <translation>Pogreška: vaš je novčanik zaključan. Najprije unesite zaporku novčanika.</translation>
     </message>
     <message>
         <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Bericht: voer een bedrag in &gt; 0.</translation>
+        <translation>Poruka: unesite iznos&gt; 0.</translation>
     </message>
     <message>
         <source>Minting </source>
@@ -2898,21 +2896,20 @@ Maximaal toegestaan:</translation>
     </message>
     <message>
         <source>Successfully minted </source>
-        <translation>Succesvol gemint</translation>
+        <translation>Uspješno mintano</translation>
     </message>
     <message>
         <source> zKYD in </source>
-        <translation> zKYD in </translation>
+        <translation> ulazni zKYD </translation>
     </message>
     <message>
         <source> sec. Used denominations:
 </source>
-        <translation>sec. gebruikte denominaties:
-</translation>
+        <translation>sek. Upotrijebljene denominacije:</translation>
     </message>
     <message>
         <source>Duration: </source>
-        <translation>Duur:</translation>
+        <translation>Trajanje:</translation>
     </message>
     <message>
         <source> sec.
@@ -2922,98 +2919,97 @@ Maximaal toegestaan:</translation>
     </message>
     <message>
         <source>Starting ResetSpentZerocoin: </source>
-        <translation>Starten van ResetSpentZerocoin: </translation>
+        <translation>Pokretanje ResetSpentZerocoin:</translation>
     </message>
     <message>
         <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
+        <translation>Nije dodijeljena adresa "Plati", stvarajući lokalnu uplatu</translation>
     </message>
     <message>
         <source>Invalid KYD Address</source>
-        <translation>Ongeldig KYD addres</translation>
+        <translation>Nevažeća KYD Adresa</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
-        <translation>Ongeldig verzend bedrag</translation>
+        <translation>Neispravan iznos slanja</translation>
     </message>
     <message>
         <source>Confirm additional Fees</source>
-        <translation>Bevestig extra kosten</translation>
+        <translation>Potvrdite dodatne naknade</translation>
     </message>
     <message>
         <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Weet je zeker dat je wilt verzenden?&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Jeste li sigurni da želite poslati?</translation>
     </message>
     <message>
         <source> to address </source>
-        <translation>naar adres</translation>
+        <translation>na adresu</translation>
     </message>
     <message>
         <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation>naar een nieuw gegenereerd (ongebruikt en dus anoniem) lokaal adres&lt;br /&gt;</translation>
+        <translation>na novo generiranu (neiskorištenu i stoga anonimnu) lokalnu adresu</translation>
     </message>
     <message>
         <source>with Security Level </source>
-        <translation>met beveiligingsniveau</translation>
+        <translation>s razinom sigurnosti</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
+        <translation>Potvrdite slanje novca</translation>
     </message>
     <message>
         <source>Version 1 zKYD require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zKYD vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+        <translation>Verzija 1 zKYD zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Failed to spend zKYD</source>
-        <translation>Mislukt om zKYD te besteden.</translation>
+        <translation>Neuspjelo trošenje zKYD</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
-        <translation>Mislukt om de mint op te halen geassocieerd met de seriële hash</translation>
+        <translation>Neuspjelo dohvaćanje minta asociranog s serijskim hashom</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
-        <translation>Teveel invoer (</translation>
+        <translation>Previše unosa (</translation>
     </message>
     <message>
         <source>
 Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te besteden bedrag verminderen.</translation>
+        <translation>Ili mintaj više vrijedne denominacije (tako da je potrebno manje ulaza) ili smanjiti iznos potrošnje</translation>
     </message>
     <message>
         <source>Spend Zerocoin failed with status = </source>
-        <translation>Bestede Zerocoin mislukt met status =</translation>
+        <translation>Utrošak Zerocoina nije uspjela s statusom =</translation>
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
         <comment>Enter an amount of KYD to convert to zKYD</comment>
-        <translation><numerusform>PrivacyDialoog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
+        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
-        <translation>denominatie:</translation>
+        <translation>denominacija:</translation>
     </message>
     <message>
         <source>serial: </source>
-        <translation>serial: </translation>
+        <translation>serijski:</translation>
     </message>
     <message>
         <source>Spend is 1 of : </source>
-        <translation>Besteed is 1 of : </translation>
+        <translation>Potrošnja je 1 od:</translation>
     </message>
     <message>
         <source>value out: </source>
-        <translation>Waarde uit:</translation>
+        <translation>izlazna vrijednost:</translation>
     </message>
     <message>
         <source>address: </source>
-        <translation>adres:</translation>
+        <translation>adresa:</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
-        <translation>Verzenden succesvol, retourcode:</translation>
+        <translation>Slanje uspješno, povratni kod:</translation>
     </message>
     <message>
         <source>txid: </source>
@@ -3021,18 +3017,18 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>fee: </source>
-        <translation>kosten:</translation>
+        <translation>naknada:</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Iznos</translation>
     </message>
     <message>
         <source>Enter a KYD address (e.g. %1)</source>
-        <translation>Voer een KYD adres in (b.v. %1)</translation>
+        <translation>Unesite KYD adresu (npr., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3052,23 +3048,23 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>NETWORK</source>
-        <translation>NETWERK</translation>
+        <translation>MREŽA</translation>
     </message>
     <message>
         <source>BLOOM</source>
-        <translation>BLOOM</translation>
+        <translation>RAST</translation>
     </message>
     <message>
         <source>UNKNOWN</source>
-        <translation>ONBEKEND</translation>
+        <translation>NEPOZNATO</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>Geen</translation>
+        <translation>Ništa</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>NB</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>%1 ms</source>
@@ -3079,142 +3075,143 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
+        <translation>Spremi sliku...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
-        <translation>&amp;Kopieer afbeelding</translation>
+        <translation>Kopiraj sliku</translation>
     </message>
     <message>
         <source>Save QR Code</source>
-        <translation>QR code opslaan</translation>
+        <translation>Spremi QR kod</translation>
     </message>
     <message>
         <source>PNG Image (*.png)</source>
-        <translation>PNG Afbeelding(*.png)</translation>
+        <translation>PNG Image (*.png)</translation>
     </message>
 </context>
 <context>
     <name>RPCConsole</name>
     <message>
         <source>Tools window</source>
-        <translation>Tools venster</translation>
+        <translation>Alatni prozor</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Informatie</translation>
+        <translation>Informacije</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Algemeen</translation>
+        <translation>Opće</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Naam</translation>
+        <translation>Naziv</translation>
     </message>
     <message>
         <source>Client name</source>
-        <translation>Client naam</translation>
+        <translation>Ime klijenta
+</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>NB</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Aantal connecties</translation>
+        <translation>Broj veza</translation>
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation>&amp;Open</translation>
+        <translation>Otvori</translation>
     </message>
     <message>
         <source>Startup time</source>
-        <translation>Opstarttijd</translation>
+        <translation>Vrijeme pokretanja</translation>
     </message>
     <message>
         <source>Network</source>
-        <translation>Netwerk</translation>
+        <translation>Mreža</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Laatste blocktijd</translation>
+        <translation>Zadnje vrijeme bloka</translation>
     </message>
     <message>
         <source>Debug log file</source>
-        <translation>Debug logbestand</translation>
+        <translation>Otkloni neispravnost log datoteke</translation>
     </message>
     <message>
         <source>Using OpenSSL version</source>
-        <translation>Gebruikt OpenSSL versie</translation>
+        <translation>Koristeći OpenSSL verziju</translation>
     </message>
     <message>
         <source>Build date</source>
-        <translation>Bouwdatum</translation>
+        <translation>Datum gradnje</translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Huidige blockaantal</translation>
+        <translation>Trenutan broj blokova</translation>
     </message>
     <message>
         <source>Client version</source>
-        <translation>Client versie</translation>
+        <translation>Verzija klijenta</translation>
     </message>
     <message>
         <source>Using BerkeleyDB version</source>
-        <translation>Gebruikt BerkeleyDB versie</translation>
+        <translation>Upotreba verzije BerkeleyDB</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>Blockchain</translation>
+        <translation>Block chain</translation>
     </message>
     <message>
         <source>Open the KYD debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het KYD debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <translation>Otvorite KYD debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Aantal Masternodes</translation>
+        <translation>Broj Masternoda</translation>
     </message>
     <message>
         <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
+        <translation>Konzola</translation>
     </message>
     <message>
         <source>Clear console</source>
-        <translation>Console leegmaken</translation>
+        <translation>Očisti konzolu</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>&amp;Netwerk verkeer</translation>
+        <translation>Promet Mreže</translation>
     </message>
     <message>
         <source>&amp;Clear</source>
-        <translation>&amp;Leegmaken</translation>
+        <translation>Očisti</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation>Totalen</translation>
+        <translation>Ukupno</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Ontvangen</translation>
+        <translation>Primljeno</translation>
     </message>
     <message>
         <source>Sent</source>
-        <translation>Verstuurd</translation>
+        <translation>Poslano</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Peers</translation>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>Banned peers</source>
-        <translation>Verboden leeftijdsgenoten</translation>
+        <translation>Blokirani peer-ovi</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Selecteer een peer om gedetailleerde informatie te bekijken.</translation>
+        <translation>Odaberite peer da biste vidjeli detaljne informacije.</translation>
     </message>
     <message>
         <source>Whitelisted</source>
@@ -3222,135 +3219,135 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Direction</source>
-        <translation>Richting</translation>
+        <translation>Upute</translation>
     </message>
     <message>
         <source>Protocol</source>
-        <translation>Protocol</translation>
+        <translation>Protokol</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versie</translation>
+        <translation>Verzija</translation>
     </message>
     <message>
         <source>Services</source>
-        <translation>Diensten</translation>
+        <translation>Servis</translation>
     </message>
     <message>
         <source>Ban Score</source>
-        <translation>Ban score</translation>
+        <translation>Ban rezultat</translation>
     </message>
     <message>
         <source>Connection Time</source>
-        <translation>Connectietijd</translation>
+        <translation>Vrijeme veze</translation>
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Laatst Verzonden</translation>
+        <translation>Zadnji slanje</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Laatst Ontvangen</translation>
+        <translation>Zadnji prijem</translation>
     </message>
     <message>
         <source>Bytes Sent</source>
-        <translation>Verzonden Bytes</translation>
+        <translation>Poslani Bytovi</translation>
     </message>
     <message>
         <source>Bytes Received</source>
-        <translation>Ontvangen Bytes</translation>
+        <translation>Primljeni Bytovi</translation>
     </message>
     <message>
         <source>Ping Time</source>
-        <translation>Pingtijd</translation>
+        <translation>Ping Time</translation>
     </message>
     <message>
         <source>&amp;Wallet Repair</source>
-        <translation>&amp;Portemonnee herstel</translation>
+        <translation>Popravak novčanika</translation>
     </message>
     <message>
         <source>Delete local Blockchain Folders</source>
-        <translation>Verwijder lokale Blockchain Mappen</translation>
+        <translation>Izbrišite lokalne mape Blockchaina</translation>
     </message>
     <message>
         <source>Wallet In Use:</source>
-        <translation>Portemonnee in gebruik:</translation>
+        <translation>Novčanik u uporabi:</translation>
     </message>
     <message>
         <source>Starting Block</source>
-        <translation>Startblok</translation>
+        <translation>Zapoćinje Block</translation>
     </message>
     <message>
         <source>Synced Headers</source>
-        <translation>Gesynchroniseerde headers</translation>
+        <translation>Sinkronizirana zaglavlja</translation>
     </message>
     <message>
         <source>Synced Blocks</source>
-        <translation>Gesynchroniseerde blokken</translation>
+        <translation>Sinkronizirana zaglavlja</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
-        <translation>De duur van een momenteel openstaande ping.</translation>
+        <translation>Trajanje trenutno prisutnog ping-a.</translation>
     </message>
     <message>
         <source>Ping Wait</source>
-        <translation>Ping wacht</translation>
+        <translation>Pingaj Novčanik</translation>
     </message>
     <message>
         <source>Time Offset</source>
-        <translation>Tijdverschuiving</translation>
+        <translation>Pomak vremena</translation>
     </message>
     <message>
         <source>Custom Backup Path:</source>
-        <translation>Aangepast back-up pad:</translation>
+        <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
         <source>Custom zKYD Backup Path:</source>
-        <translation>Aangepast zKYD back-up pad:</translation>
+        <translation>Prilagođeni put zKYD sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
-        <translation>Aangepaste back-up drempel:</translation>
+        <translation>Prag za prilagođene sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
-        <translation>Red portemonnee</translation>
+        <translation>Spasi novčanik</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
-        <translation>Poog om privé sleutels terug te halen uit een corrupte wallet.dat.</translation>
+        <translation>Pokušaj oporavka privatnih ključeva iz korumpirane wallet.dat.</translation>
     </message>
     <message>
         <source>Rescan blockchain files</source>
-        <translation>Herscan blockchain bestanden</translation>
+        <translation>Ponovno skeniranje blockchain datoteka</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions.</source>
-        <translation>Herscan de blockchain voor ontbrekende portemonnee transacties.</translation>
+        <translation>Ponovno skeniranje blok-lanca za transakcije novčanika koji nedostaju.</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
-        <translation>Herstel transacties 1</translation>
+        <translation>Oporavak transakcije 1</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
-        <translation>Herstel transacties van blockchain (houd meta-data, bijvoorbeeld account eigenaar).</translation>
+        <translation>Obnova transakcija od blockchaina (zadržite meta-podatke, npr. Vlasnika računa).</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
-        <translation>Herstel transacties 2</translation>
+        <translation>Oporavak transakcije 2</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (drop meta-data).</source>
-        <translation>Herstel transacties van blockchain (laat meta-data vallen).</translation>
+        <translation>Obnova transakcija iz blockchaina (izbaci meta-podatake).</translation>
     </message>
     <message>
         <source>Upgrade wallet format</source>
-        <translation>Upgrade portemonnee format</translation>
+        <translation>Nadogradnja formata Novčanika</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files.</source>
-        <translation>Herstel blockchain index van huidige blk000??.dat bestanden.</translation>
+        <translation>Obnovi indeks blok lanca iz trenutnih blk000 ?? dat datoteka.</translation>
     </message>
     <message>
         <source>-resync:</source>
@@ -3358,91 +3355,91 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Verwijder alle lokale blockchain mappen zodat de portemonnee alles opnieuw kan hersynchroniseren.</translation>
+        <translation>Briše sve lokalne mape blokiranja tako da se novčanik sinkronizira ispočetka.</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>De onderstaande knoppen zullen de portemonnee opnieuw opstarten met command line opties om de portemonnee te repareren, problemen op te lossen met corrupte blockchain bestanden of ontbrekende/verouderde transacties.</translation>
+        <translation>Donji gumbi će ponovo pokrenuti novčanik pomoću opcija naredbenog retka za popravak lisnice, popraviti probleme s korumpiranim datotekama blockchaina ili nedostajućim / zastarjelim transakcijama.</translation>
     </message>
     <message>
         <source>Wallet repair options.</source>
-        <translation>Portemonnee herstelopties.</translation>
+        <translation>Opcije popravka novčanika.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
-        <translation>Upgrade portemonnee naar nieuwste format bij opstarten. (Opmerking: dit is NIET een update van de portemonnee zelf!)</translation>
+        <translation>Nadogradnja novčanika na najnoviji format pri pokretanju. (Napomena: ovo NIJE ažuriranje novčanika!)</translation>
     </message>
     <message>
         <source>Rebuild index</source>
-        <translation>Herbouw index</translation>
+        <translation>Obnovi indeks</translation>
     </message>
     <message>
         <source>In:</source>
-        <translation>In:</translation>
+        <translation>U:</translation>
     </message>
     <message>
         <source>Out:</source>
-        <translation>Uit:</translation>
+        <translation>Iz:</translation>
     </message>
     <message>
         <source>Welcome to the KYD RPC console.</source>
-        <translation>Welkom bij de KYD RPC console.</translation>
+        <translation>Dobrodošli na KYD RPC konzolu.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
-        <translation>&amp; Koppel Node los</translation>
+        <translation>Odspoji Node</translation>
     </message>
     <message>
         <source>Ban Node for</source>
-        <translation>Ban Node voor</translation>
+        <translation>Ban Node za</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation>1 &amp;hour</translation>
+        <translation>1 sat</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
-        <translation>1 &amp;day</translation>
+        <translation>1 dan</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
-        <translation>1 &amp;week</translation>
+        <translation>1 tjedan</translation>
     </message>
     <message>
         <source>1 &amp;year</source>
-        <translation>1 &amp;year</translation>
+        <translation>1 godinu</translation>
     </message>
     <message>
         <source>&amp;Unban Node</source>
-        <translation>&amp; Veel succes</translation>
+        <translation>Nebanani Nodovi</translation>
     </message>
     <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Dit zal al jouw lokale blockchain mappen verwijderen en de portemonnee zal de blockchain helemaal opnieuw synchroniseren.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>To će izbrisati vaše lokalne mape blockcahaina i novčanik će uskladiti cijeli Blockchain od nule.</translation>
     </message>
     <message>
         <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Dit vergt nogal wat tijd en downloadt veel data.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>To treba dosta vremena i preuzimanja puno podataka.</translation>
     </message>
     <message>
         <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Uw transacties en tegoeden zijn opnieuw zichtbaar nadat het downloaden is voltooid.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Vaše transakcije i sredstva bit će ponovno vidljivi nakon preuzimanja.</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Wil je verdergaan?</translation>
+        <translation>Želite li nastaviti?</translation>
     </message>
     <message>
         <source>Confirm resync Blockchain</source>
-        <translation>Bevestig hersynchronisering van Blockchain</translation>
+        <translation>Potvrdite resync Blockchain</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gebruik omhoog en omlaag pijlen om de geschiedenis te navigeren, en&lt;b&gt;Ctrl-L&lt;/b&gt;om scherm te wissen.</translation>
+        <translation>Upotrijebite strelice gore i dolje za kretanje po povijesti, a Ctrl-L za brisanje zaslona.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Type &lt;b&gt;help &lt;/b&gt;voor een overzicht van beschikbare commando's.</translation>
+        <translation>Upišite pomoć za pregled dostupnih naredbi.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3470,145 +3467,146 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>never</source>
-        <translation>nooit</translation>
+        <translation>nikada</translation>
     </message>
     <message>
         <source>Inbound</source>
-        <translation>Inkomende</translation>
+        <translation>Dolazno</translation>
     </message>
     <message>
         <source>Outbound</source>
-        <translation>Uitgaande</translation>
+        <translation>Odlazno</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>ja</translation>
+        <translation>Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nee</translation>
+        <translation>Ne</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Ongekend</translation>
+        <translation>Nepoznato</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Hergebruik een van de eerder gebruikte ontvangstadressen.&lt;br&gt;Hergebruik van adressen heeft beveiligings- en privacyproblemen. &lt;br&gt;Gebruik dit niet tenzij u eerder een betalingsverzoek heeft aangemaakt.</translation>
+        <translation>Ponovno upotrijebite jednu od prethodno korištenih adresa za primanje. Ponovno korištenje adresa ima sigurnosne i privatne probleme. Nemojte to koristiti ako ponovno ne generirate prethodno izvršeni zahtjev za plaćanje.</translation>
     </message>
     <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Hergebruik een bestaand ontvangstadres (niet aanbevolen)</translation>
+        <translation>Ponovno upotrijebite postojeću adresu primatelja (nije preporučeno)</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation>&amp;Bericht:</translation>
+        <translation>Poruka:</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
+        <translation>Dodatna oznaka za povezivanje s novom adresom primatelja.</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the KYD network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het KYD netwerk.</translation>
+        <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem KYD mreže.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
-        <translation>ontvangen</translation>
+        <translation>PRIMI</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the KYD network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het KYD netwerk.</translation>
+        <translation>Dodatna poruka za pridruživanje zahtjevu za plaćanje koja će se prikazati kada se zahtjev otvori.Napomena: poruka neće biti poslana s plaćanjem putem KYD mreže.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Gebruik dit formulier om betalingen aan te vragen. Alle velden zijn&lt;b&gt;optioneel&lt;/b&gt;.</translation>
+        <translation>Upotrijebite ovaj obrazac da biste zatražili plaćanja. Sva su polja neobvezna.</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <translation>Oznaka:</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Een optioneel bedrag om te vragen. Laat dit leeg of vul een nul in om geen specifiek bedrag te vragen.</translation>
+        <translation>Neobavezna količina za zahtjev. Ostavite ovo prazno ili nulu da ne zatražite određeni iznos.</translation>
     </message>
     <message>
         <source>&amp;Amount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
+        <translation>Iznos:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
-        <translation>&amp;Verzoek betaling</translation>
+        <translation>Zatraži plaćanje</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Leeg alle velden van het formulier.</translation>
+        <translation>Izbriši sva polja obrasca.</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Leegmaken</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Requested payments history</source>
-        <translation>Betalingsverzoeken geschiedenis</translation>
+        <translation>Zahtjev za povijest plaćanja</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Toon het geselecteerde verzoek (doet hetzelfde als dubbelklik op een item)</translation>
+        <translation>Prikaz odabranog zahtjeva (jednako kao dvostruki klik na unos)</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>Toon</translation>
+        <translation>Prikaži</translation>
     </message>
     <message>
         <source>Remove the selected entries from the list</source>
-        <translation>Verwijder de geselecteerde vermeldingen uit de lijst</translation>
+        <translation>Uklonite odabrane stavke s popisa</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Verwijder</translation>
+        <translation>Ukloni</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Kopiëer label</translation>
+        <translation>Kopiraj oznaku</translation>
     </message>
     <message>
         <source>Copy message</source>
-        <translation>Bericht kopiëren</translation>
+        <translation>Kopiraj poruku</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopiraj iznos</translation>
     </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
         <source>QR Code</source>
-        <translation>QR Code</translation>
+        <translation>QR Kod</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
-        <translation>Kopieer &amp;URI</translation>
+        <translation>Kopiraj URI</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation>Kopieer &amp;Adres</translation>
+        <translation>Kopiraj adresu</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
+        <translation>Spremi sliku...</translation>
     </message>
     <message>
         <source>Request payment to %1</source>
-        <translation>Verzoek betaling aan %1</translation>
+        <translation>Zatražite uplatu na %1</translation>
     </message>
     <message>
         <source>Payment information</source>
-        <translation>Betalingsinformatie</translation>
+        <translation>Informacije o plaćanju
+</translation>
     </message>
     <message>
         <source>URI</source>
@@ -3616,27 +3614,27 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Iznos</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Oznaka</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Bericht</translation>
+        <translation>Poruka</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulterende URI te lang geleden, probeer de tekst voor label/bericht te verminderen.</translation>
+        <translation>URI predug, pokušajte smanjiti tekst za oznaku / poruku.</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Fout bij het coderen van URI in QR-code.</translation>
+        <translation>Greška kodiranja URI u QR kod.</translation>
     </message>
 </context>
 <context>
@@ -3647,106 +3645,106 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Oznaka</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Bericht</translation>
+        <translation>Poruka</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Iznos</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(geen label)</translation>
+        <translation>(bez oznake)</translation>
     </message>
     <message>
         <source>(no message)</source>
-        <translation>(geen bericht)</translation>
+        <translation>( bez poruke )</translation>
     </message>
     <message>
         <source>(no amount)</source>
-        <translation>(geen hoeveelheid)</translation>
+        <translation>(bez iznosa)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Verzend Munten</translation>
+        <translation>Salji novac</translation>
     </message>
     <message>
         <source>SEND</source>
-        <translation>STUREN</translation>
+        <translation>Šalji</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
+        <translation>Značajke upravljanja novcem</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Onvoldoende saldo!</translation>
+        <translation>Nedovoljna sredstva!</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
+        <translation>Količina:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>Bytovi:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <translation>Iznos:</translation>
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioriteit:</translation>
+        <translation>Prioritet:</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>medium</translation>
+        <translation>srednje</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Kost:</translation>
+        <translation>Naknada:</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Stof:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>no</source>
-        <translation>nee</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Na de kost:</translation>
+        <translation>Naknadne naknade:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wijzig:</translation>
+        <translation>Razlika:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
+        <translation>Ako je to aktivirano, ali adresa za izmjenu je prazna ili nije valjana, promjena će biti poslana na novo generiranu adresu.</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
+        <translation>Prilagođene izmjene adrese</translation>
     </message>
     <message>
         <source>Split UTXO</source>
-        <translation>Split UTXO</translation>
+        <translation>Podijeli UTXO</translation>
     </message>
     <message>
         <source># of outputs</source>
-        <translation># outputs</translation>
+        <translation># izlaza</translation>
     </message>
     <message>
         <source>UTXO Size:</source>
-        <translation>UTXO grootte:</translation>
+        <translation>Veličina UTXO:</translation>
     </message>
     <message>
         <source>0 KYD</source>
@@ -3754,39 +3752,41 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Transaction Fee:</source>
-        <translation>Transactiekosten: </translation>
+        <translation>Naknada za transakciju:
+</translation>
     </message>
     <message>
         <source>Choose...</source>
-        <translation>Kies...</translation>
+        <translation>Odaberi...</translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
-        <translation>Klap kosten instellingen in</translation>
+        <translation>spusti postavke naknade</translation>
     </message>
     <message>
         <source>Minimize</source>
-        <translation>Minimaliseer</translation>
+        <translation>Minimiziraj</translation>
     </message>
     <message>
         <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
+        <translation>po kilobytu</translation>
     </message>
     <message>
         <source>total at least</source>
-        <translation>totaal tenminste</translation>
+        <translation>ukupno barem</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
-        <translation>(lees de tooltip)</translation>
+        <translation>(pročitajte opis)</translation>
     </message>
     <message>
         <source>Custom:</source>
-        <translation>Aangepast:</translation>
+        <translation>Prilagođeno:
+</translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee nog niet geïnitialiseerd. Dit duurt meestal een paar blokken ...)</translation>
+        <translation>(Smart naknada još nije inicirana. To obično traje nekoliko blokova ...)</translation>
     </message>
     <message>
         <source>SwiftX</source>
@@ -3794,230 +3794,230 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Confirmation time:</source>
-        <translation>Bevestigingstijd:</translation>
+        <translation>Vrijeme potvrde:</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
-        <translation>Open munt controle...</translation>
+        <translation>Otvori kontrolu nad novcem ...</translation>
     </message>
     <message>
         <source>Coins automatically selected</source>
-        <translation>Munten automatisch geselecteerd</translation>
+        <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uKYDs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uKYDs in fee,&lt;br /&gt;while "at least" pays 1000 uKYDs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uKYDs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uKYD's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uKYD's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uKYD-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uKYD-a, dok se "barem" plaća 1000 uKYD-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uKYDs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uKYDs in fee,&lt;br /&gt;while "total at least" pays 1000 uKYDs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uKYDs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uKYD's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uKYD's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uKYD, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uKYD-ova, a "ukupno barem" plaća 1000 uKYD-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for KYD transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar KYD transacties dan het netwerk kan verwerken.</translation>
+        <translation>Plaćanje samo minimalne naknade je sasvim u redu sve dok j obujma transakcija manji od prostora u blokovima. No, budite svjesni da to može dovesti do transakcije koja nikada se ne potvrđuje kada se pojavi više zahtjeva za KYD transakcijama nego što mreža može obraditi.</translation>
     </message>
     <message>
         <source>normal</source>
-        <translation>normaal</translation>
+        <translation>normalno</translation>
     </message>
     <message>
         <source>fast</source>
-        <translation>snel</translation>
+        <translation>brzo</translation>
     </message>
     <message>
         <source>Recommended</source>
-        <translation>Aanbevolen</translation>
+        <translation>Preporučeno</translation>
     </message>
     <message>
         <source>Send as zero-fee transaction if possible</source>
-        <translation>Zend als zero-fee transactie indien mogelijk</translation>
+        <translation>Pošaljite kao transakciju s nultom naknadom, ako je moguće</translation>
     </message>
     <message>
         <source>(confirmation may take longer)</source>
-        <translation>(bevestiging kan langer duren)</translation>
+        <translation>(potvrda može potrajati dulje)</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation>Bevestig de verzendactie</translation>
+        <translation>Potvrdite slanje</translation>
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation>V&amp;erzenden</translation>
+        <translation>Pošalji</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Leeg alle velden van het formulier.</translation>
+        <translation>Izbriši sva polja obrasca.</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <translation>Poništi sve</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
-        <translation>Verzend naar meerdere ontvangers tegelijk</translation>
+        <translation>Pošaljite više primatelja odjednom</translation>
     </message>
     <message>
         <source>Add &amp;Recipient</source>
-        <translation>Voeg &amp;ontvanger toe</translation>
+        <translation>Dodaj primatelja</translation>
     </message>
     <message>
         <source>Anonymized KYD</source>
-        <translation>Geanonimiseerde KYD</translation>
+        <translation>Anonimiziran KYD</translation>
     </message>
     <message>
         <source>Balance:</source>
-        <translation>Balans:</translation>
+        <translation>Stanje:</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
+        <translation>Kopirajte količinu</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopiraj iznos</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Kopiëer kost</translation>
+        <translation>Kopiraj naknadu</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Kopiëer na kost</translation>
+        <translation>Kopiraj naknadnu naknadu</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Kopieer bytes</translation>
+        <translation>Kopiraj bitove</translation>
     </message>
     <message>
         <source>Copy priority</source>
-        <translation>Kopieer prioriteit</translation>
+        <translation>Kopiraj prioritet</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Kopieer dust</translation>
+        <translation>Kopiraj dust</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Kopieer wisselgeld</translation>
+        <translation>Kopiraj razliku</translation>
     </message>
     <message>
         <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>Het split block tool werkt niet bij het verzenden naar externe adressen. Probeer het nog eens.</translation>
+        <translation>Alat za podjelu blokova ne radi kada se šalje na vanjske adrese. Pokušajte ponovo.</translation>
     </message>
     <message>
         <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
+        <translation>Alat za podjelu blocka ne funkcionira s više adresa. Pokušajte ponovo.</translation>
     </message>
     <message>
         <source>Warning: Invalid KYD address</source>
-        <translation>Waarschuwing: Ongeldig KYD adres</translation>
+        <translation>Upozorenje: Nevažeća KYD adresa</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation>%1 naar %2</translation>
+        <translation>%1 u %2</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
-        <translation>Ben je zeker dat je wilt verzenden?</translation>
+        <translation>Jeste li sigurni da želite poslati?</translation>
     </message>
     <message>
         <source>are added as transaction fee</source>
-        <translation>worden toegevoegd als transactiekosten</translation>
+        <translation>dodaju se kao transakcijska naknada</translation>
     </message>
     <message>
         <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Totale hoeveelheid = &lt;b&gt;%1 &lt;/b&gt;&lt;br /&gt;= %2</translation>
+        <translation>Ukupni iznos = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt; = %2</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
+        <translation>Potvrdite slanje novca</translation>
     </message>
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Een vergoeding %1 keer hoger dan %2 per kB wordt beschouwd als een zwaar hoge vergoeding.</translation>
+        <translation>Naknada %1 puta veća od %2 po kB smatra se nerazumljivo visokom naknadom.</translation>
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform></translation>
+        <translation><numerusform>Procijenjeno za početak potvrde u%n blokova.</numerusform><numerusform>Procijenjeno za početak potvrde u%n blokova.</numerusform><numerusform>Procijenjeno za početak potvrde u %n blokova.</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
+        <translation>Adresa primatelja nije važeća, ponovo provjerite.</translation>
     </message>
     <message>
         <source>using SwiftX</source>
-        <translation>met SwiftX</translation>
+        <translation>koristi SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>gesplitst in %1 outputs met behulp van de UTXO splitter.</translation>
+        <translation>podijeljeno na %1 izlaza pomoću UTXO razdjelnika.</translation>
     </message>
     <message>
         <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 van %2 vermeldingen weergegeven)</translation>
+        <translation>&lt;b&gt;(%1 of %2 unosa prikazana)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>Het te betalen bedrag moet groter zijn dan 0.</translation>
+        <translation>Iznos za plaćanje mora biti veći od 0.</translation>
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Het bedrag overschrijdt uw saldo.</translation>
+        <translation>Iznos prelazi vaš saldo.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Het totaal overschrijdt uw saldo wanneer de transactievergoeding %1 is inbegrepen.</translation>
+        <translation>Ukupni iznos prelazi vaš saldo kada je uključena naknada za transakciju %1.</translation>
     </message>
     <message>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Dubbel adres gevonden, kan alleen per keer per verzendoperatie naar elk adres versturen.</translation>
+        <translation>Duplicirana adresa pronađena, može poslati samo na svaku adresu jednom po pošiljci.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
-        <translation>Transactie creatie mislukt!</translation>
+        <translation>Izrada transakcija nije uspjela!</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, zoals als je een kopie van de wallet.dat en munten in de kopie waren besteed maar niet gemarkeerd zoals hier besteed.</translation>
+        <translation>Transakcija je odbijena! To se može dogoditi ako su neki od novčića u vašem novčaniku već bili potrošeni, primjerice, ako ste upotrijebili kopiju wallet.data, a novčići su potrošeni u kopiji, ali nisu označeni kao ovdje potrošeni.</translation>
     </message>
     <message>
         <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren.</translation>
+        <translation>Pogreška: novčanik je otključan samo za anonimizaciju kovanica.</translation>
     </message>
     <message>
         <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren. Ontgrendelen geannuleerd.</translation>
+        <translation>Pogreška: novčanik je otključan samo za anonimizaciju kovanica. Otključavanje je otkazano.</translation>
     </message>
     <message>
         <source>Pay only the minimum fee of %1</source>
-        <translation>Betaal alleen de minimumkost van %1</translation>
+        <translation>Platite samo minimalnu naknadu od %1</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
-        <translation>Waarschuwing: Ongekend wisselgeld adres</translation>
+        <translation>Upozorenje: nepoznata adresa za promjenu</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(geen label)</translation>
+        <translation>(bez oznake)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
         <source>This is a normal payment.</source>
-        <translation>Dit is een normale betaling.</translation>
+        <translation>Ovo je uobičajeno plaćanje.</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
+        <translation>Platiti:</translation>
     </message>
     <message>
         <source>The KYD address to send the payment to</source>
-        <translation>Het KYD adres om de betaling naar te verzenden</translation>
+        <translation>KYD adresa za slanje uplate</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <translation>Odaberite prethodno upotrijebljenu adresu</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -4025,7 +4025,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <translation>Zalijepite adresu iz međuspremnika</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -4033,35 +4033,35 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Remove this entry</source>
-        <translation>Verwijder dit item</translation>
+        <translation>Ukloni ovaj unos</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <translation>Oznaka:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
+        <translation>Unesite oznaku za ovu adresu da biste ga dodali na popis upotrijebljenih adresa</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
+        <translation>Količina:</translation>
     </message>
     <message>
         <source>Message:</source>
-        <translation>Bericht:</translation>
+        <translation>Poruka:</translation>
     </message>
     <message>
         <source>A message that was attached to the KYD: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the KYD network.</source>
-        <translation>Een bericht dat is gehecht aan de KYD: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het KYD netwerk.</translation>
+        <translation>Poruka koja je bila povezana s KYD: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko KYD mreže.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
-        <translation>Dit is een ongeverifieerde betalingsverzoek.</translation>
+        <translation>Ovo je nepotvrđeni zahtjev za plaćanje.</translation>
     </message>
     <message>
         <source>Pay To:</source>
-        <translation>Betaal aan:</translation>
+        <translation>Platiti:</translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -4069,45 +4069,45 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>This is a verified payment request.</source>
-        <translation>Dit is een geverifieerd betalingsverzoek.</translation>
+        <translation>Ovo je potvrđeni zahtjev za plaćanje.</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
+        <translation>Unesite oznaku za ovu adresu da biste je dodali u adresar</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <source>KYD Core is shutting down...</source>
-        <translation>KYD Core is aan het afsluiten...</translation>
+        <translation>KYD Core se zatvara ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Sluit de computer niet af voordat dit venster verdwenen is.</translation>
+        <translation>Nemojte isključivati računalo dok ovaj prozor ne nestane.</translation>
     </message>
 </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Handtekeningen - Onderteken / Verifieer een Bericht</translation>
+        <translation>Potpisi - potpišite / potvrdite poruku</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Onderteken Bericht</translation>
+        <translation>Potpiši poruku</translation>
     </message>
     <message>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
+        <translation>Možete potpisati poruke s vašim adresama kako biste dokazali da ih posjedujete. Pazite da ne potpišete ništa nejasno, jer napadi za krađu identiteta mogu Vas pokušati uvjeriti da vam potpišu identitet. Potpišite samo detalje oko kojih se slažete.</translation>
     </message>
     <message>
         <source>The KYD address to sign the message with</source>
-        <translation>Het KYD adres om het bericht met te ondertekenen</translation>
+        <translation>KYD adresa za potpisivanje poruke</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <translation>Odaberite prethodno upotrijebljenu adresu</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -4115,7 +4115,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <translation>Zalijepite adresu iz međuspremnika</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -4123,130 +4123,130 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Voer hier het bericht in dat u wilt ondertekenen</translation>
+        <translation>Unesite poruku koju želite potpisati ovdje</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Handtekening</translation>
+        <translation>Potpis</translation>
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
+        <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this KYD address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het KYD adres bezit</translation>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove KYD adrese</translation>
     </message>
     <message>
         <source>The KYD address the message was signed with</source>
-        <translation>Het KYD adres waarmee het bericht was ondertekend</translation>
+        <translation>KYD adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified KYD address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde KYD adres</translation>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisana s navedenom KYD adresom</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>Onderteken &amp;Bericht</translation>
+        <translation>Potpiši poruku</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
-        <translation>Maak alle ondertekenvelden leeg</translation>
+        <translation>Ponovno postavite sva polja s obavijestima o potpisima</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <translation>Poništi sve</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Verifieer Bericht</translation>
+        <translation>Potvrdi poruku</translation>
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Voer het ondertekening adres in, verifieer het bericht (zorg ervoor dat je line breaks, spaties, tabs, enz.) en onderteken hieronder om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je door een man-in-de-middle aanval wordt getroffen.</translation>
+        <translation>Unesite adresu potpisivanja, poruku (provjerite da točno kopirate presjeke, razmake, kartice itd.) I potpis ispod da biste potvrdili poruku. Budite pažljivi da ne čitate više u potpisu od onoga što je u samoj potpisanoj poruci kako bi se izbjegla prijevara s čovjekom u sredini.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
-        <translation>Verifeer &amp;Message</translation>
+        <translation>Potvrdite poruku</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation>Maak alle verifiëren van het bericht velden leeg</translation>
+        <translation>Ponovno postavite sva polja za potvrdu poruka</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
-        <translation>Klik op "Onderteken Bericht" om een handtekening te genereren</translation>
+        <translation>Kliknite "potpiši poruku" da biste generirali potpis</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>Het ingevoerde adres is ongeldig.</translation>
+        <translation>Unesena adresa je nevažeća.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Controleer het adres en probeer het opnieuw.</translation>
+        <translation>Provjerite adresu i pokušajte ponovno.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>Het opgegeven adres verwijst niet naar een sleutel.</translation>
+        <translation>Unesena adresa ne odnosi se na ključ.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
+        <translation>Otključavanje novčanika je otkazano.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+        <translation>Privatni ključ za unesenu adresu nije dostupan.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Bericht ondertekenen mislukt.</translation>
+        <translation>Potpisivanje poruka nije uspjelo.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Bericht ondertekend.</translation>
+        <translation>Poruka potpisana.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
-        <translation>De handtekening kon niet gedecodeerd worden.</translation>
+        <translation>Potpis nije mogao biti dekodiran.</translation>
     </message>
     <message>
         <source>Please check the signature and try again.</source>
-        <translation>Controleer de handtekening en probeer het opnieuw.</translation>
+        <translation>Provjerite potpis i pokušajte ponovo.</translation>
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>De handtekening kwam niet overeen met de berichtverdeling.</translation>
+        <translation>Potpis se nije podudarao s digestom poruka.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Bericht verificatie mislukt.</translation>
+        <translation>Potvrda poruke nije uspjela.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Bericht geverifieerd.</translation>
+        <translation>Poruka je potvrđena.</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
         <source>KYD Core</source>
-        <translation>KYD Kern</translation>
+        <translation>KYD Core</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation>Versie %1</translation>
+        <translation>Verzija %1</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
-        <translation>De Bitcoin Kernontwikkelaars</translation>
+        <translation>Bitcoin Core programeri</translation>
     </message>
     <message>
         <source>The Dash Core developers</source>
-        <translation>De Dash Kernontwikkelaars</translation>
+        <translation>Dash Core programeri</translation>
     </message>
     <message>
         <source>The KYD Core developers</source>
-        <translation>De KYD Kernontwikkelaars</translation>
+        <translation>KYD Core programeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4264,15 +4264,15 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+        <translation><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Open tot %1</translation>
+        <translation>Otvori dok %1</translation>
     </message>
     <message>
         <source>conflicted</source>
-        <translation>conflicteert</translation>
+        <translation>u sukobu</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -4280,43 +4280,43 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>%1/unconfirmed</source>
-        <translation>%1/onbevestigd</translation>
+        <translation>%1/nepotvrđen</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation>%1 bevestigingen</translation>
+        <translation>%1 potvrđeno</translation>
     </message>
     <message>
         <source>%1/offline (verified via SwiftX)</source>
-        <translation>%1/offline (gecontroleerd via SwiftX)</translation>
+        <translation>%1/offline (provjereno s SwiftX)</translation>
     </message>
     <message>
         <source>%1/confirmed (verified via SwiftX)</source>
-        <translation>%1/bevestigd (gecontroleerd via swifttx)</translation>
+        <translation>%1 / potvrđeno (potvrđeno putem usluge SwiftX)</translation>
     </message>
     <message>
         <source>%1 confirmations (verified via SwiftX)</source>
-        <translation>%1 bevestigingen (gecontroleerd via swifttx)</translation>
+        <translation>Potvrde %1 (potvrđene putem SwiftX-a)</translation>
     </message>
     <message>
         <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+        <translation>%1 / offline (SwiftX potvrda u tijeku - %2 od %3 potpisa)</translation>
     </message>
     <message>
         <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bevestigd (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+        <translation>%1 / potvrđeno (provjera SwiftX u tijeku -%2 od %3 potpisa)</translation>
     </message>
     <message>
         <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 bevestigingen (SwiftTX controle in uitvoering -%2 van %3 handtekeningen)</translation>
+        <translation>Potvrde %1 (provjera SwiftX u tijeku -%2 od %3 potpisa)</translation>
     </message>
     <message>
         <source>%1/offline (SwiftX verification failed)</source>
-        <translation>%1/offline (SwiftTX verificatie mislukt)</translation>
+        <translation>%1 / offline (SwiftX verifikacija nije uspjela)</translation>
     </message>
     <message>
         <source>%1/confirmed (SwiftX verification failed)</source>
-        <translation>%1/bevestigd (SwiftTX verificatie mislukt)</translation>
+        <translation>%1 / potvrđeno (nije uspjela SwiftX provjera)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4324,11 +4324,11 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>, has not been successfully broadcast yet</source>
-        <translation>, is nog niet succesvol uitgezonden</translation>
+        <translation>, još nije uspješno emitiran</translation>
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, uitgezonden via %n nodes</numerusform><numerusform>, uitgezonden via %n nodes</numerusform></translation>
+        <translation><numerusform>, emitiraju se preko %n čvorova</numerusform><numerusform>, emitiraju se preko %n čvorova</numerusform><numerusform>, emitiraju se preko %n čvorova</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -4336,126 +4336,127 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Source</source>
-        <translation>Bron</translation>
+        <translation>Izvor</translation>
     </message>
     <message>
         <source>Generated</source>
-        <translation>Gegeneerd</translation>
+        <translation>Kreirano</translation>
     </message>
     <message>
         <source>From</source>
-        <translation>Van</translation>
+        <translation>Oblik</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation>ongekend</translation>
+        <translation>nepoznato</translation>
     </message>
     <message>
         <source>To</source>
-        <translation>Naar</translation>
+        <translation>Za</translation>
     </message>
     <message>
         <source>own address</source>
-        <translation>eigen adres</translation>
+        <translation>moja adresa</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>watch-only</translation>
+        <translation>samo za gledanje</translation>
     </message>
     <message>
         <source>label</source>
-        <translation>label</translation>
+        <translation>oznaka</translation>
     </message>
     <message>
         <source>Credit</source>
-        <translation>Credit</translation>
+        <translation>Kredit</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>maturiteit in %n meer blokken</numerusform><numerusform>maturiteit in %n meer blokken</numerusform></translation>
+        <translation><numerusform>sazrijeva se u %n više blokova</numerusform><numerusform>sazrijeva se u %n više blokova</numerusform><numerusform>sazrijeva se u %n više blokova</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
-        <translation>niet geaccepteerd</translation>
+        <translation>nije prihvaćeno</translation>
     </message>
     <message>
         <source>Debit</source>
-        <translation>Debet</translation>
+        <translation>Dugovanje</translation>
     </message>
     <message>
         <source>Total debit</source>
-        <translation>Totaal debet</translation>
+        <translation>Ukupan dug</translation>
     </message>
     <message>
         <source>Total credit</source>
-        <translation>Totaal credit</translation>
+        <translation>Ukupni kredit</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Transactiekosten</translation>
+        <translation>Naknada za transakciju</translation>
     </message>
     <message>
         <source>Net amount</source>
-        <translation>Netto bedrag</translation>
+        <translation>Neto iznos</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Bericht</translation>
+        <translation>Poruka</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Reactie</translation>
+        <translation>Komentar</translation>
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>Transactie ID</translation>
+        <translation>Transakcijski ID</translation>
     </message>
     <message>
         <source>Output index</source>
-        <translation>Output index</translation>
+        <translation>Izlazni indeks</translation>
     </message>
     <message>
         <source>Merchant</source>
-        <translation>Winkelier</translation>
+        <translation>Trgovac</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Gegenereerde munten moeten %1 blokken rijpen voordat ze kunnen worden uitgegeven. Wanneer je dit blok hebt gegenereerd, wordt het naar het netwerk uitgezonden om aan de blockchain toegevoegd te worden. Als het niet in de keten komt, verandert de staat in "niet geaccepteerd" en zal het niet uitgeefbaar worden. Dit kan af en toe gebeuren als een andere node binnen een paar seconden van u een blok genereert.</translation>
+        <translation>Generirani novčići moraju se narasti za %1 blokova prije nego što se mogu potrošiti. Kada ste generirali taj blok, emitiran je na mrežu koji će biti dodan u blok lanac. Ako ne uspije ući u lanac, stanje će se promijeniti u "ne prihvaća" i neće biti potrošeno. To se ponekad može dogoditi ako drugi čvor generira blok u roku od nekoliko sekundi od vašeg.</translation>
     </message>
     <message>
         <source>Debug information</source>
-        <translation>Debug informatie</translation>
+        <translation>Informacije o uklanjanju pogrešaka</translation>
     </message>
     <message>
         <source>Transaction</source>
-        <translation>Transactie</translation>
+        <translation>Transakcija</translation>
     </message>
     <message>
         <source>Inputs</source>
-        <translation>Inputs</translation>
+        <translation>Unosi</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Iznos</translation>
     </message>
     <message>
         <source>true</source>
-        <translation>waar</translation>
+        <translation>točno</translation>
     </message>
     <message>
         <source>false</source>
-        <translation>onwaar</translation>
+        <translation>netočno</translation>
     </message>
 </context>
 <context>
     <name>TransactionDescDialog</name>
     <message>
         <source>Transaction details</source>
-        <translation>Transactiedetails</translation>
+        <translation>Detalji transakcije
+</translation>
     </message>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Dit venster laat een gedetailleerde beschrijving van de transactie zien</translation>
+        <translation>Ovo okno prikazuje detaljan opis transakcije</translation>
     </message>
 </context>
 <context>
@@ -4466,63 +4467,63 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tip</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation>Adresa</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+        <translation><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Open tot %1</translation>
+        <translation>Otvori dok %1</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation>Offline</translation>
+        <translation>Van mreže</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Onbevestigd</translation>
+        <translation>Nepotvrđen</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Bevestigen (%1 van %2 aanbevolen bevestigingen)</translation>
+        <translation>Potvrđivanje (%1 od %2 preporučene potvrde)</translation>
     </message>
     <message>
         <source>Confirmed (%1 confirmations)</source>
-        <translation>Bevestigd (%1 bevestigingen)</translation>
+        <translation>Potvrđeno (potvrde %1)</translation>
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>Geconflicteerd</translation>
+        <translation>u sukobu</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Onvolwassen (%1 bevestigingen, zullen beschikbaar zijn na %2)</translation>
+        <translation>Nedovršeno (potvrda %1, bit će dostupna nakon %2)</translation>
     </message>
     <message>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Dit blok is niet ontvangen door andere noden en wordt waarschijnlijk niet geaccepteerd!</translation>
+        <translation>Taj blok nije primljen od strane drugih čvorova i vjerojatno neće biti prihvaćeni!</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Ontvangen met</translation>
+        <translation>Primljeno s</translation>
     </message>
     <message>
         <source>Masternode Reward</source>
-        <translation>Masternode beloning</translation>
+        <translation>Masternode Nagrada</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>Ontvangen van</translation>
+        <translation>Zaprimljeno s</translation>
     </message>
     <message>
         <source>Received via Obfuscation</source>
-        <translation>Verkregen via verduistering</translation>
+        <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
         <source>KYD Stake</source>
@@ -4534,59 +4535,59 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Obfuscation Denominate</source>
-        <translation>Verduistering denominatie</translation>
+        <translation>Zameteni denonimi</translation>
     </message>
     <message>
         <source>Obfuscation Collateral Payment</source>
-        <translation>Verduistering zijdelingse betaling</translation>
+        <translation>Zametena kolateralna plačanja</translation>
     </message>
     <message>
         <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verduistering maakt zijdelingse inputs</translation>
+        <translation>Prikrivanje Izrade Kolateralnih Unosa</translation>
     </message>
     <message>
         <source>Obfuscation Create Denominations</source>
-        <translation>Verduistering creëert denominaties</translation>
+        <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
         <source>Converted KYD to zKYD</source>
-        <translation>Geconverteerde KYD naar zKYD</translation>
+        <translation>Pretvoreni KYD u zKYD</translation>
     </message>
     <message>
         <source>Spent zKYD</source>
-        <translation>Bestede zKYD</translation>
+        <translation>Utrošeni zKYD</translation>
     </message>
     <message>
         <source>Received KYD from zKYD</source>
-        <translation>Ontvangen KYD van zKYD</translation>
+        <translation>Primljeni KYD od zKYD</translation>
     </message>
     <message>
         <source>Minted Change as zKYD from zKYD Spend</source>
-        <translation>Gemint wisselgeld als zKYD van bestede zKYD</translation>
+        <translation>Mintana razlika zKYD od zKYD Utroška</translation>
     </message>
     <message>
         <source>Converted zKYD to KYD</source>
-        <translation>Geconverteerde zKYD naar KYD</translation>
+        <translation>Pretvoreni zKYD u KYD</translation>
     </message>
     <message>
         <source>Anonymous (zKYD Transaction)</source>
-        <translation>Anonieme (zKYD transactie)</translation>
+        <translation>Anonimno (zKYD Transakcija)</translation>
     </message>
     <message>
         <source>Anonymous (zKYD Stake)</source>
-        <translation>Anonieme (zKYD stake)</translation>
+        <translation>Anonimno (zKYD Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Verzenden naar</translation>
+        <translation>Pošalji za:</translation>
     </message>
     <message>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
-        <translation>Orphan Block - Gegenereerd maar niet geaccepteerd. Dit heeft geen invloed op uw bezit.</translation>
+        <translation>Orphan Block - Generirano, ali nije prihvaćeno. Ovo ne utječe na Vašu imovinu.</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
-        <translation>Betaling naar jezelf</translation>
+        <translation>Plačanje samom sebi</translation>
     </message>
     <message>
         <source>Mined</source>
@@ -4594,86 +4595,86 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Obfuscated</source>
-        <translation>Verduisterd</translation>
+        <translation>Obfuscated</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>watch-only</translation>
+        <translation>samo za gledanje</translation>
     </message>
     <message>
         <source>(n/a)</source>
-        <translation>(n/b)</translation>
+        <translation>(n/d)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transactie status. Beweeg over dit veld om het aantal bevestigingen te tonen.</translation>
+        <translation>Status transakcije. Zadržite pokazivač iznad ovog polja da biste prikazali broj potvrda.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
-        <translation>Datum en tijd waarop de transactie is ontvangen.</translation>
+        <translation>Datum i vrijeme prijema transakcije.</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
-        <translation>Type transactie.</translation>
+        <translation>Vrsta transakcije.</translation>
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Of een watch-only adres wel of niet betrokken is bij deze transactie.</translation>
+        <translation>Bez obzira je li riječ o adresi za praćenje ili nije uključena u tu transakciju.</translation>
     </message>
     <message>
         <source>Destination address of transaction.</source>
-        <translation>Bestemming adres van de transactie.</translation>
+        <translation>Odredišna adresa transakcije.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation>Bedrag verwijderd uit of toegevoegd aan saldo.</translation>
+        <translation>Iznos uklonjen iz ili dodan u stanje.</translation>
     </message>
 </context>
 <context>
     <name>TransactionView</name>
     <message>
         <source>All</source>
-        <translation>Alle</translation>
+        <translation>Sve</translation>
     </message>
     <message>
         <source>Today</source>
-        <translation>Vandaag</translation>
+        <translation>Danas</translation>
     </message>
     <message>
         <source>This week</source>
-        <translation>Deze week</translation>
+        <translation>Ovaj tjedan</translation>
     </message>
     <message>
         <source>This month</source>
-        <translation>Deze maand</translation>
+        <translation>Ovaj mjesec</translation>
     </message>
     <message>
         <source>Last month</source>
-        <translation>Afgelopen maand</translation>
+        <translation>Prošli mjesec</translation>
     </message>
     <message>
         <source>This year</source>
-        <translation>Dit jaar</translation>
+        <translation>Ove godine</translation>
     </message>
     <message>
         <source>Range...</source>
-        <translation>Omvang...</translation>
+        <translation>Domet...</translation>
     </message>
     <message>
         <source>Most Common</source>
-        <translation>Meest voorkomend</translation>
+        <translation>Najučestaliji</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Ontvangen met</translation>
+        <translation>Primljeno s</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Verzenden naar</translation>
+        <translation>Pošalji za:</translation>
     </message>
     <message>
         <source>To yourself</source>
-        <translation>Naar jezelf</translation>
+        <translation>Sam sebi</translation>
     </message>
     <message>
         <source>Mined</source>
@@ -4685,7 +4686,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Masternode Reward</source>
-        <translation>Masternode beloning</translation>
+        <translation>Masternode Nagrada</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4693,63 +4694,63 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Zerocoin Spend</source>
-        <translation>Zerocoin uitgegeven</translation>
+        <translation>Zerocoin utrošak</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
-        <translation>Zerocoin uitgegeven aan jezelf</translation>
+        <translation>Zerocoin utrošen na sebe</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Andere</translation>
+        <translation>Drugi</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
-        <translation>Adres of label invullen om te zoeken</translation>
+        <translation>Unesite adresu ili oznaku za pretraživanje</translation>
     </message>
     <message>
         <source>Min amount</source>
-        <translation>Minimale hoeveelheid</translation>
+        <translation>Min količina</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Kopieer adres</translation>
+        <translation>Kopiraj adresu</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Kopiëer label</translation>
+        <translation>Kopiraj oznaku</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopiraj iznos</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Kopier transactie ID</translation>
+        <translation>Kopiraj ID transakcije</translation>
     </message>
     <message>
         <source>Edit label</source>
-        <translation>Label wijzigen</translation>
+        <translation>Uredi oznaku</translation>
     </message>
     <message>
         <source>Show transaction details</source>
-        <translation>Bekijk transactiedetails</translation>
+        <translation>Prikaz pojedinosti o transakciji</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
-        <translation>Exporteer Transactiegeschiedenis</translation>
+        <translation>Izvezi povijest transakcija</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Kommagescheiden bestand (*.csv)</translation>
+        <translation>Datoteka odvojena zarezom (* .csv)</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Bevestigd</translation>
+        <translation>Potvrđeno</translation>
     </message>
     <message>
         <source>Watch-only</source>
-        <translation>Watch-only</translation>
+        <translation>samo za gledanje</translation>
     </message>
     <message>
         <source>Date</source>
@@ -4757,15 +4758,15 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tip</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Oznaka</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>ID</source>
@@ -4773,98 +4774,98 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Export Mislukt</translation>
+        <translation>Izvoz nije uspio</translation>
     </message>
     <message>
         <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Er is een fout opgetreden om de transactiegeschiedenis te bewaren naar %1.</translation>
+        <translation>Došlo je do pogreške prilikom pokušaja spremanja povijesti transakcija na %1.</translation>
     </message>
     <message>
         <source>Exporting Successful</source>
-        <translation>Exporteren succesvol</translation>
+        <translation>Izvoz uspješan</translation>
     </message>
     <message>
         <source>Received KYD from zKYD</source>
-        <translation>Ontvangen KYD van zKYD</translation>
+        <translation>Primljeni KYD od zKYD</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zKYD</source>
-        <translation>Zerocoin besteed, wisselgeld in zKYD</translation>
+        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zKYD</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation>De transactiegeschiedenis is succesvol bewaard in %1.</translation>
+        <translation>Povijest transakcija uspješno je spremljena u %1.</translation>
     </message>
     <message>
         <source>Range:</source>
-        <translation>Bereik:</translation>
+        <translation>Doseg:</translation>
     </message>
     <message>
         <source>to</source>
-        <translation>naar</translation>
+        <translation>za</translation>
     </message>
 </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Eenheid om bedragen te laten zien. Klik om een andere eenheid te selecteren.</translation>
+        <translation>Jedinica za prikaz iznosa. Kliknite da biste odabrali drugu jedinicu.</translation>
     </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
-        <translation>Er is geen portemonnee ingeladen.</translation>
+        <translation>Novčanik nije učitan.</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Verzend Munten</translation>
+        <translation>Salji novac</translation>
     </message>
     <message>
         <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 KYD.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 KYD.</translation>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 KYD.</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
         <source>HISTORY</source>
-        <translation>GESCHIEDENIS</translation>
+        <translation>POVIJEST</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exporteren</translation>
+        <translation>Izvoz</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Exporteer de data in de huidige tab naar een bestand</translation>
+        <translation>Izvoz podataka iz trenutne kartice u datoteku</translation>
     </message>
     <message>
         <source>Selected amount:</source>
-        <translation>Geselecteerde hoeveelheid:</translation>
+        <translation>Odabran iznos:</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
-        <translation>Backup portemonnee</translation>
+        <translation>Sigurnosna kopija novčanika</translation>
     </message>
     <message>
         <source>Wallet Data (*.dat)</source>
-        <translation>Portemonneegegevens (*.dat)</translation>
+        <translation>Wallet Data (*.dat)</translation>
     </message>
 </context>
 <context>
     <name>ZKydControlDialog</name>
     <message>
         <source>Select zKYD to Spend</source>
-        <translation>Selecteer zKYD om te besteden</translation>
+        <translation>Odabrani zKYD za utrošiti</translation>
     </message>
     <message>
         <source>Quantity</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Količina</translation>
     </message>
     <message>
         <source>0</source>
@@ -4876,918 +4877,918 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Select/Deselect All</source>
-        <translation>Selecteer/Deselecteer Alles</translation>
+        <translation>Odaberite/poništi odabir za Sve</translation>
     </message>
     <message>
         <source>Is Spendable</source>
-        <translation>Is Uitgeefbaar</translation>
+        <translation>Je moguće utrošiti</translation>
     </message>
 </context>
 <context>
     <name>kyd-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
+        <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>
     </message>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Sta JSON-RPC connecties toe van de opgegeven bron. Geldig voor&lt;ip&gt;zijn een enkel IP (bijvoorbeeld 1.2.3.4), een netwerk/netmask (bijvoorbeeld 1.2.3.4/255.255.255.0) of een netwerk/CIDR (bijvoorbeeld 1.2.3.4/24). Deze optie kan meerdere keren worden opgegeven</translation>
+        <translation>Dopusti JSON-RPC veze od određenog izvora. Vrijedi za jednu IP (npr. 1.2.3.4), mrežu / mrežnu masku (npr. 1.2.3.4/255.255.255.0) ili mrežu / CIDR (npr. 1.2.3.4/24). Ova se opcija može odrediti više puta</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Bind naar het gegeven adres en luister er altijd naar. Gebruik [host]:poort notatie voor IPv6</translation>
+        <translation>Veži se na navedenu adresu i uvijek slušajte na njemu. Koristite [host]: port notation za IPv6</translation>
     </message>
     <message>
         <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Bind naar bepaald adres en whitelist peers die er verbinding mee maken. Gebruik [host]:poort notatie voor IPv6</translation>
+        <translation>Veži se na navedenoj adresi i dopuštenim kolegama koji se povezuju s njom. Koristite [host]: port notation za IPv6</translation>
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Bind naar het opgegeven adres om te luisteren naar JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren worden opgegeven (standaard: bind aan alle interfaces)</translation>
+        <translation>Pridržavajte se na navedenu adresu da biste slušali veze JSON-RPC. Koristite [host]: port notation za IPv6. Ova se opcija može odrediti više puta (zadano: vezati se na sva sučelja)</translation>
     </message>
     <message>
         <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
+        <translation>Izračunata kontrolna točka akumulatora nije ono što se bilježi indeksom blokova</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. KYD Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. KYD Core loopt waarschijnlijk al.</translation>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. KYD Core vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Verander automatisch gefinaliseerd budget voting gedrag. modus=auto: Stem enkel voor exact gefinaliseerde budget overeenkomend met mijn gegenereerde budget. (tekenreeks, standaard: auto)</translation>
+        <translation>Promjena ponašanja glasova na automatskom finaliziranom proračunu. mode = auto: Glasujte samo za točan završeni proračun s mojim generiranim proračunom. (niz, zadani: automatski)</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Doorlopend rate-limit gratis transacties naar&lt;n&gt;*1000 bytes per minuut (default:%u)</translation>
+        <translation>Stalne besplatne transakcije bez ograničenja stope na &lt;n&gt;* 1000 bajta po minuti (zadano: %u)</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Maak nieuwe bestanden met systeem standaard permissies, in plaats van umask 077 (alleen effectief met gedeactiveerde wallet functionaliteit)</translation>
+        <translation>Izradite nove datoteke s zadanim dozvolama za sustav, umjesto umask 077 (samo učinkovite s funkcijom onemogućene lisnice)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Verwijder alle portemonnee transacties en herstel alleen die delen van de blockchain via -rescan bij opstarten</translation>
+        <translation>Izbrišite sve transakcije lisnice i obnavljajte one dijelove blok-lanca kroz -rescan pri pokretanju</translation>
     </message>
     <message>
         <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Verwijder alle bestede Zerocoin en mints die zijn geregistreerd in de blockchain database en her-indexeer ze (0-1, standaard: %u)</translation>
+        <translation>Izbriši sve zerocoin utroške i minteve koji su zabilježeni na blockchain database i reindexiraj ih (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+        <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zKYD minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zKYD (0-1, standaard: %u)</translation>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zKYD mintanja (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for KYD inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor KYD inputs (0-1, standaard: %u)</translation>
+        <translation>Omogući ili onemogući staking funkcionalnosti za KYD unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zKYD inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor zKYD inputs (0-1, standaard: %u)</translation>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zKYD unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Activeer de spork administratie functionaliteit met de juiste private sleutel.</translation>
+        <translation>Omogućite funkcionalnost administracije s odgovarajućim privatnim ključem.</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Voer de regressietest modus uit, die een speciale chain gebruikt waarin blokken direct kunnen worden opgelost.</translation>
+        <translation>Unesite način rada regresije, koji koristi poseban lanac u kojem blokovi mogu biti riješeni odmah.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Fout: het luisteren naar inkomende verbindingen is mislukt (luister terug fout %s)</translation>
+        <translation>Pogreška: Slušanje dolaznih veza nije uspjelo (slušajte pogrešku vraćenu pogrešku %s)</translation>
     </message>
     <message>
         <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
-        <translation>Fout: de transactie is groter dan de maximaal toegestane transactiegrootte!</translation>
+        <translation>Pogreška: transakcija je veća od maksimalne dozvoljene veličine transakcije!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Fout: Niet ondersteund argument -socks gevonden. Het instellen van SOCKS versie is niet meer mogelijk, alleen SOCKS5 proxy's worden ondersteund.</translation>
+        <translation>Pogreška: nepodržani argument - pronađeni su kanali. Postavljanje SOCKS verzije više nije moguće, samo SOCKS5 proksiji su podržani.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Uitvoeren commando wanneer een relevante waarschuwing is ontvangen of we zien een echt lange fork (%s in cmd wordt vervangen door bericht)</translation>
+        <translation>Izvršite naredbu kada se primi odgovarajuće upozorenje ili vidimo jako dugo račvanje (%s u cmd zamjenjuje se porukom)</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Uitvoeren commando wanneer een portemonnee transactie verandert (%s in cmd wordt vervangen door TxID)</translation>
+        <translation>Izvrši naredbu prilikom promjene transakcije naočanika (%s u cmd zamjenjuje se TxID-om)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
+        <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
         <source>Fees (in KYD/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in KYD/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <translation>Naknade (u KYD / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
         <source>Fees (in KYD/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in KYD/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <translation>Naknade (u KYD / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Leeg database activiteit uit geheugen pool naar schijf log elke keer&lt;n&gt;megabytes (default: %u)</translation>
+        <translation>Ispraznite aktivnost baze podataka iz baze memorije na dnevnik diska svakog megabajta (zadano: %u)</translation>
     </message>
     <message>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Gevonden onbevestigde gedenomineerde outputs, wachten tot ze bevestigd zijn om verder te gaan.</translation>
+        <translation>Pronađeni su nepotvrđeni denonimi izlaza, čekat će dok ne potvrde nastavak.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Als paytxfee niet is ingesteld, sluit voldoende kosten in, zodat transacties beginnen te confirmeren binnen gemiddeld n blokken (standaard: %u)</translation>
+        <translation>Ako paytxfee nije postavljen, uključite dovoljnu naknadu kako bi transakcije započele potvrdu u prosjeku unutar n blokova (zadana vrijednost: %u)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>In deze modus controleert -genproclimit hoeveel blokken er onmiddellijk worden gegenereerd.</translation>
+        <translation>U ovom načinu rada -genproclimit kontrolira koliko blokova se generiraju odmah.</translation>
     </message>
     <message>
         <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation>Onvoldoende of onvoldoende bevestigd geld, u moet mogelijk een paar minuten wachten en het opnieuw proberen.</translation>
+        <translation>Nedovoljno ili nedovoljno potvrđena sredstva, možda ćete morati pričekati nekoliko minuta i pokušati ponovno.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Ongeldige hoeveelheid voor -maxtxfee=&lt;amount&gt;: '%s' (moet ten minste de minimale vergoeding van %s zijn om hangende transacties te voorkomen)</translation>
+        <translation>Nevažeći iznos za -maxtxfee =&lt;amount&gt;: '%s' (mora biti barem minimalna naknada od %s kako bi se spriječili zastoji)</translation>
     </message>
     <message>
         <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>Houd het gespecificeerde bedrag altijd beschikbaar voor uitgaven te allen tijde (standaard: 0)</translation>
+        <translation>Zadržavajte određeni iznos dostupan za potrošnju u svakom trenutku (zadano: 0)</translation>
     </message>
     <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Log transactie prioriteit en vergoeding per kB wanneer blokken worden gemined (standaard: %u)</translation>
+        <translation>Prijavite prioritet transakcije i naknadu po kB kada se mining-ju blokovi (zadano: %u)</translation>
     </message>
     <message>
         <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Onderhoud een volledige transactie index, gebruikt door de getrawtransaction rpc call (standaard: %u)</translation>
+        <translation>Održavajte cijeli indeks transakcija, koji se koristi pozivom getrawtransaction rpc (zadano: %u)</translation>
     </message>
     <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maximale gegevensgrootte in data carrier transacties die we relayen en minen (standaard: %u)</translation>
+        <translation>Maksimalna veličina podataka u transakcijama nosača podataka koje šaljemo i minamo (zadana vrijednost: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Maximale totale kosten die in een enkele portefeuille kunnen worden gebruikt, een te lage instelling kan grote transacties afbreken (standaard: %s)</translation>
+        <translation>Maksimalne ukupne naknade za upotrebu u jednoj transakciji novčanika, postavljanje preniske mogu prekidati velike transakcije (zadano: %s)</translation>
     </message>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Aantal seconden om te voorkomen dat misdragende peers opnieuw connectoren (standaard: %u)</translation>
+        <translation>Broj sekundi za neprimjereno ponašanje vršnjaka iz ponovnog povezivanja (zadano: %u)</translation>
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Verduistering maakt gebruik van exacte gedenomineerde bedragen om fondsen te verzenden, je zou misschien nog wat munten moeten anonimiseren.</translation>
+        <translation>Prikrivanje koristi točno iznose denominiranih sredstava za slanje sredstava, možda ćete jednostavno morati anonimizirati još novca.</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Output debugging informatie (default: %u, verschaffen &lt;category&gt; is optioneel)</translation>
+        <translation>Izlazne informacije o pogrešci (zadano: %u, &lt;category&gt; unos je neobavezan)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Query voor peer adressen via DNS lookup, als er weinig adressen zijn (standaard: 1 tenzij -connect)</translation>
+        <translation>Upit za peer adrese putem DNS traženja, ako je niska adresa (zadana: 1 ako nije povezana)</translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Willekeurige credentials voor elke proxy verbinding. Dit stelt Tor stream isolatie in staat (standaard: %u)</translation>
+        <translation>Randomizirati vjerodajnice za svaku proxy vezu. To omogućuje izolaciju Tor izvora (zadano: %u)</translation>
     </message>
     <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>Vereist hoge prioriteit voor het relayen van gratis of low-fee transacties (standaard: %u)</translation>
+        <translation>Zahtijevajte visoki prioritet za preusmjeravanje transakcija besplatnih ili niskih naknada (zadano: %u)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Stuur trace/debug info naar console in plaats van debug.log bestand (standaard: %u)</translation>
+        <translation>Pošaljite informacije o praćenju i debugu na konzolu umjesto datoteke debug.log (zadano: %u)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Stel maximale grootte van transacties met hoge prioriteit/low-fee in bytes in (standaard: %d)</translation>
+        <translation>Postavite maksimalnu veličinu transakcija s visokim prioritetom / niske naknade u bajtima (zadano: %d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Stel het aantal script verificatie threads (%u tot %d, 0 = auto, &lt;0 = laat dat aantal kernen vrij, standaard: %d)</translation>
+        <translation>Postavite broj niza provjere skripte (%u do %d, 0 = auto, &lt;0 = ostavite toliko jezgri slobodno, zadano: %d)</translation>
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Stel het aantal threads voor munt generatie in indien geactiveerd (-1 = alle kernen, standaard: %d)</translation>
+        <translation>Postavite broj niti za generiranje novčića ako je omogućeno (-1 = sve jezgre, zadana vrijednost: %d)</translation>
     </message>
     <message>
         <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Toon N bevestigingen voor een succesvol opgesloten transactie (0-9999, standaard: %u)</translation>
+        <translation>Prikaži potvrde N za uspješno zaključanu transakciju (0-9999, zadano: %u)</translation>
     </message>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Ondersteun filteren van blokken en transactie met bloom filters (standaard: %u)</translation>
+        <translation>Podržite filtriranje blokova i transakciju s filtrima za cvjetanje (zadano: %u)</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
+        <translation>Ovaj proizvod uključuje softver razvijen od strane OpenSSL projekta za uporabu u OpenSSL Toolkitu i kriptografskom softveru kojeg je napisao Eric Young i UPnP softver koji je napisao Thomas Bernard.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. KYD Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. KYD Core loopt waarschijnlijk al.</translation>
+        <translation>Nije moguće vezati se na %s na ovom računalu. KYD Core vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
+        <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 KYD.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 KYD.</translation>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 KYD.</translation>
     </message>
     <message>
         <source>Unable to locate enough funds for this transaction that are not equal 10000 KYD.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 KYD.</translation>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 KYD.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Gebruik aparte SOCKS5 proxy om peers via Tor verborgen services te bereiken (standaard: %s)</translation>
+        <translation>Koristite zasebni SOCKS5 proxy za pristup kolegama putem Tor skrivenih usluga (zadano: %s)</translation>
     </message>
     <message>
         <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Waarschuwing: -maxtxfee is zeer hoog ingesteld! Deze hoge kosten kunnen worden betaald op een enkele transactie.</translation>
+        <translation>Upozorenje: -maxtxfee je vrlo visoka! Naknade ovoliko visoke mogu se platiti samo jednom transakcijom.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
+        <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong KYD Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt KYD Core niet goed.</translation>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, KYD Core neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Waarschuwing: het netwerk lijkt er niet helemaal mee eens te zijn! Sommige miners lijken problemen te ondervinden.</translation>
+        <translation>Upozorenje: Čini se da se mreža ne slaže u potpunosti! Čini se da neki rudari imaju problema.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Waarschuwing: Wij lijken het er niet helemaal eens te zijn met onze peers! Mogelijk moet je upgraden, of andere nodes moeten mogelijk upgraden.</translation>
+        <translation>Upozorenje: Čini se da se ne slažemo s našim vršnjacima! Možda ćete morati nadograditi ili možda želite nadograditi druge čvorove.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Waarschuwing: fout lezen wallet.dat! Alle sleutels lezen correct, maar transactie gegevens of adresboek invoeringen kunnen missen of niet correct zijn.</translation>
+        <translation>Upozorenje: pogreška u čitanju wallet.dat! Svi ključevi pravilno čitaju, ali podaci o transakciji ili unosi u adresaru možda nedostaju ili su netočni.</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Waarschuwing: wallet.dat corrupt, data gered! Originele wallet.dat opgeslagen als wallet.{timestamp}.bak in %s; als je saldo of transacties onjuist zijn, moet je een back-up herstellen.</translation>
+        <translation>Upozorenje: wallet.dat je oštećen, podaci su spašeni! Izvorni wallet.dat spremljen je kao lisnica. {Timestamp} .bak u %s; ako su vaša salda ili transakcije netočne, trebali biste ih vratiti iz sigurnosne kopije.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Whitelist peers verbinden van het opgegeven netmask of IP adres. Kan meerdere keren worden opgegeven.</translation>
+        <translation>Dopuštene kolege koji se povezuju s određenom netmask ili IP adresa. Može se navesti više puta.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Whitelisted peers kunnen niet DoS banned worden en hun transacties worden altijd doorgestuurd, zelfs als ze al in de mempool zijn, nuttig bijv. voor een gateway</translation>
+        <translation>Popis dopuštenih suradnika ne može biti zabranjen DoS i njihova se transakcija uvijek prenosi, čak i ako su već u spremištu,  na primjer. za pristupnika</translation>
     </message>
     <message>
         <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
+        <translation>Morate odrediti masternodeprivkey u konfiguraciji. Za pomoć pogledajte dokumentaciju.</translation>
     </message>
     <message>
         <source>(9229 could be used only on mainnet)</source>
-        <translation>(9229 kan alleen op mainnet worden gebruikt)</translation>
+        <translation>(9229 se može koristiti samo na mainnetu)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
-        <translation>(standaard: %s)</translation>
+        <translation>(default: %s)</translation>
     </message>
     <message>
         <source>(default: 1)</source>
-        <translation>(standaard: 1)</translation>
+        <translation>(default: 1)</translation>
     </message>
     <message>
         <source>(must be 9229 for mainnet)</source>
-        <translation>(moet 9229 voor mainnet zijn)</translation>
+        <translation>(mora biti 9229 za glavnu mrežu)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accepteer command line en JSON-RPC commando's</translation>
+        <translation>Prihvatite naredbeni redak i JSON-RPC naredbe</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepteer verbindingen van buitenaf (standaard: 1 als geen -proxy of -connect)</translation>
+        <translation>Prihvatite veze s vanjske strane (zadana postavka: 1 ako nema proxy ili -connect)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
-        <translation>Accepteer publieke REST verzoeken (standaard: %u)</translation>
+        <translation>Prihvatite javne zahtjeve za REST (zadano: %u)</translation>
     </message>
     <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Voeg een node toe om verbinding mee te maken en probeer de verbinding open te houden</translation>
+        <translation>Dodajte čvor za povezivanje i pokušajte zadržati vezu otvorenu</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>DNS lookups toestaan voor -addnode, -seednode en -connect</translation>
+        <translation>Dopustite traženja DNS-a za -addnode, -seednode i -connect</translation>
     </message>
     <message>
         <source>Already have that input.</source>
-        <translation>Heeft die input al.</translation>
+        <translation>Već imate taj unos.</translation>
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Vraag altijd naar peer adressen via DNS lookup (standaard: %u)</translation>
+        <translation>Uvijek se upita za peer adrese putem DNS pretraživanja (zadano: %u)</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Poog om privé sleutels te herstellen van een corrupte wallet.dat</translation>
+        <translation>Pokušaj oporavka privatnih ključeva iz korumpirane wallet.dat</translation>
     </message>
     <message>
         <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Creëer automatisch de Tor verborgen service (standaard: %d)</translation>
+        <translation>Automatski izradite Tor skrivenu uslugu (zadano: %d)</translation>
     </message>
     <message>
         <source>Block creation options:</source>
-        <translation>Block creatie opties:</translation>
+        <translation>Opcije izrade blokova:</translation>
     </message>
     <message>
         <source>Calculating missing accumulators...</source>
-        <translation>Calculeren van ontbrekende accumulators...</translation>
+        <translation>Izračun akumulatora koji nedostaju ...</translation>
     </message>
     <message>
         <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Kan niet denomineren: er zijn geen compatibele inputs over.</translation>
+        <translation>Nije moguće denominirati: nema kompatibilnih ulaza.</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
-        <translation>Kan geen willekeurige Masternode vinden.</translation>
+        <translation>Nije moguće pronaći slučajni Masternode.</translation>
     </message>
     <message>
         <source>Can't mix while sync in progress.</source>
-        <translation>Kan niet mixen terwijl synchronisatie wordt uitgevoerd.</translation>
+        <translation>Nije moguće miješati dok je sinkronizacija u tijeku.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation>Kan de portemonnee niet downgraden</translation>
+        <translation>Nije moguće novčanik vratiti na nižu verziju</translation>
     </message>
     <message>
         <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kan -bind adres niet oplossen: '%s'</translation>
+        <translation>Nije moguće riješiti adresu pošiljatelja: '%s'</translation>
     </message>
     <message>
         <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kan -externalip adres niet oplossen: '%s'</translation>
+        <translation>Nije moguće riješiti vanjsku adresu: '%s'</translation>
     </message>
     <message>
         <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kan -whitebind adres niet oplossen: '%s'</translation>
+        <translation>Nije moguće riješiti -whitebind adresu: '%s'</translation>
     </message>
     <message>
         <source>Cannot write default address</source>
-        <translation>Kan standaard adres niet schrijven</translation>
+        <translation>Ne možete zapisati zadanu adresu</translation>
     </message>
     <message>
         <source>Collateral not valid.</source>
-        <translation>Terugbetaling niet geldig.</translation>
+        <translation>Zalog nije valjan.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
-        <translation>Verbind alleen met de opgegeven node(s)</translation>
+        <translation>Povežite se samo s navedenim čvorom(ima)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
-        <translation>Verbind via SOCKS5 proxy</translation>
+        <translation>Povežite se preko SOCKS5 proxyja</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Verbind met een node om peer adressen te verkrijgen en verbreek verbinding</translation>
+        <translation>Povežite se s čvorom za preuzimanje peer adresa i odspojite se</translation>
     </message>
     <message>
         <source>Connection options:</source>
-        <translation>Connectie opties:</translation>
+        <translation>Mogućnosti povezivanja:</translation>
     </message>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Bitcoin Kernontwikkelaars</translation>
+        <translation>Autorska prava (C) 2009-%i Bitcoin Core Developers</translation>
     </message>
     <message>
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
+        <translation>Autorska prava (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
         <source>Copyright (C) 2015-%i The KYD Core Developers</source>
-        <translation>Copyright (C) 2015-%i The KYD Kernontwikkelaars</translation>
+        <translation>Autorska prava (C) 2015-%i The KYD Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
-        <translation>Corrupte block database gedetecteerd</translation>
+        <translation>Otkriven oštećen blok podataka</translation>
     </message>
     <message>
         <source>Could not parse masternode.conf</source>
-        <translation>Kan masternode.conf niet parsen</translation>
+        <translation>Nije moguće analizirati masternode.conf
+</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
-        <translation>Debugging/Test opties:</translation>
+        <translation>Opcije otklanjanja pogrešaka / testiranja:</translation>
     </message>
     <message>
         <source>Delete blockchain folders and resync from scratch</source>
-        <translation>Verwijder blockchain mappen en hersynchroniseer alles opnieuw</translation>
+        <translation>Brisanje blockchain mape i RESYNC od nule</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>Schakel OS notificaties uit voor inkomende transacties (standaard: %u)</translation>
+        <translation>Onemogućite obavijesti OS-a za dolazne transakcije (zadano: %u)</translation>
     </message>
     <message>
         <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Schakel safe mode uit, override een echte safe mode gebeurtenis (standaard: %u)</translation>
+        <translation>Onemogućivanje sigurnosnog modula, nadjačavanje sigurnog načina rada (zadano: %u)</translation>
     </message>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Ontdek eigen IP adres (standaard: 1 bij luisteren en niet -externalip)</translation>
+        <translation>Otkrijte vlastitu IP adresu (zadano: 1 prilikom slušanja i nije za vanjski ip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Laad de portemonnee niet in en schakel portemonnee RPC oproepen uit</translation>
+        <translation>Ne učitavaj novčanik i onesspobiti RPC pozive</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Wil je de blok database nu herbouwen?</translation>
+        <translation>Želite li sada obnoviti blok bazu podataka?</translation>
     </message>
     <message>
         <source>Done loading</source>
-        <translation>Klaar met laden</translation>
+        <translation>Gotovo učitavanje</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>Zet automatische Zerocoin minting aan (0-1, standaard: %u)</translation>
+        <translation>Omogući automatsko Zerocoin stvaranje (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Activeer publicatie hash transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
+        <translation>Omogući objavu hash transakcije (zaključano putem usluge SwiftX) u </translation>
     </message>
     <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Activeer publicatie raw transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
+        <translation>Omogući objavljivanje neobrađene transakcije (zaključano putem usluge SwiftX) u</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Schakel de client in als masternode (0-1, standaard: %u)</translation>
+        <translation>Omogućite klijentu da djeluje kao masternode (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Entries are full.</source>
-        <translation>De entries zijn vol.</translation>
+        <translation>Unosi su puni.</translation>
     </message>
     <message>
         <source>Error connecting to Masternode.</source>
-        <translation>Fout bij verbinden met Masternode.</translation>
+        <translation>Pogreška pri povezivanju s Masternodeom.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Fout bij het initialiseren van blok database</translation>
+        <translation>Pogreška prilikom inicijalizacije baze blokova</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Fout bij het initialiseren van de wallet database omgeving %s!</translation>
+        <translation>Pogreška pri pokretanju okruženja baze podataka novčanika %s!</translation>
     </message>
     <message>
         <source>Error loading block database</source>
-        <translation>Error tijdens het laden van de block database</translation>
+        <translation>Pogreška pri učitavanju baze podataka blokova</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
-        <translation>Error tijdens het laden van wallet.dat</translation>
+        <translation>Pogreška prilikom učitavanja wallet.dat</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
+        <translation>Pogreška pri učitavanju wallet.dat: novčanik oštećen</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of KYD Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van KYD Core</translation>
+        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju KYD jezgre</translation>
     </message>
     <message>
         <source>Error opening block database</source>
-        <translation>Error tijdens het openen van de block database</translation>
+        <translation>Pogreška pri otvaranju baze podataka blokova</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
-        <translation>Error tijdens het lezen van de database, aan het afsluiten.</translation>
+        <translation>Pogreška pri čitanju iz baze podataka, zatvaranje.</translation>
     </message>
     <message>
         <source>Error recovering public key.</source>
-        <translation>Fout bij het herstellen van de publieke sleutel.</translation>
+        <translation>Pogreška prilikom vraćanja javnog ključa.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Greška</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor details</translation>
+        <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
     </message>
     <message>
         <source>Error: Can't select current denominated inputs</source>
-        <translation>Fout: Kan de huidige gedenomineerde inputs niet selecteren</translation>
+        <translation>Pogreška: Nije moguće odabrati trenutne unose</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
-        <translation>Error: Schijfruimte is laag!</translation>
+        <translation>Pogreška: prostor na disku je nizak!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Fout: Niet ondersteunde argument -tor gevonden, gebruik -onion.</translation>
+        <translation>Pogreška: neodržani argument - tor pronađen, koristite -onion.</translation>
     </message>
     <message>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Fout: Portemonnee vergrendeld, niet in staat om transactie te creëren!</translation>
+        <translation>Pogreška: Novčanik zaključan, ne može stvoriti transakciju!</translation>
     </message>
     <message>
         <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Fout: U heeft al entries in afwachting in de verduistering pool</translation>
+        <translation>Pogreška: već imate unose čekanja u grupi za Prekrivanje</translation>
     </message>
     <message>
         <source>Failed to calculate accumulator checkpoint</source>
-        <translation>Kon het controlepunt van de accumulator niet berekenen</translation>
+        <translation>Nije uspjelo izračunavanje kontrolne točke akumulatora</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Niet gelukt om te luisteren op een poort. Gebruik -listen=0 als je dit wilt.</translation>
+        <translation>Slušanje nije bilo na bilo kojem priključku. Koristite -listen = 0 ako to želite.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
-        <translation>Mislukt om block te lezen</translation>
+        <translation>Greška čitanja bloka</translation>
     </message>
     <message>
         <source>Fee (in KYD/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in KYD/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <translation>Naknada (u KYD / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
-        <translation>Transactie aan het voltooien.</translation>
+        <translation>Završavanje transakcije.</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
-        <translation>Forceer safe mode (standaard: %u)</translation>
+        <translation>Prisilno poktretanje sigurnosnog načina rada (zadano: %u)</translation>
     </message>
     <message>
         <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Genoeg gebruikers gevonden, aan het ondertekenen (%s aan het wachten)</translation>
+        <translation>Pronađeno dovoljno korisnika, potpisivanje (čekanje %s)</translation>
     </message>
     <message>
         <source>Found enough users, signing ...</source>
-        <translation>Genoeg gebruikers gevonden, aan het ondertekenen ...</translation>
+        <translation>Pronađeno dovoljno korisnika, potpisivanje ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
-        <translation>Genereer munten (standaard: %u)</translation>
+        <translation>Generirajte novčiće (zadano: %u)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Hoeveel blokken bij het opstarten controleren (standaard: %u, 0 = alles)</translation>
+        <translation>Koliko blokova treba provjeriti pri pokretanju (zadano: %u, 0 = sve)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>Als &lt;category&gt; niet is opgegeven, output alle debugging informatie.</translation>
+        <translation>ako &lt;category&gt;nije isporučen, ispišite sve informacije o uklanjanju pogrešaka.</translation>
     </message>
     <message>
         <source>Importing...</source>
-        <translation>Importeren...</translation>
+        <translation>Uvozim...</translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importeert blokken uit extern blk000??.dat bestand</translation>
+        <translation>Uvoz blokova iz vanjske blk000 ?? dat datoteke</translation>
     </message>
     <message>
         <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Inclusief IP adressen in debug output (standaard: %u)</translation>
+        <translation>Uključi IP adrese u izlaz za ispravljanje pogrešaka (zadano: %u)</translation>
     </message>
     <message>
         <source>Incompatible mode.</source>
-        <translation>Modus is niet compatibel.</translation>
+        <translation>Nepodudarni način rada.</translation>
     </message>
     <message>
         <source>Incompatible version.</source>
-        <translation>Versie is niet compatibel.</translation>
+        <translation>Nepodudarna verzija.</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Het genesis block kan niet worden gevonden of is incorrect. Klopt datadir voor het netwerk?</translation>
+        <translation>Netočan ili nijedan blok geneze nije pronađen. Pogrešan datadir za mrežu?</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informatie</translation>
+        <translation>Informacije</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. KYD Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. KYD Core wordt afgesloten.</translation>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. KYD Core se zatvara.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
-        <translation>Ongeldige invoer.</translation>
+        <translation>Unos nije valjan.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Onvoldoende saldo.</translation>
+        <translation>Nedovoljna sredstva</translation>
     </message>
     <message>
         <source>Insufficient funds.</source>
-        <translation>Onvoldoende saldo.</translation>
+        <translation>Nedovoljna sredstva.</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Ongeldig -onion adres of hostnaam: '%s'</translation>
+        <translation>nevažeća -onion adresa ili naziv hosta: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ongeldige hoeveelheid voor -maxtxfee=&lt;amount&gt;: '%s'</translation>
+        <translation>Nevažeći iznos za -maxtxfee =&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ongeldige hoeveelheid voor -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+        <translation>Nevažeći iznos za -minrelaytxfee =&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ongeldige hoeveelheid voor -mintxfee=&lt;amount&gt;: '%s'</translation>
+        <translation>Nevažeći iznos za -mintfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: '%s' (moet tenminste %s zijn)</translation>
+        <translation>Nevažeći iznos za -paytxfee =&lt;amount&gt;: '%s' (mora biti barem %s)</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: '%s'</translation>
+        <translation>Nevažeći iznos za -paytxfee =&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Ongeldige hoeveelheid voor -reservebalance=&lt;amount&gt;</translation>
+        <translation>Nevažeći iznos za -reservebalance =&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
-        <translation>Ongeldige hoeveelheid</translation>
+        <translation>Nevažeći iznos</translation>
     </message>
     <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation>Ongeldige masternodeprivkey. Zie documentatie.</translation>
+        <translation>Nevažeći masternodeprivkey. Molimo pogledajte dokumentaciju.</translation>
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Ongeldige netmask opgegeven in -whitelist: '%s'</translation>
+        <translation>Nevažeća mrežna maska specificirana u kategoriji -whitelist: '%s'</translation>
     </message>
     <message>
         <source>Invalid port detected in masternode.conf</source>
-        <translation>Ongeldige poort gedetecteerd in masternode.conf</translation>
+        <translation>Nevažeći port otkriven u masternode.conf</translation>
     </message>
     <message>
         <source>Invalid private key.</source>
-        <translation>Ongeldige privésleutel.</translation>
+        <translation>Nevažeći privatni ključ.</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
-        <translation>Ongeldige script gedetecteerd.</translation>
+        <translation>Otkriven nevažeća skripta.</translation>
     </message>
     <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
+        <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
         <source>Reindex the KYD and zKYD money supply statistics</source>
-        <translation>Indexeer de KYD- en zKYD-geldvoorraadstatistieken opnieuw</translation>
+        <translation>Ponovno indeksirati statistiku KYD i zKYD ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
-        <translation>Her-indexeren Zerocoin database...</translation>
+        <translation>Reindeksiranje zerocoin databaze...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin failed</source>
-        <translation>Her-indexeren Zerocoin database mislukt</translation>
+        <translation>Reindeksiranje zerocoin neuspjelo</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
-        <translation>Geselecteerde munt waarde is minder dan het betalingsdoel</translation>
+        <translation>Odabrana vrijednost novčića je manja od količine za plačanje</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
-        <translation>SwiftTX opties:</translation>
+        <translation>SwiftX opcije:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Dit is een pre-release test build - gebruik op eigen risico - niet gebruiken voor staking of handel applicaties!</translation>
+        <translation>Ovo je priprema za testiranje prije puštanja - upotrebljavajte na vlastiti rizik - nemojte ga koristiti za staking ili trgovinske aplikacije!</translation>
     </message>
     <message>
         <source> mints deleted
 </source>
-        <translation>mints verwijderd
+        <translation>mints izbrisana
 </translation>
     </message>
     <message>
         <source> mints updated, </source>
-        <translation>mints bijgewerkt,</translation>
+        <translation>mintova ažurirano</translation>
     </message>
     <message>
         <source> unconfirmed transactions removed
 </source>
-        <translation>onbevestigde transacties verwijderd
-</translation>
+        <translation>uklonjene nepotvrđene transakcije</translation>
     </message>
     <message>
         <source>Disable all KYD specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke KYD functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <translation>Onemogući sve specifične funkcije KYD (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Schakel SwiftX in, toon bevestigingen voor vergrendelde transacties (bool, standaard: %s)</translation>
+        <translation>Omogućite SwiftX, prikažite potvrde za zaključane transakcije (bool, zadano: %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fout: De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, bijvoorbeeld als je een kopie van wallet.dat gebruikt en munten in de kopie waren besteed maar hier niet als zodanig gemarkeerd.</translation>
+        <translation>Pogreška: transakcija je odbijena! To se može dogoditi ako su neki od novčića u vašem novčaniku već bili potrošeni, primjerice, ako ste upotrijebili kopiju wallet.data, a novčići su potrošeni u kopiji, ali nisu označeni kao ovdje potrošeni.</translation>
     </message>
     <message>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fout: Deze transactie vereist transactiekosten van ten minste %s vanwege de hoeveelheid, de complexiteit of het gebruik van recent ontvangen fondsen!</translation>
+        <translation>Pogreška: ova transakcija zahtijeva naknadu za transakciju od najmanje %s zbog svoje količine, složenosti ili korištenja nedavno primljenih sredstava!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Fout: Niet ondersteund argument -checklevel gevonden. Checklevel moet niveau 4 zijn.</translation>
+        <translation>Pogreška: pronađen je nepotpuni argument. Checklevel mora biti razina 4.</translation>
     </message>
     <message>
         <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Voer het commando uit als het beste blok verandert en de grootte ervan voorbij is (%s in cmd wordt vervangen door blokhash, %d met de blokgrootte)</translation>
+        <translation>Izvrši naredbu kada se promijeni najbolji blok i njezina veličina je gotova (%s u cmd zamjenjuje blok hash, %d s veličinom bloka)</translation>
     </message>
     <message>
         <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Het is niet gelukt om muntstukken te vinden onder de aangehouden munten met minder dan max. Aantal uitgaven</translation>
+        <translation>Nije pronađen set novčića koji se drže s manje od maksimuma potrošnje</translation>
     </message>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>In zeldzame gevallen overschrijdt een besteding met 7 munten uw maximaal toegestane transactiegrootte. Probeer het opnieuw met 6 of minder munten</translation>
+        <translation>U rijetkim slučajevima, potrošnja s 7 kovanica premašuje našu maksimalnu dopuštenu veličinu transakcije, pokušajte ponovo pokušati potrošiti 6 ili manje kovanica</translation>
     </message>
     <message>
         <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
+        <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any automatic zKYD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zKYD back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zKYD sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Specificeer aangepast back-up pad om een kopie van elke portemonnee back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand.</translation>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju sigurnosne kopije lisnice. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju.</translation>
     </message>
     <message>
         <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX vereist invoer van tenminste 6 bevestigingen, je dient wellicht een paar minuten te wachten en het opnieuw proberen.</translation>
+        <translation>SwiftX zahtijeva ulaze s najmanje 6 potvrda, možda ćete morati pričekati nekoliko minuta i pokušati ponovo.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt;kan zijn: </translation>
+        <translation>&lt;category&gt; može biti:</translation>
     </message>
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Poging om blockchain corruptie herstel te forceren</translation>
+        <translation>Pokušaj prisiljavanja blokiranja korupcije na oporavak</translation>
     </message>
     <message>
         <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: Accumulator witness controleert niet</translation>
+        <translation>CoinSpend: Svjedok akumulatora ne potvrđuje</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Toon de berekeningen van de stake modificator in het debug.log bestand.</translation>
+        <translation>Prikažite izračune modifikatora uloga u debug.log datoteci.</translation>
     </message>
     <message>
         <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Toon verbose munt stake berichten in het debug.log bestand.</translation>
+        <translation>Prikažite opsežne poruke za ulaganje novčića u datoteku debug.log.</translation>
     </message>
     <message>
         <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Activeer publicatie hash blok in &lt;address&gt;</translation>
+        <translation>Omogući blokiranje zbirke oglasa u sustavu&lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Activeer publicatie has transactie in &lt;address&gt;</translation>
+        <translation>Omogući transakciju hash transakcije u sustavu &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Activeer publicatie raw block in &lt;address&gt;</translation>
+        <translation>Omogući objavljivanje neobrađenog bloka u &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Activeer publicatie raw transactie in &lt;address&gt;</translation>
+        <translation>Omogući objavljivanje neobrađene transakcije u&lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Activeer staking functionaliteit (0-1, standaard: %u)</translation>
+        <translation>Omogući funkcionalnost odstupanja (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor meer informatie</translation>
+        <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
     </message>
     <message>
         <source>Error: No valid utxo!</source>
-        <translation>Fout: geen geldige utxo!</translation>
+        <translation>Pogreška: Nema valjanog utxo!</translation>
     </message>
     <message>
         <source>Failed to create mint</source>
-        <translation>Het is niet gelukt om mint te maken</translation>
+        <translation>Nije uspjelo kovanje</translation>
     </message>
     <message>
         <source>Failed to deserialize</source>
-        <translation>Kan deserialiseren niet</translation>
+        <translation>Deserializiranje nije uspjelo</translation>
     </message>
     <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Niet gelukt om Zerocoins in wallet.dat te vinden.</translation>
+        <translation>Neuspjelo pronalaženje Zerocoina u wallet.dat</translation>
     </message>
     <message>
         <source>Failed to select a zerocoin</source>
-        <translation>Het is niet gelukt om een zerocoin te selecteren</translation>
+        <translation>Odabir Zerocoina nije uspjelo</translation>
     </message>
     <message>
         <source>Failed to wipe zerocoinDB</source>
-        <translation>Mislukt om zerocoinDB te legen.</translation>
+        <translation>Neuspjelo brisanje zerocoinDB</translation>
     </message>
     <message>
         <source>Failed to write coin serial number into wallet</source>
-        <translation>Het serienummer van het muntstuk kan niet in de portemonnee worden geschreven</translation>
+        <translation>Nije uspio zapisi serijskog broja novčića u novčanik</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Houd maximaal &lt;n&gt;niet te verbinden transacties in het geheugen (standaard: %u)</translation>
+        <translation>Zadržite najviše &lt;n&gt; neprenosive transakcije u memoriji (zadano: %u)</translation>
     </message>
     <message>
         <source>Last Obfuscation was too recent.</source>
-        <translation>Laatste verduistering was te recent.</translation>
+        <translation>Poslijednje prikrivanje je bilo nedavno.</translation>
     </message>
     <message>
         <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Laatste succesvolle verduistering actie was te recent.</translation>
+        <translation>Posljednje uspješno Prikrivanje je bilo nedavno.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Limiet grootte van signature cache naar &lt;n&gt; invoer (standaard: %u)</translation>
+        <translation>Ograničite veličinu predmemorije potpisa na 1 unosa (zadano: %u)</translation>
     </message>
     <message>
         <source>Line: %d</source>
-        <translation>Line: %d</translation>
+        <translation>Linija: %d</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister naar JSON-RPC verbindingen op &lt;port&gt; (standaard: %u of testnet: %u)</translation>
+        <translation>Slušajte za povezivanje JSON-RPC veze &lt;port&gt; (zadano: %u ili testnet: %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister naar verbindingen op &lt;port&gt; (standaard: %u of testnet: %u)</translation>
+        <translation>Slušajte za veze &lt;port&gt;uključeno (zadano: %u ili testnet: %u)</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
-        <translation>Adressen laden...</translation>
+        <translation>Učitavanje adresa ...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Blockindex laden...</translation>
+        <translation>Učitavanje indeksa blokova ...</translation>
     </message>
     <message>
         <source>Loading budget cache...</source>
-        <translation>Budget cache laden...</translation>
+        <translation>Učitavanje predmemorije proračuna ...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
-        <translation>Masternode cache laden...</translation>
+        <translation>Učitavanje predmemorije masternoda ...</translation>
     </message>
     <message>
         <source>Loading masternode payment cache...</source>
-        <translation>Masternode betalingscache laden...</translation>
+        <translation>Učitavanje predmemorije plaćanja masternoda ...</translation>
     </message>
     <message>
         <source>Loading sporks...</source>
-        <translation>Sporks laden...</translation>
+        <translation>Učitavanje aplikacije ...</translation>
     </message>
     <message>
         <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Portemonnee laden... (%3.2f %%)</translation>
+        <translation>Učitavanje novčanika ... (%3.2f %%)</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
-        <translation>Portemonnee aan het laden...</translation>
+        <translation>Učitavanje novčanika...</translation>
     </message>
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Locatie van de auth cookie (standaard: data dir)</translation>
+        <translation>Lokacija autentičnog kolačića (zadano: dir. Podataka)</translation>
     </message>
     <message>
         <source>Lock is already in place.</source>
-        <translation>Vergrendeling is al uitgevoerd.</translation>
+        <translation>Zaključavanje na mjestu.</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Masternodes vergrendelen van masternode configuratiebestand (standaard: %u)</translation>
+        <translation>Zaključaj masternode iz masternode konfiguracijske datoteke (zadano: %u)</translation>
     </message>
     <message>
         <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>Lookup (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
+        <translation>Potražnja(): nevažeća adresa -proxy ili naziv hosta: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Bijhouden maximaal &lt;n&gt; connecties naar peers (standaard: %u)</translation>
+        <translation>Održavajte najviše &lt;n&gt; veza s vršnjacima (zadano: %u)</translation>
     </message>
     <message>
         <source>Masternode options:</source>
-        <translation>Masternode opties:</translation>
+        <translation>Opcije Masternoda:</translation>
     </message>
     <message>
         <source>Masternode queue is full.</source>
-        <translation>Masternode wachtrij zit vol.</translation>
+        <translation>Niz Masternoda je pun.</translation>
     </message>
     <message>
         <source>Masternode:</source>
@@ -5795,571 +5796,571 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximaal per connectie ontvangst buffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
+        <translation>Maksimalni međuspremnik za primanje veze, &lt;n&gt;* 1000 bajta (zadano: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximaal per connectie verstuur buffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
+        <translation>Maksimalni pošiljatelj za slanje po vezama, &lt;n&gt;* 1000 bajta (zadano: %u)</translation>
     </message>
     <message>
         <source>Mint did not make it into blockchain</source>
-        <translation>Mint heeft de blockchain niet gehaald</translation>
+        <translation>Kovanje nije ušlo u blockchain</translation>
     </message>
     <message>
         <source>Missing input transaction information.</source>
-        <translation>Ontbrekende invoer transactie informatie ontbreekt.</translation>
+        <translation>Nedostaju informacije o ulaznoj transakciji.</translation>
     </message>
     <message>
         <source>Mixing in progress...</source>
-        <translation>Bezig met mixen...</translation>
+        <translation>Miješanje u tijeku ...</translation>
     </message>
     <message>
         <source>Need address because change is not exact</source>
-        <translation>Noodzaak van adres omdat wijziging niet exact is</translation>
+        <translation>Trebate adresu, jer ostatak nije točan</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Moet een poort opgeven met -whitebind: '%s'</translation>
+        <translation>Morate navesti vezu s -whitebind: '%s'</translation>
     </message>
     <message>
         <source>No Masternodes detected.</source>
-        <translation>Geen Masternodes gedetecteerd.</translation>
+        <translation>Masternode nije pronađen.</translation>
     </message>
     <message>
         <source>No compatible Masternode found.</source>
-        <translation>Geen compatibele Masternode gevonden.</translation>
+        <translation>Nema kompatibilnog Masternoda.</translation>
     </message>
     <message>
         <source>No funds detected in need of denominating.</source>
-        <translation>Geen fondsen gedetecteerd die denominatie nodig hebben.</translation>
+        <translation>Nema otkrivenih sredstava kojima je potrebna denominacija.</translation>
     </message>
     <message>
         <source>No matching denominations found for mixing.</source>
-        <translation>Geen passende denominaties gevonden voor mixing.</translation>
+        <translation>Za miješanje nisu pronađeni odgovarajući apoeni.</translation>
     </message>
     <message>
         <source>Node relay options:</source>
-        <translation>Node relay opties:</translation>
+        <translation>Opcije releja čvorova:</translation>
     </message>
     <message>
         <source>Non-standard public key detected.</source>
-        <translation>Niet standaard publieke sleutel gedetecteerd.</translation>
+        <translation>Otkriven je nestandardni javni ključ.</translation>
     </message>
     <message>
         <source>Not compatible with existing transactions.</source>
-        <translation>Niet compatibel met bestaande transacties.</translation>
+        <translation>Nije kompatibilno s postojećim transakcijama.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
-        <translation>Niet genoeg bestandsbeschrijvingen beschikbaar.</translation>
+        <translation>Nije dostupno dovoljno deskriptora datoteka.</translation>
     </message>
     <message>
         <source>Not in the Masternode list.</source>
-        <translation>Niet in de Masternode lijst.</translation>
+        <translation>Nije na popisu Masternode.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Aantal automatische portemonnee backups (standaard: 10)</translation>
+        <translation>Broj automatskih sigurnosnih kopija novčanika (zadani: 10)</translation>
     </message>
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
-        <translation>Aantal aangepaste locatie back-ups om te behouden (standaard: %d)</translation>
+        <translation>Broj sigurnosnih kopija prilagođenih lokacija za zadržavanje (zadano: %d)</translation>
     </message>
     <message>
         <source>Obfuscation is idle.</source>
-        <translation>Verduistering is inactief.</translation>
+        <translation>Prikrivanje je u stanju mirovanja.</translation>
     </message>
     <message>
         <source>Obfuscation request complete:</source>
-        <translation>Verduistering verzoek compleet:</translation>
+        <translation>Zahtjev za Prikrivanje dovršeno:</translation>
     </message>
     <message>
         <source>Obfuscation request incomplete:</source>
-        <translation>Verduistering verzoek incompleet:</translation>
+        <translation>Nedovršeni zahtjevi za Prikrivanje:</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>Accepteer alleen blockchain matching met ingebouwde controlepunten (standaard: %u)</translation>
+        <translation>Prihvatite blok lanac koji odgovara ugrađenim kontrolnim točkama (zadano: %u)</translation>
     </message>
     <message>
         <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Verbind alleen met nodes in het netwerk &lt;net&gt; (ipv4, ipv6 of onion)</translation>
+        <translation>Samo se povežite s čvorovima u mreži &lt;net&gt;(ipv4, ipv6 ili luk)</translation>
     </message>
     <message>
         <source>Options:</source>
-        <translation>Opties:</translation>
+        <translation>Mogučnosti:</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
-        <translation>Wachtwoord voor JSON-RPC connecties</translation>
+        <translation>Lozinka za JSON-RPC veze</translation>
     </message>
     <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
+        <translation>isValid (): Nevažeća proxy adresa ili naziv hosta: '%s'</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
-        <translation>Voorbereiden van hersynchronisatie...</translation>
+        <translation>Priprema za resync ...</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Voeg debug output met timestamp toe (standaard: %u)</translation>
+        <translation>Dodaj na početak izlaz za uklanjanje pogrešaka s vremenskom oznakom (zadano: %u)</translation>
     </message>
     <message>
         <source>Print version and exit</source>
-        <translation>Print versie en verlaat</translation>
+        <translation>Ispis verzije i izlaz</translation>
     </message>
     <message>
         <source>RPC server options:</source>
-        <translation>RPC server opties:</translation>
+        <translation>Opcije RPC poslužitelja:</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Willekeurig laten vallen van 1 van elke &lt;n&gt;netwerk berichten</translation>
+        <translation>Nasumično ispusti 1 svake &lt;n&gt; mrežne poruke</translation>
     </message>
     <message>
         <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Willekeurig vervagen van 1 van elke &lt;n&gt; netwerk berichten</translation>
+        <translation>Označava slučajno svaka 1 &lt;n&gt; mrežne poruke</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Herstel blockchain index van huidige blk000??.dat bestanden</translation>
+        <translation>Obnovi indeks blok lanca iz trenutnih blk000??.dat datoteka</translation>
     </message>
     <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Ontvang en laat P2P netwerkmeldingen zien (standaard: %u)</translation>
+        <translation>Primanje i prikaz upozorenja P2P mreže (zadano: %u)</translation>
     </message>
     <message>
         <source>Reindex the accumulator database</source>
-        <translation>Herindexeer de verzameldatabase</translation>
+        <translation>Ponovno indeksirati bazu podataka akumulatora</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Relay en mine data carrier transacties (standaard: %u)</translation>
+        <translation>Transakcije prijenosnika i minanja podataka (zadano: %u)</translation>
     </message>
     <message>
         <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Relay non P2SH multisig (default: %u)</translation>
+        <translation>Relay ne-P2SH multisig (zadano: %u)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescan de blockchain voor ontbrekende portemonnee transacties</translation>
+        <translation>Ponovno skeniranje blok-lanca za transakcije novčanika koji nedostaju</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Opnieuw scannen...</translation>
+        <translation>Ponovno skeniranje ...</translation>
     </message>
     <message>
         <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMintZerocoin voltooid: </translation>
+        <translation>ResetMintZerocoin je završio:</translation>
     </message>
     <message>
         <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin voltooid: </translation>
+        <translation>ResetSpentZerocoin završio: </translation>
     </message>
     <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Voer regelmatig een thread om de portemonnee te spoelen uit (standaard: %u)</translation>
+        <translation>Pokrenite niti kako biste redovito prigušili novčanik (zadano: %u)</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation>Voer op de achtergrond uit als een daemon en accepteer commando's</translation>
+        <translation>Radi u pozadini kao daemon i prihvatite naredbe</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Zend transacties als zero fee transacties indien mogelijk (standaard: %u)</translation>
+        <translation>Ako je moguće, pošaljite transakcije kao transakcije s nultom naknadom (zadano: %u)</translation>
     </message>
     <message>
         <source>Session not complete!</source>
-        <translation>Sessie niet voltooid!</translation>
+        <translation>Sjednica nije dovršena!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
-        <translation>Sessie verlopen.</translation>
+        <translation>Sjednica je istekla.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Stel de cache grootte van de database in megabytes in (%d tot %d, standaard: %d)</translation>
+        <translation>Postavite veličinu predmemorije baze podataka u megabajtima (%d do %d, zadano: %d)</translation>
     </message>
     <message>
         <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Extern adres instellen:poort om bij deze masternode te komen (voorbeeld: %s)</translation>
+        <translation>Postavite vanjsku adresu:port da biste došli do tog masternoda (primjer: %s)</translation>
     </message>
     <message>
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Stel key pool grootte in op &lt;n&gt; (standaard: %u)</translation>
+        <translation>Postavite veličinu veličine baze na &lt;n&gt; (zadano: %u)</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Stel maximale block grootte in bytes in (default: %d)</translation>
+        <translation>Postavite maksimalnu veličinu bloka u bajtima (zadano: %d)</translation>
     </message>
     <message>
         <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Stel minimale block grootte in bytes in (default: %u)</translation>
+        <translation>Postavite minimalnu veličinu bloka u bajtovima (zadano: %u)</translation>
     </message>
     <message>
         <source>Set the Maximum reorg depth (default: %u)</source>
-        <translation>Stel de Maximale reorg diepte in (standaard: %u)</translation>
+        <translation>Postavite maksimalnu dubinu reorg (zadano: %u)</translation>
     </message>
     <message>
         <source>Set the masternode private key</source>
-        <translation>Stel de masternode privé sleutel in</translation>
+        <translation>Postavite masternode privatni ključ</translation>
     </message>
     <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Stel het aantal threads in om RPC oproepen te bedienen (standaard: %d)</translation>
+        <translation>Postavite broj niti za RPC pozive usluge (zadano: %d)</translation>
     </message>
     <message>
         <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Stelt de DB_PRIVATE vlag in de portemonnee db omgeving in (standaard: %u)</translation>
+        <translation>Postavlja DB_PRIVATE zastavicu u okruženju novčanika db (zadano: %u)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Toon alle debugging opties (gebruik: --help -help-debug)</translation>
+        <translation>Prikaži sve opcije uklanjanja pogrešaka (upotreba: --help -help-debug)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Krimp debug.log bestand bij client startup (standaard: 1 wanneer geen -debug)</translation>
+        <translation>Smanji datoteku debug.log na pokretanju klijenta (zadano: 1 kada nema -debug)</translation>
     </message>
     <message>
         <source>Signing failed.</source>
-        <translation>Ondertekenen mislukt.</translation>
+        <translation>Potpisivanje nije uspjelo.</translation>
     </message>
     <message>
         <source>Signing timed out.</source>
-        <translation>Ondertekening time out.</translation>
+        <translation>Potpisivanje je isteklo.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>Ondertekening transactie mislukt.</translation>
+        <translation>Potpisivanje transakcije nije uspjelo</translation>
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>
-        <translation>Specificeer configuratiebestand (standaard: %s)</translation>
+        <translation>Navedite konfiguracijsku datoteku (zadano: %s)</translation>
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Specificeer verbinding time-out in milliseconden (minimum: 1, standaard: %d)</translation>
+        <translation>Navedite vrijeme veze u milisekundama (minimalno: 1, zadano: %d)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
-        <translation>Specificeer data directory.</translation>
+        <translation>Navedite direktorij podataka</translation>
     </message>
     <message>
         <source>Specify masternode configuration file (default: %s)</source>
-        <translation>Specificeer masternode configuratie bestand (default: %s)</translation>
+        <translation>Navedite masternode konfiguracijsku datoteku (zadano: %s)</translation>
     </message>
     <message>
         <source>Specify pid file (default: %s)</source>
-        <translation>Specificeer pid bestand (default: %s)</translation>
+        <translation>Navedite datoteku pid (zadano: %s)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
-        <translation>Specificeer portemonnee bestand (in data directory)</translation>
+        <translation>Odredite datoteku novčanika (u direktoriju podataka)</translation>
     </message>
     <message>
         <source>Specify your own public address</source>
-        <translation>Specificeer je eigen publieke addres</translation>
+        <translation>Navedite svoju javnu adresu</translation>
     </message>
     <message>
         <source>Spend Valid</source>
-        <translation>Besteed geldig</translation>
+        <translation>Potrošnja valjana</translation>
     </message>
     <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Onbevestigd wisselgeld besteden bij het verzenden van transacties (standaard: %u)</translation>
+        <translation>Provedite nepotvrđene promjene prilikom slanja transakcija (zadano: %u)</translation>
     </message>
     <message>
         <source>Staking options:</source>
-        <translation>Staking opties:</translation>
+        <translation>Mogućnosti Stakinga:</translation>
     </message>
     <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>Stop na het importeren van blokken van schijf (standaard: %u)</translation>
+        <translation>Prestani prikazivati nakon uvoza blokova s diska (zadano: %u)</translation>
     </message>
     <message>
         <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Ingediende volgende vermeldingen in masternode: %u / %d</translation>
+        <translation>Sljedeće unose podnesi na masternode: %u / %d</translation>
     </message>
     <message>
         <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Ingediend naar masternode, wachten op meer inzendingen (%u / %d) %s</translation>
+        <translation>Poslano na masternode, čeka se više unosa ( %u / %d ) %s</translation>
     </message>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Ingediend naar masternode, wachten in de wachtrij %s</translation>
+        <translation>poslano na masternode, čeka se %s</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
-        <translation>Synchronisatie mislukt</translation>
+        <translation>Sinkronizacija neuspjela</translation>
     </message>
     <message>
         <source>Synchronization finished</source>
-        <translation>Synchronisatie voltooid</translation>
+        <translation>Sinkronizacija završena</translation>
     </message>
     <message>
         <source>Synchronization pending...</source>
-        <translation>Synchronisatie in afwachting...</translation>
+        <translation>Sinkronizacija je na čekanju ...</translation>
     </message>
     <message>
         <source>Synchronizing budgets...</source>
-        <translation>Budgeten synchroniseren...</translation>
+        <translation>Sinkronizacija proračuna ...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>
-        <translation>Synchroniseren masternode winnaars...</translation>
+        <translation>Usklađivanje dobitnika masternoda...</translation>
     </message>
     <message>
         <source>Synchronizing masternodes...</source>
-        <translation>Synchroniseren masternodes...</translation>
+        <translation>Sinkronizacija masternoda...</translation>
     </message>
     <message>
         <source>Synchronizing sporks...</source>
-        <translation>Synchroniseren sporks...</translation>
+        <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
         <source>Syncing zKYD wallet...</source>
-        <translation>Synchroniseren zKYD portemonnee...</translation>
+        <translation>Sinkronizacija zKYD novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
-        <translation>De muntuitgaven zijn gebruikt</translation>
+        <translation>Korištena je potrošnja novčića</translation>
     </message>
     <message>
         <source>The new spend coin transaction did not verify</source>
-        <translation>De nieuwe uitgave voor uitgavengeld heeft niet geverifieerd</translation>
+        <translation>Nova transakcija potrošnje novca nije potvrđena</translation>
     </message>
     <message>
         <source>The selected mint coin is an invalid coin</source>
-        <translation>De geselecteerde muntmunt is een ongeldige munt</translation>
+        <translation>Odabrano je kovanje novčića za nevažeći novčić</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
-        <translation>De transactie heeft niet geverifieerd</translation>
+        <translation>Transakcija nije potvrđena</translation>
     </message>
     <message>
         <source>This help message</source>
-        <translation>Dit help bericht</translation>
+        <translation>Ova poruka za pomoć</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
-        <translation>Dit is experimentele software.</translation>
+        <translation>Ovo je pokusni software</translation>
     </message>
     <message>
         <source>This is intended for regression testing tools and app development.</source>
-        <translation>Dit is bedoeld voor regressie test tools en app ontwikkeling.</translation>
+        <translation>To je namijenjeno alatima za test regresije i razvoju aplikacija.</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
-        <translation>Dit is geen Masternode.</translation>
+        <translation>Ovo nije Masternode.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Drempel voor het verbreken van misdragende peers (standaard: %u)</translation>
+        <translation>Prag za odspajanje loših vršnjaka (zadano: %u)</translation>
     </message>
     <message>
         <source>Too many spends needed</source>
-        <translation>Te veel uitgaven nodig</translation>
+        <translation>Potrebno je previše Potrošnji</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
-        <translation>Tor controle poort wachtwoord (standaard: leeg)</translation>
+        <translation>Lozinka za kontrolni port Tor (zadano: prazno)</translation>
     </message>
     <message>
         <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor controle poort om te gebruiken als onion listening geactiveerd is (standaard: %s)</translation>
+        <translation>Tor kontrolni priključak koji će se koristiti ako je uključeno slušanje portova (zadano: %s)</translation>
     </message>
     <message>
         <source>Transaction Created</source>
-        <translation>Transactie gemaakt</translation>
+        <translation>Stvorena transakcija</translation>
     </message>
     <message>
         <source>Transaction Mint Started</source>
-        <translation>Transactie startte met Mint</translation>
+        <translation>Transakcijsko kovanje započeto</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Transactie bedrag te klein</translation>
+        <translation>Iznos transakcije premali</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
-        <translation>Transactie bedragen moeten positief zijn</translation>
+        <translation>Iznos transakcije mora biti pozitivan</translation>
     </message>
     <message>
         <source>Transaction created successfully.</source>
-        <translation>Transactie is succesvol gemaakt.</translation>
+        <translation>Transakcija uspješno stvorena.</translation>
     </message>
     <message>
         <source>Transaction fees are too high.</source>
-        <translation>Transactiekosten zijn te hoog.</translation>
+        <translation>Previsoka naknada za transakciju.</translation>
     </message>
     <message>
         <source>Transaction not valid.</source>
-        <translation>Transactie is niet geldig.</translation>
+        <translation>Transakcija nije valjana.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
-        <translation>Transactie te groot voor kosten beleid</translation>
+        <translation>Transakcija prevelika da bi bila besplatna</translation>
     </message>
     <message>
         <source>Transaction too large</source>
-        <translation>Transactie te groot</translation>
+        <translation>Transakcija prevelika</translation>
     </message>
     <message>
         <source>Transmitting final transaction.</source>
-        <translation>Verzending van de definitieve transactie.</translation>
+        <translation>Šaljem finalnu transakciju. </translation>
     </message>
     <message>
         <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Probeer te spenderen met een hoger beveiligingsniveau om meer munten op te nemen</translation>
+        <translation>Pokušajte potrošiti s višom razinom sigurnosti kako biste uključili više novca</translation>
     </message>
     <message>
         <source>Trying to spend an already spent serial #, try again.</source>
-        <translation>Probeer een reeds bestaand serienummer nog een keer uit te geven, probeer het opnieuw.</translation>
+        <translation>Pokušavate potrošiti već utrošeni serijski broj #, pokušajte ponovo.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer (bind stuurt fout %s terug)</translation>
+        <translation>Nije moguće vezati se na %s na ovom računalu (vezanje vraćene pogreške %s)</translation>
     </message>
     <message>
         <source>Unable to find transaction containing mint</source>
-        <translation>Kan transactie met mint niet vinden</translation>
+        <translation>Nije moguće pronaći transakciju koja sadrži mintanje</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
-        <translation>Kan sporkbericht niet tekenen, verkeerde sleutel?</translation>
+        <translation>Nije moguće potpisati spork poruku, pogrešan ključ?</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Kan HTTP-server niet starten. Zie foutopsporingslog voor details.</translation>
+        <translation>Nije moguće pokrenuti HTTP poslužitelj. Detalje potražite u debug logu.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Onbekend netwerk gespecificeerd in -onlynet: '%s'</translation>
+        <translation>Nepoznata mreža specificirana u -onlynet: '%s'</translation>
     </message>
     <message>
         <source>Unknown state: id = %u</source>
-        <translation>Onbekende staat: id = %u</translation>
+        <translation>Nepoznato stanje: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
-        <translation>Upgrade portemonnee naar nieuwste formaat</translation>
+        <translation>Nadogradnja novčanika u najnoviji format</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Gebruik UPnP om de luisterpoort te mappen (standaard: %u)</translation>
+        <translation>Koristite UPnP za mapiranje priključka za slušanje (zadano: %u)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Gebruik UPnP om de luisterpoort te mappen (standaard: 1 bij het luisteren)</translation>
+        <translation>Koristite UPnP za mapiranje porta za slušanje (zadano: 1 prilikom slušanja)</translation>
     </message>
     <message>
         <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Gebruik een aangepaste max chain reorganisatie diepte (standaard: %u)</translation>
+        <translation>Koristite prilagođenu maksimalnu dubinu reorganizacije lanca (zadano: %u)</translation>
     </message>
     <message>
         <source>Use the test network</source>
-        <translation>Gebruik het test netwerk</translation>
+        <translation>Koristi testnu mrežu</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
-        <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
+        <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
         <source>Value is below the smallest available denomination (= 1) of zKYD</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zKYD</translation>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zKYD-a</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Waarde meer dan verduistering pool maximaal toestaat.</translation>
+        <translation>Vrijednost veća od maksimalnog broja Prikrivanja zbirnih sredstava.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
-        <translation>Blokken verifiëren...</translation>
+        <translation>Provjera blokova ...</translation>
     </message>
     <message>
         <source>Verifying wallet...</source>
-        <translation>Portemonnee verifiëren...</translation>
+        <translation>Provjera novčanika...</translation>
     </message>
     <message>
         <source>Version 1 zKYD require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zKYD vereist een beveiligingsniveau van 100 om succesvol uit te geven.</translation>
+        <translation>Verzija 1 zKYD zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
-        <translation>Portemonnee %s verblijft buiten de data directory %s</translation>
+        <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
     </message>
     <message>
         <source>Wallet is locked.</source>
-        <translation>Portemonnee is vergrendeld.</translation>
+        <translation>Novčanik zaključan.</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart KYD Core to complete</source>
-        <translation>Wallet moest worden herschreven: start KYD Core opnieuw om te voltooien</translation>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite KYD Core</translation>
     </message>
     <message>
         <source>Wallet options:</source>
-        <translation>Portemonnee opties:</translation>
+        <translation>Opcije novčanika:</translation>
     </message>
     <message>
         <source>Wallet window title</source>
-        <translation>Portemonnee venster titel</translation>
+        <translation>Naziv prozora novčanika</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Waarschuwing</translation>
+        <translation>Upozorenje</translation>
     </message>
     <message>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Waarschuwing: Deze versie is verouderd, upgrade vereist!</translation>
+        <translation>Upozorenje: Ova verzija je zastarjela, potrebna nadogradnja!</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Waarschuwing: Niet- ondersteund argument -benchmark genegeerd, gebruik -debug=bench.</translation>
+        <translation>Upozorenje: nepodržani argument -baschmark zanemaren, upotrijebite -debug = klupu.</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Waarschuwing: Niet ondersteunde argument -debugnet genegeerd, gebruik -debug=net.</translation>
+        <translation>Upozorenje: nepodržani argument -debugnet ignoriran, upotrijebite -debug=net.</translation>
     </message>
     <message>
         <source>Will retry...</source>
-        <translation>Zal het opnieuw proberen...</translation>
+        <translation>Ponovno pokušati...</translation>
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Je hebt niet genoeg Zerocoins in je portemonnee</translation>
+        <translation>Nemate dovoljno Zerocoina u novčaniku</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>Je moet de database herbouwen met -reindex om -txindex te wijzigen</translation>
+        <translation>orate obnoviti bazu podataka koristeći -index za promjenu -txindexa</translation>
     </message>
     <message>
         <source>Your entries added successfully.</source>
-        <translation>Je gegevens zijn succesvol toegevoegd.</translation>
+        <translation>Unosi uspješno dodani.</translation>
     </message>
     <message>
         <source>Your transaction was accepted into the pool!</source>
-        <translation>Je transactie is geaccepteerd in de pool!</translation>
+        <translation>Vaša transakcija je prihvaćena u bazen!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation>Verwijderen van alle transacties uit portemonnee...</translation>
+        <translation>Zapping svih transakcija iz novčanika ...</translation>
     </message>
     <message>
         <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ notificatie opties:</translation>
+        <translation>Mogućnosti ZeroMQ obavijesti:</translation>
     </message>
     <message>
         <source>Zerocoin options:</source>
-        <translation>Zerocoin opties:</translation>
+        <translation>Zerocoin mogućnosti:</translation>
     </message>
     <message>
         <source>on startup</source>
-        <translation>tijdens het opstarten</translation>
+        <translation>na pokretanju</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat corrupt, redding mislukt</translation>
+        <translation>wallet.dat korumpiran, spašavanje nije uspjelo</translation>
     </message>
 </context>
 </TS>

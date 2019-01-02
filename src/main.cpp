@@ -1556,7 +1556,7 @@ int64_t GetBlockValue(int nHeight)
             return 50000 * COIN;
     }
 
-    if (nHeight < Params().LAST_POW_BLOCK())
+    if (nHeight <= Params().LAST_POW_BLOCK())
         nSubsidy = 13000 * COIN; // 200 blocks x 13,000 SCN = 2,600,000 SCN premine
     else if (nHeight <= 129600)
         nSubsidy = 2.5 * COIN;
@@ -1589,6 +1589,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     ret = blockValue * 0.85; // 85% of block reward
 
     return ret;
+}
+
+bool IsMasternodeCollateral(CAmount value)
+{
+    return value == MASTERNODE_COLLATERAL;
 }
 
 bool IsInitialBlockDownload()
@@ -4846,7 +4851,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         bool ignoreFees = false;
         CTxIn vin;
         vector<unsigned char> vchSig;
-        int64_t sigTime;
+        //int64_t sigTime;
 
         CInv inv(MSG_TX, tx.GetHash());
         pfrom->AddInventoryKnown(inv);

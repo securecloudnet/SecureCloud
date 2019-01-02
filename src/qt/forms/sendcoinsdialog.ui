@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>978</width>
-    <height>710</height>
+    <height>695</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -898,7 +898,7 @@
              <x>0</x>
              <y>0</y>
              <width>944</width>
-             <height>73</height>
+             <height>68</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -1692,7 +1692,7 @@
                 </size>
                </property>
                <property name="text">
-                <string>SwiftTX</string>
+                <string>SwiftX</string>
                </property>
               </widget>
              </item>
