@@ -54,14 +54,22 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"));
+    (    0, uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"))
+	(10000, uint256("0xea49159da552771ecdd2b6328d63d01b97c2a979d59fb3f0ef708ea0d55b616f"))
+	(20000, uint256("0xd63f8efbb81d15891a1d7d7400ba65cf07f95ad95292f926db03eb2f4035baad"))
+	(30000, uint256("0xc99b0e8527a9402a63dd6c4bd9bb291c6c48a1c4b4a2509c64344fe60bc98a6d"))
+	(40000, uint256("0x476dc94fc57d617c517790e788d78637216f8a51a8670b1603c58167f6088aa9"))
+	(50000, uint256("0xf85b6b3cef6096a88a452d3513563dd3eba77b9e9e80e408e0c8c2bafeee315f"))
+	(60000, uint256("0xbcd8504026d7614e7f8d677920d16b03ffb4754a6fc0335d48856e5f515e578f"))
+	(70000, uint256("0x308a848cade3cbfd87db6e893e70bd5cb9712052280307b210a43c746fc19ccd"))
+	(80000, uint256("0x042ade1497c902b54748ce3ef941733d7a3aeb24de723a90c72a778bffbd6720"))
+    (99000, uint256("0xa1fa17753b2ea63739133fdf65e41c44ed29d569ceb72bc03ea1d05556b1d05a"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1540453057, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
-                //   (the tx=... number in the SetBestChain debug.log lines)
-    2000        // * estimated number of transactions per day after checkpoint
+    1547068554, // * UNIX timestamp of last checkpoint block
+    203249,     // * total number of transactions between genesis and last checkpoint (the tx=... number in the UpdateTip debug.log lines)
+    1440        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -86,90 +94,88 @@ class CMainParams : public CChainParams
 public:
     CMainParams()
     {
-        networkID = CBaseChainParams::MAIN;
-        strNetworkID = "main";
+        networkID                      = CBaseChainParams::MAIN;
+        strNetworkID                   = "main";
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x33;
-        pchMessageStart[1] = 0xdc;
-        pchMessageStart[2] = 0x21;
-        pchMessageStart[3] = 0xcb;
-        vAlertPubKey = ParseHex("0485fbb3ab1dfe9ff723af4b68e870290a5357aec2415b220eb8e22011de442c69d3ef4456ff38500645757272812a760292d95c97ec908e20aa2bbc191f3343f5");
-        vAlertPubKeyOld = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
-        nDefaultPort = 9191;
-        bnProofOfWorkLimit = ~uint256(0) >> 1;
-        nSubsidyHalvingInterval = 1050000;
-        nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 750;
-        nRejectBlockOutdatedMajority = 950;
-        nToCheckBlockUpgradeMajority = 1000;
-        nMinerThreads = 0;
-        nTargetTimespan = 2 * 60; 
-        nTargetSpacing = 1 * 60;  // SecureCloud: 1 minute blocks during POW (block 1-200)
-        nMaturity = 5; // 6 block maturity (+1 elsewhere)
-        nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 16000000 * COIN; // 16 million max supply
+        pchMessageStart[0]             = 0x33;
+        pchMessageStart[1]             = 0xdc;
+        pchMessageStart[2]             = 0x21;
+        pchMessageStart[3]             = 0xcb;
+        vAlertPubKey                   = ParseHex("0485fbb3ab1dfe9ff723af4b68e870290a5357aec2415b220eb8e22011de442c69d3ef4456ff38500645757272812a760292d95c97ec908e20aa2bbc191f3343f5");
+        vAlertPubKeyOld                = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
+        nDefaultPort                   = 9191;
+        bnProofOfWorkLimit             = ~uint256(0) >> 1;
+        nSubsidyHalvingInterval        = 1050000;
+        nMaxReorganizationDepth        = 100;
+        nEnforceBlockUpgradeMajority   = 750;
+        nRejectBlockOutdatedMajority   = 950;
+        nToCheckBlockUpgradeMajority   = 1000;
+        nMinerThreads                  = 0;
+        nTargetTimespan                = 2  * 60; 
+        nTargetSpacing                 = 1  * 60;  // SecureCloud: 1 minute blocks during POW (block 1-200)
+        nTargetTimespanPOS             = 40 * 60; 
+        nTargetSpacingPOS              = 1  * 60;  // SecureCloud: 1 minute blocks during POS
+        nMaturity                      = 5; // 6 block maturity (+1 elsewhere)
+        nMasternodeCountDrift          = 20;
+        nMaxMoneyOut                   = 16000000 * COIN; // 16 million max supply
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
-        nModifierUpdateBlock = 1; // we use the version 2 for SCN
+        nLastPOWBlock                  = 200;
+        nModifierUpdateBlock           = 1; // we use the version 2 for SCN
 
-        const char* pszTimestamp = "SecureCloudNetwork has launched! - zabtc 25/10/2018";
+        const char* pszTimestamp       = "SecureCloudNetwork has launched! - zabtc 25/10/2018";
+
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04f5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363") << OP_CHECKSIG;
-        genesis.vtx.push_back(txNew);
-        genesis.hashPrevBlock = 0;
-        genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 1;
-        genesis.nTime = 1540453057;
-        genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 23783866;
+        txNew.vin[0].scriptSig         = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        txNew.vout[0].nValue           = 0 * COIN;
+        txNew.vout[0].scriptPubKey     = CScript() << ParseHex("04f5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363") << OP_CHECKSIG;
 
-        hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"));
-        assert(genesis.hashMerkleRoot == uint256("0xb9e8be7516d514a733a481dc7db4fa04e89b59e0407e99292337cf28d40dcaae"));
+        genesis.vtx.push_back(txNew);
+        genesis.hashPrevBlock          = 0;
+        genesis.hashMerkleRoot         = genesis.BuildMerkleTree();
+        genesis.nVersion               = 1;
+        genesis.nTime                  = 1540453057;
+        genesis.nBits                  = 0x1e0ffff0;
+        genesis.nNonce                 = 23783866;
+
+        hashGenesisBlock               = genesis.GetHash();
+        assert(hashGenesisBlock        == uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"));
+        assert(genesis.hashMerkleRoot  == uint256("0xb9e8be7516d514a733a481dc7db4fa04e89b59e0407e99292337cf28d40dcaae"));
  
-        // SecureCloud addresses start with 's'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
-        // SecureCloud script addresses start with '3'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);
-        // SecureCloud private keys start with 'K'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 46);
-        // SecureCloud BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // SecureCloud BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // SecureCloud BIP44 coin type is '222' (0x800000de)
-        // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125); // SecureCloud addresses start with 's'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);   // SecureCloud script addresses start with '3'
+        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 46);  // SecureCloud private keys start with 'K'
+		
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); // SecureCloud BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); // SecureCloud BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >(); // SecureCloud BIP44 coin type is '222' (0x800000de) - BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
-        fDefaultConsistencyChecks = false;
-        fRequireStandard = true;
-        fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fMiningRequiresPeers           = true;
+        fAllowMinDifficultyBlocks      = false;
+        fDefaultConsistencyChecks      = false;
+        fRequireStandard               = true;
+        fMineBlocksOnDemand            = false;
+        fSkipProofOfWorkCheck          = false;
         fTestnetToBeDeprecatedFieldRPC = false;
-        fHeadersFirstSyncingActive = false;
+        fHeadersFirstSyncingActive     = false;
 
-        nPoolMaxTransactions = 3;
-        strSporkKey = "04f9cb975c94dc0037ba350e19f09566239439b5c9ed1729a4dfb257e5d2b75759bb1fa2c72f4a5270c9cb9e4465c213cfeac65a2b83f2484ad297a3991cc7020a";
-        strSporkKeyOld = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
-        strMasternodePoolDummyAddress = "NSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
-        nStartMasternodePayments = 4070908800; 
+        nPoolMaxTransactions           = 3;
+        strSporkKey                    = "04f9cb975c94dc0037ba350e19f09566239439b5c9ed1729a4dfb257e5d2b75759bb1fa2c72f4a5270c9cb9e4465c213cfeac65a2b83f2484ad297a3991cc7020a";
+        strSporkKeyOld                 = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
+        strMasternodePoolDummyAddress  = "NSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
+        nStartMasternodePayments       = 4070908800; 
 
-        nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+        nBudget_Fee_Confirmations      = 6; // Number of confirmations for the finalization fee
 		
-		nStartNewKeys = 1546214400; // New Spork/Alert Key start at 31/12/2018 @ 12:00am (UTC)
+		nStartNewKeys                  = 1546214400; // New Spork/Alert Key start at 31/12/2018 @ 12:00am (UTC)
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
