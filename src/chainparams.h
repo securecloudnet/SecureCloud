@@ -50,7 +50,6 @@ public:
     const std::vector<unsigned char>& AlertKey()                    const { return vAlertPubKey; }
     const std::vector<unsigned char>& AlertKeyOld()                 const { return vAlertPubKeyOld; }
     int GetDefaultPort()                                            const { return nDefaultPort; }
-    const uint256& ProofOfWorkLimit()                               const { return bnProofOfWorkLimit; }
     int SubsidyHalvingInterval()                                    const { return nSubsidyHalvingInterval; }
     int EnforceBlockUpgradeMajority()                               const { return nEnforceBlockUpgradeMajority; }   // Used to check majorities for block version upgrade
     int RejectBlockOutdatedMajority()                               const { return nRejectBlockOutdatedMajority; }
@@ -64,12 +63,17 @@ public:
     bool AllowMinDifficultyBlocks()                                 const { return fAllowMinDifficultyBlocks; }      // Allow mining of a min-difficulty block
     bool SkipProofOfWorkCheck()                                     const { return fSkipProofOfWorkCheck; }          // Skip proof-of-work check: allow mining of any difficulty block
     bool RequireStandard()                                          const { return fRequireStandard; }               // Make standard checks
+
+    const uint256& ProofOfWorkLimit()                               const { return bnProofOfWorkLimit; }
     int64_t TargetTimespan()                                        const { return nTargetTimespan; }
     int64_t TargetSpacing()                                         const { return nTargetSpacing; }
     int64_t Interval()                                              const { return nTargetTimespan / nTargetSpacing; }
+
+    const uint256& ProofOfStakeLimit()                              const { return bnProofOfStageLimit; }
     int64_t TargetTimespanPOS()                                     const { return nTargetTimespanPOS; }
     int64_t TargetSpacingPOS()                                      const { return nTargetSpacingPOS; }
     int64_t IntervalPOS()                                           const { return nTargetTimespanPOS / nTargetSpacingPOS; }
+
     int LAST_POW_BLOCK()                                            const { return nLastPOWBlock; }
     int COINBASE_MATURITY()                                         const { return nMaturity; }
     int ModifierUpgradeBlock()                                      const { return nModifierUpdateBlock; }

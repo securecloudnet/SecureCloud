@@ -108,17 +108,21 @@ public:
         vAlertPubKey                   = ParseHex("0485fbb3ab1dfe9ff723af4b68e870290a5357aec2415b220eb8e22011de442c69d3ef4456ff38500645757272812a760292d95c97ec908e20aa2bbc191f3343f5");
         vAlertPubKeyOld                = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
         nDefaultPort                   = 9191;
-        bnProofOfWorkLimit             = ~uint256(0) >> 1;
         nSubsidyHalvingInterval        = 1050000;
         nMaxReorganizationDepth        = 100;
         nEnforceBlockUpgradeMajority   = 750;
         nRejectBlockOutdatedMajority   = 950;
         nToCheckBlockUpgradeMajority   = 1000;
         nMinerThreads                  = 0;
+
+        bnProofOfWorkLimit             = ~uint256(0) >> 1;
         nTargetTimespan                = 2  * 60; 
         nTargetSpacing                 = 1  * 60;  // SecureCloud: 1 minute blocks during POW (block 1-200)
+
+        bnProofOfStakeLimit            = ~uint256(0) >> 24;
         nTargetTimespanPOS             = 40 * 60; 
         nTargetSpacingPOS              = 1  * 60;  // SecureCloud: 1 minute blocks during POS
+
         nMaturity                      = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift          = 20;
         nMaxMoneyOut                   = 16000000 * COIN; // 16 million max supply
