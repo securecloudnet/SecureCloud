@@ -69,7 +69,7 @@ public:
     int64_t TargetSpacing()                                         const { return nTargetSpacing; }
     int64_t Interval()                                              const { return nTargetTimespan / nTargetSpacing; }
 
-    const uint256& ProofOfStakeLimit()                              const { return bnProofOfStageLimit; }
+    const uint256& ProofOfStakeLimit()                              const { return bnProofOfStakeLimit; }
     int64_t TargetTimespanPOS()                                     const { return nTargetTimespanPOS; }
     int64_t TargetSpacingPOS()                                      const { return nTargetSpacingPOS; }
     int64_t IntervalPOS()                                           const { return nTargetTimespanPOS / nTargetSpacingPOS; }
@@ -104,14 +104,15 @@ protected:
     std::vector<unsigned char> vAlertPubKey;
     std::vector<unsigned char> vAlertPubKeyOld;
     int nDefaultPort;
-    uint256 bnProofOfWorkLimit;
     int nMaxReorganizationDepth;
     int nSubsidyHalvingInterval;
     int nEnforceBlockUpgradeMajority;
     int nRejectBlockOutdatedMajority;
     int nToCheckBlockUpgradeMajority;
+    uint256 bnProofOfWorkLimit;
     int64_t nTargetTimespan;
     int64_t nTargetSpacing;
+    uint256 bnProofOfStakeLimit;
     int64_t nTargetTimespanPOS;
     int64_t nTargetSpacingPOS;
     int nLastPOWBlock;
