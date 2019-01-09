@@ -55,14 +55,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (    0, uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"))
-	(10000, uint256("0xea49159da552771ecdd2b6328d63d01b97c2a979d59fb3f0ef708ea0d55b616f"))
-	(20000, uint256("0xd63f8efbb81d15891a1d7d7400ba65cf07f95ad95292f926db03eb2f4035baad"))
-	(30000, uint256("0xc99b0e8527a9402a63dd6c4bd9bb291c6c48a1c4b4a2509c64344fe60bc98a6d"))
-	(40000, uint256("0x476dc94fc57d617c517790e788d78637216f8a51a8670b1603c58167f6088aa9"))
-	(50000, uint256("0xf85b6b3cef6096a88a452d3513563dd3eba77b9e9e80e408e0c8c2bafeee315f"))
-	(60000, uint256("0xbcd8504026d7614e7f8d677920d16b03ffb4754a6fc0335d48856e5f515e578f"))
-	(70000, uint256("0x308a848cade3cbfd87db6e893e70bd5cb9712052280307b210a43c746fc19ccd"))
-	(80000, uint256("0x042ade1497c902b54748ce3ef941733d7a3aeb24de723a90c72a778bffbd6720"))
+    (10000, uint256("0xea49159da552771ecdd2b6328d63d01b97c2a979d59fb3f0ef708ea0d55b616f"))
+    (20000, uint256("0xd63f8efbb81d15891a1d7d7400ba65cf07f95ad95292f926db03eb2f4035baad"))
+    (30000, uint256("0xc99b0e8527a9402a63dd6c4bd9bb291c6c48a1c4b4a2509c64344fe60bc98a6d"))
+    (40000, uint256("0x476dc94fc57d617c517790e788d78637216f8a51a8670b1603c58167f6088aa9"))
+    (50000, uint256("0xf85b6b3cef6096a88a452d3513563dd3eba77b9e9e80e408e0c8c2bafeee315f"))
+    (60000, uint256("0xbcd8504026d7614e7f8d677920d16b03ffb4754a6fc0335d48856e5f515e578f"))
+    (70000, uint256("0x308a848cade3cbfd87db6e893e70bd5cb9712052280307b210a43c746fc19ccd"))
+    (80000, uint256("0x042ade1497c902b54748ce3ef941733d7a3aeb24de723a90c72a778bffbd6720"))
     (99000, uint256("0xa1fa17753b2ea63739133fdf65e41c44ed29d569ceb72bc03ea1d05556b1d05a"));
 
 static const Checkpoints::CCheckpointData data = {
@@ -151,7 +151,7 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125); // SecureCloud addresses start with 's'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);   // SecureCloud script addresses start with '3'
         base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 46);  // SecureCloud private keys start with 'K'
-		
+
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); // SecureCloud BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); // SecureCloud BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >(); // SecureCloud BIP44 coin type is '222' (0x800000de) - BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -174,8 +174,8 @@ public:
         nStartMasternodePayments       = 4070908800; 
 
         nBudget_Fee_Confirmations      = 6; // Number of confirmations for the finalization fee
-		
-		nStartNewKeys                  = 1546214400; // New Spork/Alert Key start at 31/12/2018 @ 12:00am (UTC)
+
+        nStartNewKeys                  = 1546214400; // New Spork/Alert Key start at 31/12/2018 @ 12:00am (UTC)
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const

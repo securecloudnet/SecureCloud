@@ -91,7 +91,7 @@ public:
     int64_t StartNewKeys()                                          const { return nStartNewKeys; }
 
     virtual const Checkpoints::CCheckpointData& Checkpoints() const = 0;
-	
+
 protected:
     CChainParams() {}
 
