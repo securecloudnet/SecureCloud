@@ -253,6 +253,7 @@ void CSporkManager::Relay(CSporkMessage& msg)
 bool CSporkManager::SetPrivKey(std::string strPrivKey)
 {
     CSporkMessage msg;
+    msg.nTimeSigned = GetTime();
 
     // Test signing successful, proceed
     strMasterPrivKey = strPrivKey;
