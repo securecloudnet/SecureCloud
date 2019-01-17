@@ -12,6 +12,7 @@
 class ClientModel;
 class TransactionFilterProxy;
 class TxViewDelegate;
+class NewsViewDelegate;
 class WalletModel;
 
 namespace Ui
@@ -41,6 +42,7 @@ public slots:
 
 signals:
     void transactionClicked(const QModelIndex& index);
+    void newsClicked(const QModelIndex& index);
 
 private:
     QTimer* timer;
@@ -55,6 +57,7 @@ private:
     CAmount currentWatchImmatureBalance;
     int nDisplayUnit;
 
+    NewsViewDelegate* newsdelegate;
     TxViewDelegate* txdelegate;
     TransactionFilterProxy* filter;
 
@@ -63,6 +66,7 @@ private:
 private slots:
     void updateDisplayUnit();
     void handleTransactionClicked(const QModelIndex& index);
+    void handleNewsClicked(const QModelIndex& index);
     void updateAlerts(const QString& warnings);
     void updateWatchOnlyLabels(bool showWatchOnly);
 };
