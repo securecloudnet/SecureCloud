@@ -19,18 +19,6 @@
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
 {
-    if (IsSporkActive(SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6)
-     || IsSporkActive(SPORK_19_NEW_PROTOCOL_ENFORCEMENT_5)
-     || IsSporkActive(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4)
-     || IsSporkActive(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3))
-        return GetNextWorkRequiredNew(pindexLast,pblock);
-
-    return GetNextWorkRequiredOld(pindexLast,pblock);
-}
-
-// Original Version
-unsigned int GetNextWorkRequiredOld(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
-{
     /* current difficulty formula, scn - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
     const CBlockIndex* BlockLastSolved = pindexLast;
     const CBlockIndex* BlockReading = pindexLast;
@@ -116,86 +104,6 @@ unsigned int GetNextWorkRequiredOld(const CBlockIndex* pindexLast, const CBlockH
 
     if (bnNew > Params().ProofOfWorkLimit()) {
         bnNew = Params().ProofOfWorkLimit();
-    }
-
-    return bnNew.GetCompact();
-}
-
-// New Version after the SPORK_17 to prevent the difficulty drop caused by the blocktime of the last block < the blocktime of the previous block
-// to avoid this we use the average timespan of the last X blocks
-unsigned int GetNextWorkRequiredNew(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
-{
-    /* current difficulty formula, scn - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
-    const CBlockIndex* BlockLastSolved = pindexLast;
-    const CBlockIndex* BlockReading = pindexLast;
-    int64_t nActualTimespan = 0;
-    int64_t LastBlockTime = 0;
-    int64_t PastBlocksMin = 24;
-    int64_t PastBlocksMax = 24;
-    int64_t CountBlocks = 0;
-    uint256 PastDifficultyAverage;
-    uint256 PastDifficultyAveragePrev;
-    uint256 bnTargetLimit;
-    int64_t nTargetSpacing;
-    int64_t nTargetTimespan;
-
-    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
-        return Params().ProofOfWorkLimit().GetCompact();
-    }
-
-    if (pindexLast->nHeight > Params().LAST_POW_BLOCK()) {
-        bnTargetLimit   = Params().ProofOfStakeLimit();
-        nTargetSpacing  = Params().TargetSpacingPOS();
-        nTargetTimespan = Params().TargetTimespanPOS();
-    } else {
-        bnTargetLimit   = Params().ProofOfWorkLimit();
-        nTargetSpacing  = Params().TargetSpacing();
-        nTargetTimespan = Params().TargetTimespan();
-    }
-
-    for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
-        if (PastBlocksMax > 0 && i > PastBlocksMax) {
-            break;
-        }
-        CountBlocks++;
-
-        if (CountBlocks <= PastBlocksMin) {
-            if (CountBlocks == 1) {
-                PastDifficultyAverage.SetCompact(BlockReading->nBits);
-            } else {
-                PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks) + (uint256().SetCompact(BlockReading->nBits))) / (CountBlocks + 1);
-            }
-            PastDifficultyAveragePrev = PastDifficultyAverage;
-        }
-
-        if (LastBlockTime > 0) {
-            int64_t Diff = (LastBlockTime - BlockReading->GetBlockTime());
-            nActualTimespan += Diff;
-        }
-        LastBlockTime = BlockReading->GetBlockTime();
-
-        if (BlockReading->pprev == NULL) {
-            assert(BlockReading);
-            break;
-        }
-        BlockReading = BlockReading->pprev;
-    }
-
-    uint256 bnNew(PastDifficultyAverage);
-
-    nTargetTimespan *= CountBlocks;
-
-    if (nActualTimespan < nTargetTimespan / 3)
-        nActualTimespan = nTargetTimespan / 3;
-    if (nActualTimespan > nTargetTimespan * 3)
-        nActualTimespan = nTargetTimespan * 3;
-
-    // Retarget
-    bnNew *= nActualTimespan;
-    bnNew /= nTargetTimespan;
-
-    if (bnNew > bnTargetLimit) {
-        bnNew = bnTargetLimit;
     }
 
     return bnNew.GetCompact();
