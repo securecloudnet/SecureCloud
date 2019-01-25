@@ -47,8 +47,8 @@ struct NewsGreaterThan {
 class NewsTablePriv
 {
 public:
-    TransactionTablePriv(CWallet* wallet, NewsTableModel* parent) : wallet(wallet),
-                                                                    parent(parent)
+    NewsTablePriv(CWallet* wallet, NewsTableModel* parent) : wallet(wallet),
+                                                             parent(parent)
     {
     }
 
@@ -66,11 +66,8 @@ public:
         qDebug() << "NewsTablePriv::refreshNews";
         cachedNews.clear();
         {
-//            LOCK2(cs_main, wallet->cs_wallet);
-//            for (std::map<uint256, CWalletTx>::iterator it = wallet->mapWallet.begin(); it != wallet->mapWallet.end(); ++it) {
-//                if (TransactionRecord::showTransaction(it->second))
-//                    cachedWallet.append(TransactionRecord::decomposeTransaction(wallet, it->second));
-//            }
+            LOCK2(cs_main, wallet->cs_wallet);
+            updateNews(GetTime(),"Coming soon...","",CT_NEW);
         }
     }
 
@@ -81,7 +78,7 @@ public:
      */
     void updateNews(const qint64& time, const std::string& text, const std::string& url, int status)
     {
-        qDebug() << "NewsTablePriv::updateNews : " + QString::fromStdString(time.ToString()) + " " + QString::number(status);
+        qDebug() << "NewsTablePriv::updateNews : " + QString::number(time) + " " + QString::fromStdString(text) + " " + QString::number(status);
 
         // Find bounds of this news in model
         QList<NewsRecord>::iterator lower = qLowerBound(cachedNews.begin(), cachedNews.end(), time, NewsGreaterThan());
@@ -102,12 +99,14 @@ public:
                 break;
             }
 
-            // Added -- insert at the right position
-            NewsRecord rec = NewsRecord(time,text,url);
+            {
+              // Added -- insert at the right position
+              NewsRecord rec = NewsRecord(time,text,url);
 
-            parent->beginInsertRows(QModelIndex(), lowerIndex, lowerIndex + toInsert.size() - 1);
-            cachedWallet.insert(lowerIndex, rec);
-            parent->endInsertRows();
+              parent->beginInsertRows(QModelIndex(), lowerIndex, lowerIndex);
+              cachedNews.insert(lowerIndex, rec);
+              parent->endInsertRows();
+            }
             break;
         case CT_DELETED:
             if (!inModel) {
@@ -116,7 +115,7 @@ public:
             }
             // Removed -- remove entire news from table
             parent->beginRemoveRows(QModelIndex(), lowerIndex, upperIndex - 1);
-            cachedWallet.erase(lower, upper);
+            cachedNews.erase(lower, upper);
             parent->endRemoveRows();
             break;
         case CT_UPDATED:
@@ -126,13 +125,13 @@ public:
 
     int size()
     {
-        return cachedWallet.size();
+        return cachedNews.size();
     }
 
     NewsRecord* index(int idx)
     {
-        if (idx >= 0 && idx < cachedWallet.size()) {
-            NewsRecord* rec = &cachedWallet[idx];
+        if (idx >= 0 && idx < cachedNews.size()) {
+            NewsRecord* rec = &cachedNews[idx];
             return rec;
         }
         return 0;
@@ -147,7 +146,7 @@ NewsTableModel::NewsTableModel(CWallet* wallet, WalletModel* parent) : QAbstract
     columns << tr("Date") << tr("Text");
     priv->refreshNews();
 
-    subscribeToNewsSignals();
+    subscribeToCoreSignals();
 }
 
 NewsTableModel::~NewsTableModel()
@@ -158,7 +157,7 @@ NewsTableModel::~NewsTableModel()
 
 void NewsTableModel::updateNews(qint64 time, const QString& text, const QString& url, int status)
 {
-    priv->updateNews(time,text,url);
+    priv->updateNews(time, text.toStdString(), url.toStdString(), status);
 }
 
 int NewsTableModel::rowCount(const QModelIndex& parent) const
@@ -183,18 +182,12 @@ QString NewsTableModel::formatNewsDate(const NewsRecord* rec) const
 
 QString NewsTableModel::formatNewsText(const NewsRecord* rec) const
 {
-    if (rec->text) {
-        return QString::fromStdString(rec->text);
-    }
-    return QString();
+    return QString::fromStdString(rec->text);
 }
 
 QString NewsTableModel::formatNewsUrl(const NewsRecord* rec) const
 {
-    if (rec->url) {
-        return QString::fromStdString(rec->url);
-    }
-    return QString();
+    return QString::fromStdString(rec->url);
 }
 
 QVariant NewsTableModel::data(const QModelIndex& index, int role) const
@@ -206,26 +199,14 @@ QVariant NewsTableModel::data(const QModelIndex& index, int role) const
 
     switch (role) {
     case Qt::DisplayRole:
+    case Qt::EditRole:
         switch (index.column()) {
         case Date:
-            return formatNewsDate(rec);
+          return QDateTime::fromTime_t(static_cast<uint>(rec->time));
         case Text:
-            return formatNewsText(rec);
+          return QString::fromStdString(rec->text);
         case Url:
-            return formatNewsUrl(rec);
-        }
-        break;
-    case Qt::EditRole:
-        // Edit role is used for sorting, so return the unformatted values
-        switch (index.column()) {
-          switch (index.column()) {
-          case Date:
-              return formatNewsDate(rec);
-          case Text:
-              return formatNewsText(rec);
-          case Url:
-              return formatNewsUrl(rec);
-          }
+          return QString::fromStdString(rec->url);
         }
         break;
     case Qt::TextAlignmentRole:
@@ -237,9 +218,9 @@ QVariant NewsTableModel::data(const QModelIndex& index, int role) const
     case DateRole:
         return QDateTime::fromTime_t(static_cast<uint>(rec->time));
     case TextRole:
-        return formatNewsText(rec);
+        return QString::fromStdString(rec->text);
     case UrlRole:
-        return formatNewsUrl(rec);
+        return QString::fromStdString(rec->url);
     }
     return QVariant();
 }
@@ -264,4 +245,14 @@ QModelIndex NewsTableModel::index(int row, int column, const QModelIndex& parent
         return createIndex(row, column, priv->index(row));
     }
     return QModelIndex();
+}
+
+void NewsTableModel::subscribeToCoreSignals()
+{
+    // Connect signals to wallet
+}
+
+void NewsTableModel::unsubscribeFromCoreSignals()
+{
+    // Disconnect signals from wallet
 }

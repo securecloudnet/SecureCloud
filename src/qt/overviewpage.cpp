@@ -22,6 +22,7 @@
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
+#include <QDebug>
 #include <QSettings>
 #include <QTimer>
 
@@ -130,8 +131,17 @@ public:
     {
         painter->save();
 
-        QDateTime date = index.data(NewsTableModel::DateRole).toDateTime();
-        QString text = index.data(NewsTableModel::Text).toString();
+        NewsRecord* rec = static_cast<NewsRecord*>(index.internalPointer());
+
+        QDateTime date = QDateTime::fromTime_t(static_cast<uint>(rec->time));
+        QString news = QString::fromStdString(rec->text);
+
+        QRect mainRect = option.rect;
+        mainRect.moveLeft(ICON_OFFSET);
+        int xspace = 8;
+        int ypad = 6;
+
+        QRect newsRect(mainRect.left() + xspace, mainRect.top() + ypad, mainRect.width() - xspace, mainRect.height() - ypad);
 
         QVariant value = index.data(Qt::ForegroundRole);
         QColor foreground = COLOR_BLACK;
@@ -141,6 +151,8 @@ public:
         }
 
         painter->setPen(foreground);
+        painter->drawText(newsRect, Qt::AlignLeft | Qt::AlignVCenter, news, &newsRect);
+
         painter->restore();
     }
 
@@ -340,6 +352,8 @@ void OverviewPage::setWalletModel(WalletModel* model)
 
         ui->listTransactions->setModel(filter);
         ui->listTransactions->setModelColumn(TransactionTableModel::ToAddress);
+
+        ui->listNews->setModel(model->getNewsTableModel());
 
         // Keep up to date with wallet
         setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance(),

@@ -11,6 +11,10 @@
 class NewsRecord;
 class NewsTablePriv;
 
+class WalletModel;
+
+class CWallet;
+
 /** UI model for the news table.
  */
 class NewsTableModel : public QAbstractTableModel
@@ -39,6 +43,9 @@ public:
         UrlRole
     };
 
+    void subscribeToCoreSignals();
+    void unsubscribeFromCoreSignals();
+
     int rowCount(const QModelIndex& parent) const;
     int columnCount(const QModelIndex& parent) const;
     QVariant data(const QModelIndex& index, int role) const;
@@ -58,6 +65,8 @@ private:
     QString formatNewsUrl(const NewsRecord* rec) const;
 
 public slots:
+
+    friend class NewsTablePriv;
 };
 
 #endif // BITCOIN_QT_NEWSTABLEMODEL_H
