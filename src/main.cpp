@@ -4680,9 +4680,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->nStartingHeight, addrMe.ToString(), pfrom->id,
             remoteAddr);
 
-        int64_t nTimeOffset = nTime - GetTime();
-        pfrom->nTimeOffset = nTimeOffset;
-        AddTimeData(pfrom->addr, nTimeOffset);
+        AddTimeData(pfrom->addr, nTime);
     }
 
 
@@ -5314,7 +5312,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         string strMsg;
         unsigned char ccode;
         string strReason;
-        
+
         try {
             vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
 
@@ -5328,12 +5326,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     ss << ": hash " << hash.ToString();
                 }
                 LogPrint("net", "Reject %s\n", SanitizeString(ss.str()));
-            } 
+            }
         } catch (std::ios_base::failure& e) {
             // Avoid feedback loops by preventing reject messages from triggering a new reject message.
             LogPrint("net", "Unparseable reject message received\n");
         }
-        
+
         // If I receive a REJECT_OBSOLETE reason I check the current Protocol Version
         if( ccode == REJECT_OBSOLETE )
         {
