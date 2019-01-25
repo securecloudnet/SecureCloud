@@ -16,16 +16,20 @@
 #include "transactionfilterproxy.h"
 #include "transactionrecord.h"
 #include "transactiontablemodel.h"
+#include "newsrecord.h"
+#include "newstablemodel.h"
 #include "walletmodel.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
+#include <QDebug>
 #include <QSettings>
 #include <QTimer>
 
 #define DECORATION_SIZE 48
 #define ICON_OFFSET 16
-#define NUM_ITEMS 9
+#define NUM_ITEMS 7
+#define NUM_NEWS 4
 
 extern CWallet* pwalletMain;
 
@@ -114,6 +118,52 @@ public:
 
     int unit;
 };
+
+class NewsViewDelegate : public QAbstractItemDelegate
+{
+    Q_OBJECT
+public:
+    NewsViewDelegate() : QAbstractItemDelegate()
+    {
+    }
+
+    inline void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
+    {
+        painter->save();
+
+        NewsRecord* rec = static_cast<NewsRecord*>(index.internalPointer());
+
+        QDateTime date = QDateTime::fromTime_t(static_cast<uint>(rec->time));
+        QString news = QString::fromStdString(rec->text);
+
+        QRect mainRect = option.rect;
+        mainRect.moveLeft(ICON_OFFSET);
+        int xspace = 8;
+        int ypad = 6;
+
+        QRect newsRect(mainRect.left() + xspace, mainRect.top() + ypad, mainRect.width() - xspace, mainRect.height() - ypad);
+
+        QVariant value = index.data(Qt::ForegroundRole);
+        QColor foreground = COLOR_BLACK;
+        if (value.canConvert<QBrush>()) {
+            QBrush brush = qvariant_cast<QBrush>(value);
+            foreground = brush.color();
+        }
+
+        painter->setPen(foreground);
+        painter->drawText(newsRect, Qt::AlignLeft | Qt::AlignVCenter, news, &newsRect);
+
+        painter->restore();
+    }
+
+    inline QSize sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const
+    {
+        return QSize(DECORATION_SIZE, DECORATION_SIZE);
+    }
+
+    int unit;
+};
+
 #include "overviewpage.moc"
 
 OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
@@ -126,6 +176,7 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchOnlyBalance(-1),
                                               currentWatchUnconfBalance(-1),
                                               currentWatchImmatureBalance(-1),
+                                              newsdelegate(new NewsViewDelegate()),
                                               txdelegate(new TxViewDelegate()),
                                               filter(0)
 {
@@ -140,9 +191,17 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
+    ui->listNews->setItemDelegate(newsdelegate);
+    ui->listNews->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
+    ui->listNews->setMinimumHeight(NUM_NEWS * (DECORATION_SIZE + 2));
+    ui->listNews->setAttribute(Qt::WA_MacShowFocusRect, false);
+
+    connect(ui->listNews, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(handleNewsClicked(QModelIndex)));
+
     // init "out of sync" warning labels
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelNewsStatus->setText("(" + tr("out of sync") + ")");
 
     SetLinks();
 
@@ -154,6 +213,11 @@ void OverviewPage::handleTransactionClicked(const QModelIndex& index)
 {
     if (filter)
         emit transactionClicked(filter->mapToSource(index));
+}
+
+void OverviewPage::handleNewsClicked(const QModelIndex& index)
+{
+    emit newsClicked(index);
 }
 
 OverviewPage::~OverviewPage()
@@ -289,6 +353,8 @@ void OverviewPage::setWalletModel(WalletModel* model)
         ui->listTransactions->setModel(filter);
         ui->listTransactions->setModelColumn(TransactionTableModel::ToAddress);
 
+        ui->listNews->setModel(model->getNewsTableModel());
+
         // Keep up to date with wallet
         setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance(),
                    model->getWatchBalance(), model->getWatchUnconfirmedBalance(), model->getWatchImmatureBalance());
@@ -331,6 +397,7 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+    ui->labelNewsStatus->setVisible(fShow);
 }
 
 void OverviewPage::SetLinks()

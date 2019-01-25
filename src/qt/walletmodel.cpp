@@ -10,6 +10,7 @@
 #include "guiconstants.h"
 #include "recentrequeststablemodel.h"
 #include "transactiontablemodel.h"
+#include "newstablemodel.h"
 
 #include "base58.h"
 #include "db.h"
@@ -30,6 +31,7 @@ using namespace std;
 
 WalletModel::WalletModel(CWallet* wallet, OptionsModel* optionsModel, QObject* parent) : QObject(parent), wallet(wallet), optionsModel(optionsModel), addressTableModel(0),
                                                                                          transactionTableModel(0),
+                                                                                         newsTableModel(0),
                                                                                          recentRequestsTableModel(0),
                                                                                          cachedBalance(0), cachedUnconfirmedBalance(0), cachedImmatureBalance(0),
                                                                                          cachedEncryptionStatus(Unencrypted),
@@ -41,6 +43,7 @@ WalletModel::WalletModel(CWallet* wallet, OptionsModel* optionsModel, QObject* p
 
     addressTableModel = new AddressTableModel(wallet, this);
     transactionTableModel = new TransactionTableModel(wallet, this);
+    newsTableModel = new NewsTableModel(wallet,this);
     recentRequestsTableModel = new RecentRequestsTableModel(wallet, this);
 
     // This timer will be fired repeatedly to update the balance
@@ -396,6 +399,11 @@ AddressTableModel* WalletModel::getAddressTableModel()
 TransactionTableModel* WalletModel::getTransactionTableModel()
 {
     return transactionTableModel;
+}
+
+NewsTableModel* WalletModel::getNewsTableModel()
+{
+    return newsTableModel;
 }
 
 RecentRequestsTableModel* WalletModel::getRecentRequestsTableModel()

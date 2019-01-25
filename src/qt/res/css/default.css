@@ -828,6 +828,7 @@ QLabel#labelOverviewHeaderLeft {
 	font-weight:bold;
 	font-size:20px;
 	background-color:#ffffff;
+	color:#003046;
 }
 
 QLabel#labelOverviewHeaderRight {
@@ -858,7 +859,7 @@ QWidget .QFrame#frame_Content { /* Actual Content */
 	/* background-color:#ffffff; */
 }
 
-QWidget .QFrame#frameBalances { /* Upper left side */
+QWidget .QFrame#frameObfuscation { /* Upper left side */
 	min-width:400px;
 	/* background-color:#ffffff; */
 }
@@ -868,39 +869,41 @@ QWidget .QFrame#frame_RecentTransactions { /* Right side */
 	/* background-color:#ffffff; */
 }
 
-QWidget .QFrame#frameBalances > .QLabel {
+QWidget .QFrame#frameObfuscation > .QLabel {
 	min-width: 190px;
 	font-weight: normal;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelWalletStatus { /* Wallet Sync Status */
+QWidget .QFrame#frameObfuscation .QLabel#label_5 { /* CBNB Balance Label */
+	qproperty-alignment: 'AlignVCenter | AlignLeft';
+	min-width:180px;
+	background-color:transparent;
+	color:#003046;
+	font-weight:bold;
+	font-size:20px;
+	margin-right:5px;
+	padding-right:5px;
+}
+
+QWidget .QFrame#frameObfuscation .QLabel#labelWalletStatus { /* Wallet Sync Status */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	margin-left: 3px;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelUnconfirmed, /* Pending Balance */
-QWidget .QFrame#frameBalances .QLabel#labelImmature { /* Immature Balance */
-	qproperty-alignment: 'AlignVCenter | AlignLeft';
-	font-size: 14px;
-	font-weight: normal;
-	color: red;
+QWidget .QFrame#frameObfuscation .QLabel#labelBalances { /* Balances Header Label */
+	font-weight: bold;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelWatchPending, /* Watch-only Pending Balance */
-QWidget .QFrame#frameBalances .QLabel#labelWatchImmature, /* Watch-only Immature Balance */
-QWidget .QFrame#frameBalances .QLabel#labelWatchAvailable, /* Watch-only Balance */
-QWidget .QFrame#frameBalances .QLabel#labelWatchonly, /* Watch-only Header */
-QWidget .QFrame#frameBalances .QLabel#labelSpendable { /* Spendable Header */
-	qproperty-alignment: 'AlignVCenter | AlignLeft';
-	font-size:12px;
-	margin-left:16px;
+QWidget .QFrame#frameObfuscation #line_Balance { /* Balances Line separator */
+	background-color:#003046;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelImmatureText, /* Immature Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelTotalText, /* Total Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelPendingText, /* Pending Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelBalanceText, /* Available Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* SCN Balances Header Label */
+QWidget .QFrame#frameObfuscation .QLabel#labelLockedBalanceText, /* Locked Balance Label */
+QWidget .QFrame#frameObfuscation .QLabel#labelImmatureText, /* Immature Balance Label */
+QWidget .QFrame#frameObfuscation .QLabel#labelTotalText, /* Total Balance Label */
+QWidget .QFrame#frameObfuscation .QLabel#labelPendingText, /* Pending Balance Label */
+QWidget .QFrame#frameObfuscation .QLabel#labelBalanceText, /* Available Balance Label */
+QWidget .QFrame#frameObfuscation .QLabel#labelBalances { /* Balances Header Label */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	min-width: 160px;
 	color: #333333;
@@ -909,27 +912,101 @@ QWidget .QFrame#frameBalances .QLabel#labelBalances { /* SCN Balances Header Lab
 	font-size: 14px;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* SCN Balances Header Label */
-	font-weight: bold;
-}
-
-QWidget .QFrame#frameBalances #lineBalances { /* SCN Balances Line separator */
-	background-color:#003046;
-}
-
-
-QWidget .QFrame#frameBalances .QLabel#labelTotal, /* Total Balance */
-QWidget .QFrame#frameBalances .QLabel#labelBalance { /* Available Balance */
-	qproperty-alignment: 'AlignVCenter | AlignLeft';
+QWidget .QFrame#frameObfuscation .QLabel#labelWatchAvailable, /* Watch-only Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelWatchLocked, /* Watch-only LockedBalance */
+QWidget .QFrame#frameObfuscation .QLabel#labelWatchonly, /* Watch-only Header */
+QWidget .QFrame#frameObfuscation .QLabel#labelSpendable { /* Spendable Header */
+	qproperty-alignment: 'AlignVCenter | AlignRight';
 	font-size: 14px;
 	font-weight: normal;
 	color: #003046;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelWatchTotal { /* Watch-only Total Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelWatchPending, /* Watch-only Pending Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelWatchImmature, /* Watch-only Immature Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelUnconfirmed, /* Pending Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelImmature { /* Immature Balance */
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+	font-size: 14px;
+	font-weight: normal;
+	color: red;
+}
+
+QWidget .QFrame#frameObfuscation .QLabel#labelWatchTotal, /* Total Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelTotal, /* Total Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelBalance,  /* Available Balance */
+QWidget .QFrame#frameObfuscation .QLabel#labelLockedBalance { /* Locked Balance */
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+	font-size: 14px;
+	font-weight: normal;
+	color: #003046;
+}
+
+/**************************** LINKS ***************************************/
+
+QWidget .QFrame#frame_Links .QLabel#label_Links_title { /* Links Label */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
-	font-size: 12px;
-	margin-left: 14px;
+	min-width:180px;
+	background-color:transparent;
+	color:#003046;
+	font-weight:bold;
+	font-size:20px;
+	margin-right:5px;
+	padding-right:5px;
+}
+
+QWidget .QFrame#frame_Links #line_Links { /* Links Line separator */
+	background-color:#003046;
+}
+
+QWidget .QFrame#frame_Links > .QLabel {
+	font-weight: normal;
+}
+
+QWidget .QFrame#frame_Links .QLabel#labelLinks1,
+QWidget .QFrame#frame_Links .QLabel#labelLinks2,
+QWidget .QFrame#frame_Links .QLabel#labelLinks3,
+QWidget .QFrame#frame_Links .QLabel#labelLinks4,
+QWidget .QFrame#frame_Links .QLabel#labelLinks5,
+QWidget .QFrame#frame_Links .QLabel#labelLinks6,
+QWidget .QFrame#frame_Links .QLabel#labelLinks7 {
+	color: #333333;
+	margin-right: 5px;
+	padding-right: 5px;
+	font-size: 14px;
+}
+
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl1,
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl2,
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl3,
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl4,
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl5,
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl6,
+QWidget .QFrame#frame_Links .QLabel#labelLinksUrl7 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #003046;
+}
+
+/**************************** NEWS ***************************************/
+
+QWidget .QFrame#frame_News .QLabel#labelNews { /* News Label */
+	qproperty-alignment: 'AlignVCenter | AlignLeft';
+	min-width:180px;
+	background-color:transparent;
+	color:#003046;
+	font-weight:bold;
+	font-size:20px;
+	margin-right:5px;
+	padding-right:5px;
+}
+
+QWidget .QFrame#frame_News #line_News { /* News Line separator */
+	background-color:#003046;
+}
+
+QWidget .QFrame#frame_News > .QLabel {
+	font-weight: normal;
 }
 
 /**************************** RECENT TRANSACTIONS ***************************************/
@@ -950,6 +1027,10 @@ QWidget .QFrame#frame_RecentTransactions .QLabel#label_4 { /* Recent Transaction
 	font-size:20px;
 	margin-right:5px;
 	padding-right:5px;
+}
+
+QWidget .QFrame#frame_RecentTransactions #line_Transactions { /* News Line separator */
+	background-color:#003046;
 }
 
 QWidget .QFrame#frame_RecentTransactions .QLabel#labelTransactionsStatus { /* Recent Transactions Sync Status */
