@@ -5379,6 +5379,15 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
+    if (IsSporkActive(SPORK_23_NEW_PROTOCOL_ENFORCEMENT_9))
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_9;
+
+    if (IsSporkActive(SPORK_22_NEW_PROTOCOL_ENFORCEMENT_8))
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_8;
+
+    if (IsSporkActive(SPORK_21_NEW_PROTOCOL_ENFORCEMENT_7))
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_7;
+
     if (IsSporkActive(SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6))
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_6;
 

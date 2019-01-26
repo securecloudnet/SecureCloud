@@ -23,7 +23,7 @@ using namespace boost;
 // Don't ever reuse these IDs for other sporks - This would result in old clients getting confused about which spork is for what
 
 #define SPORK_START                                     10001
-#define SPORK_END                                       10019
+#define SPORK_END                                       10022
                                                         
 #define SPORK_2_SWIFTTX                                 10001
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING                 10002
@@ -42,6 +42,9 @@ using namespace boost;
 #define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4             10017
 #define SPORK_19_NEW_PROTOCOL_ENFORCEMENT_5             10018
 #define SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6             10019
+#define SPORK_21_NEW_PROTOCOL_ENFORCEMENT_7             10020
+#define SPORK_22_NEW_PROTOCOL_ENFORCEMENT_8             10021
+#define SPORK_23_NEW_PROTOCOL_ENFORCEMENT_9             10022
 
 #define SPORK_2_SWIFTTX_DEFAULT                         978307200   // 2001-1-1
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING_DEFAULT         1424217600  // 2015-2-18
@@ -60,6 +63,9 @@ using namespace boost;
 #define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4_DEFAULT     4070908800  // OFF
 #define SPORK_19_NEW_PROTOCOL_ENFORCEMENT_5_DEFAULT     4070908800  // OFF
 #define SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6_DEFAULT     4070908800  // OFF
+#define SPORK_21_NEW_PROTOCOL_ENFORCEMENT_7_DEFAULT     4070908800  // OFF
+#define SPORK_22_NEW_PROTOCOL_ENFORCEMENT_8_DEFAULT     4070908800  // OFF
+#define SPORK_23_NEW_PROTOCOL_ENFORCEMENT_9_DEFAULT     4070908800  // OFF
 
 class CSporkMessage;
 class CSporkManager;
