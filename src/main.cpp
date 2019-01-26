@@ -2182,7 +2182,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     // add new entries
     for (const CTransaction tx: block.vtx) {
-        if (tx.IsCoinBase() || tx.IsZerocoinSpend())
+        if (tx.IsCoinBase())
             continue;
         for (const CTxIn in: tx.vin) {
             mapStakeSpent.insert(std::make_pair(in.prevout, pindex->nHeight));
