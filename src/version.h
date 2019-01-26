@@ -13,7 +13,7 @@
  */
 
 //! Current Protocol Version
-static const int PROTOCOL_VERSION = 70940;
+static const int PROTOCOL_VERSION = 70950;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -28,6 +28,9 @@ static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_3 = 70930;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_4 = 70940;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_5 = 70950;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_6 = 70960;
+static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_7 = 70970;
+static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_8 = 70980;
+static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_9 = 70990;
 
 //! nTime field added to CAddress, starting with this version;
 //! if possible, avoid requesting addresses nodes older than this
