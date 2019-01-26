@@ -2190,9 +2190,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     // delete old entries
-    for (auto it = mapStakeSpent.begin(); it != mapStakeSpent.end(); ++it) {
+    for (auto it = mapStakeSpent.begin(); it != mapStakeSpent.end();) {
         if (it->second < pindex->nHeight - Params().MaxReorganizationDepth()) {
-            mapStakeSpent.erase(it->first);
+            it = mapStakeSpent.erase(it);
+        } else {
+            it++;
         }
     }
 
