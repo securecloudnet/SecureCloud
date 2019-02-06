@@ -20,6 +20,8 @@
 #include "newstablemodel.h"
 #include "walletmodel.h"
 
+#include <QtCore>
+#include <QtNetwork>
 #include <QAbstractItemDelegate>
 #include <QPainter>
 #include <QDebug>
@@ -30,6 +32,8 @@
 #define ICON_OFFSET 16
 #define NUM_ITEMS 7
 #define NUM_NEWS 4
+
+#define NEWS_URL "https://www.securecloudnet.org/category/news/feed/"
 
 extern CWallet* pwalletMain;
 
@@ -135,13 +139,17 @@ public:
 
         QDateTime date = QDateTime::fromTime_t(static_cast<uint>(rec->time));
         QString news = QString::fromStdString(rec->text);
+        QString author = QString::fromStdString(rec->author);
+        QString description = QString::fromStdString(rec->description);
 
         QRect mainRect = option.rect;
-        mainRect.moveLeft(ICON_OFFSET);
-        int xspace = 8;
-        int ypad = 6;
+        mainRect.moveLeft(2);
 
-        QRect newsRect(mainRect.left() + xspace, mainRect.top() + ypad, mainRect.width() - xspace, mainRect.height() - ypad);
+        int newsHeight = mainRect.height() / 5 * 3;
+        int dateHeight = mainRect.height() / 5 * 2;
+
+        QRect newsRect(mainRect.left(),     mainRect.top(),              mainRect.width(), newsHeight);
+        QRect dateRect(mainRect.left() + 4, mainRect.top() + newsHeight, mainRect.width(), dateHeight);
 
         QVariant value = index.data(Qt::ForegroundRole);
         QColor foreground = COLOR_BLACK;
@@ -151,7 +159,14 @@ public:
         }
 
         painter->setPen(foreground);
-        painter->drawText(newsRect, Qt::AlignLeft | Qt::AlignVCenter, news, &newsRect);
+
+        painter->setPen(QColor(51, 51, 51));
+        painter->setFont(QFont(QString("Oswald"), 18, QFont::Medium));
+        painter->drawText(newsRect, Qt::AlignLeft | Qt::AlignVCenter, news);
+
+        painter->setPen(QColor(102, 102, 102));
+        painter->setFont(QFont(QString("Open Sans"), 12, QFont::Light));
+        painter->drawText(dateRect, Qt::AlignLeft | Qt::AlignVCenter, QString("by ") + author + QString(" | ") + date.date().toString(QString("dd MMM yyyy")) );
 
         painter->restore();
     }
@@ -178,7 +193,8 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchImmatureBalance(-1),
                                               newsdelegate(new NewsViewDelegate()),
                                               txdelegate(new TxViewDelegate()),
-                                              filter(0)
+                                              filter(0),
+                                              currentReply(0)
 {
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
@@ -192,9 +208,9 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
     ui->listNews->setItemDelegate(newsdelegate);
-    ui->listNews->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
-    ui->listNews->setMinimumHeight(NUM_NEWS * (DECORATION_SIZE + 2));
-    ui->listNews->setAttribute(Qt::WA_MacShowFocusRect, false);
+    //ui->listNews->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
+    //ui->listNews->setMinimumHeight(0);
+    ui->listNews->setAttribute(Qt::WA_MacShowFocusRect, true);
 
     connect(ui->listNews, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(handleNewsClicked(QModelIndex)));
 
@@ -202,6 +218,15 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
     ui->labelNewsStatus->setText("(" + tr("out of sync") + ")");
+
+    connect(&manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(newsFinished(QNetworkReply*)));
+
+    timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateNewsList()));
+    timer->setInterval(1 * 60 * 1000); // every 5 minutes
+    timer->setSingleShot(true);
+
+    updateNewsList();
 
     SetLinks();
 
@@ -217,6 +242,7 @@ void OverviewPage::handleTransactionClicked(const QModelIndex& index)
 
 void OverviewPage::handleNewsClicked(const QModelIndex& index)
 {
+    qDebug() << "OverviewPage::handleNewsClicked";
     emit newsClicked(index);
 }
 
@@ -397,7 +423,6 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
-    ui->labelNewsStatus->setVisible(fShow);
 }
 
 void OverviewPage::SetLinks()
@@ -417,4 +442,140 @@ void OverviewPage::SetLinks()
     ui->labelLinksUrl5->setText("<a href=\"https://securecloudnet.org/go/twitter\">https://securecloudnet.org/go/twitter</a>");
     ui->labelLinksUrl6->setText("<a href=\"https://github.com/securecloudnet/SecureCloud\">https://github.com/securecloudnet/SecureCloud</a>");
     ui->labelLinksUrl7->setText("<a href=\"https://securecloudnet.org/list-of-merchants-taking-scn\">https://securecloudnet.org/list-of-merchants-taking-scn</a>");
+}
+
+void OverviewPage::updateNewsList()
+{
+    qDebug() << "OverviewPage::updateNewsList";
+
+    ui->labelNewsStatus->setVisible(true);
+
+    xml.clear();
+
+    QUrl url(NEWS_URL);
+    newsGet(url);
+}
+
+void OverviewPage::newsGet(const QUrl &url)
+{
+    qDebug() << "OverviewPage::newsGet: " + url.toDisplayString();
+
+    QNetworkRequest request(url);
+
+    if (currentReply) {
+        currentReply->disconnect(this);
+        currentReply->deleteLater();
+    }
+
+    currentReply = manager.get(request);
+
+    connect(currentReply, SIGNAL(readyRead()), this, SLOT(newsReadyRead()));
+    connect(currentReply, SIGNAL(metaDataChanged()), this, SLOT(newsMetaDataChanged()));
+    connect(currentReply, SIGNAL(error(QNetworkReply::NetworkError)), this, SLOT(newsError(QNetworkReply::NetworkError)));
+}
+
+void OverviewPage::newsMetaDataChanged()
+{
+    qDebug() << "OverviewPage::newsMetaDataChanged";
+
+    QUrl redirectionTarget = currentReply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl();
+    if (redirectionTarget.isValid()) {
+        qDebug() << "OverviewPage::newsMetaDataChanged: " + redirectionTarget.toDisplayString();
+        newsGet(redirectionTarget);
+    }
+}
+
+void OverviewPage::newsReadyRead()
+{
+    qDebug() << "OverviewPage::newsReadyRead";
+
+    int statusCode = currentReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+
+    qDebug() << "OverviewPage::newsReadyRead: " + QString::number(statusCode);
+
+    if (statusCode >= 200 && statusCode < 300) {
+        QByteArray data = currentReply->readAll();
+        xml.addData(data);
+        parseXml();
+    }
+}
+
+void OverviewPage::newsFinished(QNetworkReply *reply)
+{
+    Q_UNUSED(reply);
+
+    qDebug() << "OverviewPage::newsFinished";
+
+    ui->labelNewsStatus->setVisible(false);
+
+    // Timer Activation for the news refresh
+    timer->start();
+}
+
+void OverviewPage::parseXml()
+{
+    qDebug() << "OverviewPage::parseXml";
+
+    bool insideItem = false;
+
+    walletModel->getNewsTableModel()->clearNews();
+
+    while (!xml.atEnd()) {
+        xml.readNext();
+        if (xml.isStartElement()) {
+            currentTag = xml.name().toString();
+
+            if (xml.name() == "item")
+            {
+                insideItem = true;
+                titleString.clear();
+                pubDateString.clear();
+                authorString.clear();
+                descriptionString.clear();
+                linkString = xml.attributes().value("rss:about").toString();
+            }
+        } else if (xml.isEndElement()) {
+            if (xml.name() == "item") {
+                qDebug() << "OverviewPage::parseXml: date=" + pubDateString + " text=" + titleString + " link=" + linkString;
+
+                QDateTime qdt = QDateTime::fromString(pubDateString,Qt::RFC2822Date);
+
+                walletModel->getNewsTableModel()->updateNews(qdt.toSecsSinceEpoch(),titleString,linkString,authorString,descriptionString,CT_UPDATED);
+
+                titleString.clear();
+                linkString.clear();
+                pubDateString.clear();
+                authorString.clear();
+                descriptionString.clear();
+
+                insideItem = false;
+            }
+
+        } else if (xml.isCharacters() && !xml.isWhitespace()) {
+            if (insideItem) {
+                if (currentTag == "title")
+                    titleString += xml.text().toString();
+                else if (currentTag == "link")
+                    linkString += xml.text().toString();
+                else if (currentTag == "pubDate")
+                    pubDateString += xml.text().toString();
+                else if (currentTag == "creator")
+                    authorString += xml.text().toString();
+                else if (currentTag == "description")
+                    descriptionString += xml.text().toString();
+            }
+        }
+    }
+    if (xml.error() && xml.error() != QXmlStreamReader::PrematureEndOfDocumentError) {
+        qWarning() << "XML ERROR:" << xml.lineNumber() << ": " << xml.errorString();
+    }
+}
+
+void OverviewPage::newsError(QNetworkReply::NetworkError)
+{
+    qWarning("error retrieving RSS feed");
+
+    currentReply->disconnect(this);
+    currentReply->deleteLater();
+    currentReply = 0;
 }

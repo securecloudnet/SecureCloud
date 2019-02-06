@@ -61,14 +61,9 @@ public:
 
     /* Query entire news anew from core.
      */
-    void refreshNews()
+    void clearNews()
     {
-        qDebug() << "NewsTablePriv::refreshNews";
         cachedNews.clear();
-        {
-            LOCK2(cs_main, wallet->cs_wallet);
-            updateNews(GetTime(),"Coming soon...","",CT_NEW);
-        }
     }
 
     /* Update our model of the wallet incrementally, to synchronize our model of the wallet
@@ -76,9 +71,9 @@ public:
 
        Call with transaction that was added, removed or changed.
      */
-    void updateNews(const qint64& time, const std::string& text, const std::string& url, int status)
+    void updateNews(const qint64& time, const std::string& text, const std::string& url, const std::string& author, const std::string& description, int status)
     {
-        qDebug() << "NewsTablePriv::updateNews : " + QString::number(time) + " " + QString::fromStdString(text) + " " + QString::number(status);
+        qDebug() << "NewsTablePriv::updateNews : " + QString::number(time) + " " + QString::fromStdString(text) + " " + QString::fromStdString(author) + " " + QString::fromStdString(description) + " " + QString::number(status);
 
         // Find bounds of this news in model
         QList<NewsRecord>::iterator lower = qLowerBound(cachedNews.begin(), cachedNews.end(), time, NewsGreaterThan());
@@ -101,7 +96,7 @@ public:
 
             {
               // Added -- insert at the right position
-              NewsRecord rec = NewsRecord(time,text,url);
+              NewsRecord rec = NewsRecord(time,text,url,author,description);
 
               parent->beginInsertRows(QModelIndex(), lowerIndex, lowerIndex);
               cachedNews.insert(lowerIndex, rec);
@@ -144,7 +139,7 @@ NewsTableModel::NewsTableModel(CWallet* wallet, WalletModel* parent) : QAbstract
                                                                        priv(new NewsTablePriv(wallet, this))
 {
     columns << tr("Date") << tr("Text");
-    priv->refreshNews();
+    clearNews();
 
     subscribeToCoreSignals();
 }
@@ -155,9 +150,14 @@ NewsTableModel::~NewsTableModel()
     delete priv;
 }
 
-void NewsTableModel::updateNews(qint64 time, const QString& text, const QString& url, int status)
+void NewsTableModel::clearNews()
 {
-    priv->updateNews(time, text.toStdString(), url.toStdString(), status);
+    priv->clearNews();
+}
+
+void NewsTableModel::updateNews(qint64 time, const QString& text, const QString& url, const QString& author, const QString& description, int status)
+{
+    priv->updateNews(time, text.toStdString(), url.toStdString(), author.toStdString(), description.toStdString(), status);
 }
 
 int NewsTableModel::rowCount(const QModelIndex& parent) const
@@ -190,6 +190,16 @@ QString NewsTableModel::formatNewsUrl(const NewsRecord* rec) const
     return QString::fromStdString(rec->url);
 }
 
+QString NewsTableModel::formatNewsAuthor(const NewsRecord* rec) const
+{
+    return QString::fromStdString(rec->author);
+}
+
+QString NewsTableModel::formatNewsDescription(const NewsRecord* rec) const
+{
+    return QString::fromStdString(rec->description);
+}
+
 QVariant NewsTableModel::data(const QModelIndex& index, int role) const
 {
     if (!index.isValid())
@@ -207,8 +217,14 @@ QVariant NewsTableModel::data(const QModelIndex& index, int role) const
           return QString::fromStdString(rec->text);
         case Url:
           return QString::fromStdString(rec->url);
+        case Author:
+          return QString::fromStdString(rec->author);
+        case Description:
+          return QString::fromStdString(rec->description);
         }
         break;
+    case Qt::ToolTipRole:
+        return formatNewsDescription(rec);
     case Qt::TextAlignmentRole:
         return column_alignments[index.column()];
     case Qt::ForegroundRole:
@@ -221,6 +237,10 @@ QVariant NewsTableModel::data(const QModelIndex& index, int role) const
         return QString::fromStdString(rec->text);
     case UrlRole:
         return QString::fromStdString(rec->url);
+    case AuthorRole:
+        return QString::fromStdString(rec->author);
+    case DescriptionRole:
+        return QString::fromStdString(rec->description);
     }
     return QVariant();
 }

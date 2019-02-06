@@ -28,7 +28,9 @@ public:
     enum ColumnIndex {
         Date = 1,
         Text = 2,
-        Url = 3
+        Url = 3,
+        Author = 4,
+        Description = 5
     };
 
     /** Roles to get specific information from a transaction row.
@@ -40,7 +42,11 @@ public:
         /** Content of the news (HTML format) */
         TextRole,
         /** URL of the news */
-        UrlRole
+        UrlRole,
+        /** Author of the news */
+        AuthorRole,
+        /** Description of the news */
+        DescriptionRole
     };
 
     void subscribeToCoreSignals();
@@ -52,7 +58,8 @@ public:
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
     QModelIndex index(int row, int column, const QModelIndex& parent = QModelIndex()) const;
 
-    void updateNews(qint64 time, const QString& text, const QString& url, int status);
+    void clearNews();
+    void updateNews(qint64 time, const QString& text, const QString& url, const QString& author, const QString& description, int status);
 
 private:
     CWallet* wallet;
@@ -63,6 +70,8 @@ private:
     QString formatNewsDate(const NewsRecord* rec) const;
     QString formatNewsText(const NewsRecord* rec) const;
     QString formatNewsUrl(const NewsRecord* rec) const;
+    QString formatNewsAuthor(const NewsRecord* rec) const;
+    QString formatNewsDescription(const NewsRecord* rec) const;
 
 public slots:
 

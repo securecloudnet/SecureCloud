@@ -1009,6 +1009,19 @@ QWidget .QFrame#frame_News > .QLabel {
 	font-weight: normal;
 }
 
+QWidget .QFrame#frame_News .QListView#listNews { /* News List */
+	font-weight:normal;
+	font-size:18px;
+}
+
+QWidget .QFrame#frame_News QListView QToolTip {
+  max-width:400px;
+	max-height:250px;
+	background-color:yellow;
+	color:black;
+  white-space:pre;
+}
+
 /**************************** RECENT TRANSACTIONS ***************************************/
 
 QWidget .QFrame#frame_RecentTransactions { /* Transactions Widget */

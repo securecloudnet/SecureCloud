@@ -8,6 +8,12 @@
 #include "amount.h"
 
 #include <QWidget>
+#include <QTimer>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QBuffer>
+#include <QXmlStreamReader>
+#include <QUrl>
 
 class ClientModel;
 class TransactionFilterProxy;
@@ -37,8 +43,15 @@ public:
     void setWalletModel(WalletModel* walletModel);
     void showOutOfSyncWarning(bool fShow);
 
+public Q_SLOTS:
+    void updateNewsList();
+
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance);
+    void newsFinished(QNetworkReply *reply);
+    void newsReadyRead();
+    void newsMetaDataChanged();
+    void newsError(QNetworkReply::NetworkError);
 
 signals:
     void transactionClicked(const QModelIndex& index);
@@ -60,6 +73,20 @@ private:
     NewsViewDelegate* newsdelegate;
     TxViewDelegate* txdelegate;
     TransactionFilterProxy* filter;
+
+    void parseXml();
+    void newsGet(const QUrl &url);
+
+    QXmlStreamReader xml;
+    QString currentTag;
+    QString linkString;
+    QString titleString;
+    QString pubDateString;
+    QString authorString;
+    QString descriptionString;
+
+    QNetworkAccessManager manager;
+    QNetworkReply *currentReply;
 
     void SetLinks();
 

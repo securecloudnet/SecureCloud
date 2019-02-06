@@ -12,18 +12,20 @@
 class NewsRecord
 {
 public:
-    NewsRecord() : time(0), text(""), url("")
+    NewsRecord() : time(0), text(""), url(""), author(""), description("")
     {
     }
 
 
-    NewsRecord(qint64 time, const std::string& text, const std::string& url) : time(time), text(text), url(url)
+    NewsRecord(qint64 time, const std::string& text, const std::string& url, const std::string& author, const std::string& description) : time(time), text(text), url(url), author(author), description(description)
     {
     }
 
     qint64 time;
     std::string text;
     std::string url;
+    std::string author;
+    std::string description;
 };
 
 #endif // BITCOIN_QT_NEWSRECORD_H
