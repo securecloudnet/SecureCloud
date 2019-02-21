@@ -33,7 +33,7 @@
 #define NUM_ITEMS 7
 #define NUM_NEWS 4
 
-#define NEWS_URL "https://www.securecloudnet.org/category/news/feed/"
+#define NEWS_URL "https://rfc.securecloudnet.org/category/news/feed/"
 
 extern CWallet* pwalletMain;
 
@@ -540,7 +540,7 @@ void OverviewPage::parseXml()
 
                 QDateTime qdt = QDateTime::fromString(pubDateString,Qt::RFC2822Date);
 
-                walletModel->getNewsTableModel()->updateNews(qdt.toSecsSinceEpoch(),titleString,linkString,authorString,descriptionString,CT_UPDATED);
+                walletModel->getNewsTableModel()->updateNews(qdt.toTime_t(),titleString,linkString,authorString,descriptionString,CT_UPDATED);
 
                 titleString.clear();
                 linkString.clear();
