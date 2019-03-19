@@ -728,7 +728,7 @@
                       </widget>
                      </item>
                      <item>
-                      <widget class="QListView" name="listNews">
+                      <widget class="QListWidget" name="listNews">
                        <property name="sizePolicy">
                         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                          <horstretch>0</horstretch>
@@ -760,7 +760,7 @@
                         <enum>Qt::ScrollBarAsNeeded</enum>
                        </property>
                        <property name="selectionMode">
-                        <enum>QAbstractItemView::SingleSelection</enum>
+                        <enum>QAbstractItemView::NoSelection</enum>
                        </property>
                        <property name="selectionBehavior">
                         <enum>QAbstractItemView::SelectRows</enum>

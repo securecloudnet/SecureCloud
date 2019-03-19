@@ -16,9 +16,8 @@
 #include "transactionfilterproxy.h"
 #include "transactionrecord.h"
 #include "transactiontablemodel.h"
-#include "newsrecord.h"
-#include "newstablemodel.h"
 #include "walletmodel.h"
+#include "newsitem.h"
 
 #include <QtCore>
 #include <QtNetwork>
@@ -123,62 +122,6 @@ public:
     int unit;
 };
 
-class NewsViewDelegate : public QAbstractItemDelegate
-{
-    Q_OBJECT
-public:
-    NewsViewDelegate() : QAbstractItemDelegate()
-    {
-    }
-
-    inline void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
-    {
-        painter->save();
-
-        NewsRecord* rec = static_cast<NewsRecord*>(index.internalPointer());
-
-        QDateTime date = QDateTime::fromTime_t(static_cast<uint>(rec->time));
-        QString news = QString::fromStdString(rec->text);
-        QString author = QString::fromStdString(rec->author);
-        QString description = QString::fromStdString(rec->description);
-
-        QRect mainRect = option.rect;
-        mainRect.moveLeft(2);
-
-        int newsHeight = mainRect.height() / 5 * 3;
-        int dateHeight = mainRect.height() / 5 * 2;
-
-        QRect newsRect(mainRect.left(),     mainRect.top(),              mainRect.width(), newsHeight);
-        QRect dateRect(mainRect.left() + 4, mainRect.top() + newsHeight, mainRect.width(), dateHeight);
-
-        QVariant value = index.data(Qt::ForegroundRole);
-        QColor foreground = COLOR_BLACK;
-        if (value.canConvert<QBrush>()) {
-            QBrush brush = qvariant_cast<QBrush>(value);
-            foreground = brush.color();
-        }
-
-        painter->setPen(foreground);
-
-        painter->setPen(QColor(51, 51, 51));
-        painter->setFont(QFont(QString("Oswald"), 18, QFont::Medium));
-        painter->drawText(newsRect, Qt::AlignLeft | Qt::AlignVCenter, news);
-
-        painter->setPen(QColor(102, 102, 102));
-        painter->setFont(QFont(QString("Open Sans"), 12, QFont::Light));
-        painter->drawText(dateRect, Qt::AlignLeft | Qt::AlignVCenter, QString("by ") + author + QString(" | ") + date.date().toString(QString("dd MMM yyyy")) );
-
-        painter->restore();
-    }
-
-    inline QSize sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const
-    {
-        return QSize(DECORATION_SIZE, DECORATION_SIZE);
-    }
-
-    int unit;
-};
-
 #include "overviewpage.moc"
 
 OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
@@ -191,7 +134,6 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchOnlyBalance(-1),
                                               currentWatchUnconfBalance(-1),
                                               currentWatchImmatureBalance(-1),
-                                              newsdelegate(new NewsViewDelegate()),
                                               txdelegate(new TxViewDelegate()),
                                               filter(0),
                                               currentReply(0)
@@ -207,12 +149,7 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
-    ui->listNews->setItemDelegate(newsdelegate);
-    //ui->listNews->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
-    //ui->listNews->setMinimumHeight(0);
-    ui->listNews->setAttribute(Qt::WA_MacShowFocusRect, true);
-
-    connect(ui->listNews, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(handleNewsClicked(QModelIndex)));
+    ui->listNews->setSortingEnabled(true);
 
     // init "out of sync" warning labels
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
@@ -223,7 +160,7 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateNewsList()));
-    timer->setInterval(1 * 60 * 1000); // every 5 minutes
+    timer->setInterval(5 * 60 * 1000); // every 5 minutes
     timer->setSingleShot(true);
 
     updateNewsList();
@@ -238,12 +175,6 @@ void OverviewPage::handleTransactionClicked(const QModelIndex& index)
 {
     if (filter)
         emit transactionClicked(filter->mapToSource(index));
-}
-
-void OverviewPage::handleNewsClicked(const QModelIndex& index)
-{
-    qDebug() << "OverviewPage::handleNewsClicked";
-    emit newsClicked(index);
 }
 
 OverviewPage::~OverviewPage()
@@ -379,8 +310,6 @@ void OverviewPage::setWalletModel(WalletModel* model)
         ui->listTransactions->setModel(filter);
         ui->listTransactions->setModelColumn(TransactionTableModel::ToAddress);
 
-        ui->listNews->setModel(model->getNewsTableModel());
-
         // Keep up to date with wallet
         setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance(),
                    model->getWatchBalance(), model->getWatchUnconfirmedBalance(), model->getWatchImmatureBalance());
@@ -446,8 +375,6 @@ void OverviewPage::SetLinks()
 
 void OverviewPage::updateNewsList()
 {
-    qDebug() << "OverviewPage::updateNewsList";
-
     ui->labelNewsStatus->setVisible(true);
 
     xml.clear();
@@ -458,8 +385,6 @@ void OverviewPage::updateNewsList()
 
 void OverviewPage::newsGet(const QUrl &url)
 {
-    qDebug() << "OverviewPage::newsGet: " + url.toDisplayString();
-
     QNetworkRequest request(url);
 
     if (currentReply) {
@@ -476,22 +401,15 @@ void OverviewPage::newsGet(const QUrl &url)
 
 void OverviewPage::newsMetaDataChanged()
 {
-    qDebug() << "OverviewPage::newsMetaDataChanged";
-
     QUrl redirectionTarget = currentReply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl();
     if (redirectionTarget.isValid()) {
-        qDebug() << "OverviewPage::newsMetaDataChanged: " + redirectionTarget.toDisplayString();
         newsGet(redirectionTarget);
     }
 }
 
 void OverviewPage::newsReadyRead()
 {
-    qDebug() << "OverviewPage::newsReadyRead";
-
     int statusCode = currentReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-
-    qDebug() << "OverviewPage::newsReadyRead: " + QString::number(statusCode);
 
     if (statusCode >= 200 && statusCode < 300) {
         QByteArray data = currentReply->readAll();
@@ -504,8 +422,6 @@ void OverviewPage::newsFinished(QNetworkReply *reply)
 {
     Q_UNUSED(reply);
 
-    qDebug() << "OverviewPage::newsFinished";
-
     ui->labelNewsStatus->setVisible(false);
 
     // Timer Activation for the news refresh
@@ -514,11 +430,19 @@ void OverviewPage::newsFinished(QNetworkReply *reply)
 
 void OverviewPage::parseXml()
 {
-    qDebug() << "OverviewPage::parseXml";
+    QString currentTag;
+    QString linkString;
+    QString titleString;
+    QString pubDateString;
+    QString authorString;
+    QString descriptionString;
 
     bool insideItem = false;
 
-    walletModel->getNewsTableModel()->clearNews();
+    for(int i = 0; i < ui->listNews->count(); ++i)
+    {
+        delete ui->listNews->takeItem(i);
+    }
 
     while (!xml.atEnd()) {
         xml.readNext();
@@ -536,11 +460,33 @@ void OverviewPage::parseXml()
             }
         } else if (xml.isEndElement()) {
             if (xml.name() == "item") {
-                qDebug() << "OverviewPage::parseXml: date=" + pubDateString + " text=" + titleString + " link=" + linkString;
-
                 QDateTime qdt = QDateTime::fromString(pubDateString,Qt::RFC2822Date);
 
-                walletModel->getNewsTableModel()->updateNews(qdt.toTime_t(),titleString,linkString,authorString,descriptionString,CT_UPDATED);
+                bool found = false;
+
+                for(int i = 0; i < ui->listNews->count(); ++i)
+                {
+                    NewsItem * item = (NewsItem *)(ui->listNews->itemWidget(ui->listNews->item(i)));
+                    if( item->pubDate == qdt )
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if( !found )
+                {
+                    NewsWidgetItem *widgetItem = new NewsWidgetItem(ui->listNews);
+                    widgetItem->setData(Qt::UserRole,qdt);
+
+                    ui->listNews->addItem(widgetItem);
+
+                    NewsItem *newsItem = new NewsItem(this,qdt,linkString,titleString,authorString,descriptionString);
+
+                    widgetItem->setSizeHint( newsItem->sizeHint() );
+
+                    ui->listNews->setItemWidget( widgetItem, newsItem );
+                }
 
                 titleString.clear();
                 linkString.clear();
