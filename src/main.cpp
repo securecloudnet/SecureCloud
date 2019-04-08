@@ -1602,6 +1602,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
 bool IsMasternodeCollateral(CAmount value)
 {
+    if( chainActive.Height() >= 241800 )
+        return value == MASTERNODE_COLLATERAL_AFTER_241800;
+
     return value == MASTERNODE_COLLATERAL;
 }
 
@@ -2142,7 +2145,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
+    CAmount nExpectedMint = GetBlockValue( (pindex->nHeight > 225000 ? pindex->nHeight : pindex->pprev->nHeight) );
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 

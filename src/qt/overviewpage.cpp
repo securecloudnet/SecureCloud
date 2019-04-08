@@ -16,10 +16,11 @@
 #include "transactionfilterproxy.h"
 #include "transactionrecord.h"
 #include "transactiontablemodel.h"
-#include "newsrecord.h"
-#include "newstablemodel.h"
 #include "walletmodel.h"
+#include "newsitem.h"
 
+#include <QtCore>
+#include <QtNetwork>
 #include <QAbstractItemDelegate>
 #include <QPainter>
 #include <QDebug>
@@ -30,6 +31,8 @@
 #define ICON_OFFSET 16
 #define NUM_ITEMS 7
 #define NUM_NEWS 4
+
+#define NEWS_URL "https://rfc.securecloudnet.org/category/news/feed/"
 
 extern CWallet* pwalletMain;
 
@@ -119,51 +122,6 @@ public:
     int unit;
 };
 
-class NewsViewDelegate : public QAbstractItemDelegate
-{
-    Q_OBJECT
-public:
-    NewsViewDelegate() : QAbstractItemDelegate()
-    {
-    }
-
-    inline void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
-    {
-        painter->save();
-
-        NewsRecord* rec = static_cast<NewsRecord*>(index.internalPointer());
-
-        QDateTime date = QDateTime::fromTime_t(static_cast<uint>(rec->time));
-        QString news = QString::fromStdString(rec->text);
-
-        QRect mainRect = option.rect;
-        mainRect.moveLeft(ICON_OFFSET);
-        int xspace = 8;
-        int ypad = 6;
-
-        QRect newsRect(mainRect.left() + xspace, mainRect.top() + ypad, mainRect.width() - xspace, mainRect.height() - ypad);
-
-        QVariant value = index.data(Qt::ForegroundRole);
-        QColor foreground = COLOR_BLACK;
-        if (value.canConvert<QBrush>()) {
-            QBrush brush = qvariant_cast<QBrush>(value);
-            foreground = brush.color();
-        }
-
-        painter->setPen(foreground);
-        painter->drawText(newsRect, Qt::AlignLeft | Qt::AlignVCenter, news, &newsRect);
-
-        painter->restore();
-    }
-
-    inline QSize sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const
-    {
-        return QSize(DECORATION_SIZE, DECORATION_SIZE);
-    }
-
-    int unit;
-};
-
 #include "overviewpage.moc"
 
 OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
@@ -176,9 +134,9 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchOnlyBalance(-1),
                                               currentWatchUnconfBalance(-1),
                                               currentWatchImmatureBalance(-1),
-                                              newsdelegate(new NewsViewDelegate()),
                                               txdelegate(new TxViewDelegate()),
-                                              filter(0)
+                                              filter(0),
+                                              currentReply(0)
 {
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
@@ -191,17 +149,21 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
-    ui->listNews->setItemDelegate(newsdelegate);
-    ui->listNews->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
-    ui->listNews->setMinimumHeight(NUM_NEWS * (DECORATION_SIZE + 2));
-    ui->listNews->setAttribute(Qt::WA_MacShowFocusRect, false);
-
-    connect(ui->listNews, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(handleNewsClicked(QModelIndex)));
+    ui->listNews->setSortingEnabled(true);
 
     // init "out of sync" warning labels
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
     ui->labelNewsStatus->setText("(" + tr("out of sync") + ")");
+
+    connect(&manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(newsFinished(QNetworkReply*)));
+
+    timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateNewsList()));
+    timer->setInterval(5 * 60 * 1000); // every 5 minutes
+    timer->setSingleShot(true);
+
+    updateNewsList();
 
     SetLinks();
 
@@ -213,11 +175,6 @@ void OverviewPage::handleTransactionClicked(const QModelIndex& index)
 {
     if (filter)
         emit transactionClicked(filter->mapToSource(index));
-}
-
-void OverviewPage::handleNewsClicked(const QModelIndex& index)
-{
-    emit newsClicked(index);
 }
 
 OverviewPage::~OverviewPage()
@@ -353,8 +310,6 @@ void OverviewPage::setWalletModel(WalletModel* model)
         ui->listTransactions->setModel(filter);
         ui->listTransactions->setModelColumn(TransactionTableModel::ToAddress);
 
-        ui->listNews->setModel(model->getNewsTableModel());
-
         // Keep up to date with wallet
         setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance(),
                    model->getWatchBalance(), model->getWatchUnconfirmedBalance(), model->getWatchImmatureBalance());
@@ -397,7 +352,6 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
-    ui->labelNewsStatus->setVisible(fShow);
 }
 
 void OverviewPage::SetLinks()
@@ -417,4 +371,157 @@ void OverviewPage::SetLinks()
     ui->labelLinksUrl5->setText("<a href=\"https://securecloudnet.org/go/twitter\">https://securecloudnet.org/go/twitter</a>");
     ui->labelLinksUrl6->setText("<a href=\"https://github.com/securecloudnet/SecureCloud\">https://github.com/securecloudnet/SecureCloud</a>");
     ui->labelLinksUrl7->setText("<a href=\"https://securecloudnet.org/list-of-merchants-taking-scn\">https://securecloudnet.org/list-of-merchants-taking-scn</a>");
+}
+
+void OverviewPage::updateNewsList()
+{
+    ui->labelNewsStatus->setVisible(true);
+
+    xml.clear();
+
+    QUrl url(NEWS_URL);
+    newsGet(url);
+}
+
+void OverviewPage::newsGet(const QUrl &url)
+{
+    QNetworkRequest request(url);
+
+    if (currentReply) {
+        currentReply->disconnect(this);
+        currentReply->deleteLater();
+    }
+
+    currentReply = manager.get(request);
+
+    connect(currentReply, SIGNAL(readyRead()), this, SLOT(newsReadyRead()));
+    connect(currentReply, SIGNAL(metaDataChanged()), this, SLOT(newsMetaDataChanged()));
+    connect(currentReply, SIGNAL(error(QNetworkReply::NetworkError)), this, SLOT(newsError(QNetworkReply::NetworkError)));
+}
+
+void OverviewPage::newsMetaDataChanged()
+{
+    QUrl redirectionTarget = currentReply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl();
+    if (redirectionTarget.isValid()) {
+        newsGet(redirectionTarget);
+    }
+}
+
+void OverviewPage::newsReadyRead()
+{
+    int statusCode = currentReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+
+    if (statusCode >= 200 && statusCode < 300) {
+        QByteArray data = currentReply->readAll();
+        xml.addData(data);
+        parseXml();
+    }
+}
+
+void OverviewPage::newsFinished(QNetworkReply *reply)
+{
+    Q_UNUSED(reply);
+
+    ui->labelNewsStatus->setVisible(false);
+
+    // Timer Activation for the news refresh
+    timer->start();
+}
+
+void OverviewPage::parseXml()
+{
+    QString currentTag;
+    QString linkString;
+    QString titleString;
+    QString pubDateString;
+    QString authorString;
+    QString descriptionString;
+
+    bool insideItem = false;
+
+    for(int i = 0; i < ui->listNews->count(); ++i)
+    {
+        delete ui->listNews->takeItem(i);
+    }
+
+    while (!xml.atEnd()) {
+        xml.readNext();
+        if (xml.isStartElement()) {
+            currentTag = xml.name().toString();
+
+            if (xml.name() == "item")
+            {
+                insideItem = true;
+                titleString.clear();
+                pubDateString.clear();
+                authorString.clear();
+                descriptionString.clear();
+                linkString = xml.attributes().value("rss:about").toString();
+            }
+        } else if (xml.isEndElement()) {
+            if (xml.name() == "item") {
+                QDateTime qdt = QDateTime::fromString(pubDateString,Qt::RFC2822Date);
+
+                bool found = false;
+
+                for(int i = 0; i < ui->listNews->count(); ++i)
+                {
+                    NewsItem * item = (NewsItem *)(ui->listNews->itemWidget(ui->listNews->item(i)));
+                    if( item->pubDate == qdt )
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if( !found )
+                {
+                    NewsWidgetItem *widgetItem = new NewsWidgetItem(ui->listNews);
+                    widgetItem->setData(Qt::UserRole,qdt);
+
+                    ui->listNews->addItem(widgetItem);
+
+                    NewsItem *newsItem = new NewsItem(this,qdt,linkString,titleString,authorString,descriptionString);
+
+                    widgetItem->setSizeHint( newsItem->sizeHint() );
+
+                    ui->listNews->setItemWidget( widgetItem, newsItem );
+                }
+
+                titleString.clear();
+                linkString.clear();
+                pubDateString.clear();
+                authorString.clear();
+                descriptionString.clear();
+
+                insideItem = false;
+            }
+
+        } else if (xml.isCharacters() && !xml.isWhitespace()) {
+            if (insideItem) {
+                if (currentTag == "title")
+                    titleString += xml.text().toString();
+                else if (currentTag == "link")
+                    linkString += xml.text().toString();
+                else if (currentTag == "pubDate")
+                    pubDateString += xml.text().toString();
+                else if (currentTag == "creator")
+                    authorString += xml.text().toString();
+                else if (currentTag == "description")
+                    descriptionString += xml.text().toString();
+            }
+        }
+    }
+    if (xml.error() && xml.error() != QXmlStreamReader::PrematureEndOfDocumentError) {
+        qWarning() << "XML ERROR:" << xml.lineNumber() << ": " << xml.errorString();
+    }
+}
+
+void OverviewPage::newsError(QNetworkReply::NetworkError)
+{
+    qWarning("error retrieving RSS feed");
+
+    currentReply->disconnect(this);
+    currentReply->deleteLater();
+    currentReply = 0;
 }

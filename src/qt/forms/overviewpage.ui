@@ -10,6 +10,12 @@
     <height>841</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="minimumSize">
    <size>
     <width>960</width>
@@ -43,7 +49,7 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1">
+     <layout class="QVBoxLayout" name="verticalLayout_1" stretch="1">
       <property name="leftMargin">
        <number>0</number>
       </property>
@@ -221,7 +227,7 @@
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <layout class="QVBoxLayout" name="verticalLayout_2">
                      <item>
                       <layout class="QHBoxLayout" name="horizontalLayout_4">
                        <item>
@@ -264,7 +270,7 @@
                         </widget>
                        </item>
                        <item>
-                        <spacer name="horizontalSpacer_3">
+                        <spacer name="horizontalSpacer_Balance_1">
                          <property name="orientation">
                           <enum>Qt::Horizontal</enum>
                          </property>
@@ -614,7 +620,7 @@
                         </widget>
                        </item>
                        <item row="5" column="3">
-                        <spacer name="horizontalSpacer_9">
+                        <spacer name="horizontalSpacer_Balance_2">
                          <property name="orientation">
                           <enum>Qt::Horizontal</enum>
                          </property>
@@ -628,35 +634,28 @@
                        </item>
                       </layout>
                      </item>
-                     <item>
-                      <spacer name="verticalSpacer_1">
-                       <property name="orientation">
-                        <enum>Qt::Vertical</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>20</width>
-                         <height>40</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
                     </layout>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QFrame" name="frame_Links">
+                   <widget class="QFrame" name="frame_News">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
                     <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
                     </property>
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_Links">
+                    <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0">
                      <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_Links_1" stretch="0,0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_News">
                        <item>
-                        <widget class="QLabel" name="label_Links_title">
+                        <widget class="QLabel" name="labelNews">
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
@@ -671,12 +670,31 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>Links</string>
+                          <string>Latest News</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <spacer name="horizontalSpacer_Links_1">
+                        <widget class="QLabel" name="labelNewsStatus">
+                         <property name="cursor">
+                          <cursorShape>WhatsThisCursor</cursorShape>
+                         </property>
+                         <property name="toolTip">
+                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SCN network after a connection is established, but this process has not completed yet.</string>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel { color: red; }</string>
+                         </property>
+                         <property name="text">
+                          <string notr="true">(out of sync)</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_Balance_3">
                          <property name="orientation">
                           <enum>Qt::Horizontal</enum>
                          </property>
@@ -691,7 +709,7 @@
                       </layout>
                      </item>
                      <item>
-                      <widget class="Line" name="line_Links">
+                      <widget class="Line" name="line_News">
                        <property name="minimumSize">
                         <size>
                          <width>0</width>
@@ -710,209 +728,47 @@
                       </widget>
                      </item>
                      <item>
-                      <layout class="QGridLayout" name="gridLayout_Links">
-                       <property name="spacing">
-                        <number>12</number>
+                      <widget class="QListWidget" name="listNews">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
                        </property>
-                       <item row="1" column="0">
-                        <widget class="QLabel" name="labelLinks1">
-                         <property name="text">
-                          <string>Links #1:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="1">
-                        <widget class="QLabel" name="labelLinksUrl1">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links1.url/&quot;&gt;https://links1.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="textFormat">
-                          <enum>Qt::RichText</enum>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="0">
-                        <widget class="QLabel" name="labelLinks2">
-                         <property name="text">
-                          <string>Links #2:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="1">
-                        <widget class="QLabel" name="labelLinksUrl2">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links2.url/&quot;&gt;https://links2.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="3" column="0">
-                        <widget class="QLabel" name="labelLinks3">
-                         <property name="text">
-                          <string>Links #3:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QLabel" name="labelLinksUrl3">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links3.url/&quot;&gt;https://links3.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="4" column="0">
-                        <widget class="QLabel" name="labelLinks4">
-                         <property name="text">
-                          <string>Links #4:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="4" column="1">
-                        <widget class="QLabel" name="labelLinksUrl4">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links4.url/&quot;&gt;https://links4.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="5" column="0">
-                        <widget class="QLabel" name="labelLinks5">
-                         <property name="text">
-                          <string>Links #5:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="5" column="1">
-                        <widget class="QLabel" name="labelLinksUrl5">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links5.url/&quot;&gt;https://links5.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="6" column="0">
-                        <widget class="QLabel" name="labelLinks6">
-                         <property name="text">
-                          <string>Links #6:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="6" column="1">
-                        <widget class="QLabel" name="labelLinksUrl6">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links6.url/&quot;&gt;https://links6.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="7" column="0">
-                        <widget class="QLabel" name="labelLinks7">
-                         <property name="text">
-                          <string>Links #7:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="7" column="1">
-                        <widget class="QLabel" name="labelLinksUrl7">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string notr="true">&lt;a href=&quot;https://links7.url/&quot;&gt;https://links7.url/&lt;/a&gt;</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="openExternalLinks">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="7" column="2">
-                        <spacer name="horizontalSpacer_Links_2">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="sizeIncrement">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QListView { background: transparent; }</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::NoFrame</enum>
+                       </property>
+                       <property name="verticalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAsNeeded</enum>
+                       </property>
+                       <property name="horizontalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAsNeeded</enum>
+                       </property>
+                       <property name="selectionMode">
+                        <enum>QAbstractItemView::NoSelection</enum>
+                       </property>
+                       <property name="selectionBehavior">
+                        <enum>QAbstractItemView::SelectRows</enum>
+                       </property>
+                       <property name="verticalScrollMode">
+                        <enum>QAbstractItemView::ScrollPerItem</enum>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </widget>
@@ -923,7 +779,7 @@
               </layout>
              </item>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_right" stretch="1">
+              <layout class="QVBoxLayout" name="verticalLayout_right" stretch="1,0">
                <item>
                 <widget class="QFrame" name="frame_RecentTransactions">
                  <property name="minimumSize">
@@ -938,7 +794,7 @@
                  <property name="frameShadow">
                   <enum>QFrame::Raised</enum>
                  </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_1" stretch="0,0,0,0,0,0,0">
+                 <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0">
                   <item>
                    <layout class="QHBoxLayout" name="horizontalLayout_2">
                     <item>
@@ -981,7 +837,7 @@
                      </widget>
                     </item>
                     <item>
-                     <spacer name="horizontalSpacer">
+                     <spacer name="horizontalSpacer_Transaction">
                       <property name="orientation">
                        <enum>Qt::Horizontal</enum>
                       </property>
@@ -1055,6 +911,279 @@
                     </property>
                    </spacer>
                   </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_Links">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_Links">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_Links_1" stretch="0,0">
+                    <item>
+                     <widget class="QLabel" name="label_Links_title">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Links</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_Links_1">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_Links">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_Links">
+                    <property name="spacing">
+                     <number>12</number>
+                    </property>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="labelLinks1">
+                      <property name="text">
+                       <string>Links #1:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLabel" name="labelLinksUrl1">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links1.url/&quot;&gt;https://links1.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="textFormat">
+                       <enum>Qt::RichText</enum>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="labelLinks2">
+                      <property name="text">
+                       <string>Links #2:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLabel" name="labelLinksUrl2">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links2.url/&quot;&gt;https://links2.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="labelLinks3">
+                      <property name="text">
+                       <string>Links #3:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLabel" name="labelLinksUrl3">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links3.url/&quot;&gt;https://links3.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="labelLinks4">
+                      <property name="text">
+                       <string>Links #4:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLabel" name="labelLinksUrl4">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links4.url/&quot;&gt;https://links4.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="labelLinks5">
+                      <property name="text">
+                       <string>Links #5:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QLabel" name="labelLinksUrl5">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links5.url/&quot;&gt;https://links5.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="labelLinks6">
+                      <property name="text">
+                       <string>Links #6:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1">
+                     <widget class="QLabel" name="labelLinksUrl6">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links6.url/&quot;&gt;https://links6.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0">
+                     <widget class="QLabel" name="labelLinks7">
+                      <property name="text">
+                       <string>Links #7:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="1">
+                     <widget class="QLabel" name="labelLinksUrl7">
+                      <property name="font">
+                       <font>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string notr="true">&lt;a href=&quot;https://links7.url/&quot;&gt;https://links7.url/&lt;/a&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="2">
+                     <spacer name="horizontalSpacer_Links_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
                   <item>
                    <widget class="QLabel" name="labelAlerts">
                     <property name="maximumSize">
@@ -1074,130 +1203,6 @@
                     </property>
                     <property name="margin">
                      <number>3</number>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="frame_News">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_1" stretch="0,0,0,0,0,0,0">
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_News">
-                    <item>
-                     <widget class="QLabel" name="labelNews">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <pointsize>12</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>News</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="labelNewsStatus">
-                      <property name="cursor">
-                       <cursorShape>WhatsThisCursor</cursorShape>
-                      </property>
-                      <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SCN network after a connection is established, but this process has not completed yet.</string>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">QLabel { color: red; }</string>
-                      </property>
-                      <property name="text">
-                       <string notr="true">(out of sync)</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <spacer name="horizontalSpacer">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>40</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                   </layout>
-                  </item>
-                  <item>
-                   <widget class="Line" name="line_News">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>1</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>1</height>
-                     </size>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QListView" name="listNews">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QListView { background: transparent; }</string>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::NoFrame</enum>
-                    </property>
-                    <property name="verticalScrollBarPolicy">
-                     <enum>Qt::ScrollBarAsNeeded</enum>
-                    </property>
-                    <property name="horizontalScrollBarPolicy">
-                     <enum>Qt::ScrollBarAsNeeded</enum>
-                    </property>
-                    <property name="selectionMode">
-                     <enum>QAbstractItemView::SingleSelection</enum>
-                    </property>
-                    <property name="selectionBehavior">
-                     <enum>QAbstractItemView::SelectRows</enum>
-                    </property>
-                    <property name="verticalScrollMode">
-                     <enum>QAbstractItemView::ScrollPerItem</enum>
                     </property>
                    </widget>
                   </item>

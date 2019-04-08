@@ -258,7 +258,8 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64_t& nStakeModifier, int
     while (nStakeModifierTime < pindexFrom->GetBlockTime() + nStakeModifierSelectionInterval) {
         if (!pindexNext) {
             // Should never happen
-            return error("Null pindexNext\n");
+            // return error("Null pindexNext\n");
+            return false;
         }
 
         pindex = pindexNext;
@@ -311,7 +312,7 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock blockFrom, const CTra
     int nStakeModifierHeight = 0;
     int64_t nStakeModifierTime = 0;
     if (!GetKernelStakeModifier(blockFrom.GetHash(), nStakeModifier, nStakeModifierHeight, nStakeModifierTime, fPrintProofOfStake)) {
-        LogPrintf("CheckStakeKernelHash(): failed to get kernel stake modifier \n");
+        //LogPrintf("CheckStakeKernelHash(): failed to get kernel stake modifier \n");
         return false;
     }
 

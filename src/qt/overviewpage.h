@@ -8,11 +8,16 @@
 #include "amount.h"
 
 #include <QWidget>
+#include <QTimer>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QBuffer>
+#include <QXmlStreamReader>
+#include <QUrl>
 
 class ClientModel;
 class TransactionFilterProxy;
 class TxViewDelegate;
-class NewsViewDelegate;
 class WalletModel;
 
 namespace Ui
@@ -37,12 +42,18 @@ public:
     void setWalletModel(WalletModel* walletModel);
     void showOutOfSyncWarning(bool fShow);
 
+public Q_SLOTS:
+    void updateNewsList();
+
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance);
+    void newsFinished(QNetworkReply *reply);
+    void newsReadyRead();
+    void newsMetaDataChanged();
+    void newsError(QNetworkReply::NetworkError);
 
 signals:
     void transactionClicked(const QModelIndex& index);
-    void newsClicked(const QModelIndex& index);
 
 private:
     QTimer* timer;
@@ -57,16 +68,22 @@ private:
     CAmount currentWatchImmatureBalance;
     int nDisplayUnit;
 
-    NewsViewDelegate* newsdelegate;
     TxViewDelegate* txdelegate;
     TransactionFilterProxy* filter;
+
+    void parseXml();
+    void newsGet(const QUrl &url);
+
+    QXmlStreamReader xml;
+
+    QNetworkAccessManager manager;
+    QNetworkReply *currentReply;
 
     void SetLinks();
 
 private slots:
     void updateDisplayUnit();
     void handleTransactionClicked(const QModelIndex& index);
-    void handleNewsClicked(const QModelIndex& index);
     void updateAlerts(const QString& warnings);
     void updateWatchOnlyLabels(bool showWatchOnly);
 };
