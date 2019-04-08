@@ -1602,6 +1602,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
 bool IsMasternodeCollateral(CAmount value)
 {
+    if( chainActive.Height() >= 241800 )
+        return value == MASTERNODE_COLLATERAL_AFTER_241800;
+
     return value == MASTERNODE_COLLATERAL;
 }
 
