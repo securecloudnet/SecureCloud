@@ -160,10 +160,8 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateNewsList()));
-    timer->setInterval(5 * 60 * 1000); // every 5 minutes
+    timer->setInterval(5 * 1000); // 1st shot after 5 seconds
     timer->setSingleShot(true);
-
-    updateNewsList();
 
     SetLinks();
 
@@ -425,6 +423,7 @@ void OverviewPage::newsFinished(QNetworkReply *reply)
     ui->labelNewsStatus->setVisible(false);
 
     // Timer Activation for the news refresh
+    timer->setInterval(5 * 60 * 1000); // every 5 minutes
     timer->start();
 }
 
