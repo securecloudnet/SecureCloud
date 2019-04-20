@@ -216,7 +216,7 @@ void CMasternode::Check(bool forceCheck)
     if (!unitTest) {
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut((MASTERNODE_COLLATERAL-0.01) * COIN, masternodeSigner.collateralPubKey);
+        CTxOut vout = CTxOut((GetMasternodeCollateral()-0.01) * COIN, masternodeSigner.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
@@ -576,7 +576,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
 
     CValidationState state;
     CMutableTransaction tx = CMutableTransaction();
-    CTxOut vout = CTxOut((MASTERNODE_COLLATERAL-0.01) * COIN, masternodeSigner.collateralPubKey);
+    CTxOut vout = CTxOut((GetMasternodeCollateral()-0.01) * COIN, masternodeSigner.collateralPubKey);
     tx.vin.push_back(vin);
     tx.vout.push_back(vout);
 

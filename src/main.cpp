@@ -1608,6 +1608,14 @@ bool IsMasternodeCollateral(CAmount value)
     return value == MASTERNODE_COLLATERAL;
 }
 
+CAmount GetMasternodeCollateral()
+{
+    if( chainActive.Height() >= 241800 )
+        return MASTERNODE_COLLATERAL_AFTER_241800;
+
+    return MASTERNODE_COLLATERAL;
+}
+
 bool IsInitialBlockDownload()
 {
     LOCK(cs_main);
