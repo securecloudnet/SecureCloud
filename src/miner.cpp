@@ -117,7 +117,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vout[0].scriptPubKey = scriptPubKeyIn;
 
     CBlockIndex* prev = chainActive.Tip();
-    txNew.vout[0].nValue = GetBlockValue(prev->nHeight);
+    txNew.vout[0].nValue = GetBlockValue(prev->nHeight+1);
 
     pblock->vtx.push_back(txNew);
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
@@ -485,7 +485,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 continue;
             }
 
-            if (chainActive.Tip()->nTime < Params().GenesisBlock().nTime || vNodes.empty() || pwallet->IsLocked() || !fMintableCoins || nReserveBalance >= pwallet->GetBalance()) {
+            if (chainActive.Tip()->nTime < Params().GenesisBlock().nTime || vNodes.empty() || pwallet->IsLocked() || !fMintableCoins || fReindex || fImporting || nReserveBalance >= pwallet->GetBalance()) {
                 nLastCoinStakeSearchInterval = 0;
                 MilliSleep(30000);
                 continue;
